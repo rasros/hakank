@@ -48,15 +48,12 @@ Model fixes so models flatten under current MiniZinc:
 
 Removed models:
 
-- crossword3_test: needs a bespoke crossword instance a family of crossword3_*
-  models already covers.
+- crossword3_test: needs a bespoke instance already covered by the crossword3_* family.
 - nonogram_regular: needs a hand-built regular-automaton instance.
-- weights: its data files were only ever hosted on the (now gone) upstream site.
-- linear_combinations: a mode-dependent modelling bug in the source.
-- product_test: multiplies 40 variables up to 1000, which overflows 64-bit
-  integers; only fixable by changing what the model tests.
+- weights: data only ever hosted on the (now gone) upstream site.
+- linear_combinations: a mode-dependent modelling bug.
+- product_test: multiplies 40 variables up to 1000, overflowing 64-bit integers.
 
-The crossword3.mzn template (included by the crossword3_* instances) lives under
-minizinc/lib/ with its word list.
+The crossword3.mzn template (included by the crossword3_* instances) lives under minizinc/lib/ with its word list.
 
 The original models are MIT licensed; see LICENSE.
