@@ -32,7 +32,7 @@ solve minimize moves;
 % solve :: int_search(array1d(x) ++ array1d(d), input_order, indomain_split, complete) minimize moves;
 
 constraint
-  forall(i,j in 1..n, j in 1..n) (
+  forall(i,j in 1..n) (
      % count all the neighboring cells, including this cell
      2*d[i,j] + r[i,j]  = sum([x[i+a,j+b] | a,b in {-1,0,1} where
                                (i+a) >= 1 /\ (i+a) <= n /\ 

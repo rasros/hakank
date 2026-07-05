@@ -1,0 +1,4 @@
+output let {array [int] of string: X_INTRODUCED_124_ = ["\nbest linear fit is:\n\ty = ",show(Y-b1*X)," + ",show(b1),"\n"]} in (X_INTRODUCED_124_);
+float: b1;
+float: Y;
+float: X;

@@ -47,7 +47,7 @@ array[1..m] of var 0..base-1: bin_code;                  % the sequence in base-
 % solve :: int_search(x, first_fail, indomain_split, complete) satisfy;
 
 % Change the parameters in credit and bbs for more results
-solve :: int_search(x ++ bin_code, first_fail, indomain_split, credit(5,bbs(1))) satisfy;
+solve :: int_search(x ++ bin_code, first_fail, indomain_split, complete) satisfy;
 % solve :: int_search(x, first_fail, indomain_split, complete) satisfy;
 
 

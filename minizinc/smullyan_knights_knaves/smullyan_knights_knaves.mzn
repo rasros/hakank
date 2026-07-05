@@ -36,8 +36,7 @@ predicate says(var int: kind, var bool: says) =
 
 solve satisfy;
 
-constraint
-
+constraint true
     %% Problem 26: 
     %% B: A says he is a knave
     %% C: B is a knave

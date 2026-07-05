@@ -12,16 +12,7 @@
 include "globals.mzn";
 
 int: n;
-array[1..n] of var 1..n: queens :: viz([
-                                              % viztype("vector_waterfall"),
-                                              viztype("vector"),
-                                              vizpos(0,2),
-                                              vizdisplay("compact"),
-                                              % vizdisplay("expanded"),
-                                              vizwidth(n),
-                                              vizheight(n),
-                                              vizrange(1,n)
-                                              ]);
+array[1..n] of var 1..n: queens;
 
 solve :: int_search(
         queens, 

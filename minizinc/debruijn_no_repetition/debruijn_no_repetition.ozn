@@ -1,0 +1,6 @@
+output let {array [int] of string: X_INTRODUCED_346_ = ([(if i==1 then ((((((("\nn: "++show(n))++" m: ")++show(m))++" base: ")++show(base))++"\nbin_code: ")++show(bin_code))++"\nbinary code: " else "" endif++show(bin_code[i]))++"" | i in 1..m]++["\nx (decimal representation):\n"++show(x)])++["\n"]} in (X_INTRODUCED_346_);
+int: n = 3;
+int: m = 27;
+int: base = 3;
+array [1..m] of int: bin_code;
+array [1..m] of int: x;

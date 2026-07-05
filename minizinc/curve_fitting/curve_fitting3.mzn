@@ -28,13 +28,13 @@ array[Sample] of float: Sx;
 % dependent variable
 array[Sample] of float: Sy;
 
-var float: X;
-var float: Y;
+var -100000.0..100000.0: X;
+var -100000.0..100000.0: Y;
 
-array[Sample] of var float: Ex;
-array[Sample] of var float: Ey;
+array[Sample] of var -100000.0..100000.0: Ex;
+array[Sample] of var -100000.0..100000.0: Ey;
 
-var float: b1 = (sum(z in Sample) (Ex[z]*Ey[z]))/(sum(z in Sample) (Ex[z]*Ex[z]));
+var -100000.0..100000.0: b1 = (sum(z in Sample) (Ex[z]*Ey[z]))/(sum(z in Sample) (Ex[z]*Ex[z]));
 
 
 % solve satisfy;

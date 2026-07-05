@@ -51,8 +51,8 @@ predicate sudoku(array[int,int] of var int: x, int: n, int: reg) =
 %
 % Print a matrix
 %
-function array[int] of string: print_matrix(string: s, array[int,int] of var int: x) =
- [show(s) ++ ":"] ++ [if j = 1 then "\n" else " " endif ++ show(s1[i,j]) | i,j in index_set_1of2(x)] ++ ["\n\n"]
+function array[int] of string: print_matrix(string: s, array[int,int] of int: x) =
+ [show(s) ++ ":"] ++ [if j = 1 then "\n" else " " endif ++ show(x[i,j]) | i,j in index_set_1of2(x)] ++ ["\n\n"]
 ;
 
 solve satisfy;
@@ -63,11 +63,7 @@ constraint
   sudoku(s2,n,reg)
 ;
 
-output 
-print_matrix("s1", s1)
-++
-print_matrix("s2", s2)
-;
+output [ "s1 =\n", show(s1), "\ns2 =\n", show(s2), "\n" ];
 
 %
 % data

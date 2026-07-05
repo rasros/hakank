@@ -107,3 +107,5 @@ output
 [
   "\n"
 ];
+
+function string: show_cond(var bool: c, string: a, string: b) = if fix(c) then a else b endif;

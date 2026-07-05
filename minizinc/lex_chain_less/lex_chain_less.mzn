@@ -44,7 +44,7 @@ int: r = 3;
 int: c = 4;
 array[1..r, 1..c] of var 1..9: x;
 
-predicate lex_chain_less(array[int, int] of var int: x) =
+predicate lex_chain_less_local(array[int, int] of var int: x) =
 
  forall(i in 2..card(index_set_1of2(x))) (
      (lex_less( [x[i-1, j] | j in index_set_2of2(x)], [x[i, j] | j in index_set_2of2(x)]))
@@ -72,7 +72,7 @@ constraint
   %      5,2,6,3
   %    ]))
   % /\
-  lex_chain_less(x)
+  lex_chain_less_local(x)
 ;
 
 output [

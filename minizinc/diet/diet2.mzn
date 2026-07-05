@@ -31,7 +31,7 @@ set of int: F = 1..num_foods;
 array[N] of float: b;
 
 % nutritive value of foods (per dollar spent) 
-array[F, N] of 0.0..2000.0: a;
+array[F, N] of 0.0..100000.0: a;
 
 % dollars of food f to be purchased daily
 array[F] of var 0.0..1.0: x;

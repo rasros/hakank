@@ -1,0 +1,2 @@
+output let {array [int] of string: X_INTRODUCED_19_ = ["1:knight (always tells the true), 2=knave (always lies)\n","p: ",show(p),"\n"]} in (X_INTRODUCED_19_);
+array [1..3] of int: p;

@@ -147,3 +147,5 @@ predicate myregular(array[int] of var int: x, int: Q, int: S,
      )))))
 ;
 
+
+function string: show_cond(var bool: c, string: a, string: b) = if fix(c) then a else b endif;

@@ -1,0 +1,7 @@
+output let {array [int] of string: X_INTRODUCED_332_ = (((["moves: "++format(moves)++"\n","x:"]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..n])++["\nd:"])++[if j==1 then "\n" else " " endif++show(d[i,j]) | i,j in 1..n])++["\nmoves: "++format(moves)++"\n"]} in (X_INTRODUCED_332_);
+int: n = 9;
+array [1..81] of int: X_INTRODUCED_0_;
+array [1..n,1..n] of int: x = array2d(1..9,1..9,X_INTRODUCED_0_);
+int: moves = sum(array1d(x));
+array [1..81] of int: X_INTRODUCED_82_;
+array [1..n,1..n] of int: d = array2d(1..9,1..9,X_INTRODUCED_82_);

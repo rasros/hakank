@@ -46,7 +46,7 @@ string: problem_name;
 % ann: val_select;
 solve :: int_search(
         L, 
-        size_afc_min,
+        first_fail,
         indomain_min, 
         complete) 
     satisfy;

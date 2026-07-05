@@ -1,0 +1,6 @@
+output let {array [int] of string: X_INTRODUCED_187_ = ["s1 =\n",show(s1),"\ns2 =\n",show(s2),"\n"]} in (X_INTRODUCED_187_);
+int: n = 9;
+array [1..81] of int: X_INTRODUCED_73_;
+array [1..n,1..n] of int: s2 = array2d(1..9,1..9,X_INTRODUCED_73_);
+array [1..81] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: s1 = array2d(1..9,1..9,X_INTRODUCED_16_);
