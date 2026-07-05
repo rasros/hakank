@@ -1,4 +1,4 @@
-output ["Liz: ",show(Liz),"\n","Fi: ",show(Fi),"\n","Sara: ",show(Sara),"\n"];
+output let {array [int] of string: X_INTRODUCED_29_ = ["Liz: ",show(Liz),"\n","Fi: ",show(Fi),"\n","Sara: ",show(Sara),"\n"]} in (X_INTRODUCED_29_);
 int: Sara;
 int: Fi;
 int: Liz;

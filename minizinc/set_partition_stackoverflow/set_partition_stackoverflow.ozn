@@ -1,4 +1,4 @@
-output [(((("x: "++show(x))++"\n")++"xs: ")++show(xs))++"\n"];
+output let {array [int] of string: X_INTRODUCED_36_ = [(((("x: "++show(x))++"\n")++"xs: ")++show(xs))++"\n"]} in (X_INTRODUCED_36_);
 int: n = 5;
 array [1..n] of bool: x;
 array [1..n] of set of int: xs;

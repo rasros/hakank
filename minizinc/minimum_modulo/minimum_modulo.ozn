@@ -1,4 +1,4 @@
-output [((((((("variables: "++show(variables))++"\n")++"t_min: ")++show(t_min))++"\n")++"m: ")++show(m))++"\n"];
+output let {array [int] of string: X_INTRODUCED_32_ = [((((((("variables: "++show(variables))++"\n")++"t_min: ")++show(t_min))++"\n")++"m: ")++show(m))++"\n"]} in (X_INTRODUCED_32_);
 int: n = 5;
 array [1..n] of int: variables = [9,1,7,6,5];
 int: t_min = 6;

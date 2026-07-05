@@ -1,4 +1,4 @@
-output ["used    : ",show(used),"\n","origin  : ",show(origin),"\n","duration: ",show(duration),"\n","end_time: ",show(end_time),"\n"];
+output let {array [int] of string: X_INTRODUCED_43_ = ["used    : ",show(used),"\n","origin  : ",show(origin),"\n","duration: ",show(duration),"\n","end_time: ",show(end_time),"\n"]} in (X_INTRODUCED_43_);
 int: n = 4;
 array [1..n] of int: end_time = [4,0,9,5];
 array [1..n] of int: duration = [3,0,2,1];

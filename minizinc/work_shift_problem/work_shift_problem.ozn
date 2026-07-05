@@ -1,4 +1,4 @@
-output (["x: "++show(x)]++[if worker==1 then ("\nShift "++show(shift))++": " else "" endif++if fix(x[worker])==shift then show(workers[worker])++" " else "" endif | shift in 1..s, worker in 1..p])++["\n"];
+output let {array [int] of string: X_INTRODUCED_25_ = (["x: "++show(x)]++[if worker==1 then ("\nShift "++show(shift))++": " else "" endif++if fix(x[worker])==shift then show(workers[worker])++" " else "" endif | shift in 1..s, worker in 1..p])++["\n"]} in (X_INTRODUCED_25_);
 int: p = 6;
 int: s = 3;
 array [1..p] of int: x;

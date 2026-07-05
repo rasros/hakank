@@ -1,4 +1,4 @@
-output ["          s m t w t f s"]++[if j==1 then ("\nintern "++show(i))++": " else " " endif++show(d[fix(interns[i,j])]) | i in 1..n, j in 1..w];
+output let {array [int] of string: X_INTRODUCED_198_ = ["          s m t w t f s"]++[if j==1 then ("\nintern "++show(i))++": " else " " endif++show(d[fix(interns[i,j])]) | i in 1..n, j in 1..w]} in (X_INTRODUCED_198_);
 array [0..1] of string: d = array1d(0..1,["o","w"]);
 int: w = 7;
 int: n = 3;

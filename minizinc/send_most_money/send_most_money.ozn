@@ -1,4 +1,4 @@
-output ["z: ",show(z),"\n","S: ",show(S),"\nE: ",show(E),"\nN: ",show(N),"\nD: ",show(D),"\nM: ",show(M),"\nO: ",show(O),"\nT: ",show(T),"\nY: ",show(Y),"\n"];
+output let {array [int] of string: X_INTRODUCED_21_ = ["z: ",show(z),"\n","S: ",show(S),"\nE: ",show(E),"\nN: ",show(N),"\nD: ",show(D),"\nM: ",show(M),"\nO: ",show(O),"\nT: ",show(T),"\nY: ",show(Y),"\n"]} in (X_INTRODUCED_21_);
 int: Y;
 int: T;
 int: O;

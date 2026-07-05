@@ -1,4 +1,4 @@
-output ["cost: ",show(cost),"\n","x: ",show(x),"\n","x_cost: ",show(x_cost),"\n","quant: ",show(quant),"\n","total_cost: ",show(total_cost),"\n"];
+output let {array [int] of string: X_INTRODUCED_1497_ = ["cost: ",show(cost),"\n","x: ",show(x),"\n","x_cost: ",show(x_cost),"\n","quant: ",show(quant),"\n","total_cost: ",show(total_cost),"\n"]} in (X_INTRODUCED_1497_);
 float: days = 365.25;
 set of int: C = 1..77;
 array [C] of float: x;

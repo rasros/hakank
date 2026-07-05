@@ -1,4 +1,4 @@
-output (([show(letters[word[I]]) | I in 1..len]++[", "])++[show(letters[word[fix(shuffle[I])]]) | I in 1..len])++[(", ("++show(num_same))++")\n"];
+output let {array [int] of string: X_INTRODUCED_50_ = (([show(letters[word[I]]) | I in 1..len]++[", "])++[show(letters[word[fix(shuffle[I])]]) | I in 1..len])++[(", ("++show(num_same))++")\n"]} in (X_INTRODUCED_50_);
 int: num_letters = 26;
 array [1..num_letters] of string: letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 int: a = 1;

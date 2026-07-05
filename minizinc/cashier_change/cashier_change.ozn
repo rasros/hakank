@@ -1,4 +1,4 @@
-output [show(x),"\n","sum(x): ",show(sum([x[i]*b[i] | i in 1..n])),"\n"]++[((show(b[i])++" cent: ")++show(x[i]))++"\n" | i in 1..n];
+output let {array [int] of string: X_INTRODUCED_635_ = [show(x),"\n","sum(x): ",show(sum([x[i]*b[i] | i in 1..n])),"\n"]++[((show(b[i])++" cent: ")++show(x[i]))++"\n" | i in 1..n]} in (X_INTRODUCED_635_);
 int: n = 5;
 array [1..n] of int: x;
 array [1..n] of int: b = [1,5,10,25,50];

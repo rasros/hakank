@@ -1,4 +1,4 @@
-output ["Answers: ",show(LD),"\n"];
+output let {array [int] of string: X_INTRODUCED_126_ = ["Answers: ",show(LD),"\n"]} in (X_INTRODUCED_126_);
 int: Q10;
 int: Q9;
 int: Q8;

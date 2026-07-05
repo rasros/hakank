@@ -1,4 +1,4 @@
-output ([("weights: "++show(weights))++"\n"]++[if j==1 then ("\n"++show_int(4,i))++": " else " " endif++if fix(weights[j]) > 0 then show_int(3,x[i,j]) else "" endif | i in 1..n, j in 1..m1])++[((((((("\nweights: "++show(weights))++"\n")++"t: ")++show(t))++"\n")++"t2: ")++show(t2))++"\n"];
+output let {array [int] of string: X_INTRODUCED_344_ = ([("weights: "++show(weights))++"\n"]++[if j==1 then ("\n"++show_int(4,i))++": " else " " endif++if fix(weights[j]) > 0 then show_int(3,x[i,j]) else "" endif | i in 1..n, j in 1..m1])++[((((((("\nweights: "++show(weights))++"\n")++"t: ")++show(t))++"\n")++"t2: ")++show(t2))++"\n"]} in (X_INTRODUCED_344_);
 int: m1 = 5;
 array [1..m1] of int: weights;
 int: n = 13;

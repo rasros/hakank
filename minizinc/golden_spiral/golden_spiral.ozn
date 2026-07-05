@@ -1,3 +1,3 @@
-output ["xy: ",show([x,y])];
+output let {array [int] of string: X_INTRODUCED_8_ = ["xy: ",show([x,y])]} in (X_INTRODUCED_8_);
 float: y;
 float: x;

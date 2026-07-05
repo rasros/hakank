@@ -1,4 +1,4 @@
-output [((((((((((((("s: "++show(s))++"\n")++"a: ")++show(a))++"\n")++"d: ")++show(d))++"\n")++"k: ")++show(k))++"\n")++"c: ")++show(c))++"\n"];
+output let {array [int] of string: X_INTRODUCED_54_ = [((((((((((((("s: "++show(s))++"\n")++"a: ")++show(a))++"\n")++"d: ")++show(d))++"\n")++"k: ")++show(k))++"\n")++"c: ")++show(c))++"\n"]} in (X_INTRODUCED_54_);
 set of int: States = 1..5;
 array [States] of int: s;
 set of int: Animals = 1..5;

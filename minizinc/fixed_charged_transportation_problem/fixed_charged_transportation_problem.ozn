@@ -1,4 +1,4 @@
-output [((((((("x: "++show(x))++"\n")++"y: ")++show(y))++"\n")++"cost: ")++show(cost))++"\n"];
+output let {array [int] of string: X_INTRODUCED_687_ = [((((((("x: "++show(x))++"\n")++"y: ")++show(y))++"\n")++"cost: ")++show(cost))++"\n"]} in (X_INTRODUCED_687_);
 set of int: J = 1..12;
 set of int: I = 1..8;
 array [1..96] of float: X_INTRODUCED_0_;

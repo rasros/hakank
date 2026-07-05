@@ -1,4 +1,4 @@
-output (["\nladder_num: ",show(ladder_num)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..ladder_len, j in 1..word_len])++["\n"];
+output let {array [int] of string: X_INTRODUCED_296_ = (["\nladder_num: ",show(ladder_num)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..ladder_len, j in 1..word_len])++["\n"]} in (X_INTRODUCED_296_);
 int: ladder_len = 14;
 array [1..ladder_len] of int: ladder_num;
 int: word_len = 4;

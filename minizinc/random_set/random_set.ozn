@@ -1,4 +1,4 @@
-output [((((((((((((((((((("rand: "++show(rand))++"\n")++"rand_lens: ")++show([card(fix(rand[i])) | i in 1..n]))++"\n\n")++"x: ")++show(x))++"\n")++"rand_fixed: ")++show(rand_fixed))++"\n")++"rand_fixed_lens: ")++show(rand_fixed_lens))++"\n")++"rand_fixed2: ")++show(rand_fixed2))++"\n")++"\n")++"rand_fixed2_lens: ")++show(rand_fixed2_lens)]++[show(rand_fixed2[i])++"\n" | i in 1..n];
+output let {array [int] of string: X_INTRODUCED_1621_ = [((((((((((((((((((("rand: "++show(rand))++"\n")++"rand_lens: ")++show([card(fix(rand[i])) | i in 1..n]))++"\n\n")++"x: ")++show(x))++"\n")++"rand_fixed: ")++show(rand_fixed))++"\n")++"rand_fixed_lens: ")++show(rand_fixed_lens))++"\n")++"rand_fixed2: ")++show(rand_fixed2))++"\n")++"\n")++"rand_fixed2_lens: ")++show(rand_fixed2_lens)]++[show(rand_fixed2[i])++"\n" | i in 1..n]} in (X_INTRODUCED_1621_);
 int: n = 10;
 array [1..n] of set of int: rand;
 array [1..n] of int: x = [25,30,12,18,5,5,34,10,42,3];

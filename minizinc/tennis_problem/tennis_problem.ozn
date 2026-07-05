@@ -1,4 +1,4 @@
-output ["first_serves [g,f]: ",show([gs[1],fs[1]]),"\n","fs: ",show(fs),"\n","gs: ",show(gs),"\n","fw: ",show(fw),"\n","gw: ",show(gw),"\n"];
+output let {array [int] of string: X_INTRODUCED_104_ = ["first_serves [g,f]: ",show([gs[1],fs[1]]),"\n","fs: ",show(fs),"\n","gs: ",show(gs),"\n","fw: ",show(fw),"\n","gw: ",show(gw),"\n"]} in (X_INTRODUCED_104_);
 int: n = 9;
 array [1..n] of int: gw;
 array [1..n] of int: fw;

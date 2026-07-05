@@ -1,4 +1,4 @@
-output [(((("talkp: "++show(talkp))++"\n")++"talkn: ")++show(talkn))++"\n"];
+output let {array [int] of string: X_INTRODUCED_31_ = [(((("talkp: "++show(talkp))++"\n")++"talkn: ")++show(talkn))++"\n"]} in (X_INTRODUCED_31_);
 int: n = 5;
 array [1..n] of int: talkp;
 array [1..n] of int: talkn;

@@ -1,4 +1,4 @@
-output ["x: ",show(x),"\n","y: ",show(y),"\n","z: ",show(z),"\n"];
+output let {array [int] of string: X_INTRODUCED_258_ = ["x: ",show(x),"\n","y: ",show(y),"\n","z: ",show(z),"\n"]} in (X_INTRODUCED_258_);
 int: n = 12;
 array [1..n] of int: y;
 int: z = sum(y);

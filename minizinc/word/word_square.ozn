@@ -1,4 +1,4 @@
-output [((((("E"++show(I))++": ")++show_int(5,E[I]))++"  = ")++show(join("",[str[fix(words[E[I],J])] | J in 1..word_len])))++"\n" | I in 1..word_len]++["\n"];
+output let {array [int] of string: X_INTRODUCED_41_ = [((((("E"++show(I))++": ")++show_int(5,E[I]))++"  = ")++show(join("",[str[fix(words[E[I],J])] | J in 1..word_len])))++"\n" | I in 1..word_len]++["\n"]} in (X_INTRODUCED_41_);
 int: word_len = 4;
 int: num_words = 10630;
 array [1..word_len] of int: E;

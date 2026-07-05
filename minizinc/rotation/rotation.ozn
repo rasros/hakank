@@ -1,4 +1,4 @@
-output (["\ninit: ",show(init),"\n","check: ",show(check),"\n","check_ix: ",show(check_ix),"\n","operations: ",show(operations)++"\n"]++[if i==1 then ("\n"++show(operations[k]))++": " else " " endif++show(x[k,i]) | k in 1..rows, i in 1..n*n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_1502_ = (["\ninit: ",show(init),"\n","check: ",show(check),"\n","check_ix: ",show(check_ix),"\n","operations: ",show(operations)++"\n"]++[if i==1 then ("\n"++show(operations[k]))++": " else " " endif++show(x[k,i]) | k in 1..rows, i in 1..n*n])++["\n"]} in (X_INTRODUCED_1502_);
 int: rows = 12;
 array [1..rows] of int: operations;
 int: check_ix;

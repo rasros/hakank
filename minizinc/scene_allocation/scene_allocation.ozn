@@ -1,4 +1,4 @@
-output [((("cost: "++show(cost))++"\n")++show(shoot))++"\n"];
+output let {array [int] of string: X_INTRODUCED_383_ = [((("cost: "++show(cost))++"\n")++show(shoot))++"\n"]} in (X_INTRODUCED_383_);
 int: numActors = 11;
 array [1..numActors] of int: pay = [26481,25043,30310,4085,7562,9381,8770,5788,7423,3303,9593];
 int: maxDay = 5;

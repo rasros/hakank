@@ -1,4 +1,4 @@
-output [((show(x)++"\n")++show([ss[fix(x[i])] | i in 1..n]))++"\n"];
+output let {array [int] of string: X_INTRODUCED_31_ = [((show(x)++"\n")++show([ss[fix(x[i])] | i in 1..n]))++"\n"]} in (X_INTRODUCED_31_);
 int: p7;
 int: p6 = p2;
 int: p5;

@@ -1,4 +1,4 @@
-output [((((((("variables: "++show(variables))++"\n")++"t_max: ")++show(t_max))++"\n")++"rank: ")++show(rank))++"\n"];
+output let {array [int] of string: X_INTRODUCED_21_ = [((((((("variables: "++show(variables))++"\n")++"t_max: ")++show(t_max))++"\n")++"rank: ")++show(rank))++"\n"]} in (X_INTRODUCED_21_);
 int: n = 5;
 array [1..n] of int: variables = [3,1,7,1,6];
 int: t_max = 1;

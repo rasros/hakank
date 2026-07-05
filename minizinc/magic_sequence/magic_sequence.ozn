@@ -1,4 +1,4 @@
-output [show(s),"\n"];
+output let {array [int] of string: X_INTRODUCED_3363_ = [show(s),"\n"]} in (X_INTRODUCED_3363_);
 int: n = 40;
 array [1..40] of int: X_INTRODUCED_0_;
 array [0..n-1] of int: s = array1d(0..39,X_INTRODUCED_0_);

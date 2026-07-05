@@ -1,4 +1,4 @@
-output [if j==1 then "\n" else " " endif++show_int(3,x[i,j]) | i in 1..r, j in 1..c];
+output let {array [int] of string: X_INTRODUCED_528_ = [if j==1 then "\n" else " " endif++show_int(3,x[i,j]) | i in 1..r, j in 1..c]} in (X_INTRODUCED_528_);
 int: c = 8;
 int: r = 8;
 array [1..64] of int: X_INTRODUCED_16_;

@@ -1,4 +1,4 @@
-output [("z: "++show(z))++"\n"]++[(if c1==1 /\ c2==1 then "\n\nProduct "++show(p) else " " endif++if c2==1 then "\n" else " " endif)++show_float(5,1,Trans[p,c1,c2]) | p in 1..num_products, c1 in 1..num_cities, c2 in 1..num_cities];
+output let {array [int] of string: X_INTRODUCED_566_ = [("z: "++show(z))++"\n"]++[(if c1==1 /\ c2==1 then "\n\nProduct "++show(p) else " " endif++if c2==1 then "\n" else " " endif)++show_float(5,1,Trans[p,c1,c2]) | p in 1..num_products, c1 in 1..num_cities, c2 in 1..num_cities]} in (X_INTRODUCED_566_);
 float: z;
 int: num_cities = 10;
 int: num_products = 3;

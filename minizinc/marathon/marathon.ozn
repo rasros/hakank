@@ -1,4 +1,4 @@
-output [(if p==1 /\ r==1 then "  Do Ig Na Ol Ph Pa\n"++show(place) else "" endif++if p==1 then "\n" else " " endif)++show(arrive[r,p]) | r in RUNNERS, p in POS]++["\n"];
+output let {array [int] of string: X_INTRODUCED_114_ = [(if p==1 /\ r==1 then "  Do Ig Na Ol Ph Pa\n"++show(place) else "" endif++if p==1 then "\n" else " " endif)++show(arrive[r,p]) | r in RUNNERS, p in POS]++["\n"]} in (X_INTRODUCED_114_);
 set of int: RUNNERS = 1..6;
 set of int: POS = 1..6;
 array [RUNNERS] of int: place;

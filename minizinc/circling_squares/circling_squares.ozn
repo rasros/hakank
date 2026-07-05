@@ -1,4 +1,4 @@
-output [show(LD),"\n"];
+output let {array [int] of string: X_INTRODUCED_33_ = [show(LD),"\n"]} in (X_INTRODUCED_33_);
 int: K;
 int: I;
 int: H;

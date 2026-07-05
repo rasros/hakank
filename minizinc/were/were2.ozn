@@ -1,4 +1,4 @@
-output ["x: ",show(x),"\n","y: ",show(y),"\n","z: ",show(z),"\n"];
+output let {array [int] of string: X_INTRODUCED_21_ = ["x: ",show(x),"\n","y: ",show(y),"\n","z: ",show(z),"\n"]} in (X_INTRODUCED_21_);
 int: person = 3;
 array [1..person] of int: x;
 int: z = sum([x[i]+9*x[3] | i in 1..person]);

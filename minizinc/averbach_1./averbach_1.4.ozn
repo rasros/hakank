@@ -1,4 +1,4 @@
-output ["[Baker, Dyer, Farmer, Glover, Hosier]: ",show([Baker,Dyer,Farmer,Glover,Hosier]),"\n","[baker, dyer, farmer, glover, hosier]: ",show([baker,dyer,farmer,glover,hosier]),"\n"];
+output let {array [int] of string: X_INTRODUCED_24_ = ["[Baker, Dyer, Farmer, Glover, Hosier]: ",show([Baker,Dyer,Farmer,Glover,Hosier]),"\n","[baker, dyer, farmer, glover, hosier]: ",show([baker,dyer,farmer,glover,hosier]),"\n"]} in (X_INTRODUCED_24_);
 int: hosier;
 int: glover;
 int: farmer;

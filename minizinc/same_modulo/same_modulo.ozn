@@ -1,4 +1,4 @@
-output [((((((("v1: "++show(v1))++"\n")++"v2: ")++show(v2))++"\n")++"M: ")++show(M))++"\n"];
+output let {array [int] of string: X_INTRODUCED_50_ = [((((((("v1: "++show(v1))++"\n")++"v2: ")++show(v2))++"\n")++"M: ")++show(M))++"\n"]} in (X_INTRODUCED_50_);
 int: n = 6;
 array [1..n] of int: v1 = [1,9,1,5,2,1];
 array [1..n] of int: v2 = [6,4,1,1,5,5];

@@ -1,4 +1,4 @@
-output ((["tcost: ",show(tcost),"\n","d:"]++[if j==1 then "\n" else " " endif++show(d[i,j]) | i in ndepts, j in ncities])++["\n"])++["\n"];
+output let {array [int] of string: X_INTRODUCED_723_ = ((["tcost: ",show(tcost),"\n","d:"]++[if j==1 then "\n" else " " endif++show(d[i,j]) | i in ndepts, j in ncities])++["\n"])++["\n"]} in (X_INTRODUCED_723_);
 set of int: ncities = 1..3;
 set of int: ndepts = 1..5;
 array [1..15] of int: X_INTRODUCED_0_;

@@ -1,4 +1,4 @@
-output ["today: "++format(today)++"\n","truth: "++format(truth)++"\n"];
+output let {array [int] of string: X_INTRODUCED_48_ = ["today: "++format(today)++"\n","truth: "++format(truth)++"\n"]} in (X_INTRODUCED_48_);
 int: n = 7;
 array [1..n] of int: truth;
 int: today;

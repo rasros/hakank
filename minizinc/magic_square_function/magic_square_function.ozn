@@ -1,4 +1,4 @@
-output ["s: "++format(s)++"\n"++format(nice2d(x))++""];
+output let {array [int] of string: X_INTRODUCED_47_ = ["s: "++format(s)++"\n"++format(nice2d(x))++""]} in (X_INTRODUCED_47_);
 function string : nice2d(array [int,int] of int: a) = join("\n",[join(" ",[show_int(3,a[i,j]) | i in index_set_1of2(a)]) | j in index_set_2of2(a)]);
 int: n = 4;
 int: s = 34;

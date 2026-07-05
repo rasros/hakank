@@ -1,4 +1,4 @@
-output ["island: ",show(island),"\n","export: ",show(export),"\n","attraction: ",show(attraction),"\n"];
+output let {array [int] of string: X_INTRODUCED_66_ = ["island: ",show(island),"\n","export: ",show(export),"\n","attraction: ",show(attraction),"\n"]} in (X_INTRODUCED_66_);
 set of int: r = 1..4;
 int: koala_preserve;
 int: jai_alai_stadium;

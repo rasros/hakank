@@ -1,4 +1,4 @@
-output [(((("vector1: "++show(vector1))++"\n")++"vector2: ")++show(vector2))++"\n"];
+output let {array [int] of string: X_INTRODUCED_21_ = [(((("vector1: "++show(vector1))++"\n")++"vector2: ")++show(vector2))++"\n"]} in (X_INTRODUCED_21_);
 int: n = 4;
 array [1..n] of int: vector1 = [5,2,7,1];
 array [1..n] of int: vector2 = [5,3,7,1];

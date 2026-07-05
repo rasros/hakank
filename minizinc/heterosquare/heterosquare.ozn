@@ -1,4 +1,4 @@
-output ((["diag1: ",show(diag1)," diag2: ",show(diag2),"\n","row_sums: ",show(row_sums),"\n","col_sums: ",show(col_sums),"\n"]++[show(mat[i,j])++if j mod n==0 then "\n" else " " endif | i in 1..n, j in 1..n])++["mat: "++show(mat)])++["\n"];
+output let {array [int] of string: X_INTRODUCED_45_ = ((["diag1: ",show(diag1)," diag2: ",show(diag2),"\n","row_sums: ",show(row_sums),"\n","col_sums: ",show(col_sums),"\n"]++[show(mat[i,j])++if j mod n==0 then "\n" else " " endif | i in 1..n, j in 1..n])++["mat: "++show(mat)])++["\n"]} in (X_INTRODUCED_45_);
 int: n = 3;
 array [1..n] of int: col_sums;
 array [1..n] of int: row_sums;

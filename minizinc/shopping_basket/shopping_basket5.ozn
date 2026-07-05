@@ -1,4 +1,4 @@
-output [((((((("max_total: "++show(max_total))++"\n")++"total: ")++show(total))++"\n")++"x: ")++show(x))++"\n"];
+output let {array [int] of string: X_INTRODUCED_4232_ = [((((((("max_total: "++show(max_total))++"\n")++"total: ")++show(total))++"\n")++"x: ")++show(x))++"\n"]} in (X_INTRODUCED_4232_);
 int: max_total = 2705262;
 int: total;
 int: num_items = 29;

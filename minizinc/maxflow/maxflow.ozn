@@ -1,4 +1,4 @@
-output [((("x: "++show(x))++"\n")++"flow: ")++show(flow)];
+output let {array [int] of string: X_INTRODUCED_31_ = [((("x: "++show(x))++"\n")++"flow: ")++show(flow)]} in (X_INTRODUCED_31_);
 int: num_edges = 14;
 array [1..num_edges] of int: x;
 int: flow;

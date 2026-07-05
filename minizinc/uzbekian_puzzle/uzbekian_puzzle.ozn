@@ -1,4 +1,4 @@
-output [(((("vstCty: "++show(vstCty))++"\n")++"mtTrader: ")++show(mtTrader))++"\n"];
+output let {array [int] of string: X_INTRODUCED_32_ = [(((("vstCty: "++show(vstCty))++"\n")++"mtTrader: ")++show(mtTrader))++"\n"]} in (X_INTRODUCED_32_);
 int: NumCities = 5;
 array [1..NumCities] of int: vstCty;
 int: NumTraders = 5;

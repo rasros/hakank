@@ -1,3 +1,3 @@
-output [("x: "++show(x))++"\n"];
+output let {array [int] of string: X_INTRODUCED_4536_ = [("x: "++show(x))++"\n"]} in (X_INTRODUCED_4536_);
 int: n = 1000;
 array [1..n] of int: x;

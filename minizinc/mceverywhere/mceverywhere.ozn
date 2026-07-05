@@ -1,4 +1,4 @@
-output ((([("num_restaurants: "++show(num_restaurants))++"\n"]++[if j==1 then "\n" else " " endif++if fix(x[i,j])==1 /\ homes[i,j]==1 then "X" elseif fix(x[i,j])==1 then "R" elseif homes[i,j]==1 then "H" else "_" endif | i,j in 1..n])++["\nNum restaurants in the 'hood:"])++[if j==1 then "\n" else " " endif++if homes[i,j]==1 then show(counts[i,j]) else "_" endif | i,j in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_764_ = ((([("num_restaurants: "++show(num_restaurants))++"\n"]++[if j==1 then "\n" else " " endif++if fix(x[i,j])==1 /\ homes[i,j]==1 then "X" elseif fix(x[i,j])==1 then "R" elseif homes[i,j]==1 then "H" else "_" endif | i,j in 1..n])++["\nNum restaurants in the 'hood:"])++[if j==1 then "\n" else " " endif++if homes[i,j]==1 then show(counts[i,j]) else "_" endif | i,j in 1..n])++["\n"]} in (X_INTRODUCED_764_);
 int: n = 10;
 array [1..100] of int: X_INTRODUCED_0_;
 array [1..n,1..n] of int: x = array2d(1..10,1..10,X_INTRODUCED_0_);

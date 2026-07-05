@@ -1,4 +1,4 @@
-output [(((("total: "++show(total))++"\n")++"x: ")++show(x))++"\n"];
+output let {array [int] of string: X_INTRODUCED_75_ = [(((("total: "++show(total))++"\n")++"x: ")++show(x))++"\n"]} in (X_INTRODUCED_75_);
 int: total;
 int: num_items = 3;
 array [1..num_items] of int: x;

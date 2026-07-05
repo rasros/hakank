@@ -1,4 +1,4 @@
-output (([((((((((((((("gsize: "++show(gsize))++"\n")++"nval : ")++show(nval))++"\n")++"z    : ")++show(z))++"\n")++"x    : ")++show(x))++"\n")++"s    : ")++show(s))++"\n"]++[((((("s["++show(i))++"]:")++show(s[i]))++" (diff:")++show(fix(s[i])-gsize))++")\n" | i in 1..k])++[if j==1 then show(a[i])++" " else "" endif++if i==fix(x[j]) then "\n" else "" endif | i in 1..n, j in 1..k-1])++["\n"];
+output let {array [int] of string: X_INTRODUCED_70_ = (([((((((((((((("gsize: "++show(gsize))++"\n")++"nval : ")++show(nval))++"\n")++"z    : ")++show(z))++"\n")++"x    : ")++show(x))++"\n")++"s    : ")++show(s))++"\n"]++[((((("s["++show(i))++"]:")++show(s[i]))++" (diff:")++show(fix(s[i])-gsize))++")\n" | i in 1..k])++[if j==1 then show(a[i])++" " else "" endif++if i==fix(x[j]) then "\n" else "" endif | i in 1..n, j in 1..k-1])++["\n"]} in (X_INTRODUCED_70_);
 int: gsize = 100;
 int: nval = 100;
 int: k = 10;

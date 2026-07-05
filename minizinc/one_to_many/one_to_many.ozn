@@ -1,3 +1,3 @@
-output [""++format(c)++": "++format(x[c])++"\n" | c in children];
+output let {array [int] of string: X_INTRODUCED_109_ = [""++format(c)++": "++format(x[c])++"\n" | c in children]} in (X_INTRODUCED_109_);
 set of int: children = 1..6;
 array [children] of int: x;

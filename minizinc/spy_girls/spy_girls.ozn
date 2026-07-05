@@ -1,4 +1,4 @@
-output ["first_names: ",show(first_names),"\n","last_names : ",show(last_names),"\n"];
+output let {array [int] of string: X_INTRODUCED_18_ = ["first_names: ",show(first_names),"\n","last_names : ",show(last_names),"\n"]} in (X_INTRODUCED_18_);
 set of int: r = 1..5;
 int: miller;
 int: cooper;

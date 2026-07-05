@@ -1,4 +1,4 @@
-output ["a: "++format(a)++"\n","x: "++format(x)++"\n","y: "++format(y)++""];
+output let {array [int] of string: X_INTRODUCED_198_ = ["a: "++format(a)++"\n","x: "++format(x)++"\n","y: "++format(y)++""]} in (X_INTRODUCED_198_);
 int: n = 12;
 array [1..n] of int: y;
 array [1..n] of int: x = [0,0,6,2,1,6,2,1,0,2,1,0];

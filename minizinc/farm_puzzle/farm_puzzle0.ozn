@@ -1,4 +1,4 @@
-output [(("number_of_legs: "++show(number_of_legs))++"\n")++show([animal1,animal2,animal3,animal4,animal5,animal7,animal7])];
+output let {array [int] of string: X_INTRODUCED_2_ = [(("number_of_legs: "++show(number_of_legs))++"\n")++show([animal1,animal2,animal3,animal4,animal5,animal7,animal7])]} in (X_INTRODUCED_2_);
 int: number_of_legs = 22;
 int: animal7;
 int: animal5;

@@ -1,4 +1,4 @@
-output ([((((((("z:   : "++show(z))++"\n")++"x    : ")++show(x))++"\n")++"dists: ")++show(dists))++"\n"]++[((show_int(2,t)++": ")++if fix(x[t]) > 0 then show(x[t]) else "  " endif)++"\n" | t in start..end])++[if time==start then ("\nType "++show(t))++": " else "" endif++if fix(x[time])==t then show(time)++" " else "" endif | t in 1..num_types, time in start..end];
+output let {array [int] of string: X_INTRODUCED_384_ = ([((((((("z:   : "++show(z))++"\n")++"x    : ")++show(x))++"\n")++"dists: ")++show(dists))++"\n"]++[((show_int(2,t)++": ")++if fix(x[t]) > 0 then show(x[t]) else "  " endif)++"\n" | t in start..end])++[if time==start then ("\nType "++show(t))++": " else "" endif++if fix(x[time])==t then show(time)++" " else "" endif | t in 1..num_types, time in start..end]} in (X_INTRODUCED_384_);
 int: num_types = 3;
 array [1..num_types] of int: dists;
 int: z = sum(dists);

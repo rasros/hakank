@@ -1,4 +1,4 @@
-output ["isbn: ",show(isbn),"\n","mult0: ",show(mult0)," mult1: ",show(mult1),"\n"];
+output let {array [int] of string: X_INTRODUCED_28_ = ["isbn: ",show(isbn),"\n","mult0: ",show(mult0)," mult1: ",show(mult1),"\n"]} in (X_INTRODUCED_28_);
 int: mult1 = 1;
 int: mult0 = 3;
 int: n = 13;

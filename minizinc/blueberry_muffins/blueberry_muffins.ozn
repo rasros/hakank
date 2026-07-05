@@ -1,4 +1,4 @@
-output ([((((((("lastname: "++show(lastname))++"\n")++"job     : ")++show(job))++"\n")++"muffins : ")++show(muffins))++"\n\n"]++[let {1..n: lastname_ix = max([j*bool2int(lastname[j]==i) | j in 1..n]), 1..n: job_ix = max([j*bool2int(job[j]==i) | j in 1..n])} in (((((((firstname_s[i]++" ")++lastname_s[fix(lastname_ix)])++", ")++job_s[fix(job_ix)])++": ")++show(muffins[i]))++" muffins\n") | i in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_39_ = ([((((((("lastname: "++show(lastname))++"\n")++"job     : ")++show(job))++"\n")++"muffins : ")++show(muffins))++"\n\n"]++[let {1..n: lastname_ix = max([j*bool2int(lastname[j]==i) | j in 1..n]), 1..n: job_ix = max([j*bool2int(job[j]==i) | j in 1..n])} in (((((((firstname_s[i]++" ")++lastname_s[fix(lastname_ix)])++", ")++job_s[fix(job_ix)])++": ")++show(muffins[i]))++" muffins\n") | i in 1..n])++["\n"]} in (X_INTRODUCED_39_);
 int: n = 4;
 int: Summers;
 int: Oakley;

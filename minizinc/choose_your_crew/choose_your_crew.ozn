@@ -1,4 +1,4 @@
-output (((([((("total cost: "++show(total_cost))++"\n")++"x: ")++show(x)]++["\n"])++[if fix(x[i]==1) then ((((((((show(names[i])++"\t")++show(salary[i]))++"   ")++show(skills[i,1]))++"  ")++show(skills[i,2]))++"  ")++show(skills[i,3]))++"\n" else "" endif | i in 1..n])++["Sum skills: "])++[show(sum_skills[j])++" " | j in 1..num_skills])++["\n"];
+output let {array [int] of string: X_INTRODUCED_72_ = (((([((("total cost: "++show(total_cost))++"\n")++"x: ")++show(x)]++["\n"])++[if fix(x[i]==1) then ((((((((show(names[i])++"\t")++show(salary[i]))++"   ")++show(skills[i,1]))++"  ")++show(skills[i,2]))++"  ")++show(skills[i,3]))++"\n" else "" endif | i in 1..n])++["Sum skills: "])++[show(sum_skills[j])++" " | j in 1..num_skills])++["\n"]} in (X_INTRODUCED_72_);
 int: n = 9;
 array [1..n] of int: x;
 array [1..n] of int: salary = [46,43,47,36,43,55,68,64,60];

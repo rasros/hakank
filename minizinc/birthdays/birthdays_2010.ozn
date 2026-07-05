@@ -1,4 +1,4 @@
-output [(((((((((((("hakank_age: "++show(hakank_age))++"\n")++"anders_age: ")++show(anders_age))++"\n")++"hakank_born: ")++show(hakank_born))++"\n")++"anders_born: ")++show(anders_born))++"\n")++"this_year: ")++show(this_year)];
+output let {array [int] of string: X_INTRODUCED_6_ = [(((((((((((("hakank_age: "++show(hakank_age))++"\n")++"anders_age: ")++show(anders_age))++"\n")++"hakank_born: ")++show(hakank_born))++"\n")++"anders_born: ")++show(anders_born))++"\n")++"this_year: ")++show(this_year)]} in (X_INTRODUCED_6_);
 int: hakank_age;
 int: anders_age;
 int: hakank_born = anders_age;

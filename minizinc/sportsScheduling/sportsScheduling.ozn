@@ -1,4 +1,4 @@
-output ["\nschedule: "]++[((((((((((if p==1 then "\n" else "" endif++"w:")++show(w))++" p:")++show(p))++" : ")++show(schedule[w,p,1]))++" vs ")++show(schedule[w,p,2]))++" game:")++show(game[w,p]))++"\n" | w in weeks, p in periods];
+output let {array [int] of string: X_INTRODUCED_166_ = ["\nschedule: "]++[((((((((((if p==1 then "\n" else "" endif++"w:")++show(w))++" p:")++show(p))++" : ")++show(schedule[w,p,1]))++" vs ")++show(schedule[w,p,2]))++" game:")++show(game[w,p]))++"\n" | w in weeks, p in periods]} in (X_INTRODUCED_166_);
 set of int: homeaway = 1..2;
 set of int: periods = 1..2;
 set of int: weeks = 1..3;

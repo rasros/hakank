@@ -1,4 +1,4 @@
-output [((((((("colors: "++show(colors))++"\n")++"perm: ")++show(perm))++"\n")++"optimal: ")++show(optimal))++"\n"];
+output let {array [int] of string: X_INTRODUCED_37_ = [((((((("colors: "++show(colors))++"\n")++"perm: ")++show(perm))++"\n")++"optimal: ")++show(optimal))++"\n"]} in (X_INTRODUCED_37_);
 int: n = 7;
 array [1..n] of int: colors = [3,5,5,2,1,3,1];
 array [1..n] of int: perm;

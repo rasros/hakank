@@ -1,4 +1,4 @@
-output [((((("OneRM   ( "++show_int(2,1))++" rep): ")++show_float(2,2,oneRM))++"kg age adjusted: ")++show_float(3,2,oneRMAge))++"kg\n",((((("Weight1 ("++show_int(2,reps1))++" reps): ")++show_float(2,2,weight1))++"kg age adjusted: ")++show_float(3,2,weight1Age))++"kg\n",((((("Weight2 ("++show_int(2,reps2))++" reps): ")++show_float(2,2,weight2))++"kg age adjusted: ")++show_float(3,2,weight2Age))++"kg\n"];
+output let {array [int] of string: X_INTRODUCED_31_ = [((((("OneRM   ( "++show_int(2,1))++" rep): ")++show_float(2,2,oneRM))++"kg age adjusted: ")++show_float(3,2,oneRMAge))++"kg\n",((((("Weight1 ("++show_int(2,reps1))++" reps): ")++show_float(2,2,weight1))++"kg age adjusted: ")++show_float(3,2,weight1Age))++"kg\n",((((("Weight2 ("++show_int(2,reps2))++" reps): ")++show_float(2,2,weight2))++"kg age adjusted: ")++show_float(3,2,weight2Age))++"kg\n"]} in (X_INTRODUCED_31_);
 int: reps2 = 12;
 float: weight2 = 72.0;
 float: weight2Age = 109.008;

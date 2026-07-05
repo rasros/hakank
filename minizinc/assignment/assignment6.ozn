@@ -1,4 +1,4 @@
-output ["z: ",show(z),"\n","assigned: ",show(assigned),"\n","costs: ",show(costs),"\n"]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in I, j in J];
+output let {array [int] of string: X_INTRODUCED_286_ = ["z: ",show(z),"\n","assigned: ",show(assigned),"\n","costs: ",show(costs),"\n"]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in I, j in J]} in (X_INTRODUCED_286_);
 set of int: I = 1..8;
 array [I] of int: costs;
 set of int: J = 1..8;

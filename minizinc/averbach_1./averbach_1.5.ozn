@@ -1,4 +1,4 @@
-output ["x       : ",show(x),"\n","who     : ",show(who),"\n","winner  : ",show(winner),"\n","z_cumsum: ",show(z_cumsum),"\n"];
+output let {array [int] of string: X_INTRODUCED_162_ = ["x       : ",show(x),"\n","who     : ",show(who),"\n","winner  : ",show(winner),"\n","z_cumsum: ",show(z_cumsum),"\n"]} in (X_INTRODUCED_162_);
 int: n = 15;
 array [1..n] of int: z_cumsum;
 array [1..n] of int: winner;

@@ -1,4 +1,4 @@
-output (((["\nquasiGroupColumns: "]++[if col==0 then "\n" else " " endif++show(quasiGroupColumns[row,col]) | row,col in nDomain])++["\nquasiGroup: "])++[if col==0 then "\n" else " " endif++show(quasiGroup[row,col]) | row,col in nDomain])++["\n"];
+output let {array [int] of string: X_INTRODUCED_145_ = (((["\nquasiGroupColumns: "]++[if col==0 then "\n" else " " endif++show(quasiGroupColumns[row,col]) | row,col in nDomain])++["\nquasiGroup: "])++[if col==0 then "\n" else " " endif++show(quasiGroup[row,col]) | row,col in nDomain])++["\n"]} in (X_INTRODUCED_145_);
 set of int: nDomain = 0..4;
 array [1..25] of int: X_INTRODUCED_42_;
 array [nDomain,nDomain] of int: quasiGroupColumns = array2d(0..4,0..4,X_INTRODUCED_42_);

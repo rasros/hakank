@@ -1,4 +1,4 @@
-output (["\nnum_solutions: ",show(num_solutions)]++[if j==1 then "\n" else " " endif++show(s[i,j]) | i in 1..n_sols, j in 1..4])++["max p: "++show(s[1,4])];
+output let {array [int] of string: X_INTRODUCED_301_ = (["\nnum_solutions: ",show(num_solutions)]++[if j==1 then "\n" else " " endif++show(s[i,j]) | i in 1..n_sols, j in 1..4])++["max p: "++show(s[1,4])]} in (X_INTRODUCED_301_);
 int: n_sols = 10;
 array [1..40] of int: X_INTRODUCED_0_;
 array [1..n_sols,1..4] of int: s = array2d(1..10,1..4,X_INTRODUCED_0_);

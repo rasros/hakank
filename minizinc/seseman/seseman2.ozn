@@ -1,4 +1,4 @@
-output ((["["]++[if i==1 \/ i==n then ("f("++show(border_sum))++")," else "  -," endif | i in 1..n+1])++[((if j==1 then "\n" else "," endif++if fix(x[i,j]) < 10 then "   " else "  " endif)++show(x[i,j]))++if j==n then if i==1 \/ i==n then (",f("++show(border_sum))++")," else ",   -," endif else "" endif | i in 1..n, j in 1..n])++["]\n"];
+output let {array [int] of string: X_INTRODUCED_59_ = ((["["]++[if i==1 \/ i==n then ("f("++show(border_sum))++")," else "  -," endif | i in 1..n+1])++[((if j==1 then "\n" else "," endif++if fix(x[i,j]) < 10 then "   " else "  " endif)++show(x[i,j]))++if j==n then if i==1 \/ i==n then (",f("++show(border_sum))++")," else ",   -," endif else "" endif | i in 1..n, j in 1..n])++["]\n"]} in (X_INTRODUCED_59_);
 int: border_sum = 49;
 int: n = 7;
 array [1..49] of int: X_INTRODUCED_0_;

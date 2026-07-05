@@ -1,4 +1,4 @@
-output [(((("s: "++show(s))++"\n")++"coeffs: ")++show(coeffs))++"\n"];
+output let {array [int] of string: X_INTRODUCED_13_ = [(((("s: "++show(s))++"\n")++"coeffs: ")++show(coeffs))++"\n"]} in (X_INTRODUCED_13_);
 int: s;
 int: n = 3;
 array [1..n] of int: coeffs = [1,2,-3];

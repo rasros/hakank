@@ -1,4 +1,4 @@
-output ([(((("min_step: "++show(min_step))++"\n")++"ops: ")++show(ops))++"\n"]++[(if j==1 then "\n" else " " endif++show(steps[i,j]))++if j==n then (" (op "++show(ops[i]))++")" else "" endif | i in 1..max_steps, j in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_1208_ = ([(((("min_step: "++show(min_step))++"\n")++"ops: ")++show(ops))++"\n"]++[(if j==1 then "\n" else " " endif++show(steps[i,j]))++if j==n then (" (op "++show(ops[i]))++")" else "" endif | i in 1..max_steps, j in 1..n])++["\n"]} in (X_INTRODUCED_1208_);
 int: max_steps = 15;
 int: min_step;
 array [1..max_steps] of int: ops;

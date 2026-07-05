@@ -1,4 +1,4 @@
-output [((((((("rand: "++show(rand))++"\n")++"x   : ")++show(x))++"\n")++"rand_float (not used in the model): ")++show(rand_float))++"\n"];
+output let {array [int] of string: X_INTRODUCED_40_ = [((((((("rand: "++show(rand))++"\n")++"x   : ")++show(x))++"\n")++"rand_float (not used in the model): ")++show(rand_float))++"\n"]} in (X_INTRODUCED_40_);
 int: n = 20;
 array [1..n] of int: rand = [2,7,9,4,6,1,6,8,3,5,0,5,7,2,4,9,4,6,1,3];
 array [1..n] of int: x;

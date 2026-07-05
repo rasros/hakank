@@ -1,4 +1,4 @@
-output ["total:  ",show(total),"\n","result: ",show(result),"\n","plus:   ",show(plus),"\n","minus:  ",show(minus),"\n"];
+output let {array [int] of string: X_INTRODUCED_167_ = ["total:  ",show(total),"\n","result: ",show(result),"\n","plus:   ",show(plus),"\n","minus:  ",show(minus),"\n"]} in (X_INTRODUCED_167_);
 int: n = 19;
 array [1..n] of int: minus;
 array [1..n] of int: plus;

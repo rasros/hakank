@@ -1,4 +1,4 @@
-output ["husbands: ",show(husbands),"\n","wifes   : ",show(wifes),"\n","married : ",show(married),"\n"]++[((((((show(surnames_s[s])++": ")++show(join("",[husbands_s[p] | p in 1..n where s==fix(husbands[p])])))++" and ")++show(join("",[wifes_s[p] | p in 1..n where s==fix(wifes[p])])))++" ")++show(married[s]))++" years\n" | s in 1..n];
+output let {array [int] of string: X_INTRODUCED_44_ = ["husbands: ",show(husbands),"\n","wifes   : ",show(wifes),"\n","married : ",show(married),"\n"]++[((((((show(surnames_s[s])++": ")++show(join("",[husbands_s[p] | p in 1..n where s==fix(husbands[p])])))++" and ")++show(join("",[wifes_s[p] | p in 1..n where s==fix(wifes[p])])))++" ")++show(married[s]))++" years\n" | s in 1..n]} in (X_INTRODUCED_44_);
 int: n = 5;
 array [1..n] of int: married;
 int: Mildred = Douglas;

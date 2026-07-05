@@ -1,4 +1,4 @@
-output [if fix(x[j])==1 then show(j) else show(0) endif++" " | j in r]++["\n"++show(s),"\n"];
+output let {array [int] of string: X_INTRODUCED_10964_ = [if fix(x[j])==1 then show(j) else show(0) endif++" " | j in r]++["\n"++show(s),"\n"]} in (X_INTRODUCED_10964_);
 set of int: r = 1..100;
 array [r] of int: x;
 set of int: s;

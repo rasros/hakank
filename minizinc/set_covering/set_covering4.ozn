@@ -1,4 +1,4 @@
-output [(((("z: "++show(z))++"\n")++"x: ")++show(x))++"\n"];
+output let {array [int] of string: X_INTRODUCED_39_ = [(((("z: "++show(z))++"\n")++"x: ")++show(x))++"\n"]} in (X_INTRODUCED_39_);
 int: num_alternatives = 10;
 array [1..num_alternatives] of int: x;
 array [1..num_alternatives] of int: costs = [19,16,18,13,15,19,15,17,16,15];

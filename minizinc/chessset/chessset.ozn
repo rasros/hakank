@@ -1,3 +1,3 @@
-output [(((("smallset: "++show(smallset))++"\n")++"largeset: ")++show(largeset))++"\n"];
+output let {array [int] of string: X_INTRODUCED_6_ = [(((("smallset: "++show(smallset))++"\n")++"largeset: ")++show(largeset))++"\n"]} in (X_INTRODUCED_6_);
 int: smallset;
 int: largeset;

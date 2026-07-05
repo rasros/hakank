@@ -1,4 +1,4 @@
-output [(((("x: "++show(x))++"\n")++"total_weight: ")++show(total_weight))++"\n"];
+output let {array [int] of string: X_INTRODUCED_72_ = [(((("x: "++show(x))++"\n")++"total_weight: ")++show(total_weight))++"\n"]} in (X_INTRODUCED_72_);
 int: n = 8;
 array [1..n] of int: x;
 int: t = 4;

@@ -1,4 +1,4 @@
-output ["z: ",show(z),"\n","y = ",show(b),"*x + ",show(a),"\n","u: "++show(u),"\n","v: "++show(v),"\n"];
+output let {array [int] of string: X_INTRODUCED_81_ = ["z: ",show(z),"\n","y = ",show(b),"*x + ",show(a),"\n","u: "++show(u),"\n","v: "++show(v),"\n"]} in (X_INTRODUCED_81_);
 int: n = 19;
 array [1..n] of float: v;
 array [1..n] of float: u;

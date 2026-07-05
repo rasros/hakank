@@ -1,4 +1,4 @@
-output ["colors       : ",show(colors),"\n","nationalities: ",show(nationalities),"\n","drinks       : ",show(drinks),"\n","smokes       : ",show(smokes),"\n","pets         : ",show(pets),"\n"];
+output let {array [int] of string: X_INTRODUCED_350_ = ["colors       : ",show(colors),"\n","nationalities: ",show(nationalities),"\n","drinks       : ",show(drinks),"\n","smokes       : ",show(smokes),"\n","pets         : ",show(pets),"\n"]} in (X_INTRODUCED_350_);
 array [1..5] of int: pets;
 array [1..5] of int: smokes;
 array [1..5] of int: drinks;

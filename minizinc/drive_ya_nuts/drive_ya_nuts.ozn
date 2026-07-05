@@ -1,4 +1,4 @@
-output (((([(((((((("pos     : "++show(pos))++"\n")++"pos_inv : ")++show(pos_inv))++"\n")++"start_ix: ")++show(start_ix))++"\n")++"x:"]++[(if j==1 then "\n" else " " endif++show(x[i,j]))++if i==7 /\ j==n then "  center!" else "" endif | i in 1..m, j in 1..n])++[((("\ncenter ("++show(7))++"): ")++show([nuts[pos[7],j] | j in 1..n]))++"\n"])++["\nnuts:"])++[if j==1 then "\n" else " " endif++show(nuts[i,j]) | i in 1..m, j in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_202_ = (((([(((((((("pos     : "++show(pos))++"\n")++"pos_inv : ")++show(pos_inv))++"\n")++"start_ix: ")++show(start_ix))++"\n")++"x:"]++[(if j==1 then "\n" else " " endif++show(x[i,j]))++if i==7 /\ j==n then "  center!" else "" endif | i in 1..m, j in 1..n])++[((("\ncenter ("++show(7))++"): ")++show([nuts[pos[7],j] | j in 1..n]))++"\n"])++["\nnuts:"])++[if j==1 then "\n" else " " endif++show(nuts[i,j]) | i in 1..m, j in 1..n])++["\n"]} in (X_INTRODUCED_202_);
 int: m = 7;
 array [1..m] of int: pos;
 array [1..m] of int: pos_inv;

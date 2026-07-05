@@ -1,4 +1,4 @@
-output [show(s)];
+output let {array [int] of string: X_INTRODUCED_6682_ = [show(s)]} in (X_INTRODUCED_6682_);
 int: p = 256;
 array [1..256] of set of int: X_INTRODUCED_16_;
 array [0..p-1] of set of int: s = array1d(0..255,X_INTRODUCED_16_);

@@ -1,4 +1,4 @@
-output [((("total_steps: "++show(total_steps))++"\n")++"total: ")++show(total)]++[if p==1 /\ t<=fix(total_steps) then "\n" else " " endif++if t<=fix(total_steps) then show(actions[t,p])++if p==num_persons then ((" torch: "++show(torch_place[t]))++" transfered: ")++show(transfered[t]) else "" endif else "" endif | t in 1..max_time, p in 1..num_persons];
+output let {array [int] of string: X_INTRODUCED_129_ = [((("total_steps: "++show(total_steps))++"\n")++"total: ")++show(total)]++[if p==1 /\ t<=fix(total_steps) then "\n" else " " endif++if t<=fix(total_steps) then show(actions[t,p])++if p==num_persons then ((" torch: "++show(torch_place[t]))++" transfered: ")++show(transfered[t]) else "" endif else "" endif | t in 1..max_time, p in 1..num_persons]} in (X_INTRODUCED_129_);
 int: max_time = 3;
 int: total_steps;
 int: num_persons = 3;

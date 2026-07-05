@@ -1,4 +1,4 @@
-output (["y: ",show(y),"\n","d: ",show(d)]++[(if i==1 /\ j==1 then "\nclosest: "++show(closest) else "" endif++if j==1 then "\n" else " " endif)++show(x[i,j]) | i,j in N])++["\n"];
+output let {array [int] of string: X_INTRODUCED_305_ = (["y: ",show(y),"\n","d: ",show(d)]++[(if i==1 /\ j==1 then "\nclosest: "++show(closest) else "" endif++if j==1 then "\n" else " " endif)++show(x[i,j]) | i,j in N])++["\n"]} in (X_INTRODUCED_305_);
 int: d;
 set of int: N = 1..10;
 array [N] of int: y;

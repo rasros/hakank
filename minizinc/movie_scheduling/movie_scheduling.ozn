@@ -1,4 +1,4 @@
-output [((("z: "++show(z))++"\nx: ")++show(x))++"\n"]++[if fix(x[i])==1 then ((((show(movies[i])++": ")++show(data[i,1]))++"..")++show(data[i,2]))++"\n" else "" endif | i in 1..num_movies];
+output let {array [int] of string: X_INTRODUCED_32_ = [((("z: "++show(z))++"\nx: ")++show(x))++"\n"]++[if fix(x[i])==1 then ((((show(movies[i])++": ")++show(data[i,1]))++"..")++show(data[i,2]))++"\n" else "" endif | i in 1..num_movies]} in (X_INTRODUCED_32_);
 int: num_movies = 9;
 array [1..num_movies] of int: x;
 int: z = sum(x);

@@ -1,4 +1,4 @@
-output [((((((((((((("x: "++show(x))++"\n")++"total_persons: ")++show(total_persons))++"\n")++"total_budget: ")++show(total_budget))++"\n")++"total_projects: ")++show(total_projects))++"\n")++"total_values: ")++show(total_values))++"\n"];
+output let {array [int] of string: X_INTRODUCED_108_ = [((((((((((((("x: "++show(x))++"\n")++"total_persons: ")++show(total_persons))++"\n")++"total_budget: ")++show(total_budget))++"\n")++"total_projects: ")++show(total_projects))++"\n")++"total_values: ")++show(total_values))++"\n"]} in (X_INTRODUCED_108_);
 int: num_projects = 15;
 array [1..num_projects] of int: x;
 array [1..num_projects] of int: personell = [5,3,4,2,2,2,4,1,1,5,3,2,2,4,3];

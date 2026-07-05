@@ -1,4 +1,4 @@
-output ["days: ",show(days),"\n","first_name: ",show(first_name),"\n","last_name: ",show(last_name),"\n","lectures: ",show(lectures),"\n"];
+output let {array [int] of string: X_INTRODUCED_25_ = ["days: ",show(days),"\n","first_name: ",show(first_name),"\n","last_name: ",show(last_name),"\n","lectures: ",show(lectures),"\n"]} in (X_INTRODUCED_25_);
 set of int: r = 1..5;
 int: study_habits;
 int: nutrition = Jeffreys;

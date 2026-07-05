@@ -1,4 +1,4 @@
-output [((("x: "++show(x))++"\n")++"total_sum: ")++show(total_sum)];
+output let {array [int] of string: X_INTRODUCED_22_ = [((("x: "++show(x))++"\n")++"total_sum: ")++show(total_sum)]} in (X_INTRODUCED_22_);
 int: num_comb = 6;
 array [1..num_comb] of int: x;
 int: total_sum = sum([x[i] | i in 1..num_comb]);

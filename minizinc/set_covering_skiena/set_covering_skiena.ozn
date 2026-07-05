@@ -1,4 +1,4 @@
-output [((((((("x: "++show(x))++"\n")++"z: ")++show(z))++"\n")++"tot_elements: ")++show(tot_elements))++"\n"];
+output let {array [int] of string: X_INTRODUCED_37_ = [((((((("x: "++show(x))++"\n")++"z: ")++show(z))++"\n")++"tot_elements: ")++show(tot_elements))++"\n"]} in (X_INTRODUCED_37_);
 int: num_sets = 7;
 array [1..num_sets] of int: x;
 int: z = sum([x[j] | j in 1..num_sets]);

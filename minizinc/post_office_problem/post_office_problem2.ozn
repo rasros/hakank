@@ -1,4 +1,4 @@
-output [((((((("x: "++show(x))++"\n")++"z: ")++show(z))++"\n")++"num_workers: ")++show(num_workers))++"\n"];
+output let {array [int] of string: X_INTRODUCED_29_ = [((((((("x: "++show(x))++"\n")++"z: ")++show(z))++"\n")++"num_workers: ")++show(num_workers))++"\n"]} in (X_INTRODUCED_29_);
 set of int: DAYS = 0..6;
 array [1..7] of int: X_INTRODUCED_0_;
 array [DAYS] of int: x = array1d(0..6,X_INTRODUCED_0_);

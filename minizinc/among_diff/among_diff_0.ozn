@@ -1,4 +1,4 @@
-output [((("nvar: "++show(nvar))++"\n")++"x:")++show(x)];
+output let {array [int] of string: X_INTRODUCED_17_ = [((("nvar: "++show(nvar))++"\n")++"x:")++show(x)]} in (X_INTRODUCED_17_);
 int: nvar;
 int: n = 5;
 array [1..n] of int: x;

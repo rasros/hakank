@@ -1,4 +1,4 @@
-output [show(letters)];
+output let {array [int] of string: X_INTRODUCED_22_ = [show(letters)]} in (X_INTRODUCED_22_);
 int: S;
 int: T;
 int: A;

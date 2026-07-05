@@ -1,4 +1,4 @@
-output [" D  O  N  A  L  G  E  R  B  T\n",show(FD),"\n"];
+output let {array [int] of string: X_INTRODUCED_21_ = [" D  O  N  A  L  G  E  R  B  T\n",show(FD),"\n"]} in (X_INTRODUCED_21_);
 int: T;
 int: B;
 int: R;

@@ -1,4 +1,4 @@
-output ([(if j==1 then ",   " else "," endif++show(col_sums[j]))++" " | j in 1..c]++[if j==1 then (",\n"++show(row_sums[i]))++",  " else ", " endif++show(x[i,j]) | i in 1..r, j in 1..c])++["\n"];
+output let {array [int] of string: X_INTRODUCED_181_ = ([(if j==1 then ",   " else "," endif++show(col_sums[j]))++" " | j in 1..c]++[if j==1 then (",\n"++show(row_sums[i]))++",  " else ", " endif++show(x[i,j]) | i in 1..r, j in 1..c])++["\n"]} in (X_INTRODUCED_181_);
 int: c = 12;
 array [1..c] of int: col_sums = [1,1,1,1,1,1,1,1,1,1,1,1];
 int: r = 11;

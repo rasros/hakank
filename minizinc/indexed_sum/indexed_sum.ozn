@@ -1,4 +1,4 @@
-output [(((("xtable: "++show(xtable))++"\n")++"items: ")++show(items))++"\n"];
+output let {array [int] of string: X_INTRODUCED_5_ = [(((("xtable: "++show(xtable))++"\n")++"items: ")++show(items))++"\n"]} in (X_INTRODUCED_5_);
 int: n = 3;
 array [1..n] of int: xtable = [6,0,-3];
 int: num_rows = 3;

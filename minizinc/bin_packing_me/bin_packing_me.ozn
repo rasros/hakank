@@ -1,4 +1,4 @@
-output [((if b==1 /\ s==1 then ("num_loaded_bins: "++show(num_loaded_bins))++"\n" else "" endif++if s==1 then show(bin_loads[b])++" : " else "" endif)++show(bins[b,s]))++if s==num_stuff then "\n" else " " endif | b in 1..num_bins, s in 1..num_stuff];
+output let {array [int] of string: X_INTRODUCED_2047_ = [((if b==1 /\ s==1 then ("num_loaded_bins: "++show(num_loaded_bins))++"\n" else "" endif++if s==1 then show(bin_loads[b])++" : " else "" endif)++show(bins[b,s]))++if s==num_stuff then "\n" else " " endif | b in 1..num_bins, s in 1..num_stuff]} in (X_INTRODUCED_2047_);
 int: num_bins = 19;
 int: num_loaded_bins;
 array [1..num_bins] of int: bin_loads;

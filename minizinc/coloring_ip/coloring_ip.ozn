@@ -1,4 +1,4 @@
-output (["obj: ",show(obj),"\n","u: ",show(u),"\n"]++[if j==1 then ("\n"++show(i))++": " else " " endif++show(x[i,j]) | i in V, j in 1..nc])++["\n"];
+output let {array [int] of string: X_INTRODUCED_176_ = (["obj: ",show(obj),"\n","u: ",show(u),"\n"]++[if j==1 then ("\n"++show(i))++": " else " " endif++show(x[i,j]) | i in V, j in 1..nc])++["\n"]} in (X_INTRODUCED_176_);
 int: nc = 5;
 array [1..nc] of int: u;
 int: obj = sum([u[c] | c in 1..nc]);

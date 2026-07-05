@@ -1,4 +1,4 @@
-output ([((((((((("m: "++show(m))++" n: ")++show(n))++"\n")++"x: ")++show(x))++"\n")++"c: ")++show(c))++"\n"]++[show(s[fix(x[i])]) | i in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_122_ = ([((((((((("m: "++show(m))++" n: ")++show(n))++"\n")++"x: ")++show(x))++"\n")++"c: ")++show(c))++"\n"]++[show(s[fix(x[i])]) | i in 1..n])++["\n"]} in (X_INTRODUCED_122_);
 int: m = 13;
 int: n = 26;
 array [1..n] of int: x;

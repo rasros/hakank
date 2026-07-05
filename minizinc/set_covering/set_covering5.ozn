@@ -1,4 +1,4 @@
-output ["x: ",show(x),"\n","preference_points: ",show(preference_points),"\n","sum_pref_points: ",show(sum_pref_points),"\n"];
+output let {array [int] of string: X_INTRODUCED_82_ = ["x: ",show(x),"\n","preference_points: ",show(preference_points),"\n","sum_pref_points: ",show(sum_pref_points),"\n"]} in (X_INTRODUCED_82_);
 int: num_persons = 3;
 array [1..num_persons] of int: preference_points;
 int: sum_pref_points = sum(preference_points);

@@ -1,4 +1,4 @@
-output ((["\ninit: ",show(init),"\n","check_ix: ",show(check_ix),"\n","ops: ",(show(ops)++"\n")++"Moves: "]++[let {int: m = fix(ops[i])} in (if i > 0 /\ m > 0 then show(moves_str[m]) else "" endif) | i in 1..rows])++[if i==1 then ("\n"++show(ops[k]))++": " else " " endif++show(x[k,i]) | k in 1..rows, i in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_1575_ = ((["\ninit: ",show(init),"\n","check_ix: ",show(check_ix),"\n","ops: ",(show(ops)++"\n")++"Moves: "]++[let {int: m = fix(ops[i])} in (if i > 0 /\ m > 0 then show(moves_str[m]) else "" endif) | i in 1..rows])++[if i==1 then ("\n"++show(ops[k]))++": " else " " endif++show(x[k,i]) | k in 1..rows, i in 1..n])++["\n"]} in (X_INTRODUCED_1575_);
 int: rows = 20;
 int: num_moves = 4;
 array [1..rows] of int: ops;

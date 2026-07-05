@@ -1,4 +1,4 @@
-output [((((((("from: "++show(from))++"\n")++"permutation: ")++show(permutation))++"\n")++"to: ")++show(to))++"\n"];
+output let {array [int] of string: X_INTRODUCED_48_ = [((((((("from: "++show(from))++"\n")++"permutation: ")++show(permutation))++"\n")++"to: ")++show(to))++"\n"]} in (X_INTRODUCED_48_);
 int: n = 6;
 array [1..n] of int: from;
 array [1..n] of int: permutation;

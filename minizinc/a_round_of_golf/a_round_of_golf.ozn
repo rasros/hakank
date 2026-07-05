@@ -1,4 +1,4 @@
-output ["first_name: ",show(first_name),"\n","last_name : ",show(last_name),"\n","job       : ",show(job),"\n","score     : ",show(score),"\n"];
+output let {array [int] of string: X_INTRODUCED_36_ = ["first_name: ",show(first_name),"\n","last_name : ",show(last_name),"\n","job       : ",show(job),"\n","score     : ",show(score),"\n"]} in (X_INTRODUCED_36_);
 set of int: r = 1..4;
 array [r] of int: score;
 int: caddy;

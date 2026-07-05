@@ -1,4 +1,4 @@
-output (["num_list: ",show(num_list),"\n"]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_68_ = (["num_list: ",show(num_list),"\n"]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..n])++["\n"]} in (X_INTRODUCED_68_);
 int: n = 5;
 array [1..n] of int: num_list = [4,5,2,3,1];
 array [1..25] of int: X_INTRODUCED_0_;

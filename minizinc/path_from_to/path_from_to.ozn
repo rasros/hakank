@@ -1,4 +1,4 @@
-output ([if j==1 then "\n" else " " endif++show(g[i,j]) | i,j in 1..num_nodes]++["\n"])++[show(paths),"\n"];
+output let {array [int] of string: X_INTRODUCED_58_ = ([if j==1 then "\n" else " " endif++show(g[i,j]) | i,j in 1..num_nodes]++["\n"])++[show(paths),"\n"]} in (X_INTRODUCED_58_);
 int: num_nodes = 5;
 array [1..25] of int: X_INTRODUCED_0_;
 array [1..num_nodes,1..num_nodes] of int: g = [|0,0,0,0,0|0,0,0,0,0|0,0,0,0,1|0,0,0,0,1|0,1,1,0,0|];

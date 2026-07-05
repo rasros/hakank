@@ -1,4 +1,4 @@
-output [((show([start,end,minsum])++"\n")++"L: ")++show([L[i] | i in fix(start)..fix(end)])];
+output let {array [int] of string: X_INTRODUCED_563_ = [((show([start,end,minsum])++"\n")++"L: ")++show([L[i] | i in fix(start)..fix(end)])]} in (X_INTRODUCED_563_);
 int: minsum;
 int: n = 100;
 int: end;

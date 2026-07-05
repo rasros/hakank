@@ -1,4 +1,4 @@
-output [((((show(x)++" * ")++show(y))++" = ")++show(z))++"\n"]++["\n"];
+output let {array [int] of string: X_INTRODUCED_35_ = [((((show(x)++" * ")++show(y))++" = ")++show(z))++"\n"]++["\n"]} in (X_INTRODUCED_35_);
 int: x;
 int: y;
 int: z;

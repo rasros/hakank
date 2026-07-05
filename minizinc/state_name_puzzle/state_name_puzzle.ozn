@@ -1,4 +1,4 @@
-output ([(((((((("x1: "++show(x1))++" ")++show([states_str[fix(x1[I])] | I in 1..num_get]))++"\n")++"x2: ")++show(x2))++" ")++show([states_str[fix(x2[I])] | I in 1..num_get]))++"\n"]++[("gcc: "++show(gcc))++"\n"])++["\n"];
+output let {array [int] of string: X_INTRODUCED_469_ = ([(((((((("x1: "++show(x1))++" ")++show([states_str[fix(x1[I])] | I in 1..num_get]))++"\n")++"x2: ")++show(x2))++" ")++show([states_str[fix(x2[I])] | I in 1..num_get]))++"\n"]++[("gcc: "++show(gcc))++"\n"])++["\n"]} in (X_INTRODUCED_469_);
 int: num_get = 2;
 int: num_states = 50;
 array [1..num_get] of int: x1;

@@ -1,4 +1,4 @@
-output ["dice9 (IMAGINING): ",show(dice9),"\n","dice4 (GAGS): ",show(dice4),"\n","dice6 (ENIGMA): ",show(dice6),"\n","MEANINGS: ",show([M,E,A,N,I,N,G,S]),"\n"];
+output let {array [int] of string: X_INTRODUCED_1002_ = ["dice9 (IMAGINING): ",show(dice9),"\n","dice4 (GAGS): ",show(dice4),"\n","dice6 (ENIGMA): ",show(dice6),"\n","MEANINGS: ",show([M,E,A,N,I,N,G,S]),"\n"]} in (X_INTRODUCED_1002_);
 int: S;
 int: G;
 int: N;

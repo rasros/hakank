@@ -1,4 +1,4 @@
-output ["t: ",show(t),"\n","totcost: ",show(totcost)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in M];
+output let {array [int] of string: X_INTRODUCED_91_ = ["t: ",show(t),"\n","totcost: ",show(totcost)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in M]} in (X_INTRODUCED_91_);
 set of int: M = 1..5;
 array [M] of int: t;
 float: totcost;

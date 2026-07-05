@@ -1,4 +1,4 @@
-output [((((((("sokPosn: "++show(sokPosn))++"\n")++"move: ")++show(move))++"\n")++"crateGoalPosns: ")++show(crateGoalPosns))++"\n"];
+output let {array [int] of string: X_INTRODUCED_157_ = [((((((("sokPosn: "++show(sokPosn))++"\n")++"move: ")++show(move))++"\n")++"crateGoalPosns: ")++show(crateGoalPosns))++"\n"]} in (X_INTRODUCED_157_);
 set of int: STEPS = 0..13;
 array [1..14] of int: X_INTRODUCED_16_;
 array [STEPS] of int: sokPosn = array1d(0..13,X_INTRODUCED_16_);

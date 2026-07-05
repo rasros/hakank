@@ -1,4 +1,4 @@
-output (["z: ",show(z),"\n","num_players_choosen: ",show(num_players_choosen),"\n"]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..num_types, j in 1..max_num_players])++["\n"];
+output let {array [int] of string: X_INTRODUCED_162_ = (["z: ",show(z),"\n","num_players_choosen: ",show(num_players_choosen),"\n"]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..num_types, j in 1..max_num_players])++["\n"]} in (X_INTRODUCED_162_);
 int: max_num_players = 10;
 int: num_types = 4;
 array [1..40] of int: X_INTRODUCED_0_;

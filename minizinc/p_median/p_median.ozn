@@ -1,4 +1,4 @@
-output [((((((("OpenWarehouse: "++show(OpenWarehouse))++"\n")++"ShipToCustomer: ")++show(ShipToCustomer))++"\n")++"z: ")++show(z))++"\n"];
+output let {array [int] of string: X_INTRODUCED_61_ = [((((((("OpenWarehouse: "++show(OpenWarehouse))++"\n")++"ShipToCustomer: ")++show(ShipToCustomer))++"\n")++"z: ")++show(z))++"\n"]} in (X_INTRODUCED_61_);
 set of int: Warehouses = 1..3;
 array [Warehouses] of int: OpenWarehouse;
 set of int: Customers = 1..4;

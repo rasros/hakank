@@ -1,4 +1,4 @@
-output [((((((((((((("window_size: "++show(window_size))++"\n")++"limitx: ")++show(limitx))++"\n")++"tasks: ")++show(tasks))++"\n")++"start: ")++show(start))++"\n")++"occupied: ")++show(occupied))++"\n"];
+output let {array [int] of string: X_INTRODUCED_77_ = [((((((((((((("window_size: "++show(window_size))++"\n")++"limitx: ")++show(limitx))++"\n")++"tasks: ")++show(tasks))++"\n")++"start: ")++show(start))++"\n")++"occupied: ")++show(occupied))++"\n"]} in (X_INTRODUCED_77_);
 int: window_size = 9;
 int: limitx = 6;
 int: n = 3;

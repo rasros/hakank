@@ -1,4 +1,4 @@
-output ["a_max: ",show(a_max),"\n","A: ",show(A),"\n"];
+output let {array [int] of string: X_INTRODUCED_91_ = ["a_max: ",show(a_max),"\n","A: ",show(A),"\n"]} in (X_INTRODUCED_91_);
 int: z;
 int: y;
 int: x;

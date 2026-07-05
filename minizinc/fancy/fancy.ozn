@@ -1,4 +1,4 @@
-output [show(cost),"\n","t:",show(t)," h:",show(h)," r:",show(r)," s:",show(s)," n:",show(n),"\n"];
+output let {array [int] of string: X_INTRODUCED_17_ = [show(cost),"\n","t:",show(t)," h:",show(h)," r:",show(r)," s:",show(s)," n:",show(n),"\n"]} in (X_INTRODUCED_17_);
 bool: n;
 bool: s;
 bool: r;

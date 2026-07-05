@@ -1,4 +1,4 @@
-output [show(mP)," * ",show(nP)," = ",show(mnP),"\n"];
+output let {array [int] of string: X_INTRODUCED_40_ = [show(mP)," * ",show(nP)," = ",show(mnP),"\n"]} in (X_INTRODUCED_40_);
 int: mnP;
 int: nP;
 int: mP;

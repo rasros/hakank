@@ -1,4 +1,4 @@
-output [if j==1 then "\n" else " " endif++if fix(x[i,j])==T then "T" elseif fix(x[i,j])==E then "e" else "_" endif | i,j in 1..n];
+output let {array [int] of string: X_INTRODUCED_3402_ = [if j==1 then "\n" else " " endif++if fix(x[i,j])==T then "T" elseif fix(x[i,j])==E then "e" else "_" endif | i,j in 1..n]} in (X_INTRODUCED_3402_);
 int: n = 16;
 int: E = 2;
 array [1..256] of int: X_INTRODUCED_16_;

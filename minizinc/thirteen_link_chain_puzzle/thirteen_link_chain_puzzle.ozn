@@ -1,4 +1,4 @@
-output [((((((("weights: "++show(weights))++"\n")++"s: ")++show(s))++"\n")++"t: ")++show(t))++"\n"];
+output let {array [int] of string: X_INTRODUCED_705_ = [((((((("weights: "++show(weights))++"\n")++"s: ")++show(s))++"\n")++"t: ")++show(t))++"\n"]} in (X_INTRODUCED_705_);
 set of int: weights;
 int: n = 13;
 array [1..n] of set of int: s;

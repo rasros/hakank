@@ -1,4 +1,4 @@
-output (["a: ",show(a),"\n","from: ",show(from),"\n","to: ",show(to),"\n","tot_sum: ",show(tot_sum),"\n","from_answer: ",show(from_answer),"\n","to_answer: ",show(to_answer),"\n","ans: ",show(ans),"\n"]++[if k>=fix(from_answer) /\ k<=fix(to_answer) then show(a[k]) else show(-999) endif++" " | k in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_293_ = (["a: ",show(a),"\n","from: ",show(from),"\n","to: ",show(to),"\n","tot_sum: ",show(tot_sum),"\n","from_answer: ",show(from_answer),"\n","to_answer: ",show(to_answer),"\n","ans: ",show(ans),"\n"]++[if k>=fix(from_answer) /\ k<=fix(to_answer) then show(a[k]) else show(-999) endif++" " | k in 1..n])++["\n"]} in (X_INTRODUCED_293_);
 int: n = 11;
 array [1..n] of int: ans;
 int: to_answer;

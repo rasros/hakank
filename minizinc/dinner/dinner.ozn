@@ -1,4 +1,4 @@
-output ["Grandparents: ",show(Grandparents),"\n","Parents:      ",show(Parents),"\n","Children:     ",show(Children),"\n"];
+output let {array [int] of string: X_INTRODUCED_4_ = ["Grandparents: ",show(Grandparents),"\n","Parents:      ",show(Parents),"\n","Children:     ",show(Children),"\n"]} in (X_INTRODUCED_4_);
 int: Children;
 int: Parents;
 int: Grandparents;

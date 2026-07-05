@@ -1,4 +1,4 @@
-output ["rockband: ",show(rock_band),"\n","genre: ",show(genre),"\n","rendevouz: ",show(rendevouz),"\n"];
+output let {array [int] of string: X_INTRODUCED_31_ = ["rockband: ",show(rock_band),"\n","genre: ",show(genre),"\n","rendevouz: ",show(rendevouz),"\n"]} in (X_INTRODUCED_31_);
 set of int: r = 1..4;
 int: T_shirt_vendor;
 int: mosh_pit;

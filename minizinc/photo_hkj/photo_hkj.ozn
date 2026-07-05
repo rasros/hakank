@@ -1,4 +1,4 @@
-output [(((("positions: "++show(positions))++"\n")++"z: ")++show(z))++"\n"];
+output let {array [int] of string: X_INTRODUCED_59_ = [(((("positions: "++show(positions))++"\n")++"z: ")++show(z))++"\n"]} in (X_INTRODUCED_59_);
 int: n = 7;
 array [1..n] of int: positions;
 int: z;

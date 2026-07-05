@@ -1,4 +1,4 @@
-output [(((("S  : "++show(S))++"min: ")++show(mn))++"max: ")++show(mx)]++["\n"];
+output let {array [int] of string: X_INTRODUCED_55_ = [(((("S  : "++show(S))++"min: ")++show(mn))++"max: ")++show(mx)]++["\n"]} in (X_INTRODUCED_55_);
 set of int: S;
 int: mn;
 int: mx;

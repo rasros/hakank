@@ -1,4 +1,4 @@
-output (([("\nnuma: "++show(numa))++"\n"]++[(if j==1 /\ i==1 then "\n: x\n" else "" endif++if j==1 then "\n" else " " endif)++show(x[i,j]) | i,j in 1..size])++[(if j==1 /\ i==1 then "\n: a\n" else "" endif++if j==1 then "\n" else " " endif)++show(a[i,j]) | i,j in 1..size])++["\n"];
+output let {array [int] of string: X_INTRODUCED_221_ = (([("\nnuma: "++show(numa))++"\n"]++[(if j==1 /\ i==1 then "\n: x\n" else "" endif++if j==1 then "\n" else " " endif)++show(x[i,j]) | i,j in 1..size])++[(if j==1 /\ i==1 then "\n: a\n" else "" endif++if j==1 then "\n" else " " endif)++show(a[i,j]) | i,j in 1..size])++["\n"]} in (X_INTRODUCED_221_);
 int: size = 5;
 set of int: S = 1..5;
 array [1..25] of int: X_INTRODUCED_26_;

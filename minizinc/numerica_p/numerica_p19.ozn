@@ -1,2 +1,2 @@
-output ["x:"++show_float(3,12,x)];
+output let {array [int] of string: X_INTRODUCED_12_ = ["x:"++show_float(3,12,x)]} in (X_INTRODUCED_12_);
 float: x;

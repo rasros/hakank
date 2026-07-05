@@ -1,4 +1,4 @@
-output ["Tim:",show(Tim)," Jane:",show(Jane)," Mary:",show(Mary),"\n",show(tmp)];
+output let {array [int] of string: X_INTRODUCED_52_ = ["Tim:",show(Tim)," Jane:",show(Jane)," Mary:",show(Mary),"\n",show(tmp)]} in (X_INTRODUCED_52_);
 float: Mary;
 float: Jane;
 float: Tim;

@@ -1,4 +1,4 @@
-output ["partners: "++format(partners)++"\n","pairs: "++format(pairs)++"\n","countries: "++format(countries)++"\n","sleds: "++format(sleds)++"\n"]++[""++format(p)++":\t"++format(partners[p])++"\t"++format(sleds[pairs[p]])++"\t"++format(countries[pairs[p]])++" \n" | p in names];
+output let {array [int] of string: X_INTRODUCED_604_ = ["partners: "++format(partners)++"\n","pairs: "++format(pairs)++"\n","countries: "++format(countries)++"\n","sleds: "++format(sleds)++"\n"]++[""++format(p)++":\t"++format(partners[p])++"\t"++format(sleds[pairs[p]])++"\t"++format(countries[pairs[p]])++" \n" | p in names]} in (X_INTRODUCED_604_);
 int: num_pairs = 5;
 array [1..num_pairs] of int: sleds;
 array [1..num_pairs] of int: countries;

@@ -1,4 +1,4 @@
-output ((["m: ",show(m),"\n","s:\n"]++[if j==1 then "\n" else " " endif++show(s[i,j]) | i,j in 1..n])++["\ny:\n"])++[if j==1 then "\n" else " " endif++show(y[i,j]) | i,j in 1..n];
+output let {array [int] of string: X_INTRODUCED_548_ = ((["m: ",show(m),"\n","s:\n"]++[if j==1 then "\n" else " " endif++show(s[i,j]) | i,j in 1..n])++["\ny:\n"])++[if j==1 then "\n" else " " endif++show(y[i,j]) | i,j in 1..n]} in (X_INTRODUCED_548_);
 int: n = 10;
 array [1..100] of int: X_INTRODUCED_16_;
 array [1..n,1..n] of int: s = array2d(1..10,1..10,X_INTRODUCED_16_);

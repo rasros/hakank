@@ -1,4 +1,4 @@
-output ["doors: ",show([A,B,C,D]),"\n","monks: ",show([M1,M2,M3,M4,M5,M6,M7,M8]),"\n"];
+output let {array [int] of string: X_INTRODUCED_10_ = ["doors: ",show([A,B,C,D]),"\n","monks: ",show([M1,M2,M3,M4,M5,M6,M7,M8]),"\n"]} in (X_INTRODUCED_10_);
 bool: M8;
 bool: M7;
 bool: M6;

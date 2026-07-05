@@ -1,4 +1,4 @@
-output (["A: ",show(A),"\n","B: ",show(B),"\n","C: ",show(C),"\n","D: ",show(D),"\n","E: ",show(E),"\n"]++[("The "++show(nationalities[fix(A[C[5]])]))++" owns the fish\n"])++["\n"];
+output let {array [int] of string: X_INTRODUCED_56_ = (["A: ",show(A),"\n","B: ",show(B),"\n","C: ",show(C),"\n","D: ",show(D),"\n","E: ",show(E),"\n"]++[("The "++show(nationalities[fix(A[C[5]])]))++" owns the fish\n"])++["\n"]} in (X_INTRODUCED_56_);
 set of int: e = 1..5;
 array [e] of int: E;
 set of int: d = 1..5;

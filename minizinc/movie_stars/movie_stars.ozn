@@ -1,4 +1,4 @@
-output [((((((((((((("x: "++show(x))++"\n")++"dists: ")++show(dists))++"\n")++"probable rating: ")++show(x[the_case]))++"\n")++"min_ix: ")++show(min_ix))++"\n")++"Evan is most like ")++show(p_str[fix(min_ix)]))++"\n"]++["\n"];
+output let {array [int] of string: X_INTRODUCED_51_ = [((((((((((((("x: "++show(x))++"\n")++"dists: ")++show(dists))++"\n")++"probable rating: ")++show(x[the_case]))++"\n")++"min_ix: ")++show(min_ix))++"\n")++"Evan is most like ")++show(p_str[fix(min_ix)]))++"\n"]++["\n"]} in (X_INTRODUCED_51_);
 int: num_r = 5;
 array [1..num_r] of int: x;
 int: num_p = 4;

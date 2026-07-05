@@ -1,4 +1,4 @@
-output [((((((("original #: "++show(left[0]))++"\n")++"left: ")++show(left))++"\n")++"removed: ")++show(removed))++"\n"];
+output let {array [int] of string: X_INTRODUCED_20_ = [((((((("original #: "++show(left[0]))++"\n")++"left: ")++show(left))++"\n")++"removed: ")++show(removed))++"\n"]} in (X_INTRODUCED_20_);
 int: n = 3;
 array [1..4] of int: X_INTRODUCED_0_;
 array [0..n] of int: left = array1d(0..3,X_INTRODUCED_0_);

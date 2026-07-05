@@ -1,4 +1,4 @@
-output [(show(s)++"\n")++show(sieve)];
+output let {array [int] of string: X_INTRODUCED_123_ = [(show(s)++"\n")++show(sieve)]} in (X_INTRODUCED_123_);
 int: n = 123;
 set of int: s;
 array [1..n] of int: sieve;

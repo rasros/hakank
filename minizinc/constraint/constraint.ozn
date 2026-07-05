@@ -1,4 +1,4 @@
-output ["b: ",show(b),"\n","rhs: ",show(rhs),"\n","ss: ",show(ss),"\n","a: ",show(a),"\n"];
+output let {array [int] of string: X_INTRODUCED_54_ = ["b: ",show(b),"\n","rhs: ",show(rhs),"\n","ss: ",show(ss),"\n","a: ",show(a),"\n"]} in (X_INTRODUCED_54_);
 set of int: terms = 1..8;
 array [terms] of int: a;
 int: ss = sum([a[j]*j | j in terms]);

@@ -1,4 +1,4 @@
-output [((((((("elements: "++show(elements))++"\n")++"entries: ")++show(entries))++"\n")++"t_index: ")++show(t_index))++"\n"];
+output let {array [int] of string: X_INTRODUCED_8_ = [((((((("elements: "++show(elements))++"\n")++"entries: ")++show(entries))++"\n")++"t_index: ")++show(t_index))++"\n"]} in (X_INTRODUCED_8_);
 int: n = 4;
 array [1..n] of int: elements = [6,9,2,9];
 int: s = 2;

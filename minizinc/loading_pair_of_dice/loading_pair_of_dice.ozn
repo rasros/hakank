@@ -1,4 +1,4 @@
-output ["x: ",show(x),"\n","y: ",show(y),"\n","z: ",show(z),"\n","s: ",show(s),"\n"];
+output let {array [int] of string: X_INTRODUCED_135_ = ["x: ",show(x),"\n","y: ",show(y),"\n","z: ",show(z),"\n","s: ",show(s),"\n"]} in (X_INTRODUCED_135_);
 int: n = 3;
 array [1..5] of int: X_INTRODUCED_22_;
 array [2..n*2] of int: z = array1d(2..6,X_INTRODUCED_22_);

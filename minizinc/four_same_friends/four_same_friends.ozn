@@ -1,4 +1,4 @@
-output [(((((((((("first_name: "++show(first_name))++"\n")++"last_name : ")++show(last_name))++"\n")++"birthday  : ")++show(birthday))++"\n")++"z         : ")++show(z))++"\n"];
+output let {array [int] of string: X_INTRODUCED_52_ = [(((((((((("first_name: "++show(first_name))++"\n")++"last_name : ")++show(last_name))++"\n")++"birthday  : ")++show(birthday))++"\n")++"z         : ")++show(z))++"\n"]} in (X_INTRODUCED_52_);
 int: n = 4;
 array [1..n] of int: first_name;
 array [1..n] of int: last_name;

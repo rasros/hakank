@@ -1,4 +1,4 @@
-output [(if i==1 /\ j==1 then ("\n"++show(num_lang))++"\n" else "" endif++if num_persons mod j==0 then "\n" else " " endif)++show(mat[i,j]) | i in 1..num_persons, j in 1..num_languages]++["\n"];
+output let {array [int] of string: X_INTRODUCED_75_ = [(if i==1 /\ j==1 then ("\n"++show(num_lang))++"\n" else "" endif++if num_persons mod j==0 then "\n" else " " endif)++show(mat[i,j]) | i in 1..num_persons, j in 1..num_languages]++["\n"]} in (X_INTRODUCED_75_);
 int: num_persons = 7;
 int: num_languages = 5;
 array [1..num_persons] of int: num_lang;

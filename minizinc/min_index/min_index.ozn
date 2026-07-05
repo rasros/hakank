@@ -1,4 +1,4 @@
-output ["variables: ",show(variables),"\n","min_ind: ",show(min_ind),"\n","min_val: ",show(min_val),"\n"];
+output let {array [int] of string: X_INTRODUCED_42_ = ["variables: ",show(variables),"\n","min_ind: ",show(min_ind),"\n","min_val: ",show(min_val),"\n"]} in (X_INTRODUCED_42_);
 int: min_val;
 int: n = 5;
 int: min_ind;

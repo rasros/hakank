@@ -1,4 +1,4 @@
-output ["Age: ",show(Age),"\n","Names: ",show(Names),"\n","Surnames: ",show(Surnames),"\n","Music: ",show(Music),"\n"];
+output let {array [int] of string: X_INTRODUCED_18_ = ["Age: ",show(Age),"\n","Names: ",show(Names),"\n","Surnames: ",show(Surnames),"\n","Music: ",show(Music),"\n"]} in (X_INTRODUCED_18_);
 int: Pop;
 int: Jazz;
 int: Classical = Queen;

@@ -1,4 +1,4 @@
-output [if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..door, j in 1..prize]++[(if i==1 then "\n" else "" endif++show(t[i]))++"\n" | i in 1..door];
+output let {array [int] of string: X_INTRODUCED_15_ = [if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..door, j in 1..prize]++[(if i==1 then "\n" else "" endif++show(t[i]))++"\n" | i in 1..door]} in (X_INTRODUCED_15_);
 int: prize = 2;
 int: door = 2;
 array [1..4] of int: X_INTRODUCED_0_;

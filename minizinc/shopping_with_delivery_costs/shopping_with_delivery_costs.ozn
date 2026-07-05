@@ -1,4 +1,4 @@
-output ["x: "++format(x)++"\n","part_cost: "++format(part_cost)++"\n","delivery_cost: "++format(delivery_cost)++"\n","total_cost: "++format(total_cost)++"\n"];
+output let {array [int] of string: X_INTRODUCED_101_ = ["x: "++format(x)++"\n","part_cost: "++format(part_cost)++"\n","delivery_cost: "++format(delivery_cost)++"\n","total_cost: "++format(total_cost)++"\n"]} in (X_INTRODUCED_101_);
 int: num_parts = 3;
 float: part_cost;
 float: delivery_cost;

@@ -1,4 +1,4 @@
-output ["sum of the squares: ",show(ss),"\n","square of the sum: ",show(s2),"\n","square of the sum - sum of the squares = ",show(d),"\n"];
+output let {array [int] of string: X_INTRODUCED_1_ = ["sum of the squares: ",show(ss),"\n","square of the sum: ",show(s2),"\n","square of the sum - sum of the squares = ",show(d),"\n"]} in (X_INTRODUCED_1_);
 int: s = 5050;
 int: s2 = s*s;
 int: ss = 338350;

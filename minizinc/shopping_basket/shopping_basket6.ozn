@@ -1,4 +1,4 @@
-output [((((((("total: "++show(total))++"\n")++"punish: ")++show(punish))++"\n")++"x: ")++show(x))++"\n"];
+output let {array [int] of string: X_INTRODUCED_4055_ = [((((((("total: "++show(total))++"\n")++"punish: ")++show(punish))++"\n")++"x: ")++show(x))++"\n"]} in (X_INTRODUCED_4055_);
 int: total;
 int: num_shops = 37;
 array [1..num_shops] of int: punish;

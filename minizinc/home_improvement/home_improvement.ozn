@@ -1,4 +1,4 @@
-output ([(((((("x:"++show(x))++"\n")++"sum_rest: ")++show(sum_rest))++"\n")++"max: ")++show(max_rest)]++[(if j==1 then "\n" else " " endif++show(rest[i,j]))++" " | i in 1..num_houses, j in 1..num_improvements])++["\n"];
+output let {array [int] of string: X_INTRODUCED_113_ = ([(((((("x:"++show(x))++"\n")++"sum_rest: ")++show(sum_rest))++"\n")++"max: ")++show(max_rest)]++[(if j==1 then "\n" else " " endif++show(rest[i,j]))++" " | i in 1..num_houses, j in 1..num_improvements])++["\n"]} in (X_INTRODUCED_113_);
 int: num_improvements = 5;
 array [1..num_improvements] of int: x;
 int: num_houses = 9;

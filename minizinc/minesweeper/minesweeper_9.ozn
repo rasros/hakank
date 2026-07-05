@@ -1,4 +1,4 @@
-output (["\nmines:"]++[if j==1 then "\n" else "" endif++if fix(mines[i,j])==1 then "*" else "." endif | i in 1..r, j in 1..c])++["\n"];
+output let {array [int] of string: X_INTRODUCED_114_ = (["\nmines:"]++[if j==1 then "\n" else "" endif++if fix(mines[i,j])==1 then "*" else "." endif | i in 1..r, j in 1..c])++["\n"]} in (X_INTRODUCED_114_);
 int: c = 9;
 int: r = 9;
 array [1..81] of int: X_INTRODUCED_0_;

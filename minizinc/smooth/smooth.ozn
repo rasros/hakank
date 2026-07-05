@@ -1,4 +1,4 @@
-output [((((((("nchange: "++show(nchange))++"\n")++"tolerance: ")++show(tolerance))++"\n")++"x: ")++show(x))++"\n"];
+output let {array [int] of string: X_INTRODUCED_24_ = [((((((("nchange: "++show(nchange))++"\n")++"tolerance: ")++show(tolerance))++"\n")++"x: ")++show(x))++"\n"]} in (X_INTRODUCED_24_);
 int: n = 5;
 int: nchange = 1;
 int: tolerance = 2;

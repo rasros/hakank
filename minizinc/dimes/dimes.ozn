@@ -1,4 +1,4 @@
-output [((((((("amount: "++show(amount))++"\n")++"amount_gcc: ")++show(amount_gcc))++"\n")++"cents: ")++show(cents))++"\n"];
+output let {array [int] of string: X_INTRODUCED_49_ = [((((((("amount: "++show(amount))++"\n")++"amount_gcc: ")++show(amount_gcc))++"\n")++"cents: ")++show(cents))++"\n"]} in (X_INTRODUCED_49_);
 array [1..5] of int: amount;
 array [1..2] of int: X_INTRODUCED_26_;
 array [3..4] of int: amount_gcc = array1d(3..4,X_INTRODUCED_26_);

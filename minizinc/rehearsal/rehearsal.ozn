@@ -1,4 +1,4 @@
-output (["order: ",show(rehearsal_order),"\n","waiting_time: ",show(waiting_time),"\n","total_waiting_time: ",show(total_waiting_time),"\n"]++[(if j==1 then "\n" else " " endif++show(rehearsal[p,rehearsal_order[j]]))++" " | p in 1..num_players, j in 1..num_pieces])++["\n"];
+output let {array [int] of string: X_INTRODUCED_134_ = (["order: ",show(rehearsal_order),"\n","waiting_time: ",show(waiting_time),"\n","total_waiting_time: ",show(total_waiting_time),"\n"]++[(if j==1 then "\n" else " " endif++show(rehearsal[p,rehearsal_order[j]]))++" " | p in 1..num_players, j in 1..num_pieces])++["\n"]} in (X_INTRODUCED_134_);
 int: num_players = 5;
 int: num_pieces = 9;
 array [1..num_players] of int: waiting_time = [0,0,0,0,0];

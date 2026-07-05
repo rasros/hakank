@@ -1,4 +1,4 @@
-output ["firstName: "++format(FirstName)++"\n","lastName : "++format(LastName)++"\n","Shirt    : "++format(Shirt)++"\n","Icecream : "++format(Icecream)++"\n","Age      : "++format(Age)++"\n","Position : "++format(Position)++"\n"];
+output let {array [int] of string: X_INTRODUCED_52_ = ["firstName: "++format(FirstName)++"\n","lastName : "++format(LastName)++"\n","Shirt    : "++format(Shirt)++"\n","Icecream : "++format(Icecream)++"\n","Age      : "++format(Age)++"\n","Position : "++format(Position)++"\n"]} in (X_INTRODUCED_52_);
 int: n = 4;
 array [1..n] of int: Position;
 array [1..n] of int: Age;

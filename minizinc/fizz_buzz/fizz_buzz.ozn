@@ -1,4 +1,4 @@
-output [let {int: t = fix(x[i])} in (((show(i)++": ")++if t==0 then show(i) else show(fizz_buzz[t]) endif)++"\n") | i in 1..n]++["\n"];
+output let {array [int] of string: X_INTRODUCED_1996_ = [let {int: t = fix(x[i])} in (((show(i)++": ")++if t==0 then show(i) else show(fizz_buzz[t]) endif)++"\n") | i in 1..n]++["\n"]} in (X_INTRODUCED_1996_);
 int: n = 100;
 array [1..n] of int: x;
 array [0..3] of string: fizz_buzz = array1d(0..3,["","fizz","buzz","fizzbuzz"]);

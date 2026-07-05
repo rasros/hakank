@@ -1,4 +1,4 @@
-output ([("makespan: "++show(makespan))++"\n"]++[((((((show(tasks[t])++": ")++show(start[t]))++" - ")++show(duration[t]))++" --> ")++show(start[t]+duration[t]))++"\n" | t in 1..num_tasks])++["\n"];
+output let {array [int] of string: X_INTRODUCED_53_ = ([("makespan: "++show(makespan))++"\n"]++[((((((show(tasks[t])++": ")++show(start[t]))++" - ")++show(duration[t]))++" --> ")++show(start[t]+duration[t]))++"\n" | t in 1..num_tasks])++["\n"]} in (X_INTRODUCED_53_);
 int: makespan;
 int: num_tasks = 10;
 array [1..num_tasks] of string: tasks = ["erecting_walls","carpentry_for_roof","roof","installations","facade_painting","windows","garden","ceilings","painting","moving_in"];

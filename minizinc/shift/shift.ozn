@@ -1,4 +1,4 @@
-output (["tasks:"]++[if j==1 then ("\n"++show(i))++": " else " " endif++show(tasks[i,j]) | i in 1..n, j in 1..2])++["\nshifts: ",show(shifts),"\n","min_break: ",show(min_break),"\n","max_range: ",show(max_range),"\n"];
+output let {array [int] of string: X_INTRODUCED_270_ = (["tasks:"]++[if j==1 then ("\n"++show(i))++": " else " " endif++show(tasks[i,j]) | i in 1..n, j in 1..2])++["\nshifts: ",show(shifts),"\n","min_break: ",show(min_break),"\n","max_range: ",show(max_range),"\n"]} in (X_INTRODUCED_270_);
 int: n = 5;
 array [1..10] of int: X_INTRODUCED_16_;
 array [1..n,1..2] of int: tasks = [|17,20|7,10|2,4|21,22|5,6|];

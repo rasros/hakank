@@ -1,4 +1,4 @@
-output ((([((("total_dist: "++show(total_dist))++"\n")++"x: ")++show(x)]++[(if j==1 then "\n" else "" endif++show_int(2,distances[i,j]))++if fix(x[1,1])==i /\ fix(x[1,2])==j \/ fix(x[2,1])==i /\ fix(x[2,2])==j then "P " else "  " endif | i,j in 1..n])++["\nThe real total distance is "])++[show(sum([sqrt(int2float(fix(distances[i,j]))) | i,j in 1..n]))])++["\n"];
+output let {array [int] of string: X_INTRODUCED_351_ = ((([((("total_dist: "++show(total_dist))++"\n")++"x: ")++show(x)]++[(if j==1 then "\n" else "" endif++show_int(2,distances[i,j]))++if fix(x[1,1])==i /\ fix(x[1,2])==j \/ fix(x[2,1])==i /\ fix(x[2,2])==j then "P " else "  " endif | i,j in 1..n])++["\nThe real total distance is "])++[show(sum([sqrt(int2float(fix(distances[i,j]))) | i,j in 1..n]))])++["\n"]} in (X_INTRODUCED_351_);
 int: total_dist;
 int: n = 10;
 array [1..4] of int: X_INTRODUCED_16_;

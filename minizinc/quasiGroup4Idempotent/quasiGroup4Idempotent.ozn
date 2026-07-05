@@ -1,4 +1,4 @@
-output [if col==0 then "\n" else " " endif++show(quasiGroup[row,col]) | row,col in nDomain]++["\n"];
+output let {array [int] of string: X_INTRODUCED_219_ = [if col==0 then "\n" else " " endif++show(quasiGroup[row,col]) | row,col in nDomain]++["\n"]} in (X_INTRODUCED_219_);
 set of int: nDomain = 0..8;
 array [1..81] of int: X_INTRODUCED_16_;
 array [nDomain,nDomain] of int: quasiGroup = array2d(0..8,0..8,X_INTRODUCED_16_);

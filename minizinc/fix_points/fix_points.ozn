@@ -1,4 +1,4 @@
-output [(((("x: "++show(x))++"\n")++"z: ")++show(z))++"\n"];
+output let {array [int] of string: X_INTRODUCED_23_ = [(((("x: "++show(x))++"\n")++"z: ")++show(z))++"\n"]} in (X_INTRODUCED_23_);
 int: n = 7;
 array [1..n] of int: x;
 int: z = 4;

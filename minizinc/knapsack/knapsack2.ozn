@@ -1,4 +1,4 @@
-output ["profit: ",show(profit),"\n",show(take),"\n"];
+output let {array [int] of string: X_INTRODUCED_25_ = ["profit: ",show(profit),"\n",show(take),"\n"]} in (X_INTRODUCED_25_);
 int: n = 8;
 array [1..n] of int: take;
 array [1..n] of int: ratings = [2,9,3,8,10,6,4,10];

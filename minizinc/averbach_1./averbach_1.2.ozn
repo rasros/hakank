@@ -1,4 +1,4 @@
-output ["table: ",show(xtable),"\n","[American, English, French]: ",show([American,English,French]),"\n"];
+output let {array [int] of string: X_INTRODUCED_27_ = ["table: ",show(xtable),"\n","[American, English, French]: ",show([American,English,French]),"\n"]} in (X_INTRODUCED_27_);
 int: French;
 int: English;
 int: American;

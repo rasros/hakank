@@ -1,4 +1,4 @@
-output [(if i==1 /\ j==1 then ("sum_profit: "++show(sum_profit))++"\n" else "" endif++if j==1 then "\n" else " " endif)++show(x[i,j]) | i in w, j in p]++["\n"];
+output let {array [int] of string: X_INTRODUCED_48_ = [(if i==1 /\ j==1 then ("sum_profit: "++show(sum_profit))++"\n" else "" endif++if j==1 then "\n" else " " endif)++show(x[i,j]) | i in w, j in p]++["\n"]} in (X_INTRODUCED_48_);
 set of int: p = 1..4;
 set of int: w = 1..4;
 array [1..16] of int: X_INTRODUCED_0_;

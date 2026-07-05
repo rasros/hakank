@@ -1,4 +1,4 @@
-output (((["\nmines:"]++[if j==1 then "\n" else " " endif++show(mines[i,j]) | i in 1..r, j in 1..c])++["\ngame:"])++[if j==1 then "\n" else " " endif++if mines[i,j]==1 then show("B") else show(game[i,j]) endif | i in 1..r, j in 1..c])++["\n"];
+output let {array [int] of string: X_INTRODUCED_102_ = (((["\nmines:"]++[if j==1 then "\n" else " " endif++show(mines[i,j]) | i in 1..r, j in 1..c])++["\ngame:"])++[if j==1 then "\n" else " " endif++if mines[i,j]==1 then show("B") else show(game[i,j]) endif | i in 1..r, j in 1..c])++["\n"]} in (X_INTRODUCED_102_);
 int: c = 10;
 int: r = 10;
 array [1..r,1..c] of int: mines = [|0,0,0,0,1,0,0,0,0,0|1,0,0,1,0,1,0,1,1,0|1,1,0,0,0,1,0,1,0,0|0,0,0,0,0,0,0,0,1,0|1,0,0,0,0,0,1,0,1,0|0,0,1,0,1,0,0,0,0,0|0,1,0,0,0,0,1,0,0,0|1,0,0,0,1,0,0,0,1,0|0,1,0,1,0,0,1,0,1,1|0,0,1,0,0,1,0,0,0,0|];

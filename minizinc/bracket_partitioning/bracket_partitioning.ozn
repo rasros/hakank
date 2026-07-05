@@ -1,4 +1,4 @@
-output [((((((((((((((((((("w: "++show(w))++"\n")++"z: ")++show(z))++"\n")++"x: ")++show(x))++"\n")++"set_size: ")++show(set_size))++"\n")++"diffs: ")++show(diffs))++"\n")++"mins: ")++show(mins))++"\n")++"maxs: ")++show(maxs))++"\n"]++[if fix(set_size[s]) > 0 then ((("bracket "++show(s))++": ")++show([w[i] | i in 1..n where fix(x[i])==s]))++"\n" else "" endif | s in 1..ssize];
+output let {array [int] of string: X_INTRODUCED_5680_ = [((((((((((((((((((("w: "++show(w))++"\n")++"z: ")++show(z))++"\n")++"x: ")++show(x))++"\n")++"set_size: ")++show(set_size))++"\n")++"diffs: ")++show(diffs))++"\n")++"mins: ")++show(mins))++"\n")++"maxs: ")++show(maxs))++"\n"]++[if fix(set_size[s]) > 0 then ((("bracket "++show(s))++": ")++show([w[i] | i in 1..n where fix(x[i])==s]))++"\n" else "" endif | s in 1..ssize]} in (X_INTRODUCED_5680_);
 int: n = 30;
 array [1..n] of int: w = [190,143,133,186,176,129,182,172,125,115,168,158,111,164,154,107,197,150,140,193,146,136,189,179,132,185,175,128,118,171];
 int: ssize = 15;

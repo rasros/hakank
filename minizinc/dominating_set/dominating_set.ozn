@@ -1,2 +1,2 @@
-output ["D: ",show(D),"\n"];
+output let {array [int] of string: X_INTRODUCED_19_ = ["D: ",show(D),"\n"]} in (X_INTRODUCED_19_);
 set of int: D;

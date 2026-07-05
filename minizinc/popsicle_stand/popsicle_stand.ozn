@@ -1,4 +1,4 @@
-output [((((((((((((((((((("z        : "++show(z))++"\n")++"full_time: ")++show(full_time))++"\n")++"part_time: ")++show(part_time))++"\n")++"all_f    : ")++show(all_f))++"\n")++"all_p    : ")++show(all_p))++"\n")++"all      : ")++show(all))++"\n")++"demand   : ")++show(demand))++"\n"]++["\n"];
+output let {array [int] of string: X_INTRODUCED_91_ = [((((((((((((((((((("z        : "++show(z))++"\n")++"full_time: ")++show(full_time))++"\n")++"part_time: ")++show(part_time))++"\n")++"all_f    : ")++show(all_f))++"\n")++"all_p    : ")++show(all_p))++"\n")++"all      : ")++show(all))++"\n")++"demand   : ")++show(demand))++"\n"]++["\n"]} in (X_INTRODUCED_91_);
 int: n = 7;
 array [1..7] of int: X_INTRODUCED_0_;
 array [0..n-1] of int: full_time = array1d(0..6,X_INTRODUCED_0_);

@@ -1,4 +1,4 @@
-output [(((((("variables: "++show(variables))++"\n")++"nvar: ")++show(nvar))++"\n")++"values: ")++show(values)];
+output let {array [int] of string: X_INTRODUCED_9_ = [(((((("variables: "++show(variables))++"\n")++"nvar: ")++show(nvar))++"\n")++"values: ")++show(values)]} in (X_INTRODUCED_9_);
 int: n = 3;
 array [1..n] of int: variables = [3,3,8];
 int: nvar = 1;

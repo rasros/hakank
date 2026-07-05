@@ -1,4 +1,4 @@
-output [show([x1,x2,z])];
+output let {array [int] of string: X_INTRODUCED_12_ = [show([x1,x2,z])]} in (X_INTRODUCED_12_);
 float: x2;
 float: x1;
 float: z = 100.0*(x2-x1*x1)*(x2-x1*x1)+(1.0-x1)*(1.0-x1);

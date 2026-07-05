@@ -1,2 +1,2 @@
-output [show(X),"\n\n","     ",show(X[1]),"   ",show(X[2]),"   ",show(X[3]),"\n","   ",show(X[12]),"           ",show(X[4]),"\n"," ",show(X[11]),"               ",show(X[5]),"\n","   ",show(X[10]),"           ",show(X[6]),"\n","      ",show(X[9]),"   ",show(X[8]),"   ",show(X[7]),"\n"];
+output let {array [int] of string: X_INTRODUCED_55_ = [show(X),"\n\n","     ",show(X[1]),"   ",show(X[2]),"   ",show(X[3]),"\n","   ",show(X[12]),"           ",show(X[4]),"\n"," ",show(X[11]),"               ",show(X[5]),"\n","   ",show(X[10]),"           ",show(X[6]),"\n","      ",show(X[9]),"   ",show(X[8]),"   ",show(X[7]),"\n"]} in (X_INTRODUCED_55_);
 array [1..12] of int: X;

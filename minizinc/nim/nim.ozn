@@ -1,4 +1,4 @@
-output [((show(s[i])++" ")++show(m[i]))++"\n" | i in 1..heap];
+output let {array [int] of string: X_INTRODUCED_87_ = [((show(s[i])++" ")++show(m[i]))++"\n" | i in 1..heap]} in (X_INTRODUCED_87_);
 int: heap = 5;
 array [1..heap] of int: s;
 array [1..heap] of int: m;

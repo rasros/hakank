@@ -1,4 +1,4 @@
-output ["tot_bottles: "++format(tot_bottles)++"\n","tot_oil: "++format(tot_oil)++"\n"]++[""++format(slice_1d(x,[i..i,-infinity..infinity],index_set_2of2(x)))++"\n" | i in 1..num_sons];
+output let {array [int] of string: X_INTRODUCED_59_ = ["tot_bottles: "++format(tot_bottles)++"\n","tot_oil: "++format(tot_oil)++"\n"]++[""++format(slice_1d(x,[i..i,-infinity..infinity],index_set_2of2(x)))++"\n" | i in 1..num_sons]} in (X_INTRODUCED_59_);
 int: tot_oil = 30;
 int: tot_bottles = 30;
 int: n = 3;

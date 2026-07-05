@@ -1,4 +1,4 @@
-output ((((["\nsumx: ",show(sumx)]++["\nx:"])++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..size])++["\na:"])++[if j==1 then "\n" else " " endif++show(a[i,j]) | i,j in 1..size])++["\n"];
+output let {array [int] of string: X_INTRODUCED_458_ = ((((["\nsumx: ",show(sumx)]++["\nx:"])++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..size])++["\na:"])++[if j==1 then "\n" else " " endif++show(a[i,j]) | i,j in 1..size])++["\n"]} in (X_INTRODUCED_458_);
 int: size = 8;
 array [1..64] of int: X_INTRODUCED_0_;
 array [1..size,1..size] of int: x = array2d(1..8,1..8,X_INTRODUCED_0_);

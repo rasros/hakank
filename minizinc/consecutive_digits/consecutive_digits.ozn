@@ -1,4 +1,4 @@
-output ["  ",show(ABCD),"\n","  ",show(DCBA),"\n","+ ",show(dots_num),"\n","------","\n"," 12300","\n"];
+output let {array [int] of string: X_INTRODUCED_49_ = ["  ",show(ABCD),"\n","  ",show(DCBA),"\n","+ ",show(dots_num),"\n","------","\n"," 12300","\n"]} in (X_INTRODUCED_49_);
 int: dots_num;
 int: D;
 int: C;

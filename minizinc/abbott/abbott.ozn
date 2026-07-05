@@ -1,4 +1,4 @@
-output [((if i==1 /\ j==1 then ("total_sum: "++show(total_sum))++"\n" else "" endif++if j==1 then show(i)++" : " else "" endif)++show(x[i,j]))++if j==col then "\n" else " " endif | i in R, j in C];
+output let {array [int] of string: X_INTRODUCED_201_ = [((if i==1 /\ j==1 then ("total_sum: "++show(total_sum))++"\n" else "" endif++if j==1 then show(i)++" : " else "" endif)++show(x[i,j]))++if j==col then "\n" else " " endif | i in R, j in C]} in (X_INTRODUCED_201_);
 int: col = 8;
 set of int: C = 1..8;
 set of int: R = 1..8;

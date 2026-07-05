@@ -1,4 +1,4 @@
-output [(((("k: "++show(k))++"\n")++"x: ")++show(x))++"\n"]++[if fix(x[i])==1 then show(i)++" " else "" endif | i in 1..n];
+output let {array [int] of string: X_INTRODUCED_399_ = [(((("k: "++show(k))++"\n")++"x: ")++show(x))++"\n"]++[if fix(x[i])==1 then show(i)++" " else "" endif | i in 1..n]} in (X_INTRODUCED_399_);
 int: n = 128;
 array [1..n] of int: x;
 int: k = sum(x);

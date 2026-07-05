@@ -1,4 +1,4 @@
-output ["nv: ",show(nvv)," x: ",show(x),"\n"];
+output let {array [int] of string: X_INTRODUCED_25_ = ["nv: ",show(nvv)," x: ",show(x),"\n"]} in (X_INTRODUCED_25_);
 int: n = 6;
 array [1..n] of int: x = [4,5,5,4,1,5];
 int: nvv;

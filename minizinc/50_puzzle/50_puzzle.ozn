@@ -1,4 +1,4 @@
-output [((show(v[i])++": ")++show(x[i]))++"\n" | i in 1..n];
+output let {array [int] of string: X_INTRODUCED_33_ = [((show(v[i])++": ")++show(x[i]))++"\n" | i in 1..n]} in (X_INTRODUCED_33_);
 int: n = 10;
 array [1..n] of int: v = [3,6,9,12,15,19,21,25,27,30];
 array [1..n] of int: x;

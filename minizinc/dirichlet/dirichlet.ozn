@@ -1,4 +1,4 @@
-output [if j==1 then "\n" else " " endif++show(temp[i,j]) | i,j in 1..n]++["\nTemperature at (",show(half_n),", ",show(half_n),") is ",show(temp[half_n,half_n])];
+output let {array [int] of string: X_INTRODUCED_87_ = [if j==1 then "\n" else " " endif++show(temp[i,j]) | i,j in 1..n]++["\nTemperature at (",show(half_n),", ",show(half_n),") is ",show(temp[half_n,half_n])]} in (X_INTRODUCED_87_);
 int: n = 7;
 array [1..49] of float: X_INTRODUCED_0_;
 array [1..n,1..n] of float: temp = array2d(1..7,1..7,X_INTRODUCED_0_);

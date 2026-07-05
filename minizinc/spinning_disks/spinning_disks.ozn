@@ -1,4 +1,4 @@
-output [(((("disk1: "++show(disk1))++"\n")++"disk2: ")++show(disk2))++"\n"];
+output let {array [int] of string: X_INTRODUCED_605_ = [(((("disk1: "++show(disk1))++"\n")++"disk2: ")++show(disk2))++"\n"]} in (X_INTRODUCED_605_);
 int: n = 12;
 array [1..n] of int: disk1;
 int: m = 12;

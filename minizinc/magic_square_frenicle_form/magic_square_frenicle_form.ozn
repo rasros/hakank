@@ -1,4 +1,4 @@
-output [("Total: "++show(total))++"\n"]++[(show_int(3,magic[i,j])++" ")++if j mod n==0 then "\n" else "" endif | i,j in 1..n];
+output let {array [int] of string: X_INTRODUCED_47_ = [("Total: "++show(total))++"\n"]++[(show_int(3,magic[i,j])++" ")++if j mod n==0 then "\n" else "" endif | i,j in 1..n]} in (X_INTRODUCED_47_);
 int: total = 34;
 int: n = 4;
 array [1..16] of int: X_INTRODUCED_16_;

@@ -1,4 +1,4 @@
-output [(((("Production: "++show(Production))++"\n")++"z: ")++show(z))++"\n"];
+output let {array [int] of string: X_INTRODUCED_15_ = [(((("Production: "++show(Production))++"\n")++"z: ")++show(z))++"\n"]} in (X_INTRODUCED_15_);
 set of int: Products = 1..2;
 array [Products] of float: Production;
 array [Products] of float: Profit = [30.0,40.0];

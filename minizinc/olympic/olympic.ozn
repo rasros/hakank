@@ -1,4 +1,4 @@
-output [show(Vars),"\n"];
+output let {array [int] of string: X_INTRODUCED_29_ = [show(Vars),"\n"]} in (X_INTRODUCED_29_);
 int: X10;
 int: X9;
 int: X8;

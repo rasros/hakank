@@ -1,4 +1,4 @@
-output [((show([a,b,c,d])++"\n")++show([w,x,y,z]))++"\n"]++[if fix(wxyz[j])==i then show(join("<=>",[abcd_s[i],wxyz_s[j]]))++"\n" else "" endif | i in 1..n, j in 1..n];
+output let {array [int] of string: X_INTRODUCED_27_ = [((show([a,b,c,d])++"\n")++show([w,x,y,z]))++"\n"]++[if fix(wxyz[j])==i then show(join("<=>",[abcd_s[i],wxyz_s[j]]))++"\n" else "" endif | i in 1..n, j in 1..n]} in (X_INTRODUCED_27_);
 int: d = 4;
 int: c = 3;
 int: b = 2;

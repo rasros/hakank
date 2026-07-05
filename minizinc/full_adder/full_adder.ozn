@@ -1,4 +1,4 @@
-output ["[I1,I2,I3,O1,O2]: ",show([I1,I2,I3,O1,O2]),"\n"];
+output let {array [int] of string: X_INTRODUCED_3_ = ["[I1,I2,I3,O1,O2]: ",show([I1,I2,I3,O1,O2]),"\n"]} in (X_INTRODUCED_3_);
 bool: O2 = true;
 bool: O1;
 bool: I3 = false;

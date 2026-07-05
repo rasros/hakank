@@ -1,4 +1,4 @@
-output [("sons: "++show(sons))++"\n"]++[((("son "++show(s))++" got these cows: ")++show([c | c in 1..num_cows where fix(cows[c,s])==1]))++"\n" | s in 1..num_sons];
+output let {array [int] of string: X_INTRODUCED_1767_ = [("sons: "++show(sons))++"\n"]++[((("son "++show(s))++" got these cows: ")++show([c | c in 1..num_cows where fix(cows[c,s])==1]))++"\n" | s in 1..num_sons]} in (X_INTRODUCED_1767_);
 int: num_sons = 9;
 int: num_cows = 81;
 array [1..num_sons] of int: sons = [369,369,369,369,369,369,369,369,369];

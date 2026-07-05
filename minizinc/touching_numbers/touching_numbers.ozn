@@ -1,4 +1,4 @@
-output [show(Maxscore),"\n",show(Z),"\n"]++[if j==0 then "\n" else " " endif++show(X[i,j]) | i,j in 0..Size];
+output let {array [int] of string: X_INTRODUCED_366_ = [show(Maxscore),"\n",show(Z),"\n"]++[if j==0 then "\n" else " " endif++show(X[i,j]) | i,j in 0..Size]} in (X_INTRODUCED_366_);
 int: Size = 9;
 array [1..10] of int: X_INTRODUCED_101_;
 array [0..Size] of int: Z = array1d(0..9,X_INTRODUCED_101_);

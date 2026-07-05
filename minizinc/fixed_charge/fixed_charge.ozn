@@ -1,4 +1,4 @@
-output [((((((("Rent: "++show(Rent))++"\n")++"Produce: ")++show(Produce))++"\n")++"z: ")++show(z))++"\n"];
+output let {array [int] of string: X_INTRODUCED_39_ = [((((((("Rent: "++show(Rent))++"\n")++"Produce: ")++show(Produce))++"\n")++"z: ")++show(z))++"\n"]} in (X_INTRODUCED_39_);
 int: num_machines = 3;
 array [1..num_machines] of int: Rent;
 int: num_products = 3;

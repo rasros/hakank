@@ -1,4 +1,4 @@
-output (((((["\nnumber: ",show(number)]++["\nnor: ",show(nor)])++["\nin1:"])++[if j==1 then "\n" else " " endif++show(in1[i,j]) | i in maxi, j in maxj])++["\nout:"])++[if k==1 then "\n" else " " endif++show(out[i,k]) | i in maxi, k in maxk])++["\n"];
+output let {array [int] of string: X_INTRODUCED_197_ = (((((["\nnumber: ",show(number)]++["\nnor: ",show(nor)])++["\nin1:"])++[if j==1 then "\n" else " " endif++show(in1[i,j]) | i in maxi, j in maxj])++["\nout:"])++[if k==1 then "\n" else " " endif++show(out[i,k]) | i in maxi, k in maxk])++["\n"]} in (X_INTRODUCED_197_);
 set of int: maxi = 1..7;
 array [maxi] of int: nor;
 int: number = sum([nor[i] | i in maxi]);

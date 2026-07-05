@@ -1,4 +1,4 @@
-output ["Leo family : girls: ",show(leo_girls),"  boys: ",show(leo_boys),"\n","Rene family: girls: ",show(rene_girls),"  boys: ",show(rene_boys),"\n"];
+output let {array [int] of string: X_INTRODUCED_54_ = ["Leo family : girls: ",show(leo_girls),"  boys: ",show(leo_boys),"\n","Rene family: girls: ",show(rene_girls),"  boys: ",show(rene_boys),"\n"]} in (X_INTRODUCED_54_);
 array [1..3] of int: rene_boys;
 array [1..3] of int: rene_girls;
 array [1..3] of int: leo_boys;

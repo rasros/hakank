@@ -1,4 +1,4 @@
-output [show(LD)];
+output let {array [int] of string: X_INTRODUCED_35_ = [show(LD)]} in (X_INTRODUCED_35_);
 int: X20;
 int: X19;
 int: X18;

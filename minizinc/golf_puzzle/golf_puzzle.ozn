@@ -1,4 +1,4 @@
-output ["club1: "++format(club1)++"\n","club2: "++format(club2)++"\n","z: "++format(z)++"\n"]++[if j==1 then "\n" else " " endif++show_int(3,holes[i,j]) | i in 1..n, j in 1..2];
+output let {array [int] of string: X_INTRODUCED_87_ = ["club1: "++format(club1)++"\n","club2: "++format(club2)++"\n","z: "++format(z)++"\n"]++[if j==1 then "\n" else " " endif++show_int(3,holes[i,j]) | i in 1..n, j in 1..2]} in (X_INTRODUCED_87_);
 int: z;
 int: club2;
 int: club1;

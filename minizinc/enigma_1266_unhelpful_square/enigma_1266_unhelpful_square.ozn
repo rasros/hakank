@@ -1,4 +1,4 @@
-output ["x:"]++[if j==1 then "\n" else " " endif++if (i-1)*m+j in blanks then "X" else show(x[i,j]) endif | i in 1..n, j in 1..m];
+output let {array [int] of string: X_INTRODUCED_96_ = ["x:"]++[if j==1 then "\n" else " " endif++if (i-1)*m+j in blanks then "X" else show(x[i,j]) endif | i in 1..n, j in 1..m]} in (X_INTRODUCED_96_);
 int: m = 5;
 set of int: blanks = {3,6,10,13};
 int: n = 3;

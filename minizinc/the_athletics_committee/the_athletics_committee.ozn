@@ -1,4 +1,4 @@
-output [if j==1 then ((("\n"++show_int(2,i))++" (")++show(x[i]))++"): " else " " endif++show(friends[i,j]) | i,j in 1..n]++["\nx: "++format(x)++"\n"];
+output let {array [int] of string: X_INTRODUCED_113_ = [if j==1 then ((("\n"++show_int(2,i))++" (")++show(x[i]))++"): " else " " endif++show(friends[i,j]) | i,j in 1..n]++["\nx: "++format(x)++"\n"]} in (X_INTRODUCED_113_);
 int: n = 4;
 array [1..n] of int: x;
 array [1..16] of int: X_INTRODUCED_16_;

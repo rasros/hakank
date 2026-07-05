@@ -1,4 +1,4 @@
-output (((((([if j==1 then "\n" else " " endif++show(data[i,j]) | i in 1..rows, j in 1..cols]++["\n"])++[if j==1 then "\n" else " " endif++show(str[data[i,j]]) | i in 1..rows, j in 1..cols])++["\nx:"])++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..rows, j in 1..cols])++["\nx:"])++[if j==1 then "\n" else " " endif++show(str[fix(x[i,j])]) | i in 1..rows, j in 1..cols])++["\n"];
+output let {array [int] of string: X_INTRODUCED_34_ = (((((([if j==1 then "\n" else " " endif++show(data[i,j]) | i in 1..rows, j in 1..cols]++["\n"])++[if j==1 then "\n" else " " endif++show(str[data[i,j]]) | i in 1..rows, j in 1..cols])++["\nx:"])++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..rows, j in 1..cols])++["\nx:"])++[if j==1 then "\n" else " " endif++show(str[fix(x[i,j])]) | i in 1..rows, j in 1..cols])++["\n"]} in (X_INTRODUCED_34_);
 int: B = 3;
 int: P = 2;
 int: W = 4;

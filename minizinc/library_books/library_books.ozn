@@ -1,4 +1,4 @@
-output ["major   : ",show(major),"\n","major_inv: ",show(major_inv),"\n","returned: ",show(returned),"\n"]++[((((show(people_s[p])++" majors in ")++show(major_s[fix(major_inv[p])]))++" and returned ")++show(returned[p]))++"\n" | p in 1..n];
+output let {array [int] of string: X_INTRODUCED_33_ = ["major   : ",show(major),"\n","major_inv: ",show(major_inv),"\n","returned: ",show(returned),"\n"]++[((((show(people_s[p])++" majors in ")++show(major_s[fix(major_inv[p])]))++" and returned ")++show(returned[p]))++"\n" | p in 1..n]} in (X_INTRODUCED_33_);
 int: n = 3;
 array [1..n] of int: returned;
 array [1..n] of int: major_inv;

@@ -1,4 +1,4 @@
-output [(if j==1 then "\n" else " " endif++if fix(x[i,j]) < 0 then " " else if fix(x[i,j]) < 10 then "  " else if fix(x[i,j]) < 100 then " " else "" endif endif endif)++if fix(x[i,j]) > 0 then show(x[i,j]) else "__" endif | i in 1..r, j in 1..c]++["\n"];
+output let {array [int] of string: X_INTRODUCED_445_ = [(if j==1 then "\n" else " " endif++if fix(x[i,j]) < 0 then " " else if fix(x[i,j]) < 10 then "  " else if fix(x[i,j]) < 100 then " " else "" endif endif endif)++if fix(x[i,j]) > 0 then show(x[i,j]) else "__" endif | i in 1..r, j in 1..c]++["\n"]} in (X_INTRODUCED_445_);
 int: c = 8;
 int: r = 8;
 array [1..64] of int: X_INTRODUCED_16_;

@@ -1,4 +1,4 @@
-output ([(((((((("num_purgings: "++show(num_purgings))++"\n")++"distance    : ")++show(distance))++"\n")++"x           : ")++show(x))++"\n")++"x(colors)   : "]++[show(col_str[colors[fix(x[i])]])++" " | i in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_82_ = ([(((((((("num_purgings: "++show(num_purgings))++"\n")++"distance    : ")++show(distance))++"\n")++"x           : ")++show(x))++"\n")++"x(colors)   : "]++[show(col_str[colors[fix(x[i])]])++" " | i in 1..n])++["\n"]} in (X_INTRODUCED_82_);
 int: n = 10;
 int: num_purgings;
 int: distance;

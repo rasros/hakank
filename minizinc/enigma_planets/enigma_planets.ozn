@@ -1,4 +1,4 @@
-output ["[p, l, u, t, o, r, a, n, s, e, i, m, j, h, v, c, y]","\n",show(letters),"\n","planets: ",show(planets),"\n"];
+output let {array [int] of string: X_INTRODUCED_38_ = ["[p, l, u, t, o, r, a, n, s, e, i, m, j, h, v, c, y]","\n",show(letters),"\n","planets: ",show(planets),"\n"]} in (X_INTRODUCED_38_);
 int: planets;
 int: y;
 int: c;

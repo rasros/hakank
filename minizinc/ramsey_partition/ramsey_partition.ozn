@@ -1,2 +1,2 @@
-output [show(x),"\n"];
+output let {array [int] of string: X_INTRODUCED_232_ = [show(x),"\n"]} in (X_INTRODUCED_232_);
 array [1..3] of set of int: x;

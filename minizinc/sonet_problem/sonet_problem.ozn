@@ -1,4 +1,4 @@
-output (["z: ",show(z)]++[if client==1 then "\n" else " " endif++show(rings[ring,client]) | ring in 1..r, client in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_62_ = (["z: ",show(z)]++[if client==1 then "\n" else " " endif++show(rings[ring,client]) | ring in 1..r, client in 1..n])++["\n"]} in (X_INTRODUCED_62_);
 int: n = 5;
 int: r = 4;
 array [1..20] of int: X_INTRODUCED_0_;

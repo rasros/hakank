@@ -1,4 +1,4 @@
-output ["x: "++format(x)++"\nnval: "++format(nval)++"\n"];
+output let {array [int] of string: X_INTRODUCED_9_ = ["x: "++format(x)++"\nnval: "++format(nval)++"\n"]} in (X_INTRODUCED_9_);
 int: n = 5;
 array [1..n] of int: x = [3,1,7,1,6];
 int: nval = 2;

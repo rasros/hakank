@@ -1,4 +1,4 @@
-output [((((((((((((("x: "++show(x))++"\n")++"s: ")++show(s))++"\n")++"y: ")++show(y))++"\n")++"z: ")++show(z))++"\n")++"obj: ")++show(obj))++"\n"];
+output let {array [int] of string: X_INTRODUCED_103_ = [((((((((((((("x: "++show(x))++"\n")++"s: ")++show(s))++"\n")++"y: ")++show(y))++"\n")++"z: ")++show(z))++"\n")++"obj: ")++show(obj))++"\n"]} in (X_INTRODUCED_103_);
 set of int: year = 0..12;
 array [1..13] of int: X_INTRODUCED_0_;
 array [year] of int: x = array1d(0..12,X_INTRODUCED_0_);

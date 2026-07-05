@@ -1,2 +1,2 @@
-output ["beetles: ",show(beetles),"\n"];
+output let {array [int] of string: X_INTRODUCED_45_ = ["beetles: ",show(beetles),"\n"]} in (X_INTRODUCED_45_);
 int: beetles;

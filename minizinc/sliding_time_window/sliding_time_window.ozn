@@ -1,4 +1,4 @@
-output (["tasks:"]++[if j==1 then "\n  " else " " endif++show(tasks[i,j]) | i in 1..n, j in 1..2])++["\nsums: ",show(sums),"\n","limit: ",show(limitx),"\n"];
+output let {array [int] of string: X_INTRODUCED_90_ = (["tasks:"]++[if j==1 then "\n  " else " " endif++show(tasks[i,j]) | i in 1..n, j in 1..2])++["\nsums: ",show(sums),"\n","limit: ",show(limitx),"\n"]} in (X_INTRODUCED_90_);
 int: n = 5;
 int: max_time = 16;
 array [1..10] of int: X_INTRODUCED_0_;

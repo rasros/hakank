@@ -1,3 +1,3 @@
-output [(((("X: "++show(X))++" ")++"Y: ")++show(Y))++"\n"];
+output let {array [int] of string: X_INTRODUCED_10_ = [(((("X: "++show(X))++" ")++"Y: ")++show(Y))++"\n"]} in (X_INTRODUCED_10_);
 float: X;
 float: Y;

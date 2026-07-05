@@ -1,4 +1,4 @@
-output [((((((("threshold: "++show(threshold))++"\n")++"ind: ")++show(ind))++"\n")++"val: ")++show(val))++"\n"];
+output let {array [int] of string: X_INTRODUCED_29_ = [((((((("threshold: "++show(threshold))++"\n")++"ind: ")++show(ind))++"\n")++"val: ")++show(val))++"\n"]} in (X_INTRODUCED_29_);
 int: threshold = 2;
 int: ind = 3;
 int: val = 9;

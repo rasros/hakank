@@ -1,4 +1,4 @@
-output [((("obj: "++show(obj))++"\n")++show(x))++"\n"]++[if fix(x[i]==1) then show(i)++" " else "" endif | i in 1..n];
+output let {array [int] of string: X_INTRODUCED_671_ = [((("obj: "++show(obj))++"\n")++show(x))++"\n"]++[if fix(x[i]==1) then show(i)++" " else "" endif | i in 1..n]} in (X_INTRODUCED_671_);
 int: n = 50;
 array [1..n] of int: x;
 int: obj = sum(x);

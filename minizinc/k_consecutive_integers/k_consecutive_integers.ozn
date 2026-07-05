@@ -1,4 +1,4 @@
-output [((((((("z     : "++show(z))++"\n")++"starts: ")++show(starts))++"\n")++"x     : ")++show(x))++"\n"];
+output let {array [int] of string: X_INTRODUCED_226_ = [((((((("z     : "++show(z))++"\n")++"starts: ")++show(starts))++"\n")++"x     : ")++show(x))++"\n"]} in (X_INTRODUCED_226_);
 int: n = 13;
 array [1..n] of int: starts;
 int: z = sum([bool2int(starts[i] > 0) | i in 1..n]);

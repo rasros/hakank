@@ -1,4 +1,4 @@
-output [""++format(slice_1d(x,[i..i,-infinity..infinity],index_set_2of2(x)))++"\n" | i in 1..m];
+output let {array [int] of string: X_INTRODUCED_3501_ = [""++format(slice_1d(x,[i..i,-infinity..infinity],index_set_2of2(x)))++"\n" | i in 1..m]} in (X_INTRODUCED_3501_);
 int: n = 5;
 int: m = 25;
 array [1..125] of int: X_INTRODUCED_16_;

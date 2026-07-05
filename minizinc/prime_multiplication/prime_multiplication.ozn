@@ -1,4 +1,4 @@
-output ["abc: ",show(abc),"\n","de: ",show(de),"\n","fghi: ",show(fghi),"\n","jklm: ",show(jklm),"\n","nopqr: ",show(nopqr),"\n","\n\n","   ",show(abc),"\n","*   ",show(de),"\n","------\n","  ",show(fghi),"\n","+",show(jklm)," \n","------\n"," ",show(nopqr)," \n"];
+output let {array [int] of string: X_INTRODUCED_65_ = ["abc: ",show(abc),"\n","de: ",show(de),"\n","fghi: ",show(fghi),"\n","jklm: ",show(jklm),"\n","nopqr: ",show(nopqr),"\n","\n\n","   ",show(abc),"\n","*   ",show(de),"\n","------\n","  ",show(fghi),"\n","+",show(jklm)," \n","------\n"," ",show(nopqr)," \n"]} in (X_INTRODUCED_65_);
 int: nopqr;
 int: jklm;
 int: fghi;

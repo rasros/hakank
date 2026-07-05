@@ -1,4 +1,4 @@
-output ([((((((("x: "++show(x))++"\n")++"sums: ")++show(sums))++"\n")++"max_sum: ")++show(max_sum))++"\n"]++[if i==1 then ((("\n"++show(j))++"(")++show(sums[j]))++"): " else "" endif++if fix(x[i]==j) then show(a[i])++" " else "" endif | j in 1..k, i in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_11105_ = ([((((((("x: "++show(x))++"\n")++"sums: ")++show(sums))++"\n")++"max_sum: ")++show(max_sum))++"\n"]++[if i==1 then ((("\n"++show(j))++"(")++show(sums[j]))++"): " else "" endif++if fix(x[i]==j) then show(a[i])++" " else "" endif | j in 1..k, i in 1..n])++["\n"]} in (X_INTRODUCED_11105_);
 int: n = 1000;
 int: k = 3;
 array [1..n] of int: x;

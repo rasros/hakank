@@ -1,4 +1,4 @@
-output ["revenue: ",show(revenue),"\n","milk price: ",show(milk*1000.0),"\n","butter price: ",show(butt*1000.0),"\n","cheese 1 price: ",show(cha*1000.0),"\n","cheese 2 price: ",show(chb*1000.0),"\n","milk prod: ",show(xm*1000.0),"\n","butter prod: ",show(xb*1000.0),"\n","cheese 1 prod: ",show(xca*1000.0),"\n","cheese 2 prod: ",show(xcb*1000.0),"\n"];
+output let {array [int] of string: X_INTRODUCED_799_ = ["revenue: ",show(revenue),"\n","milk price: ",show(milk*1000.0),"\n","butter price: ",show(butt*1000.0),"\n","cheese 1 price: ",show(cha*1000.0),"\n","cheese 2 price: ",show(chb*1000.0),"\n","milk prod: ",show(xm*1000.0),"\n","butter prod: ",show(xb*1000.0),"\n","cheese 1 prod: ",show(xca*1000.0),"\n","cheese 2 prod: ",show(xcb*1000.0),"\n"]} in (X_INTRODUCED_799_);
 float: xcb;
 float: xca;
 float: xb;

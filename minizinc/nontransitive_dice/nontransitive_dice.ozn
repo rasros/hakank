@@ -1,4 +1,4 @@
-output (([((((((((((("max_val: "++show(max_val))++"\n")++"max_win: ")++show(max_win))++"\n")++"gap    : ")++show(gap))++"\n")++"gap_sum: ")++show(gap_sum))++"\n")++"comp:"]++[(((if j==1 then "\n" else " " endif++show_int(2,comp[i,j]))++" (")++show_float(2,2,int2float(100*comp[i,j] div sum([comp[i,k] | k in 1..2]))))++"%) " | i in 0..m-1, j in 1..2])++["\nDice: "])++[if j==1 then "\n" else " " endif++show_int(2,dice[i,j]) | i in 1..m, j in 1..n];
+output let {array [int] of string: X_INTRODUCED_997_ = (([((((((((((("max_val: "++show(max_val))++"\n")++"max_win: ")++show(max_win))++"\n")++"gap    : ")++show(gap))++"\n")++"gap_sum: ")++show(gap_sum))++"\n")++"comp:"]++[(((if j==1 then "\n" else " " endif++show_int(2,comp[i,j]))++" (")++show_float(2,2,int2float(100*comp[i,j] div sum([comp[i,k] | k in 1..2]))))++"%) " | i in 0..m-1, j in 1..2])++["\nDice: "])++[if j==1 then "\n" else " " endif++show_int(2,dice[i,j]) | i in 1..m, j in 1..n]} in (X_INTRODUCED_997_);
 int: n = 6;
 int: max_val;
 int: max_win;

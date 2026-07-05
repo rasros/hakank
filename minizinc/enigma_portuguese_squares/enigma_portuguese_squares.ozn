@@ -1,4 +1,4 @@
-output ["square_root: ",show(square_root),"\n","x: ",show(x),"\n"];
+output let {array [int] of string: X_INTRODUCED_33_ = ["square_root: ",show(square_root),"\n","x: ",show(x),"\n"]} in (X_INTRODUCED_33_);
 int: C;
 int: V;
 int: N;

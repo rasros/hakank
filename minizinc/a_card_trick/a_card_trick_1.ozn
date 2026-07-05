@@ -1,4 +1,4 @@
-output (["suites:",show(suites),"\n","values:",show(values),"\n"]++[(((if j==1 then "\n" else "" endif++show(suites_s[fix(suites[i,j])]))++"")++show(values_s[fix(values[i,j])]))++" " | i in 1..rows, j in 1..columns])++["\n"];
+output let {array [int] of string: X_INTRODUCED_3433_ = (["suites:",show(suites),"\n","values:",show(values),"\n"]++[(((if j==1 then "\n" else "" endif++show(suites_s[fix(suites[i,j])]))++"")++show(values_s[fix(values[i,j])]))++" " | i in 1..rows, j in 1..columns])++["\n"]} in (X_INTRODUCED_3433_);
 int: columns = 13;
 int: rows = 4;
 int: num_values = 13;

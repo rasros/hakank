@@ -1,4 +1,4 @@
-output ["color      : ",show([red,green,ivory,yellow,blue]),"\n","nationality: ",show([englishman,spaniard,ukrainian,norwegian,japanese]),"\n","animal     : ",show([dog,snail,fox,horse,zebra]),"\n","drinks     : ",show([coffee,tea,milk,orange_juice,water]),"\n","brand      : ",show([old_gold,kool,chesterfield,lucky_strike,parliament]),"\n"];
+output let {array [int] of string: X_INTRODUCED_55_ = ["color      : ",show([red,green,ivory,yellow,blue]),"\n","nationality: ",show([englishman,spaniard,ukrainian,norwegian,japanese]),"\n","animal     : ",show([dog,snail,fox,horse,zebra]),"\n","drinks     : ",show([coffee,tea,milk,orange_juice,water]),"\n","brand      : ",show([old_gold,kool,chesterfield,lucky_strike,parliament]),"\n"]} in (X_INTRODUCED_55_);
 int: parliament = japanese;
 int: lucky_strike;
 int: chesterfield;

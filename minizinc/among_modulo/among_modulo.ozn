@@ -1,4 +1,4 @@
-output [(((((((((("x: "++show(x))++"\n")++"nvar: ")++show(nvar))++"\n")++"remainder: ")++show(remainder))++"\n")++"quotient: ")++show(quotient))++"\n"];
+output let {array [int] of string: X_INTRODUCED_53_ = [(((((((((("x: "++show(x))++"\n")++"nvar: ")++show(nvar))++"\n")++"remainder: ")++show(remainder))++"\n")++"quotient: ")++show(quotient))++"\n"]} in (X_INTRODUCED_53_);
 array [1..5] of int: x = [4,5,8,4,1];
 int: nvar;
 int: remainder = 0;

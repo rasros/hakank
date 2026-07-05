@@ -1,4 +1,4 @@
-output ["portrait    : ",show(portrait),"\n","inscriptions: ",show(inscriptions),"\n"]++[if fix(portrait[i]) then ("\nThe portrait is in the "++show(boxes[i]))++" casket." else "" endif | i in 1..3];
+output let {array [int] of string: X_INTRODUCED_40_ = ["portrait    : ",show(portrait),"\n","inscriptions: ",show(inscriptions),"\n"]++[if fix(portrait[i]) then ("\nThe portrait is in the "++show(boxes[i]))++" casket." else "" endif | i in 1..3]} in (X_INTRODUCED_40_);
 array [1..3] of bool: inscriptions;
 array [1..3] of bool: portrait;
 array [1..3] of string: boxes = ["Gold","Silver","Lead"];

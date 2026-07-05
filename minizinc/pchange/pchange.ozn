@@ -1,4 +1,4 @@
-output (["nsold: ",show(nsold),"\n","p:     ",show(p)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in M, j in N])++["\n"];
+output let {array [int] of string: X_INTRODUCED_26_ = (["nsold: ",show(nsold),"\n","p:     ",show(p)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in M, j in N])++["\n"]} in (X_INTRODUCED_26_);
 set of int: N = 1..2;
 array [N] of int: p;
 set of int: M = 1..3;

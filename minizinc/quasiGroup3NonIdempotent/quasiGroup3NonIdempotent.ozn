@@ -1,4 +1,4 @@
-output ((["\nqgDiagonal: ",show(qgDiagonal)]++["\nquasiGroup: "])++[if col==0 then "\n" else " " endif++show(quasiGroup[row,col]) | row,col in nDomain])++["\n"];
+output let {array [int] of string: X_INTRODUCED_101_ = ((["\nqgDiagonal: ",show(qgDiagonal)]++["\nquasiGroup: "])++[if col==0 then "\n" else " " endif++show(quasiGroup[row,col]) | row,col in nDomain])++["\n"]} in (X_INTRODUCED_101_);
 set of int: nDomain = 0..3;
 array [1..4] of int: X_INTRODUCED_33_;
 array [nDomain] of int: qgDiagonal = array1d(0..3,X_INTRODUCED_33_);

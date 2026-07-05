@@ -1,4 +1,4 @@
-output ([(((((("tot_dist: "++show(tot_dist))++"\n")++"bridges: ")++show(x))++"\n")++"\n")++"Distances:\n"]++[let {array [1..num_bridges_to_build] of int: bb = [fix(dist1[p,fix(x[b])])+1+fix(dist2[p,x[b]]) | b in 1..num_bridges_to_build], int: min_b = min(bb)} in ((((((((show(str[p])++": ")++show(fix(min_b)))++" using bridge ")++show(b_ix[p]))++" (at row ")++show(bridges[x[b_ix[p]]]))++")")++"\n") | p in 1..num_p])++["\n"];
+output let {array [int] of string: X_INTRODUCED_115_ = ([(((((("tot_dist: "++show(tot_dist))++"\n")++"bridges: ")++show(x))++"\n")++"\n")++"Distances:\n"]++[let {array [1..num_bridges_to_build] of int: bb = [fix(dist1[p,fix(x[b])])+1+fix(dist2[p,x[b]]) | b in 1..num_bridges_to_build], int: min_b = min(bb)} in ((((((((show(str[p])++": ")++show(fix(min_b)))++" using bridge ")++show(b_ix[p]))++" (at row ")++show(bridges[x[b_ix[p]]]))++")")++"\n") | p in 1..num_p])++["\n"]} in (X_INTRODUCED_115_);
 int: tot_dist;
 int: num_bridges_to_build = 2;
 int: num_b = 4;

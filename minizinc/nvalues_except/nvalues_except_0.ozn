@@ -1,4 +1,4 @@
-output [((((((("variables: "++show(variables))++"\n")++"relop: ")++show(relop))++"\n")++"limitx: ")++show(limitx))++"\n"];
+output let {array [int] of string: X_INTRODUCED_9_ = [((((((("variables: "++show(variables))++"\n")++"relop: ")++show(relop))++"\n")++"limitx: ")++show(limitx))++"\n"]} in (X_INTRODUCED_9_);
 int: n = 6;
 array [1..n] of int: variables = [4,5,5,4,0,1];
 int: relop = 0;

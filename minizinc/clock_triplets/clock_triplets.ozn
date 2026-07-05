@@ -1,4 +1,4 @@
-output ["triplet_sum: ",show(triplet_sum),"\n","       ",show(x[0]),"\n","     ",show(x[11]),"    ",show(x[1]),"\n","   ",show(x[10]),"       ",show(x[2]),"\n","  ",show(x[9]),"         ",show(x[3]),"\n","   ",show(x[8]),"        ",show(x[4]),"\n","     ",show(x[7]),"    ",show(x[5]),"\n","       ",show(x[6]),"\n"]++[("x: "++show(x))++"\n"];
+output let {array [int] of string: X_INTRODUCED_45_ = ["triplet_sum: ",show(triplet_sum),"\n","       ",show(x[0]),"\n","     ",show(x[11]),"    ",show(x[1]),"\n","   ",show(x[10]),"       ",show(x[2]),"\n","  ",show(x[9]),"         ",show(x[3]),"\n","   ",show(x[8]),"        ",show(x[4]),"\n","     ",show(x[7]),"    ",show(x[5]),"\n","       ",show(x[6]),"\n"]++[("x: "++show(x))++"\n"]} in (X_INTRODUCED_45_);
 array [1..12] of int: X_INTRODUCED_16_;
 array [0..11] of int: x = array1d(0..11,X_INTRODUCED_16_);
 int: triplet_sum;

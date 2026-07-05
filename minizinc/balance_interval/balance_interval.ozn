@@ -1,4 +1,4 @@
-output ["x: ",show(x),"\n","bal: ",show(bal),"\n"];
+output let {array [int] of string: X_INTRODUCED_127_ = ["x: ",show(x),"\n","bal: ",show(bal),"\n"]} in (X_INTRODUCED_127_);
 int: bal = 3;
 int: n = 5;
 array [1..n] of int: x;

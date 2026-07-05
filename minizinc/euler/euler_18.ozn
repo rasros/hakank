@@ -1,4 +1,4 @@
-output ["\ntotal: ",show(total),"\n","x: ",show(x),"\n"]++[show(triangle[i,x[i]])++" " | i in 1..n];
+output let {array [int] of string: X_INTRODUCED_83_ = ["\ntotal: ",show(total),"\n","x: ",show(x),"\n"]++[show(triangle[i,x[i]])++" " | i in 1..n]} in (X_INTRODUCED_83_);
 int: n = 15;
 array [1..n] of int: x;
 int: total;

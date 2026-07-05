@@ -1,4 +1,4 @@
-output [show([m,p,t,i,m2,p2,t2])];
+output let {array [int] of string: X_INTRODUCED_18_ = [show([m,p,t,i,m2,p2,t2])]} in (X_INTRODUCED_18_);
 int: t2;
 int: p2;
 int: m2;

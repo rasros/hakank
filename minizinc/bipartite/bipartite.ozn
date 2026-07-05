@@ -1,4 +1,4 @@
-output ["s: ",show(s),"\n","b: ",show(b),"\n"];
+output let {array [int] of string: X_INTRODUCED_160_ = ["s: ",show(s),"\n","b: ",show(b),"\n"]} in (X_INTRODUCED_160_);
 int: n = 6;
 array [1..2] of set of int: b;
 array [1..n] of set of int: s;

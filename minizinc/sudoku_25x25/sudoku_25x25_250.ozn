@@ -1,4 +1,4 @@
-output [((if j==1 then "\n" else " " endif++show(Vars[25*(i-1)+j]))++if i mod 5==0 /\ j==25 then "\n" else "" endif)++if j mod 5==0 then " " else "" endif | i,j in 1..25];
+output let {array [int] of string: X_INTRODUCED_91_ = [((if j==1 then "\n" else " " endif++show(Vars[25*(i-1)+j]))++if i mod 5==0 /\ j==25 then "\n" else "" endif)++if j mod 5==0 then " " else "" endif | i,j in 1..25]} in (X_INTRODUCED_91_);
 int: Y55 = 6;
 int: Y54;
 int: Y53;

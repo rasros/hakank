@@ -1,4 +1,4 @@
-output (((["\nz: ",show(z),"\n","x: "]++[if a==1 then "\n" else " " endif++show(x[i,a]) | i in J, a in M])++["\nY:"])++[(if a==1 /\ j==1 then "\n" else "" endif++if a==1 then "\n" else " " endif)++show(Y[i,j,a]) | i,j in J, a in M])++["\n"];
+output let {array [int] of string: X_INTRODUCED_1202_ = (((["\nz: ",show(z),"\n","x: "]++[if a==1 then "\n" else " " endif++show(x[i,a]) | i in J, a in M])++["\nY:"])++[(if a==1 /\ j==1 then "\n" else "" endif++if a==1 then "\n" else " " endif)++show(Y[i,j,a]) | i,j in J, a in M])++["\n"]} in (X_INTRODUCED_1202_);
 int: z;
 set of int: M = 1..6;
 set of int: J = 1..6;

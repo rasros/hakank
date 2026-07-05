@@ -1,4 +1,4 @@
-output [("gifts: "++show(gifts))++"\n","A B C D"]++[if i==1 then "\n" else " " endif++show(x[t,i]) | t in 1..num_steps, i in 1..n];
+output let {array [int] of string: X_INTRODUCED_51_ = [("gifts: "++show(gifts))++"\n","A B C D"]++[if i==1 then "\n" else " " endif++show(x[t,i]) | t in 1..num_steps, i in 1..n]} in (X_INTRODUCED_51_);
 int: num_gifts = 4;
 array [1..num_gifts] of int: gifts;
 int: n = 4;

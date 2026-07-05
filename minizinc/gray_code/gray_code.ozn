@@ -1,4 +1,4 @@
-output [(("\nx: "++show(x))++"\nnum_bits: ")++show(num_bits),"\n"];
+output let {array [int] of string: X_INTRODUCED_417_ = [(("\nx: "++show(x))++"\nnum_bits: ")++show(num_bits),"\n"]} in (X_INTRODUCED_417_);
 int: m = 16;
 array [1..m] of int: x;
 array [1..m] of int: num_bits;

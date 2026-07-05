@@ -1,4 +1,4 @@
-output ["z: "++format(z)++"\nqueens: "++format(queens)++"\nknights: "++format(knights)++"\n"]++[if j==1 then "\n" else " " endif++if fix(x[i,j])==1 then "Q" elseif fix(x[i,j])==2 then "K" else "_" endif | i,j in 1..n];
+output let {array [int] of string: X_INTRODUCED_1496_ = ["z: "++format(z)++"\nqueens: "++format(queens)++"\nknights: "++format(knights)++"\n"]++[if j==1 then "\n" else " " endif++if fix(x[i,j])==1 then "Q" elseif fix(x[i,j])==2 then "K" else "_" endif | i,j in 1..n]} in (X_INTRODUCED_1496_);
 int: n = 8;
 array [1..64] of int: X_INTRODUCED_16_;
 array [1..n,1..n] of int: x = array2d(1..8,1..8,X_INTRODUCED_16_);

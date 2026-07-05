@@ -1,4 +1,4 @@
-output (([(((("z: "++show(z))++"\n")++"x: ")++show(x))++"\n"]++["person: donor\n"])++[if fix(x[i]==0) then show_int(3,i)++":   -\n" else ((show_int(3,i)++": ")++show_int(3,x[i]))++"\n" endif | i in 1..num_people])++[("\nz: "++show(z))++"\n"];
+output let {array [int] of string: X_INTRODUCED_160_ = (([(((("z: "++show(z))++"\n")++"x: ")++show(x))++"\n"]++["person: donor\n"])++[if fix(x[i]==0) then show_int(3,i)++":   -\n" else ((show_int(3,i)++": ")++show_int(3,x[i]))++"\n" endif | i in 1..num_people])++[("\nz: "++show(z))++"\n"]} in (X_INTRODUCED_160_);
 int: num_people = 8;
 array [1..num_people] of int: x;
 int: z = sum([bool2int(x[i] > 0) | i in 1..num_people]);

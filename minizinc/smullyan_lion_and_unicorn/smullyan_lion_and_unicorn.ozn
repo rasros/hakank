@@ -1,2 +1,2 @@
-output ["today: ",show(today),"\n"];
+output let {array [int] of string: X_INTRODUCED_24_ = ["today: ",show(today),"\n"]} in (X_INTRODUCED_24_);
 int: today;

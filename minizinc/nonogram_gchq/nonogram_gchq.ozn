@@ -1,4 +1,4 @@
-output [if j==1 then "\n" else "" endif++if fix(x[i,j])==1 then " " else "#" endif | i in 1..rows, j in 1..cols]++["\n"];
+output let {array [int] of string: X_INTRODUCED_844_ = [if j==1 then "\n" else "" endif++if fix(x[i,j])==1 then " " else "#" endif | i in 1..rows, j in 1..cols]++["\n"]} in (X_INTRODUCED_844_);
 int: cols = 25;
 int: rows = 25;
 array [1..625] of int: X_INTRODUCED_16_;

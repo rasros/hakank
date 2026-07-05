@@ -1,4 +1,4 @@
-output ["x: ",show(x),"\n","x_t: ",show(x_t),"\n","Who did it: ",show(join(", ",[names[i] | i in 1..n where fix(x[i])==1])),"\n"];
+output let {array [int] of string: X_INTRODUCED_30_ = ["x: ",show(x),"\n","x_t: ",show(x_t),"\n","Who did it: ",show(join(", ",[names[i] | i in 1..n where fix(x[i])==1])),"\n"]} in (X_INTRODUCED_30_);
 int: n = 6;
 array [1..n] of string: names = ["Artie","Bill","Crackitt","Dodgy","Edgy","Fingers"];
 int: fingers;

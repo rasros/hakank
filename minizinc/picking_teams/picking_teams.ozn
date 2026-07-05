@@ -1,4 +1,4 @@
-output ([if n<=100 then ("s: "++show(s))++"\n" else "" endif]++[(((((((((("n: "++show(n))++"\n")++"sum(s): ")++show(sum(s)))++"\n")++"x: ")++show(x))++"\n")++"diff: ")++show(d))++"\n"])++[((((("team"++show(j))++": ")++show([s[i] | i in 1..n where fix(x[i])==j]))++"  sum: ")++show(sum([s[i] | i in 1..n where fix(x[i])==j])))++"\n" | j in 1..2];
+output let {array [int] of string: X_INTRODUCED_800_ = ([if n<=100 then ("s: "++show(s))++"\n" else "" endif]++[(((((((((("n: "++show(n))++"\n")++"sum(s): ")++show(sum(s)))++"\n")++"x: ")++show(x))++"\n")++"diff: ")++show(d))++"\n"])++[((((("team"++show(j))++": ")++show([s[i] | i in 1..n where fix(x[i])==j]))++"  sum: ")++show(sum([s[i] | i in 1..n where fix(x[i])==j])))++"\n" | j in 1..2]} in (X_INTRODUCED_800_);
 int: n = 100;
 array [1..n] of int: s = [35,52,17,26,90,55,57,54,41,9,75,24,17,23,62,74,100,67,40,48,7,6,44,19,16,14,2,66,70,2,43,45,76,53,90,12,88,96,30,30,36,93,74,1,52,45,38,7,24,96,17,21,12,12,23,90,77,64,37,79,67,62,24,11,74,82,51,17,72,18,37,94,43,44,32,86,94,33,97,27,38,38,29,92,35,82,22,66,80,8,62,72,25,13,94,42,51,31,69,66];
 array [1..n] of int: x;

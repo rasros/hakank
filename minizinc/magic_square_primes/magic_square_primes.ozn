@@ -1,4 +1,4 @@
-output ["total: "++show(total)]++[if j==1 then "\n" else " " endif++show_int(3,x[i,j]) | i,j in 1..n];
+output let {array [int] of string: X_INTRODUCED_57_ = ["total: "++show(total)]++[if j==1 then "\n" else " " endif++show_int(3,x[i,j]) | i,j in 1..n]} in (X_INTRODUCED_57_);
 int: n = 5;
 int: total;
 array [1..25] of int: X_INTRODUCED_16_;

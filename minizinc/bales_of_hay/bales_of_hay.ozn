@@ -1,3 +1,3 @@
-output [((("bale"++show(i))++": ")++show(bales[i]))++"\n" | i in 1..n]++["\n"];
+output let {array [int] of string: X_INTRODUCED_73_ = [((("bale"++show(i))++": ")++show(bales[i]))++"\n" | i in 1..n]++["\n"]} in (X_INTRODUCED_73_);
 int: n = 5;
 array [1..n] of int: bales;

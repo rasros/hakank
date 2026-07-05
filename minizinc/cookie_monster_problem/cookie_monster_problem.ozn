@@ -1,4 +1,4 @@
-output ([(((("Num_moves: "++show(num_moves))++"\n")++"Cookies picked: ")++show([z[m] | m in 2..fix(num_moves)+1]))++"\n"]++["jars:             "++show(jars)])++[if i==1 then ("\nTake "++show_int(2,z[m]))++" cookie(s): " else " " endif++show(x[m,i]) | m in 2..max_moves, i in 1..n];
+output let {array [int] of string: X_INTRODUCED_219_ = ([(((("Num_moves: "++show(num_moves))++"\n")++"Cookies picked: ")++show([z[m] | m in 2..fix(num_moves)+1]))++"\n"]++["jars:             "++show(jars)])++[if i==1 then ("\nTake "++show_int(2,z[m]))++" cookie(s): " else " " endif++show(x[m,i]) | m in 2..max_moves, i in 1..n]} in (X_INTRODUCED_219_);
 int: max_moves = 5;
 int: num_moves;
 int: n = 6;

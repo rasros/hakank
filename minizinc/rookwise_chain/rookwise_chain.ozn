@@ -1,4 +1,4 @@
-output (["\nrow_sums: ",show(row_sums)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_273_ = (["\nrow_sums: ",show(row_sums)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..n])++["\n"]} in (X_INTRODUCED_273_);
 int: n = 3;
 array [1..n] of int: row_sums;
 array [1..9] of int: X_INTRODUCED_16_;

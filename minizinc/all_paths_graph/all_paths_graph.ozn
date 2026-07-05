@@ -1,4 +1,4 @@
-output [((("x: "++show(x))++"\n")++"path_len: ")++show(path_len)];
+output let {array [int] of string: X_INTRODUCED_640_ = [((("x: "++show(x))++"\n")++"path_len: ")++show(path_len)]} in (X_INTRODUCED_640_);
 set of int: N = 1..10;
 array [N] of int: x;
 int: path_len = sum([bool2int(x[i] > 0) | i in N]);

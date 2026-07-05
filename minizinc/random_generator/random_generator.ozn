@@ -1,4 +1,4 @@
-output [(((("rand: "++show(rand))++"\n")++"x   : ")++show(x))++"\n"];
+output let {array [int] of string: X_INTRODUCED_79_ = [(((("rand: "++show(rand))++"\n")++"x   : ")++show(x))++"\n"]} in (X_INTRODUCED_79_);
 int: n = 10;
 array [1..n] of int: rand;
 array [1..n] of int: x;

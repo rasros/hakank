@@ -1,4 +1,4 @@
-output [(((("x: "++show(x))++"\n")++"z: ")++show(z))++"\n"];
+output let {array [int] of string: X_INTRODUCED_60_ = [(((("x: "++show(x))++"\n")++"z: ")++show(z))++"\n"]} in (X_INTRODUCED_60_);
 int: num_edges = 15;
 array [1..num_edges] of int: x;
 array [1..num_edges] of int: c = [1,8,6,2,14,10,6,19,8,13,12,7,5,4,10];

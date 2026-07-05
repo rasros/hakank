@@ -1,4 +1,4 @@
-output (((((([(((((((((((("Freq : "++show(Freq))++"\n")++"ItemsetSize : ")++show(ItemsetSize))++"\n")++"Coverage: ")++show(Coverage))++"\n")++"Support: ")++show_float(2,2,int2float(fix(Support))/100.0))++" (")++show(Support))++")\n"]++["Items: "])++[if fix(Items[i])==1 then show(i)++" " else "" endif | i in 1..NrI])++["\nItems: "])++[if fix(Items[i])==1 then show(ItemStr[i])++" " else "" endif | i in 1..NrI])++["\nTrans: "])++[if fix(Trans[t])==1 then show(t)++" " else "" endif | t in 1..NrT])++["\n"];
+output let {array [int] of string: X_INTRODUCED_2685_ = (((((([(((((((((((("Freq : "++show(Freq))++"\n")++"ItemsetSize : ")++show(ItemsetSize))++"\n")++"Coverage: ")++show(Coverage))++"\n")++"Support: ")++show_float(2,2,int2float(fix(Support))/100.0))++" (")++show(Support))++")\n"]++["Items: "])++[if fix(Items[i])==1 then show(i)++" " else "" endif | i in 1..NrI])++["\nItems: "])++[if fix(Items[i])==1 then show(ItemStr[i])++" " else "" endif | i in 1..NrI])++["\nTrans: "])++[if fix(Trans[t])==1 then show(t)++" " else "" endif | t in 1..NrT])++["\n"]} in (X_INTRODUCED_2685_);
 int: Freq = 10;
 int: NrI = 10;
 int: ItemsetSize;

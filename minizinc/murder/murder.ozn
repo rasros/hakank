@@ -1,4 +1,4 @@
-output ["actions: ",show(actions),"\n","objects: ",show(objects),"\n","motives: ",show(motives),"\n"];
+output let {array [int] of string: X_INTRODUCED_17_ = ["actions: ",show(actions),"\n","objects: ",show(objects),"\n","motives: ",show(motives),"\n"]} in (X_INTRODUCED_17_);
 set of int: r = 1..5;
 int: hate;
 int: promotion = argue;

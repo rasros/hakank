@@ -1,4 +1,4 @@
-output [(((((("bal: "++show(bal))++"\n")++"x: ")++show(x))++"\n")++"gcc: ")++show(gcc)];
+output let {array [int] of string: X_INTRODUCED_156_ = [(((((("bal: "++show(bal))++"\n")++"x: ")++show(x))++"\n")++"gcc: ")++show(gcc)]} in (X_INTRODUCED_156_);
 int: bal = 3;
 int: n = 5;
 array [1..n] of int: x;

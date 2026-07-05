@@ -1,3 +1,3 @@
-output ["chain: "++show(chain)];
+output let {array [int] of string: X_INTRODUCED_7868_ = ["chain: "++show(chain)]} in (X_INTRODUCED_7868_);
 int: n = 8;
 array [1..n] of int: chain;

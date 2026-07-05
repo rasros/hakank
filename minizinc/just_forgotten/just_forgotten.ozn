@@ -1,2 +1,2 @@
-output ["x: "++show(x)];
+output let {array [int] of string: X_INTRODUCED_98_ = ["x: "++show(x)]} in (X_INTRODUCED_98_);
 array [1..10] of int: x;

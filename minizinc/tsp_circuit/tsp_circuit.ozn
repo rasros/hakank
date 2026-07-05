@@ -1,4 +1,4 @@
-output ["x: ",show(x),"\n",show(distance)];
+output let {array [int] of string: X_INTRODUCED_82_ = ["x: ",show(x),"\n",show(distance)]} in (X_INTRODUCED_82_);
 int: n = 16;
 array [1..n] of int: d;
 int: distance = sum(d);

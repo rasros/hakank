@@ -1,4 +1,4 @@
-output [show([XB,XC,obj])];
+output let {array [int] of string: X_INTRODUCED_4_ = [show([XB,XC,obj])]} in (X_INTRODUCED_4_);
 float: XB;
 float: XC;
 float: obj = 25.0*XB+30.0*XC;

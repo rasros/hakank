@@ -1,5 +1,5 @@
-output [((((((("variables1: "++show(variables1))++"\n")++"variables2: ")++show(variables2))++"\n")++"c: ")++show(c))++"\n"];
+output let {array [int] of string: X_INTRODUCED_72_ = [((((((("variables1: "++show(variables1))++"\n")++"variables2: ")++show(variables2))++"\n")++"c: ")++show(c))++"\n"]} in (X_INTRODUCED_72_);
 int: n = 6;
 array [1..n] of int: variables1;
 array [1..n] of int: variables2;
-int: c;
+int: c = 4;

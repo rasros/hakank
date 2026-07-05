@@ -1,4 +1,4 @@
-output [show(a)++"\n"];
+output let {array [int] of string: X_INTRODUCED_34_ = [show(a)++"\n"]} in (X_INTRODUCED_34_);
 int: x5;
 int: x4;
 int: x3;

@@ -1,4 +1,4 @@
-output ["shoes [ecru_espadrilles, fuchsia_flats, purple_pumps, suede_sandals] ",show(shoes),"\n","shops [Foot_Farm, Heels_in_a_Handcart, The_Shoe_Palace, Tootsies]",show(shops),"\n"];
+output let {array [int] of string: X_INTRODUCED_20_ = ["shoes [ecru_espadrilles, fuchsia_flats, purple_pumps, suede_sandals] ",show(shoes),"\n","shops [Foot_Farm, Heels_in_a_Handcart, The_Shoe_Palace, Tootsies]",show(shops),"\n"]} in (X_INTRODUCED_20_);
 int: Tootsies;
 int: The_Shoe_Palace;
 int: Heels_in_a_Handcart = fuchsia_flats;

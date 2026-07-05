@@ -1,4 +1,4 @@
-output [(((("gcd: "++show([a,b,gg]))++"\n")++"lcm: ")++show([a,b,ll]))++"\n"];
+output let {array [int] of string: X_INTRODUCED_1377_ = [(((("gcd: "++show([a,b,gg]))++"\n")++"lcm: ")++show([a,b,ll]))++"\n"]} in (X_INTRODUCED_1377_);
 int: gg;
 int: b;
 int: a;

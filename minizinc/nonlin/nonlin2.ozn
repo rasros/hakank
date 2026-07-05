@@ -1,4 +1,4 @@
-output [show([L,w,h,wh]),"\n","[w,h,L/4]: ",show([w,h,L div 4])];
+output let {array [int] of string: X_INTRODUCED_6_ = [show([L,w,h,wh]),"\n","[w,h,L/4]: ",show([w,h,L div 4])]} in (X_INTRODUCED_6_);
 int: L;
 int: h;
 int: w;

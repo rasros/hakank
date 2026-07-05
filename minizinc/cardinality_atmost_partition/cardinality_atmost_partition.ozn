@@ -1,4 +1,4 @@
-output [(((((("variables: "++show(variables))++"\n")++"nvar: ")++show(nvar))++"\n")++"partitions: ")++show(partitions)];
+output let {array [int] of string: X_INTRODUCED_158_ = [(((((("variables: "++show(variables))++"\n")++"nvar: ")++show(nvar))++"\n")++"partitions: ")++show(partitions)]} in (X_INTRODUCED_158_);
 int: n = 6;
 array [1..n] of int: variables = [2,3,7,1,6,0];
 int: nvar = 2;

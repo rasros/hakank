@@ -1,4 +1,4 @@
-output ["x: ",show(x),"\n","kind:  ",show(kind),"\n","lower: ",show(lower),"\n","upper: ",show(upper),"\n","sum_upper: ",show(sum_upper),"\n"]++[(if j==1 then "\n" else " " endif++if j==1 then ("kind "++show(kind[i]))++": " else "" endif)++show(x[i,j]) | i in 1..num_shape_groups, j in 1..k];
+output let {array [int] of string: X_INTRODUCED_1216_ = ["x: ",show(x),"\n","kind:  ",show(kind),"\n","lower: ",show(lower),"\n","upper: ",show(upper),"\n","sum_upper: ",show(sum_upper),"\n"]++[(if j==1 then "\n" else " " endif++if j==1 then ("kind "++show(kind[i]))++": " else "" endif)++show(x[i,j]) | i in 1..num_shape_groups, j in 1..k]} in (X_INTRODUCED_1216_);
 int: k = 2;
 array [1..k] of int: upper;
 int: sum_upper = sum(upper);

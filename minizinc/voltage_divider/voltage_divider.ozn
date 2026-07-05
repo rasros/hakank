@@ -1,4 +1,4 @@
-output [show([V,I,R1,R2,VD,ID])];
+output let {array [int] of string: X_INTRODUCED_17_ = [show([V,I,R1,R2,VD,ID])]} in (X_INTRODUCED_17_);
 float: ID = 0.1;
 float: VD;
 float: R2;

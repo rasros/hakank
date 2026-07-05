@@ -1,3 +1,3 @@
-output [(((("enigma: "++show(enigma))++"\n")++"igmaen: ")++show(igmaen))++"\n"];
+output let {array [int] of string: X_INTRODUCED_26_ = [(((("enigma: "++show(enigma))++"\n")++"igmaen: ")++show(igmaen))++"\n"]} in (X_INTRODUCED_26_);
 int: enigma;
 int: igmaen;

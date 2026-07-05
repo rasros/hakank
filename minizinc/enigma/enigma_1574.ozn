@@ -1,4 +1,4 @@
-output [show([year,month,day])];
+output let {array [int] of string: X_INTRODUCED_67_ = [show([year,month,day])]} in (X_INTRODUCED_67_);
 int: day;
 int: month;
 int: year;

@@ -1,4 +1,4 @@
-output (((((["x: "]++[if j==1 then "\n" else " " endif++show(str[fix(x[i,j])]) | i,j in 1..n])++["\ngcc_row:"])++[if j==1 then "\n" else " " endif++show(gcc_rows[i,j]) | i in 1..n, j in 1..m])++["\ngcc_col:"])++[if j==1 then "\n" else " " endif++show(gcc_cols[i,j]) | i in 1..n, j in 1..m])++["\n"];
+output let {array [int] of string: X_INTRODUCED_202_ = (((((["x: "]++[if j==1 then "\n" else " " endif++show(str[fix(x[i,j])]) | i,j in 1..n])++["\ngcc_row:"])++[if j==1 then "\n" else " " endif++show(gcc_rows[i,j]) | i in 1..n, j in 1..m])++["\ngcc_col:"])++[if j==1 then "\n" else " " endif++show(gcc_cols[i,j]) | i in 1..n, j in 1..m])++["\n"]} in (X_INTRODUCED_202_);
 int: m = 3;
 array [1..m] of string: str = ["A","B","C"];
 int: n = 4;

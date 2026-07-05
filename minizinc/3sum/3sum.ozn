@@ -1,4 +1,4 @@
-output [((((("nums: "++show(nums))++"\n")++"x   : ")++show(x))++"\n")++show([i | i in 1..n where fix(x[i])==1])];
+output let {array [int] of string: X_INTRODUCED_27_ = [((((("nums: "++show(nums))++"\n")++"x   : ")++show(x))++"\n")++show([i | i in 1..n where fix(x[i])==1])]} in (X_INTRODUCED_27_);
 int: n = 9;
 array [1..n] of int: nums = [-1,6,8,9,10,-100,78,0,1];
 array [1..n] of int: x;

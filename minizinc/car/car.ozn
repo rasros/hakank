@@ -1,4 +1,4 @@
-output [(((("z: "++show(z))++"\n")++"slot: ")++show(slot))++"\n"]++[if j==1 then "\n" else " " endif++show(setup[i,j]) | i in Options, j in Slots];
+output let {array [int] of string: X_INTRODUCED_311_ = [(((("z: "++show(z))++"\n")++"slot: ")++show(slot))++"\n"]++[if j==1 then "\n" else " " endif++show(setup[i,j]) | i in Options, j in Slots]} in (X_INTRODUCED_311_);
 set of int: Slots = 1..10;
 set of int: Cars = 1..6;
 array [Slots] of int: slot;

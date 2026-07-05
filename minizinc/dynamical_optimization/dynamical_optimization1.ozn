@@ -1,4 +1,4 @@
-output [((((((("x: "++show(x))++"\n")++"u: ")++show(u))++"\n")++"cost: ")++show(cost))++"\n"];
+output let {array [int] of string: X_INTRODUCED_609_ = [((((((("x: "++show(x))++"\n")++"u: ")++show(u))++"\n")++"cost: ")++show(cost))++"\n"]} in (X_INTRODUCED_609_);
 int: Ng = 101;
 array [1..Ng] of float: x;
 array [1..Ng] of float: u;

@@ -1,4 +1,4 @@
-output [((((((("p: "++show(p))++"\n")++"mean_first_return_time: ")++show(mean_first_return_time))++"\n")++"tot_cost: ")++show(tot_cost))++"\n"];
+output let {array [int] of string: X_INTRODUCED_39_ = [((((((("p: "++show(p))++"\n")++"mean_first_return_time: ")++show(mean_first_return_time))++"\n")++"tot_cost: ")++show(tot_cost))++"\n"]} in (X_INTRODUCED_39_);
 int: n = 3;
 array [1..n] of float: p;
 array [1..n] of float: mean_first_return_time;

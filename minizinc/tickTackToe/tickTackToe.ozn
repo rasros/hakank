@@ -1,4 +1,4 @@
-output [((if i==0 /\ j==1 /\ k==1 then "\n\nGame:" else "" endif++if j==1 /\ k==1 then "\n" else "" endif)++if k==1 then "\n" else " " endif)++show(tickTackToe[i,j,k]) | i in STEPS0, j,k in LENGTH]++["\n"];
+output let {array [int] of string: X_INTRODUCED_464_ = [((if i==0 /\ j==1 /\ k==1 then "\n\nGame:" else "" endif++if j==1 /\ k==1 then "\n" else "" endif)++if k==1 then "\n" else " " endif)++show(tickTackToe[i,j,k]) | i in STEPS0, j,k in LENGTH]++["\n"]} in (X_INTRODUCED_464_);
 set of int: LENGTH = 1..3;
 set of int: STEPS0 = 0..7;
 array [1..72] of int: X_INTRODUCED_0_;

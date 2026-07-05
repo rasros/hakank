@@ -1,4 +1,4 @@
-output ["numNeeded: ",show(numNeeded),"\n",show(x),"\n"];
+output let {array [int] of string: X_INTRODUCED_38_ = ["numNeeded: ",show(numNeeded),"\n",show(x),"\n"]} in (X_INTRODUCED_38_);
 int: num_sets = 7;
 array [1..num_sets] of int: x;
 int: numNeeded = 4;

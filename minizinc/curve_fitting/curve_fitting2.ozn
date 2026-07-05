@@ -1,4 +1,4 @@
-output ["y = ",show(b),"*x + ",show(a)," Max deviation: ",show(z),"\n","u: ",show(u),"\n","v: ",show(v),"\n"];
+output let {array [int] of string: X_INTRODUCED_117_ = ["y = ",show(b),"*x + ",show(a)," Max deviation: ",show(z),"\n","u: ",show(u),"\n","v: ",show(v),"\n"]} in (X_INTRODUCED_117_);
 int: n = 19;
 array [1..n] of float: v;
 array [1..n] of float: u;

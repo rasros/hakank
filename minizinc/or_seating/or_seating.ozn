@@ -1,4 +1,4 @@
-output [((((((((((((("max_score: "++show(max_score))++"\n")++"total: ")++show(total))++"\n")++"x: ")++show(x))++"\n")++"z: ")++show(z))++"\n")++"s: ")++show(s))++"\n"]++["\n"];
+output let {array [int] of string: X_INTRODUCED_132_ = [((((((((((((("max_score: "++show(max_score))++"\n")++"total: ")++show(total))++"\n")++"x: ")++show(x))++"\n")++"z: ")++show(z))++"\n")++"s: ")++show(s))++"\n"]++["\n"]} in (X_INTRODUCED_132_);
 int: max_score = 92;
 int: n = 19;
 array [1..n] of int: s;

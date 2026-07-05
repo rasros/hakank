@@ -1,4 +1,4 @@
-output [((((((("x: "++show(x))++"\n")++"size_interval: ")++show(size_interval))++"\n")++"intervals: ")++show(intervals))++"\n"];
+output let {array [int] of string: X_INTRODUCED_55_ = [((((((("x: "++show(x))++"\n")++"size_interval: ")++show(size_interval))++"\n")++"intervals: ")++show(intervals))++"\n"]} in (X_INTRODUCED_55_);
 int: n = 3;
 array [1..n] of int: x;
 int: size_interval;

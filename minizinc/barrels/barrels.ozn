@@ -1,4 +1,4 @@
-output ((["barrels: ",show(barrels),"\n"]++[((((((("barrel "++show(b))++" (")++show_int(2,barrels[b]))++"): ")++show([contents[b,i,j] | i,j in 1..m]))++" op: ")++show(ops[fix(barrels_op[b])]))++"\n" | b in 1..n])++["barrels grid:"])++[((if j==1 then "\n" else " " endif++if j==1 /\ i mod 2==1 then "\n" else "" endif)++if j mod 2==1 then "  " else "" endif)++show(mat[i,j]) | i,j in 1..t];
+output let {array [int] of string: X_INTRODUCED_329_ = ((["barrels: ",show(barrels),"\n"]++[((((((("barrel "++show(b))++" (")++show_int(2,barrels[b]))++"): ")++show([contents[b,i,j] | i,j in 1..m]))++" op: ")++show(ops[fix(barrels_op[b])]))++"\n" | b in 1..n])++["barrels grid:"])++[((if j==1 then "\n" else " " endif++if j==1 /\ i mod 2==1 then "\n" else "" endif)++if j mod 2==1 then "  " else "" endif)++show(mat[i,j]) | i,j in 1..t]} in (X_INTRODUCED_329_);
 int: n = 9;
 array [1..n] of int: barrels;
 int: m = 2;

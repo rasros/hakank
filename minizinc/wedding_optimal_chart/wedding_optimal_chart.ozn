@@ -1,4 +1,4 @@
-output ((([("z: "++show(z))++"\n"]++[("\ntables:"++show(tables))++"\n"])++[((((show(j)++": ")++show(names[j]))++". Table ")++show(tables[j]))++"\n" | j in 1..m])++[if j==1 then ("\nTable "++show(i))++": " else "" endif++if fix(tables[j])==i then show(names2[j])++" " else "" endif | i in 1..n, j in 1..m])++["\n"];
+output let {array [int] of string: X_INTRODUCED_1157_ = ((([("z: "++show(z))++"\n"]++[("\ntables:"++show(tables))++"\n"])++[((((show(j)++": ")++show(names[j]))++". Table ")++show(tables[j]))++"\n" | j in 1..m])++[if j==1 then ("\nTable "++show(i))++": " else "" endif++if fix(tables[j])==i then show(names2[j])++" " else "" endif | i in 1..n, j in 1..m])++["\n"]} in (X_INTRODUCED_1157_);
 int: m = 17;
 int: z;
 int: n = 5;

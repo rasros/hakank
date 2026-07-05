@@ -1,4 +1,4 @@
-output [(((((((((((("needed     : "++show(needed))++"\n")++"total_cost : ")++show(total_cost))++"\n")++"x          : ")++show(x))++"\n")++"working    : ")++show(working))++"\n")++"num_workers: ")++show(sum([x[i] | i in 1..days]))]++["\n"];
+output let {array [int] of string: X_INTRODUCED_54_ = [(((((((((((("needed     : "++show(needed))++"\n")++"total_cost : ")++show(total_cost))++"\n")++"x          : ")++show(x))++"\n")++"working    : ")++show(working))++"\n")++"num_workers: ")++show(sum([x[i] | i in 1..days]))]++["\n"]} in (X_INTRODUCED_54_);
 int: days = 7;
 array [1..days] of int: needed = [4,5,5,10,12,12,2];
 int: work_days = 4;

@@ -1,4 +1,4 @@
-output [(((("letters: "++show(letters))++"\n")++"days: ")++show(days))++"\n"];
+output let {array [int] of string: X_INTRODUCED_75_ = [(((("letters: "++show(letters))++"\n")++"days: ")++show(days))++"\n"]} in (X_INTRODUCED_75_);
 int: a;
 int: s;
 int: f;

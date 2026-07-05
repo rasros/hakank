@@ -1,4 +1,4 @@
-output [if j==1 then "\n" else " " endif++show(x[i,j]) | i in fairy, j in color]++["\n"];
+output let {array [int] of string: X_INTRODUCED_86_ = [if j==1 then "\n" else " " endif++show(x[i,j]) | i in fairy, j in color]++["\n"]} in (X_INTRODUCED_86_);
 set of int: color = 1..9;
 set of int: fairy = 1..5;
 array [1..45] of int: X_INTRODUCED_0_;

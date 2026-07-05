@@ -1,4 +1,4 @@
-output [""++format(A)++"/"++format(B)++" + "++format(C)++"/"++format(D)++" + "++format(E)++" / "++format(F)++" = "++format(A)++"/"++format(B)++" * "++format(C)++"/"++format(D)++" * "++format(E)++" / "++format(F)++"\n",""++format(Addition)++" == "++format(Multiplication)++"  A/B:"++format(AB)++" C/D:"++format(CD)++" E/F:"++format(EF)++"\n"];
+output let {array [int] of string: X_INTRODUCED_33_ = [""++format(A)++"/"++format(B)++" + "++format(C)++"/"++format(D)++" + "++format(E)++" / "++format(F)++" = "++format(A)++"/"++format(B)++" * "++format(C)++"/"++format(D)++" * "++format(E)++" / "++format(F)++"\n",""++format(Addition)++" == "++format(Multiplication)++"  A/B:"++format(AB)++" C/D:"++format(CD)++" E/F:"++format(EF)++"\n"]} in (X_INTRODUCED_33_);
 int: A;
 int: B;
 int: C;

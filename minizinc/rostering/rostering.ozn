@@ -1,4 +1,4 @@
-output ["on_duty: ",show(on_duty),"\n","num_workdays: ",show(num_workdays),"\n","z: ",show(z),"\n"];
+output let {array [int] of string: X_INTRODUCED_292_ = ["on_duty: ",show(on_duty),"\n","num_workdays: ",show(num_workdays),"\n","z: ",show(z),"\n"]} in (X_INTRODUCED_292_);
 int: num_shifts = 3;
 int: mon = 1;
 int: sun = 7;

@@ -1,4 +1,4 @@
-output (["x: "++show(x)]++[((if j==1 then "\n" else " " endif++if fix(x[i])==j then show(j) else show("_") endif)++if j mod m==0 then " " else "" endif)++if i mod m==0 /\ j==n then "\n" else "" endif | i,j in 1..n])++[((if j==1 then "\n" else " " endif++show(y[i,j]))++if j mod m==0 then " " else "" endif)++if i mod m==0 /\ j==n then "\n" else "" endif | i,j in 1..n];
+output let {array [int] of string: X_INTRODUCED_58_ = (["x: "++show(x)]++[((if j==1 then "\n" else " " endif++if fix(x[i])==j then show(j) else show("_") endif)++if j mod m==0 then " " else "" endif)++if i mod m==0 /\ j==n then "\n" else "" endif | i,j in 1..n])++[((if j==1 then "\n" else " " endif++show(y[i,j]))++if j mod m==0 then " " else "" endif)++if i mod m==0 /\ j==n then "\n" else "" endif | i,j in 1..n]} in (X_INTRODUCED_58_);
 int: n = 4;
 array [1..n] of int: x;
 int: m = 2;

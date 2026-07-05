@@ -1,4 +1,4 @@
-output ["varsnow: ",show(varsnow),"\n","lastyear: ",show(lastyear),"\n","now:",show(now),"\n"];
+output let {array [int] of string: X_INTRODUCED_61_ = ["varsnow: ",show(varsnow),"\n","lastyear: ",show(lastyear),"\n","now:",show(now),"\n"]} in (X_INTRODUCED_61_);
 int: now;
 int: lastyear;
 int: n = 7;

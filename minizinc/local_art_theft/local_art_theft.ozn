@@ -1,4 +1,4 @@
-output [(((("b     : "++show(b))++"\n")++"counts: ")++show(counts))++"\n"]++[if fix(b[i])==true then show(s[i])++" committed the crime.\n" else "" endif | i in 1..n];
+output let {array [int] of string: X_INTRODUCED_53_ = [(((("b     : "++show(b))++"\n")++"counts: ")++show(counts))++"\n"]++[if fix(b[i])==true then show(s[i])++" committed the crime.\n" else "" endif | i in 1..n]} in (X_INTRODUCED_53_);
 int: n = 6;
 array [1..n] of bool: b;
 array [1..n] of int: counts;

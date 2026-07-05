@@ -1,4 +1,4 @@
-output (["\nvalue in A: ",show(A),"\n","value in B: ",show(B)]++[(if j==1 then "\n" else " " endif++show(x[i,j]))++if j==2 then ((" A:"++show(A[x[i,1]]))++" B:")++show(A[x[i,1]]) else " " endif | i in 1..n, j in 1..2])++["\n"];
+output let {array [int] of string: X_INTRODUCED_34_ = (["\nvalue in A: ",show(A),"\n","value in B: ",show(B)]++[(if j==1 then "\n" else " " endif++show(x[i,j]))++if j==2 then ((" A:"++show(A[x[i,1]]))++" B:")++show(A[x[i,1]]) else " " endif | i in 1..n, j in 1..2])++["\n"]} in (X_INTRODUCED_34_);
 int: B5;
 int: B4;
 int: B3;

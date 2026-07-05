@@ -1,2 +1,2 @@
-output [show(x)];
+output let {array [int] of string: X_INTRODUCED_4_ = [show(x)]} in (X_INTRODUCED_4_);
 array [1..2] of int: x;

@@ -1,4 +1,4 @@
-output [(((((("value: "++show(value))++"\n")++"sel: ")++show(sel))++"\n")++"sum_coins: ")++show(sum_coins)];
+output let {array [int] of string: X_INTRODUCED_1325_ = [(((((("value: "++show(value))++"\n")++"sel: ")++show(sel))++"\n")++"sum_coins: ")++show(sum_coins)]} in (X_INTRODUCED_1325_);
 set of int: coin = 1..6;
 array [coin] of int: value;
 set of int: change = 1..100;

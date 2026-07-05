@@ -1,4 +1,4 @@
-output ["Ph:",show(Ph)," ","Pa:",show(Pa)," ","Pl:",show(Pl)," ","El:",show(El)," ","Ca:",show(Ca)," ","Ma:",show(Ma)," ","\n"];
+output let {array [int] of string: X_INTRODUCED_9_ = ["Ph:",show(Ph)," ","Pa:",show(Pa)," ","Pl:",show(Pl)," ","El:",show(El)," ","Ca:",show(Ca)," ","Ma:",show(Ma)," ","\n"]} in (X_INTRODUCED_9_);
 int: Ma;
 int: Ca;
 int: El;

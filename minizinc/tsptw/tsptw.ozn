@@ -1,4 +1,4 @@
-output ["travel_distance: "++format(travel_distance)++"\n","x; "++format(x)++"\n","d: "++format(d)++"\n\n","path     : "++format(path)++"\n","cum_times: "++format(cum_times)++"\n","wait_time: "++format(wait_time)++"\n","travel_time: "++format(travel_time)++"\n","total_wait_times: "++format(total_wait_times)++"\n"];
+output let {array [int] of string: X_INTRODUCED_296_ = ["travel_distance: "++format(travel_distance)++"\n","x; "++format(x)++"\n","d: "++format(d)++"\n\n","path     : "++format(path)++"\n","cum_times: "++format(cum_times)++"\n","wait_time: "++format(wait_time)++"\n","travel_time: "++format(travel_time)++"\n","total_wait_times: "++format(total_wait_times)++"\n"]} in (X_INTRODUCED_296_);
 int: n = 21;
 array [1..n] of int: wait_time;
 int: total_wait_times = sum(wait_time);

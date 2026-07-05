@@ -1,4 +1,4 @@
-output ["x: ",show(x),"\n","s: ",show(s),"\n"]++["\n"];
+output let {array [int] of string: X_INTRODUCED_42_ = ["x: ",show(x),"\n","s: ",show(s),"\n"]++["\n"]} in (X_INTRODUCED_42_);
 int: n = 4;
 array [1..n] of set of int: s = [{5,8},5..5,5..7,{1,4}];
 array [1..n] of int: x = [2,1,3,2];

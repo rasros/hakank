@@ -1,4 +1,4 @@
-output ["path_length: "++format(path_length)++"\n: x: "++format([x[i] | i in 1..n where fix(x[i]) > 0])++"\n"];
+output let {array [int] of string: X_INTRODUCED_1551_ = ["path_length: "++format(path_length)++"\n: x: "++format([x[i] | i in 1..n where fix(x[i]) > 0])++"\n"]} in (X_INTRODUCED_1551_);
 int: n = 15;
 array [1..n] of int: x;
 int: path_length = sum([bool2int(x[i] > 0) | i in 1..n]);

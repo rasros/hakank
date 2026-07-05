@@ -1,4 +1,4 @@
-output ["x: ",show(x),"\n","..NINE..: ",show(nine),"\n","EIGHTEEN: ",show(eighteen),"\n","(",show(X1),show(X2),show(N),show(I),show(N),show(E),show(X3),show(X4),") * 2 = ",show(E),show(I),show(G),show(H),show(T),show(E),show(E),show(N),"\n"];
+output let {array [int] of string: X_INTRODUCED_24_ = ["x: ",show(x),"\n","..NINE..: ",show(nine),"\n","EIGHTEEN: ",show(eighteen),"\n","(",show(X1),show(X2),show(N),show(I),show(N),show(E),show(X3),show(X4),") * 2 = ",show(E),show(I),show(G),show(H),show(T),show(E),show(E),show(N),"\n"]} in (X_INTRODUCED_24_);
 int: N;
 int: E;
 int: T;

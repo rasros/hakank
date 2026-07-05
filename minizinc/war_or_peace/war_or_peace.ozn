@@ -1,4 +1,4 @@
-output (["\ncountpeaces: ",show(countpeaces)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..N])++["\n"];
+output let {array [int] of string: X_INTRODUCED_316_ = (["\ncountpeaces: ",show(countpeaces)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..N])++["\n"]} in (X_INTRODUCED_316_);
 int: N = 8;
 int: peace = 1;
 array [1..64] of int: X_INTRODUCED_0_;

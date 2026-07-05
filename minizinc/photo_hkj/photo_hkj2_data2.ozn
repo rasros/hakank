@@ -1,4 +1,4 @@
-output [show(z),": ",show(positions),"\n"];
+output let {array [int] of string: X_INTRODUCED_145_ = [show(z),": ",show(positions),"\n"]} in (X_INTRODUCED_145_);
 int: n = 11;
 array [1..11] of int: X_INTRODUCED_16_;
 array [0..n-1] of int: positions = array1d(0..10,X_INTRODUCED_16_);

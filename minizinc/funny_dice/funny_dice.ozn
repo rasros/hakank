@@ -1,4 +1,4 @@
-output ["probs: ",show(probs),"\n","red: ",show(red),"\n","blue: ",show(blue),"\n"];
+output let {array [int] of string: X_INTRODUCED_915_ = ["probs: ",show(probs),"\n","red: ",show(red),"\n","blue: ",show(blue),"\n"]} in (X_INTRODUCED_915_);
 int: n = 6;
 array [1..n] of int: blue;
 array [1..n] of int: red;

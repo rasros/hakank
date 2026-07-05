@@ -1,4 +1,4 @@
-output (([(((((((("z: "++show(z))++"\n")++"row_scores: ")++show(row_scores))++"\n")++"col_scores: ")++show(col_scores))++"\n")++"x:"]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..n])++["\n"])++[if j==1 then "\n" else " " endif++if fix(x[i,j])==residential then "R" else "C" endif | i,j in 1..n];
+output let {array [int] of string: X_INTRODUCED_90_ = (([(((((((("z: "++show(z))++"\n")++"row_scores: ")++show(row_scores))++"\n")++"col_scores: ")++show(col_scores))++"\n")++"x:"]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..n])++["\n"])++[if j==1 then "\n" else " " endif++if fix(x[i,j])==residential then "R" else "C" endif | i,j in 1..n]} in (X_INTRODUCED_90_);
 int: n = 5;
 array [1..n] of int: row_scores;
 array [1..n] of int: col_scores;

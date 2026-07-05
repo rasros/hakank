@@ -1,4 +1,4 @@
-output [(((((((((("digits: "++show(digits))++"\n")++"x: ")++show(x))++"\n")++"digits_sum: ")++show(digits_sum))++"\n")++"digits_sum_a: ")++show(digits_sum_a))++"\n"];
+output let {array [int] of string: X_INTRODUCED_204_ = [(((((((((("digits: "++show(digits))++"\n")++"x: ")++show(x))++"\n")++"digits_sum: ")++show(digits_sum))++"\n")++"digits_sum_a: ")++show(digits_sum_a))++"\n"]} in (X_INTRODUCED_204_);
 int: n = 4;
 array [1..n] of int: digits;
 int: m = 24;

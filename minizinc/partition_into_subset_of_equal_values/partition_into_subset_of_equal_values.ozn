@@ -1,4 +1,4 @@
-output [(((("s: "++show(s))++"\n")++"x: ")++show(x))++"\n"]++[((("subset"++show(j))++": ")++show([s[i] | i in 1..n where fix(x[i])==j]))++"\n" | j in 1..num_subsets];
+output let {array [int] of string: X_INTRODUCED_65_ = [(((("s: "++show(s))++"\n")++"x: ")++show(x))++"\n"]++[((("subset"++show(j))++": ")++show([s[i] | i in 1..n where fix(x[i])==j]))++"\n" | j in 1..num_subsets]} in (X_INTRODUCED_65_);
 int: n = 9;
 array [1..n] of int: s = [3,1,1,2,2,1,5,2,7];
 int: num_subsets = 2;

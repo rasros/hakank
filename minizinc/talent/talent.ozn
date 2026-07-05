@@ -1,4 +1,4 @@
-output ["idleCost: ",show(idleCost),"\n","slot: ",show(slot),"\n","scene: ",show(scene),"\n"];
+output let {array [int] of string: X_INTRODUCED_168_ = ["idleCost: ",show(idleCost),"\n","slot: ",show(slot),"\n","scene: ",show(scene),"\n"]} in (X_INTRODUCED_168_);
 set of int: Scenes = 1..9;
 array [Scenes] of int: scene;
 array [Scenes] of int: slot;

@@ -1,4 +1,4 @@
-output ["min: "++format(min_salaries)++"\n","avg: "++format(avg_salaries)++"\n","max: "++format(max_salaries)++"\n\n","num_high_paid: "++format(num_high_paid)++" ("++format(high_paid)++")\n","low paid: "++format([p | p in name where people[p,5]<=30000])++"\n","mean age: "++format(sum([people[p,4] | p in name]) div n)++"\n"];
+output let {array [int] of string: X_INTRODUCED_64_ = ["min: "++format(min_salaries)++"\n","avg: "++format(avg_salaries)++"\n","max: "++format(max_salaries)++"\n\n","num_high_paid: "++format(num_high_paid)++" ("++format(high_paid)++")\n","low paid: "++format([p | p in name where people[p,5]<=30000])++"\n","mean age: "++format(sum([people[p,4] | p in name]) div n)++"\n"]} in (X_INTRODUCED_64_);
 int: Female = 1;
 int: Single = 2;
 int: Doe = 12;

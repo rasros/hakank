@@ -1,4 +1,4 @@
-output (["Starting:  ",show(starting_slot),"\n","Durations: ",show(app_durations),"\n","Ends:      ",show(ending_slot),"\n","z:         ",show(z),"\n"]++[if s==1 then ("\n"++show_int(2,t))++": " else " " endif++if not (t in speaker_availability[s]) then "- " elseif t>=fix(starting_slot[s]) /\ t<=fix(ending_slot[s]) then "S " else "  " endif | t in 1..num_slots, s in 1..num_speakers])++["\nz:         ",show(z),"\n"];
+output let {array [int] of string: X_INTRODUCED_1143_ = (["Starting:  ",show(starting_slot),"\n","Durations: ",show(app_durations),"\n","Ends:      ",show(ending_slot),"\n","z:         ",show(z),"\n"]++[if s==1 then ("\n"++show_int(2,t))++": " else " " endif++if not (t in speaker_availability[s]) then "- " elseif t>=fix(starting_slot[s]) /\ t<=fix(ending_slot[s]) then "S " else "  " endif | t in 1..num_slots, s in 1..num_speakers])++["\nz:         ",show(z),"\n"]} in (X_INTRODUCED_1143_);
 int: num_speakers = 18;
 int: num_slots = 60;
 array [1..num_speakers] of int: ending_slot;

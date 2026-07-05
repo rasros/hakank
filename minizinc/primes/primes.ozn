@@ -1,4 +1,4 @@
-output [(((((((((("nn: "++show(nn))++"\n")++"num_divisors: ")++show(num_divisors))++"\n")++"divisor: ")++show(divisor))++"\n")++"is_prime: ")++show(is_prime))++"\n"];
+output let {array [int] of string: X_INTRODUCED_140_ = [(((((((((("nn: "++show(nn))++"\n")++"num_divisors: ")++show(num_divisors))++"\n")++"divisor: ")++show(divisor))++"\n")++"is_prime: ")++show(is_prime))++"\n"]} in (X_INTRODUCED_140_);
 int: nn;
 int: num_divisors;
 set of int: divisor;

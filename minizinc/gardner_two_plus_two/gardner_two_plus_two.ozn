@@ -1,4 +1,4 @@
-output [show(T),show(W),show(O)," + ",show(T),show(W),show(O)," = ",show(F),show(O),show(U),show(R),"\n","W: ",show(W),"\n"];
+output let {array [int] of string: X_INTRODUCED_24_ = [show(T),show(W),show(O)," + ",show(T),show(W),show(O)," = ",show(F),show(O),show(U),show(R),"\n","W: ",show(W),"\n"]} in (X_INTRODUCED_24_);
 int: W;
 int: R;
 int: U;

@@ -1,4 +1,4 @@
-output ["ATOM = A + TO + M","\n",show(ATOM)," = ",show(A)," + ",show(10*T+O)," + ",show(M),"\n"];
+output let {array [int] of string: X_INTRODUCED_24_ = ["ATOM = A + TO + M","\n",show(ATOM)," = ",show(A)," + ",show(10*T+O)," + ",show(M),"\n"]} in (X_INTRODUCED_24_);
 int: M;
 int: T;
 int: O;

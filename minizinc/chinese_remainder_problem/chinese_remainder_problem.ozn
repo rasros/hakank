@@ -1,4 +1,4 @@
-output ["divs: ",show(divs),"\n","rems: ",show(rems),"\n",show(x)];
+output let {array [int] of string: X_INTRODUCED_6_ = ["divs: ",show(divs),"\n","rems: ",show(rems),"\n",show(x)]} in (X_INTRODUCED_6_);
 int: x;
 int: n = 5;
 array [1..n] of int: rems = [2,3,2,4,1];

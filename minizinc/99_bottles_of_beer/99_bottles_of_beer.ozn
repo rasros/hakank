@@ -1,2 +1,2 @@
-output [(show(n-i-1)++" bottles of beer on the wall\n")++if i < n-1 then (show(n-i-1)++" bootles of beer\n")++"Take one down, pass it around\n" else "" endif | i in 0..n-1];
+output let {array [int] of string: X_INTRODUCED_0_ = [(show(n-i-1)++" bottles of beer on the wall\n")++if i < n-1 then (show(n-i-1)++" bootles of beer\n")++"Take one down, pass it around\n" else "" endif | i in 0..n-1]} in (X_INTRODUCED_0_);
 int: n = 100;

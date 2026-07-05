@@ -1,4 +1,4 @@
-output ["limit   : ",show(limitx),"\n","origin  : ",show(origin),"\n","duration: ",show(duration),"\n","height  : ",show(height),"\n","end     : ",show(end),"\n"];
+output let {array [int] of string: X_INTRODUCED_47_ = ["limit   : ",show(limitx),"\n","origin  : ",show(origin),"\n","duration: ",show(duration),"\n","height  : ",show(height),"\n","end     : ",show(end),"\n"]} in (X_INTRODUCED_47_);
 int: n = 5;
 array [1..n] of int: end;
 array [1..n] of int: height;

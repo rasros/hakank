@@ -1,4 +1,4 @@
-output ["x"++show(x)]++["\n"];
+output let {array [int] of string: X_INTRODUCED_22_ = ["x"++show(x)]++["\n"]} in (X_INTRODUCED_22_);
 int: n = 5;
 int: Smith;
 int: Miller;

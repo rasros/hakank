@@ -1,4 +1,4 @@
-output [((show(x)++"\n")++show(difference))++"\n"];
+output let {array [int] of string: X_INTRODUCED_18_ = [((show(x)++"\n")++show(difference))++"\n"]} in (X_INTRODUCED_18_);
 int: J;
 int: I;
 int: H;

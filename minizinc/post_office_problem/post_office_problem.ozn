@@ -1,4 +1,4 @@
-output [(((("z: "++show(z))++"\n")++"x: ")++show(x))++"\n"];
+output let {array [int] of string: X_INTRODUCED_32_ = [(((("z: "++show(z))++"\n")++"x: ")++show(x))++"\n"]} in (X_INTRODUCED_32_);
 set of int: DAYS = 1..7;
 array [DAYS] of int: x;
 int: z = sum([x[i] | i in DAYS]);

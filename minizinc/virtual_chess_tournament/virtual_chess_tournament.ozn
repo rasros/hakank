@@ -1,4 +1,4 @@
-output [((((((((((((((((((("x         : "++show(x))++"\n")++"total     : ")++show(total))++"\n")++"num_wins  : ")++show(num_wins))++"\n")++"num_losses: ")++show(num_losses))++"\n")++"winners   : ")++show(winners))++"\n")++"losers    : ")++show(losers))++"\n")++"num_draws_total : ")++show(num_draws_total))++"\n"]++[let {int: i2 = 1+i, int: m = 1+i mod 3, int: r = fix(x[i+1])} in (((((((show_int(2,i2)++": ")++show(s2[m]))++" Winner/draw: ")++show(s[fix(winners[i2])]))++" (")++show(winners[i2]))++")\n") | i in 0..n2-1];
+output let {array [int] of string: X_INTRODUCED_523_ = [((((((((((((((((((("x         : "++show(x))++"\n")++"total     : ")++show(total))++"\n")++"num_wins  : ")++show(num_wins))++"\n")++"num_losses: ")++show(num_losses))++"\n")++"winners   : ")++show(winners))++"\n")++"losers    : ")++show(losers))++"\n")++"num_draws_total : ")++show(num_draws_total))++"\n"]++[let {int: i2 = 1+i, int: m = 1+i mod 3, int: r = fix(x[i+1])} in (((((((show_int(2,i2)++": ")++show(s2[m]))++" Winner/draw: ")++show(s[fix(winners[i2])]))++" (")++show(winners[i2]))++")\n") | i in 0..n2-1]} in (X_INTRODUCED_523_);
 int: n2 = 21;
 array [1..n2] of int: x;
 int: num_players = 3;

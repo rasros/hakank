@@ -1,4 +1,4 @@
-output [(((((((((((((((((((((((((((((((((((((((("A: "++show(A))++"\n")++"B: ")++show(B))++"\n")++"C: ")++show(C))++"\n")++"D: ")++show(D))++"\n")++"E: ")++show(E))++"\n")++"F: ")++show(F))++"\n")++"G: ")++show(G))++"\n")++"H: ")++show(H))++"\n")++"I: ")++show(I))++"\n")++"J: ")++show(J))++"\n")++"K: ")++show(K))++"\n")++"L: ")++show(L))++"\n")++"AB: ")++show(AB))++"\n")++"all: [A  B  C  D  E  F  G  H  I  J  K  L]\n")++show([A,B,C,D,E,F,G,H,I,J,K,L]))++"\n"]++["\n"];
+output let {array [int] of string: X_INTRODUCED_36_ = [(((((((((((((((((((((((((((((((((((((((("A: "++show(A))++"\n")++"B: ")++show(B))++"\n")++"C: ")++show(C))++"\n")++"D: ")++show(D))++"\n")++"E: ")++show(E))++"\n")++"F: ")++show(F))++"\n")++"G: ")++show(G))++"\n")++"H: ")++show(H))++"\n")++"I: ")++show(I))++"\n")++"J: ")++show(J))++"\n")++"K: ")++show(K))++"\n")++"L: ")++show(L))++"\n")++"AB: ")++show(AB))++"\n")++"all: [A  B  C  D  E  F  G  H  I  J  K  L]\n")++show([A,B,C,D,E,F,G,H,I,J,K,L]))++"\n"]++["\n"]} in (X_INTRODUCED_36_);
 int: A;
 int: B;
 int: C;

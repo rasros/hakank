@@ -1,4 +1,4 @@
-output [((((((show(FD)++"\n")++show(X))++" - ")++show(Y))++" = ")++show(difference))++"\n"];
+output let {array [int] of string: X_INTRODUCED_36_ = [((((((show(FD)++"\n")++show(X))++" - ")++show(Y))++" = ")++show(difference))++"\n"]} in (X_INTRODUCED_36_);
 int: J;
 int: I;
 int: H;

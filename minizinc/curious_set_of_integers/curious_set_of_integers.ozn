@@ -1,3 +1,3 @@
-output [show(x),"\n"];
+output let {array [int] of string: X_INTRODUCED_115_ = [show(x),"\n"]} in (X_INTRODUCED_115_);
 int: n = 5;
 array [1..n] of int: x;

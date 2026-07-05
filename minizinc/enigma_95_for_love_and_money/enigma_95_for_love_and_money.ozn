@@ -1,4 +1,4 @@
-output ["         A   B   C   D   E   F   G\n","love : ",show(love),"\n","money: ",show(money),"\n","total: ",show(total),"\n"];
+output let {array [int] of string: X_INTRODUCED_135_ = ["         A   B   C   D   E   F   G\n","love : ",show(love),"\n","money: ",show(money),"\n","total: ",show(total),"\n"]} in (X_INTRODUCED_135_);
 int: n = 7;
 array [1..n] of int: total;
 array [1..n] of int: money;

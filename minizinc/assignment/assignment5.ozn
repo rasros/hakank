@@ -1,4 +1,4 @@
-output (["\njobs: ",show(jobs),"\n","summax: ",show(summax)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..rows, j in 1..cols])++["\n"];
+output let {array [int] of string: X_INTRODUCED_99_ = (["\njobs: ",show(jobs),"\n","summax: ",show(summax)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..rows, j in 1..cols])++["\n"]} in (X_INTRODUCED_99_);
 int: summax;
 int: rows = 5;
 int: cols = 5;

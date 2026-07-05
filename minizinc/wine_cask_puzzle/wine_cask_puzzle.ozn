@@ -1,4 +1,4 @@
-output [if j==1 then "\n" else " " endif++show(x[i,j]) | i in N, j in C]++["\ndtot: ",show(dtot),"\n"];
+output let {array [int] of string: X_INTRODUCED_127_ = [if j==1 then "\n" else " " endif++show(x[i,j]) | i in N, j in C]++["\ndtot: ",show(dtot),"\n"]} in (X_INTRODUCED_127_);
 set of int: C = 1..5;
 set of int: N = 1..5;
 array [1..25] of int: X_INTRODUCED_0_;

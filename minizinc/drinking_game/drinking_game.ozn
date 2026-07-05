@@ -1,4 +1,4 @@
-output [(((((("drinking: "++show(drinking))++"\n")++"num_drinks: ")++show(num_drinks))++"\n")++"drinking times: ")++show([t | t in 1..n where fix(drinking[t])==1])];
+output let {array [int] of string: X_INTRODUCED_340_ = [(((((("drinking: "++show(drinking))++"\n")++"num_drinks: ")++show(num_drinks))++"\n")++"drinking times: ")++show([t | t in 1..n where fix(drinking[t])==1])]} in (X_INTRODUCED_340_);
 int: n = 100;
 array [1..n] of int: drinking;
 int: num_drinks;

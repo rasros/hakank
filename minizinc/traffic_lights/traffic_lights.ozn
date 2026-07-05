@@ -1,4 +1,4 @@
-output ([((show(V[i])++" ")++show(P[i]))++" " | i in 1..n]++["\n"])++[(((("V: "++show(V))++"\n")++"P: ")++show(P))++"\n"];
+output let {array [int] of string: X_INTRODUCED_52_ = ([((show(V[i])++" ")++show(P[i]))++" " | i in 1..n]++["\n"])++[(((("V: "++show(V))++"\n")++"P: ")++show(P))++"\n"]} in (X_INTRODUCED_52_);
 int: n = 4;
 array [1..n] of int: V;
 array [1..n] of int: P;

@@ -1,4 +1,4 @@
-output [show(x)++"\n"]++[if j==1 then "\n" else " " endif++show(puzzle[i,j]) | i in 1..n, j in 1..num_attributes];
+output let {array [int] of string: X_INTRODUCED_381_ = [show(x)++"\n"]++[if j==1 then "\n" else " " endif++show(puzzle[i,j]) | i in 1..n, j in 1..num_attributes]} in (X_INTRODUCED_381_);
 int: num_sets = 5;
 int: n = 12;
 array [1..num_sets] of set of int: x;

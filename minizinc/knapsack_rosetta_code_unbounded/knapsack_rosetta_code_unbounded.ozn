@@ -1,4 +1,4 @@
-output ([((((((("total_value: "++show(total_value))++"\n")++"total_weight: ")++show(total_weight))++"\n")++"total_volume: ")++show(total_volume))++"\n"]++[((show(i)++": ")++show(x[i]))++"\n" | i in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_28_ = ([((((((("total_value: "++show(total_value))++"\n")++"total_weight: ")++show(total_weight))++"\n")++"total_volume: ")++show(total_volume))++"\n"]++[((show(i)++": ")++show(x[i]))++"\n" | i in 1..n])++["\n"]} in (X_INTRODUCED_28_);
 int: n = 3;
 array [1..n] of int: x;
 array [1..n] of float: value = [3000.0,1800.0,2500.0];

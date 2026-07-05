@@ -1,4 +1,4 @@
-output [(if j==1 then "\n" else " " endif++show(pigeon_holes_ip[i,j]))++" " | i in 1..N, j in 1..M]++["\n"];
+output let {array [int] of string: X_INTRODUCED_52_ = [(if j==1 then "\n" else " " endif++show(pigeon_holes_ip[i,j]))++" " | i in 1..N, j in 1..M]++["\n"]} in (X_INTRODUCED_52_);
 int: M = 10;
 int: N = 2;
 array [1..20] of int: X_INTRODUCED_16_;

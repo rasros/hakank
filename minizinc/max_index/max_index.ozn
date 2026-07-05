@@ -1,4 +1,4 @@
-output ["variables: ",show(variables),"\n","max_ind: ",show(max_ind),"\n","max_val: ",show(max_val),"\n"];
+output let {array [int] of string: X_INTRODUCED_42_ = ["variables: ",show(variables),"\n","max_ind: ",show(max_ind),"\n","max_val: ",show(max_val),"\n"]} in (X_INTRODUCED_42_);
 int: max_val;
 int: n = 5;
 int: max_ind;

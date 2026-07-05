@@ -1,4 +1,4 @@
-output [if g==Alexis then "\n" else " " endif++show(assign[b,g]) | b in boys, g in girls];
+output let {array [int] of string: X_INTRODUCED_226_ = [if g==Alexis then "\n" else " " endif++show(assign[b,g]) | b in boys, g in girls]} in (X_INTRODUCED_226_);
 int: Alexis = 12;
 set of int: girls = 12..22;
 set of int: boys = 1..11;

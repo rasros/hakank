@@ -1,3 +1,3 @@
-output [((("primes: "++show(primes))++"\n")++"num_primes:")++show(num_primes)]++["\n"];
+output let {array [int] of string: X_INTRODUCED_101_ = [((("primes: "++show(primes))++"\n")++"num_primes:")++show(num_primes)]++["\n"]} in (X_INTRODUCED_101_);
 set of int: primes;
 int: num_primes = card(primes);

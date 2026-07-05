@@ -1,4 +1,4 @@
-output [((((((("x: "++show(x))++"\n")++"perm_num: ")++show(perm_num))++"\n")++"even_odd: ")++show(even_odd))++"\n"];
+output let {array [int] of string: X_INTRODUCED_71_ = [((((((("x: "++show(x))++"\n")++"perm_num: ")++show(perm_num))++"\n")++"even_odd: ")++show(even_odd))++"\n"]} in (X_INTRODUCED_71_);
 int: n = 6;
 array [1..n] of int: x;
 int: perm_num;

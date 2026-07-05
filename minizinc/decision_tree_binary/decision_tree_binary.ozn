@@ -1,4 +1,4 @@
-output (((["x (the values):\n",show(x[1])]++[if tree_levels[i] > tree_levels[i-1] then "\n" else " " endif++show(x[i]) | i in 2..n])++["\n\nnode_used:\n",show(node_used[1])])++[if tree_levels[i] > tree_levels[i-1] then "\n" else " " endif++show(node_used[i]) | i in 2..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_80_ = (((["x (the values):\n",show(x[1])]++[if tree_levels[i] > tree_levels[i-1] then "\n" else " " endif++show(x[i]) | i in 2..n])++["\n\nnode_used:\n",show(node_used[1])])++[if tree_levels[i] > tree_levels[i-1] then "\n" else " " endif++show(node_used[i]) | i in 2..n])++["\n"]} in (X_INTRODUCED_80_);
 int: n = 15;
 array [1..n] of int: x;
 array [1..n] of int: tree_levels = [1,2,2,3,3,3,3,4,4,4,4,4,4,4,4];

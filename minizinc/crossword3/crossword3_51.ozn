@@ -1,4 +1,4 @@
-output ([(((("\n"++problem_name)++"\n")++"L:")++show(L))++"\n"]++[if problem[i,j]==0 then "*" else show(letters[fix(L[problem[i,j]])]) endif++if j==cols then "\n" else "" endif | i in 1..rows, j in 1..cols])++["\n"];
+output let {array [int] of string: X_INTRODUCED_69_ = ([(((("\n"++problem_name)++"\n")++"L:")++show(L))++"\n"]++[if problem[i,j]==0 then "*" else show(letters[fix(L[problem[i,j]])]) endif++if j==cols then "\n" else "" endif | i in 1..rows, j in 1..cols])++["\n"]} in (X_INTRODUCED_69_);
 string: problem_name = "puzzle02, 3 x 3";
 int: N = 8;
 int: num_letters = 26;

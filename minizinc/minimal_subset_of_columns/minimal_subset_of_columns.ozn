@@ -1,4 +1,4 @@
-output ["z: "++format(z)++"\n","x: "++format(x)++"\n","rows: "++format(rows)++"\ncols: "++format(cols)++"\n"]++[show([m[r,c] | c in 1..cols where fix(x[c])==1])++"\n" | r in 1..rows];
+output let {array [int] of string: X_INTRODUCED_30_ = ["z: "++format(z)++"\n","x: "++format(x)++"\n","rows: "++format(rows)++"\ncols: "++format(cols)++"\n"]++[show([m[r,c] | c in 1..cols where fix(x[c])==1])++"\n" | r in 1..rows]} in (X_INTRODUCED_30_);
 int: rows = 5;
 int: cols = 4;
 array [1..cols] of int: x;

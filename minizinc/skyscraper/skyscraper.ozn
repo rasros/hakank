@@ -1,4 +1,4 @@
-output [if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..n]++["\n"];
+output let {array [int] of string: X_INTRODUCED_2444_ = [if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..n]++["\n"]} in (X_INTRODUCED_2444_);
 int: n = 7;
 array [1..49] of int: X_INTRODUCED_30_;
 array [1..n,1..n] of int: x = array2d(1..7,1..7,X_INTRODUCED_30_);

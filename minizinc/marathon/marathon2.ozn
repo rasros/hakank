@@ -1,4 +1,4 @@
-output [((show(runners)++"\n")++show(runners_pres))++"\n"];
+output let {array [int] of string: X_INTRODUCED_25_ = [((show(runners)++"\n")++show(runners_pres))++"\n"]} in (X_INTRODUCED_25_);
 int: n = 6;
 int: Pascal;
 int: Philippe;

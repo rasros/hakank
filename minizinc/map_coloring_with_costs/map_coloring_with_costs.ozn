@@ -1,4 +1,4 @@
-output ([(((("total: "++show(total))++"\n")++"x: ")++show(x))++"\n\n"]++[((((show(countries_str[i])++": ")++color_str[fix(x[i])])++" ")++show(color_cost[x[i]]))++"\n" | i in 1..num_countries])++["\n"];
+output let {array [int] of string: X_INTRODUCED_54_ = ([(((("total: "++show(total))++"\n")++"x: ")++show(x))++"\n\n"]++[((((show(countries_str[i])++": ")++color_str[fix(x[i])])++" ")++show(color_cost[x[i]]))++"\n" | i in 1..num_countries])++["\n"]} in (X_INTRODUCED_54_);
 int: num_countries = 16;
 int: num_colors = 8;
 array [1..num_colors] of int: color_cost = [100,200,300,400,500,600,700,800];

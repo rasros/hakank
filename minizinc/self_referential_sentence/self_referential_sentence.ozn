@@ -1,4 +1,4 @@
-output ["x: ",show(x),"\n","This statement contains "]++[(((show(x[i*2+2])++" ")++show(x[i*2+1]))++"'s, ")++if i==b-1 then "and " else "" endif | i in 0..b];
+output let {array [int] of string: X_INTRODUCED_36_ = ["x: ",show(x),"\n","This statement contains "]++[(((show(x[i*2+2])++" ")++show(x[i*2+1]))++"'s, ")++if i==b-1 then "and " else "" endif | i in 0..b]} in (X_INTRODUCED_36_);
 int: n = 20;
 int: b = 9;
 array [1..n] of int: x;

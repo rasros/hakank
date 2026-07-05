@@ -1,4 +1,4 @@
-output ["cube1: ",show(cube1),"\n","cube2: ",show(cube2),"\n"]++[(((show(k)++": ")++show(x[k,1]))++show(x[k,2]))++"\n" | k in 1..31];
+output let {array [int] of string: X_INTRODUCED_928_ = ["cube1: ",show(cube1),"\n","cube2: ",show(cube2),"\n"]++[(((show(k)++": ")++show(x[k,1]))++show(x[k,2]))++"\n" | k in 1..31]} in (X_INTRODUCED_928_);
 array [1..6] of int: cube2;
 array [1..6] of int: cube1;
 array [1..62] of int: X_INTRODUCED_28_;

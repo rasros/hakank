@@ -1,4 +1,4 @@
-output [if j==1 /\ k==1 then "\n" else "" endif++if fix(x[i,j,k])==1 then show_int(2,k)++" " else "" endif | i in 1..rows, j in 1..cols, k in 1..vals];
+output let {array [int] of string: X_INTRODUCED_19385_ = [if j==1 /\ k==1 then "\n" else "" endif++if fix(x[i,j,k])==1 then show_int(2,k)++" " else "" endif | i in 1..rows, j in 1..cols, k in 1..vals]} in (X_INTRODUCED_19385_);
 int: vals = 81;
 int: cols = 9;
 int: rows = 9;

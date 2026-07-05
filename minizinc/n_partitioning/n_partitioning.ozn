@@ -1,4 +1,4 @@
-output [(((("a: "++show(a))++"\n")++"a_sum: ")++show(a_sum))++"\n"];
+output let {array [int] of string: X_INTRODUCED_281_ = [(((("a: "++show(a))++"\n")++"a_sum: ")++show(a_sum))++"\n"]} in (X_INTRODUCED_281_);
 int: n = 5;
 array [1..n] of set of int: a;
 array [1..n] of int: a_sum;

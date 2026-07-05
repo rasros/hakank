@@ -1,4 +1,4 @@
-output ["x: "++show(x),("\n"++"s: ")++show(s),("\n"++"num_conflicts: ")++show(card(s))];
+output let {array [int] of string: X_INTRODUCED_117_ = ["x: "++show(x),("\n"++"s: ")++show(s),("\n"++"num_conflicts: ")++show(card(s))]} in (X_INTRODUCED_117_);
 int: n = 5;
 set of int: s;
 array [1..n] of int: x;

@@ -1,4 +1,4 @@
-output [(if i==1 /\ j==1 then ("\nz: "++show(z))++"\nx:" else "" endif++if j==1 then "\n" else " " endif)++show_int(4,x[i,j]) | i in 1..timex, j in 1..timex+1]++[(if i==1 /\ j==1 then "\n\nCost:" else "" endif++if j==1 then "\n" else " " endif)++show_int(4,cost[i,j]) | i in 1..timex, j in 1..timex+1];
+output let {array [int] of string: X_INTRODUCED_107_ = [(if i==1 /\ j==1 then ("\nz: "++show(z))++"\nx:" else "" endif++if j==1 then "\n" else " " endif)++show_int(4,x[i,j]) | i in 1..timex, j in 1..timex+1]++[(if i==1 /\ j==1 then "\n\nCost:" else "" endif++if j==1 then "\n" else " " endif)++show_int(4,cost[i,j]) | i in 1..timex, j in 1..timex+1]} in (X_INTRODUCED_107_);
 int: timex = 5;
 array [1..30] of int: X_INTRODUCED_31_;
 array [1..timex,1..timex+1] of int: x = array2d(1..5,1..6,X_INTRODUCED_31_);

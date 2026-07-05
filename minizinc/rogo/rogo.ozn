@@ -1,4 +1,4 @@
-output [(((((((((("x: "++show(x))++"\n")++"y: ")++show(y))++"\n")++"points: ")++show(points))++"\n")++"sum_points: ")++show(sum_points))++"\n"];
+output let {array [int] of string: X_INTRODUCED_55_ = [(((((((((("x: "++show(x))++"\n")++"y: ")++show(y))++"\n")++"points: ")++show(points))++"\n")++"sum_points: ")++show(sum_points))++"\n"]} in (X_INTRODUCED_55_);
 int: max_steps = 3;
 array [1..max_steps] of int: x;
 array [1..max_steps] of int: y;

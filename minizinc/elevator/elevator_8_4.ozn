@@ -1,4 +1,4 @@
-output (["sumx: ",show(sumx)]++[if i==1 then "\n" else "" endif++if fix(x[i])==1 then show(c[i,j]) else "" endif | j in 1..n, i in 1..m])++["\n"];
+output let {array [int] of string: X_INTRODUCED_181_ = (["sumx: ",show(sumx)]++[if i==1 then "\n" else "" endif++if fix(x[i])==1 then show(c[i,j]) else "" endif | j in 1..n, i in 1..m])++["\n"]} in (X_INTRODUCED_181_);
 int: m = 70;
 array [1..m] of int: x;
 int: sumx = sum([x[i] | i in 1..m]);

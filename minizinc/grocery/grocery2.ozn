@@ -1,4 +1,4 @@
-output [show([A,B,C,D]),"\n"];
+output let {array [int] of string: X_INTRODUCED_7_ = [show([A,B,C,D]),"\n"]} in (X_INTRODUCED_7_);
 int: D;
 int: C;
 int: B;

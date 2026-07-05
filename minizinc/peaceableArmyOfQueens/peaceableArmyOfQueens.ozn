@@ -1,4 +1,4 @@
-output (["amountOfQueens: ",show(amountOfQueens)]++[if j==1 then "\n" else " " endif++if fix(board[i,j])==1 then "w" elseif fix(board[i,j])==2 then "b" else "_" endif | i,j in N])++["\n"];
+output let {array [int] of string: X_INTRODUCED_875_ = (["amountOfQueens: ",show(amountOfQueens)]++[if j==1 then "\n" else " " endif++if fix(board[i,j])==1 then "w" elseif fix(board[i,j])==2 then "b" else "_" endif | i,j in N])++["\n"]} in (X_INTRODUCED_875_);
 int: amountOfQueens;
 set of int: N = 1..6;
 array [1..36] of int: X_INTRODUCED_0_;

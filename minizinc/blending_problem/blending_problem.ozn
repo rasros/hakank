@@ -1,4 +1,4 @@
-output [((((((("mix: "++show(mix))++"\n")++"tot_cost: ")++show(tot_cost))++"\n")++"daily_req_met: ")++show(daily_req_met))++"\n"];
+output let {array [int] of string: X_INTRODUCED_45_ = [((((((("mix: "++show(mix))++"\n")++"tot_cost: ")++show(tot_cost))++"\n")++"daily_req_met: ")++show(daily_req_met))++"\n"]} in (X_INTRODUCED_45_);
 int: num_feeds = 3;
 array [1..num_feeds] of int: mix;
 int: tot_cost;

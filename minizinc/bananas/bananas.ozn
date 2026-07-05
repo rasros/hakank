@@ -1,4 +1,4 @@
-output [(("the_sum: "++show(the_sum))++"\n")++show([bananas,oranges,mangoes,apples])];
+output let {array [int] of string: X_INTRODUCED_31_ = [(("the_sum: "++show(the_sum))++"\n")++show([bananas,oranges,mangoes,apples])]} in (X_INTRODUCED_31_);
 int: bananas;
 int: apples;
 int: the_sum = bananas+apples;

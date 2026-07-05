@@ -1,4 +1,4 @@
-output [(((("element_table:"++show(element_table))++"\n")++"items:")++show(items))++"\n"];
+output let {array [int] of string: X_INTRODUCED_8_ = [(((("element_table:"++show(element_table))++"\n")++"items:")++show(items))++"\n"]} in (X_INTRODUCED_8_);
 int: n = 4;
 array [1..n] of int: element_table = [6,9,2,9];
 int: m = 2;

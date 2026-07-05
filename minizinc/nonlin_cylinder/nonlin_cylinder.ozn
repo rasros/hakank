@@ -1,4 +1,4 @@
-output ["W: ",show(W),"\n","L: ",show(L),"\n","V: ",show(V),"\n"];
+output let {array [int] of string: X_INTRODUCED_10_ = ["W: ",show(W),"\n","L: ",show(L),"\n","V: ",show(V),"\n"]} in (X_INTRODUCED_10_);
 float: V;
 int: L;
 int: W;

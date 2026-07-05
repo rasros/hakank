@@ -1,4 +1,4 @@
-output [(if i==1 /\ j==1 then (((("\n"++show(x))++"\n")++"\ntotal:")++show(total))++"\n" else "" endif++if j==1 then "\n" else " " endif)++show(x[i,j]) | i in rows, j in cols]++["\n"];
+output let {array [int] of string: X_INTRODUCED_39_ = [(if i==1 /\ j==1 then (((("\n"++show(x))++"\n")++"\ntotal:")++show(total))++"\n" else "" endif++if j==1 then "\n" else " " endif)++show(x[i,j]) | i in rows, j in cols]++["\n"]} in (X_INTRODUCED_39_);
 set of int: cols = 1..5;
 set of int: rows = 1..5;
 array [1..25] of int: X_INTRODUCED_0_;

@@ -1,4 +1,4 @@
-output [(((("bins: "++show(bins))++"\n")++"weights: ")++show(weights))++"\n"];
+output let {array [int] of string: X_INTRODUCED_38_ = [(((("bins: "++show(bins))++"\n")++"weights: ")++show(weights))++"\n"]} in (X_INTRODUCED_38_);
 int: n = 3;
 array [1..n] of int: bins;
 array [1..n] of int: weights = [4,3,1];

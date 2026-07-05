@@ -1,4 +1,4 @@
-output [((("x: "++show(x))++"\n")++"the_period: ")++show(the_period)];
+output let {array [int] of string: X_INTRODUCED_29_ = [((("x: "++show(x))++"\n")++"the_period: ")++show(the_period)]} in (X_INTRODUCED_29_);
 int: n = 8;
 array [1..n] of int: x;
 int: per_len = 3;

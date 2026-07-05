@@ -1,4 +1,4 @@
-output ["task 1: ",show([O1,D1,H1])," task 2: ",show([O2,D2,H2]),"\n"];
+output let {array [int] of string: X_INTRODUCED_20_ = ["task 1: ",show([O1,D1,H1])," task 2: ",show([O2,D2,H2]),"\n"]} in (X_INTRODUCED_20_);
 int: H2;
 int: D2 = 2;
 int: O2 = 3;

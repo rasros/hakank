@@ -1,2 +1,2 @@
-output ["y="++format(y)++""];
+output let {array [int] of string: X_INTRODUCED_26_ = ["y="++format(y)++""]} in (X_INTRODUCED_26_);
 int: y;

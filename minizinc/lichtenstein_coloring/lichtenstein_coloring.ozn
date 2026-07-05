@@ -1,4 +1,4 @@
-output ["n_colors: ",show(n_colors),"\n","color_communes: ",show(color_communes),"\n","color: ",show(color),"\n"];
+output let {array [int] of string: X_INTRODUCED_528_ = ["n_colors: ",show(n_colors),"\n","color_communes: ",show(color_communes),"\n","color: ",show(color),"\n"]} in (X_INTRODUCED_528_);
 int: num_enclaves = 29;
 int: num_communes = 11;
 array [1..num_enclaves] of int: color;

@@ -1,4 +1,4 @@
-output [if j==1 then "\n" else " " endif++show(x[i,j]) | i in knight, j in posit]++["\nt: ",show(t)++"\n","d: ",show(d)++"\n","maxk: ",show(maxk)];
+output let {array [int] of string: X_INTRODUCED_282_ = [if j==1 then "\n" else " " endif++show(x[i,j]) | i in knight, j in posit]++["\nt: ",show(t)++"\n","d: ",show(d)++"\n","maxk: ",show(maxk)]} in (X_INTRODUCED_282_);
 set of int: posit = 1..8;
 set of int: knight = 1..8;
 array [1..64] of int: X_INTRODUCED_0_;

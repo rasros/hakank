@@ -1,4 +1,4 @@
-output [((((((("n: "++show(n))++"\n")++"len: ")++show(len))++"\n")++"x: ")++show(x))++"\n"];
+output let {array [int] of string: X_INTRODUCED_5236_ = [((((((("n: "++show(n))++"\n")++"len: ")++show(len))++"\n")++"x: ")++show(x))++"\n"]} in (X_INTRODUCED_5236_);
 int: n = 117;
 int: max_len = 351;
 int: len;

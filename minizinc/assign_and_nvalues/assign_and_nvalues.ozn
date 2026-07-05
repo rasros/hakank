@@ -1,2 +1,2 @@
-output [("limitx: "++show(limitx))++"\n"];
+output let {array [int] of string: X_INTRODUCED_22_ = [("limitx: "++show(limitx))++"\n"]} in (X_INTRODUCED_22_);
 int: limitx = 2;

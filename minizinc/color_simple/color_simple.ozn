@@ -1,4 +1,4 @@
-output [((("x: "++show(x))++"\n")++"numColors: ")++show(numColors)];
+output let {array [int] of string: X_INTRODUCED_8_ = [((("x: "++show(x))++"\n")++"numColors: ")++show(numColors)]} in (X_INTRODUCED_8_);
 set of int: countries = 1..6;
 array [countries] of int: x;
 int: numColors;

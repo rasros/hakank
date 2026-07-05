@@ -1,4 +1,4 @@
-output [(((((((((((((((((((((("bin1: "++show(bin1))++"\n")++"bin2: ")++show(bin2))++"\n")++"bin3: ")++show(bin3))++"\n")++"bin4: ")++show(bin4))++"\n")++"bin5: ")++show(bin5))++"\n")++"alum: ")++show(alum))++"\n")++"silicon: ")++show(silicon))++"\n")++"value: ")++show(value))++"\n"];
+output let {array [int] of string: X_INTRODUCED_19_ = [(((((((((((((((((((((("bin1: "++show(bin1))++"\n")++"bin2: ")++show(bin2))++"\n")++"bin3: ")++show(bin3))++"\n")++"bin4: ")++show(bin4))++"\n")++"bin5: ")++show(bin5))++"\n")++"alum: ")++show(alum))++"\n")++"silicon: ")++show(silicon))++"\n")++"value: ")++show(value))++"\n"]} in (X_INTRODUCED_19_);
 float: bin1;
 float: bin2;
 float: bin3;

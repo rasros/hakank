@@ -1,4 +1,4 @@
-output ["nums: "++format(nums)++"\n"]++[if i==1 then "\n" else " " endif++show(x[s,i]) | s in 0..num_steps, i in 1..max_size];
+output let {array [int] of string: X_INTRODUCED_402_ = ["nums: "++format(nums)++"\n"]++[if i==1 then "\n" else " " endif++show(x[s,i]) | s in 0..num_steps, i in 1..max_size]} in (X_INTRODUCED_402_);
 int: num_steps = 5;
 int: max_size = 5;
 array [1..6] of int: X_INTRODUCED_47_;

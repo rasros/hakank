@@ -1,4 +1,4 @@
-output ((([if use_soft_constraints==1 then "Using soft constraints\n" else "Using hard constraints\n" endif]++[if j==0 then "\n" else " " endif++show(x[i,j]) | i,j in 0..n-1])++[if j==0 then "\n" else " " endif++show(obj[fix(x[i,j])]) | i,j in 0..n-1])++[((((((((((("\n"++"prefs    : ")++show(prefs))++"\n")++"satis    : ")++show(satis))++"\n")++"sat_prefs: ")++show(sat_prefs))++"\n")++"max_prefs: ")++show(max_prefs))++"\n"])++["\n"];
+output let {array [int] of string: X_INTRODUCED_222_ = ((([if use_soft_constraints==1 then "Using soft constraints\n" else "Using hard constraints\n" endif]++[if j==0 then "\n" else " " endif++show(x[i,j]) | i,j in 0..n-1])++[if j==0 then "\n" else " " endif++show(obj[fix(x[i,j])]) | i,j in 0..n-1])++[((((((((((("\n"++"prefs    : ")++show(prefs))++"\n")++"satis    : ")++show(satis))++"\n")++"sat_prefs: ")++show(sat_prefs))++"\n")++"max_prefs: ")++show(max_prefs))++"\n"])++["\n"]} in (X_INTRODUCED_222_);
 int: use_soft_constraints = 1;
 int: n = 3;
 int: m = 6;

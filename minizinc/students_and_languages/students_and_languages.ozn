@@ -1,4 +1,4 @@
-output [((("The "++ss[S])++" student speaks: ")++show(join(", ",[ss[L] | L in 1..N where fix(Students[S,L])==1])))++"\n" | S in 1..N];
+output let {array [int] of string: X_INTRODUCED_190_ = [((("The "++ss[S])++" student speaks: ")++show(join(", ",[ss[L] | L in 1..N where fix(Students[S,L])==1])))++"\n" | S in 1..N]} in (X_INTRODUCED_190_);
 int: N = 5;
 array [1..N] of string: ss = ["Polish","Hungarian","Finnish","Swedish","German"];
 array [1..25] of int: X_INTRODUCED_0_;

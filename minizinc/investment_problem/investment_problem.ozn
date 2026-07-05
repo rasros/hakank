@@ -1,4 +1,4 @@
-output [(((((((((("x:"++show(x))++"\n")++"the_returns:")++show(the_returns))++"\n")++"not_invested:")++show(not_invested))++"\n")++"z:")++show(z))++"\n"];
+output let {array [int] of string: X_INTRODUCED_41_ = [(((((((((("x:"++show(x))++"\n")++"the_returns:")++show(the_returns))++"\n")++"not_invested:")++show(not_invested))++"\n")++"z:")++show(z))++"\n"]} in (X_INTRODUCED_41_);
 int: m = 8;
 array [1..m] of int: x;
 array [1..m] of int: the_returns;

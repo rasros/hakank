@@ -1,4 +1,4 @@
-output ["Starting:  ",show(starting_slot),"\n","Durations: ",show(app_durations),"\n","Ends:      ",show(ending_slot),"\n","z:         ",show(z),"\n"]++[if s==1 then "\n" else " " endif++if fix(m[t,s])==-1 then "Busy    " elseif fix(m[t,s])==1 then "SELECTED" else "        " endif | t in 1..num_slots, s in 1..num_speakers];
+output let {array [int] of string: X_INTRODUCED_94_ = ["Starting:  ",show(starting_slot),"\n","Durations: ",show(app_durations),"\n","Ends:      ",show(ending_slot),"\n","z:         ",show(z),"\n"]++[if s==1 then "\n" else " " endif++if fix(m[t,s])==-1 then "Busy    " elseif fix(m[t,s])==1 then "SELECTED" else "        " endif | t in 1..num_slots, s in 1..num_speakers]} in (X_INTRODUCED_94_);
 int: num_speakers = 3;
 int: num_slots = 6;
 array [1..num_speakers] of int: ending_slot;

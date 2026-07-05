@@ -1,4 +1,4 @@
-output [((((((("pants: "++show(colors[fix(pants)]))++"\n")++"shirt: ")++show(colors[fix(shirt)]))++"\n")++"tie  : ")++show(colors[fix(tie)]))++"\n"]++["\n"];
+output let {array [int] of string: X_INTRODUCED_28_ = [((((((("pants: "++show(colors[fix(pants)]))++"\n")++"shirt: ")++show(colors[fix(shirt)]))++"\n")++"tie  : ")++show(colors[fix(tie)]))++"\n"]++["\n"]} in (X_INTRODUCED_28_);
 array [1..9] of string: colors = ["red","green","orange","blue","pink","yellow","black","khaki","purple"];
 int: pants;
 int: shirt;

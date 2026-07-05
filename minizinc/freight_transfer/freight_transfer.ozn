@@ -1,4 +1,4 @@
-output ["z: ",show(z),"\n","x: ",show(x),"\n","transported: ",show(transported),"\n"];
+output let {array [int] of string: X_INTRODUCED_22_ = ["z: ",show(z),"\n","x: ",show(x),"\n","transported: ",show(transported),"\n"]} in (X_INTRODUCED_22_);
 int: n = 4;
 array [1..n] of int: x;
 array [1..n] of int: capacity = [7,5,4,3];

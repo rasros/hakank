@@ -1,4 +1,4 @@
-output ["x: ",show(x),"\n","x_s: ",show(x_s),"\n","ss_sum: ",show(ss_sum),"\n"];
+output let {array [int] of string: X_INTRODUCED_44_ = ["x: ",show(x),"\n","x_s: ",show(x_s),"\n","ss_sum: ",show(ss_sum),"\n"]} in (X_INTRODUCED_44_);
 int: ss_sum;
 int: m = 4;
 int: n = 6;

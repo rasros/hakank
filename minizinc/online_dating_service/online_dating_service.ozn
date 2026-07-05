@@ -1,4 +1,4 @@
-output ((([""++format(p)++" -> "++format(x[p])++"\n" | p in name]++["\n"])++[""++format(p)++" is matched to "++format(y[p])++"\n" | p in name])++["\nage_diff: "++format(age_diff)++"\n","common_interests: "++format(common_interests)++"\n","z: "++format(z)++"\n\n","complete_matches: "++format(complete_match)++"  num_complete_matches: "++format(num_complete_matches)++":\n"])++[if fix(complete_match[p])==1 /\ p < fix(x[p]) then "  "++format(p)++" <-> "++format(x[p])++"\n" else "" endif | p in name];
+output let {array [int] of string: X_INTRODUCED_954_ = ((([""++format(p)++" -> "++format(x[p])++"\n" | p in name]++["\n"])++[""++format(p)++" is matched to "++format(y[p])++"\n" | p in name])++["\nage_diff: "++format(age_diff)++"\n","common_interests: "++format(common_interests)++"\n","z: "++format(z)++"\n\n","complete_matches: "++format(complete_match)++"  num_complete_matches: "++format(num_complete_matches)++":\n"])++[if fix(complete_match[p])==1 /\ p < fix(x[p]) then "  "++format(p)++" <-> "++format(x[p])++"\n" else "" endif | p in name]} in (X_INTRODUCED_954_);
 set of int: name = 1..9;
 array [name] of int: x;
 array [name] of set of int: y;

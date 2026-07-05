@@ -1,4 +1,4 @@
-output [(((("Hire: "++show(Hire))++"\n")++"total_cost: ")++show(z))++"\n"]++[if fix(Hire[w])==1 then show(w)++" " else "" endif | w in Workers];
+output let {array [int] of string: X_INTRODUCED_120_ = [(((("Hire: "++show(Hire))++"\n")++"total_cost: ")++show(z))++"\n"]++[if fix(Hire[w])==1 then show(w)++" " else "" endif | w in Workers]} in (X_INTRODUCED_120_);
 set of int: Workers = 1..32;
 array [Workers] of int: Hire;
 array [Workers] of int: Cost = [1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,6,6,6,7,8,9];

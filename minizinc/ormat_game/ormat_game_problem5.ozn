@@ -1,4 +1,4 @@
-output (((["Problem:"]++[if j==1 then "\n" else "" endif++show(problem[i,j]) | i,j in 1..n])++["\n\nSolution:\nx: ",show(x),"\n","num_overlays: ",show(num_overlays),"\n"])++[((if fix(x[o])==1 /\ j==1 then "\n" else "" endif++if fix(x[o])==1 /\ i==1 /\ j==1 then ("Overlay #"++show(o))++"\n" else "" endif)++if fix(x[o])==1 then show(overlays[o,i,j]) else "" endif)++if fix(x[o])==1 /\ i==n /\ j==n then "\n" else "" endif | o in 1..f, i,j in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_280_ = (((["Problem:"]++[if j==1 then "\n" else "" endif++show(problem[i,j]) | i,j in 1..n])++["\n\nSolution:\nx: ",show(x),"\n","num_overlays: ",show(num_overlays),"\n"])++[((if fix(x[o])==1 /\ j==1 then "\n" else "" endif++if fix(x[o])==1 /\ i==1 /\ j==1 then ("Overlay #"++show(o))++"\n" else "" endif)++if fix(x[o])==1 then show(overlays[o,i,j]) else "" endif)++if fix(x[o])==1 /\ i==n /\ j==n then "\n" else "" endif | o in 1..f, i,j in 1..n])++["\n"]} in (X_INTRODUCED_280_);
 int: n = 5;
 array [1..n,1..n] of int: problem = [|1,1,1,1,1|1,1,1,1,1|1,1,1,1,1|1,1,1,1,1|1,1,0,0,0|];
 int: f = 120;

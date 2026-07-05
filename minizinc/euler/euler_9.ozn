@@ -1,4 +1,4 @@
-output [(show([a,b,c])++": ")++show(prod)];
+output let {array [int] of string: X_INTRODUCED_10_ = [(show([a,b,c])++": ")++show(prod)]} in (X_INTRODUCED_10_);
 int: c;
 int: b;
 int: a;

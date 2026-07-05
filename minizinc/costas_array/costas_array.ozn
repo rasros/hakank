@@ -1,4 +1,4 @@
-output ([show(costas)++","]++[if j==1 then "\n" else " " endif++if fix(differences[i,j]) > -n+1 then show(differences[i,j]) else " " endif | i,j in 1..n])++["\n"];
+output let {array [int] of string: X_INTRODUCED_775_ = ([show(costas)++","]++[if j==1 then "\n" else " " endif++if fix(differences[i,j]) > -n+1 then show(differences[i,j]) else " " endif | i,j in 1..n])++["\n"]} in (X_INTRODUCED_775_);
 int: n = 18;
 array [1..n] of int: costas;
 array [1..324] of int: X_INTRODUCED_34_;

@@ -1,4 +1,4 @@
-output [if j==0 then "\n" else " " endif++show(grid[i,j]) | i,j in augmentedBoardCoord];
+output let {array [int] of string: X_INTRODUCED_631_ = [if j==0 then "\n" else " " endif++show(grid[i,j]) | i,j in augmentedBoardCoord]} in (X_INTRODUCED_631_);
 set of int: augmentedBoardCoord = 0..10;
 array [1..121] of int: X_INTRODUCED_0_;
 array [augmentedBoardCoord,augmentedBoardCoord] of int: grid = array2d(0..10,0..10,X_INTRODUCED_0_);

@@ -1,0 +1,5 @@
+output let {array [int] of string: X_INTRODUCED_188_ = ["total: ",show(total),"\n","x: ",show(x),"\n","ops: ",show(ops),"\n"]} in (X_INTRODUCED_188_);
+int: n = 19;
+array [1..n-1] of int: ops;
+array [1..n] of int: x = [72,229,107,97,110,32,75,106,101,108,108,101,114,115,116,114,97,110,100];
+int: total = 666;

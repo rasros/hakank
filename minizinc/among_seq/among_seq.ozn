@@ -1,4 +1,4 @@
-output [((((((((("x: "++show(x))++"\n")++"low: ")++show(low))++"\n")++"up: ")++show(up))++"\n")++"y: ")++show(y)];
+output let {array [int] of string: X_INTRODUCED_21_ = [((((((((("x: "++show(x))++"\n")++"low: ")++show(low))++"\n")++"up: ")++show(up))++"\n")++"y: ")++show(y)]} in (X_INTRODUCED_21_);
 int: n = 7;
 array [1..n] of int: x = [9,2,4,5,5,7,2];
 int: low = 1;

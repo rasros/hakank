@@ -1,4 +1,4 @@
-output [(((((((((("n: "++show(n))++"\n")++"n_a: ")++show(n_a))++"\n")++"n_squared: ")++show(n_squared))++"\n")++"n_squared_a: ")++show(n_squared_a))++"\n"];
+output let {array [int] of string: X_INTRODUCED_34_ = [(((((((((("n: "++show(n))++"\n")++"n_a: ")++show(n_a))++"\n")++"n_squared: ")++show(n_squared))++"\n")++"n_squared_a: ")++show(n_squared_a))++"\n"]} in (X_INTRODUCED_34_);
 int: n;
 array [1..4] of int: n_a;
 int: n_squared;

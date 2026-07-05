@@ -11,7 +11,12 @@ so fixes for models that no longer flatten under current MiniZinc are kept here.
 
 The models live under minizinc/, grouped into one subdirectory per family, so a
 model and its variants (for example queens, queens2 and queens_ip) sit together.
-Models that include one another are always placed in the same directory.
+
+Files that only define shared constraints/functions and are included by other
+models (rather than being problems themselves) live under minizinc/lib/. Add it
+to the include path to compile a model that uses one, for example:
+
+    minizinc -I minizinc/lib minizinc/minesweeper/minesweeper_0.mzn
 
 ## Changes from upstream
 

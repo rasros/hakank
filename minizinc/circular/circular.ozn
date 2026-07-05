@@ -1,3 +1,3 @@
-output ["x: "++format(x)++"\n"];
+output let {array [int] of string: X_INTRODUCED_168_ = ["x: "++format(x)++"\n"]} in (X_INTRODUCED_168_);
 int: m = 10;
 array [1..m] of int: x;

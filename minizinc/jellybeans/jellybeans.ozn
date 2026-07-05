@@ -1,4 +1,4 @@
-output ["age  : ",show(age),"\n","beans: ",show(beans),"\n","David's age: ",show(age[David])," David's beans: ",show(beans[David]),"\n"];
+output let {array [int] of string: X_INTRODUCED_33_ = ["age  : ",show(age),"\n","beans: ",show(beans),"\n","David's age: ",show(age[David])," David's beans: ",show(beans[David]),"\n"]} in (X_INTRODUCED_33_);
 int: n = 4;
 array [1..n] of int: beans;
 int: David = 4;

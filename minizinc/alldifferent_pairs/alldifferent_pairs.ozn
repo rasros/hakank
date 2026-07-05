@@ -1,4 +1,4 @@
-output [show([x[k,j] | j in 1..2])++"\n" | k in 1..m]++["pairs: "++format([x[k,1]*(n-1)+x[k,2] | k in index_set_1of2(x)])++"\n"];
+output let {array [int] of string: X_INTRODUCED_39_ = [show([x[k,j] | j in 1..2])++"\n" | k in 1..m]++["pairs: "++format([x[k,1]*(n-1)+x[k,2] | k in index_set_1of2(x)])++"\n"]} in (X_INTRODUCED_39_);
 int: m = 6;
 int: n = 4;
 array [1..12] of int: X_INTRODUCED_16_;

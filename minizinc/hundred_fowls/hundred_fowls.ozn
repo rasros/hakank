@@ -1,4 +1,4 @@
-output [show([cock,hen,chicks])];
+output let {array [int] of string: X_INTRODUCED_5_ = [show([cock,hen,chicks])]} in (X_INTRODUCED_5_);
 int: chicks;
 int: hen;
 int: cock;

@@ -1,4 +1,4 @@
-output [(show(["a","b","c","d","e","f","g","h","i"])++"\n")++show([a,b,c,d,e,f,g,h,i])];
+output let {array [int] of string: X_INTRODUCED_36_ = [(show(["a","b","c","d","e","f","g","h","i"])++"\n")++show([a,b,c,d,e,f,g,h,i])]} in (X_INTRODUCED_36_);
 int: i;
 int: h;
 int: g;

@@ -1,4 +1,4 @@
-output ["a: "++format(a)++"\n","upb: "++format(upb)++"\n","gcc: "++format(gcc)++"\n","z: "++format(z)++"\n","max_val: "++format(max_val)++"\n","ub_array(a): "++format(lb_array(a))++".."++format(ub_array(a))++"\n"];
+output let {array [int] of string: X_INTRODUCED_64_ = ["a: "++format(a)++"\n","upb: "++format(upb)++"\n","gcc: "++format(gcc)++"\n","z: "++format(z)++"\n","max_val: "++format(max_val)++"\n","ub_array(a): "++format(lb_array(a))++".."++format(ub_array(a))++"\n"]} in (X_INTRODUCED_64_);
 int: n = 7;
 array [1..n] of int: a = [15,14,39,23,14,14,8];
 int: upb = 39;

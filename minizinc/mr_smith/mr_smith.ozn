@@ -1,4 +1,4 @@
-output [show(x)];
+output let {array [int] of string: X_INTRODUCED_1_ = [show(x)]} in (X_INTRODUCED_1_);
 bool: Tim = John;
 bool: John;
 bool: Matt;

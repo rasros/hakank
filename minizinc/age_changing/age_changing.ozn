@@ -1,3 +1,3 @@
-output ["my age: ",show(m),"\n","husband's age: ",show(h),"\n"];
+output let {array [int] of string: X_INTRODUCED_319_ = ["my age: ",show(m),"\n","husband's age: ",show(h),"\n"]} in (X_INTRODUCED_319_);
 int: h;
 int: m;

@@ -1,4 +1,4 @@
-output ([let {int: leftout = max(0..n diff {fix(x[j,k]) | j in 1..m, k in 1..2})} in (((((((((("max_score: "++show(max_score))++"\n")++"total: ")++show(total))++"\n")++"leftout: ")++show(leftout))++"\n")++"p1 p2: score\n")++"------------\n")]++[((((show(x[i,1])++" ")++show(x[i,2]))++": ")++show(s[i]))++"\n" | i in 1..m])++["\n"];
+output let {array [int] of string: X_INTRODUCED_58_ = ([let {int: leftout = max(0..n diff {fix(x[j,k]) | j in 1..m, k in 1..2})} in (((((((((("max_score: "++show(max_score))++"\n")++"total: ")++show(total))++"\n")++"leftout: ")++show(leftout))++"\n")++"p1 p2: score\n")++"------------\n")]++[((((show(x[i,1])++" ")++show(x[i,2]))++": ")++show(s[i]))++"\n" | i in 1..m])++["\n"]} in (X_INTRODUCED_58_);
 int: n = 19;
 int: m = 9;
 array [1..18] of int: X_INTRODUCED_16_;

@@ -1,4 +1,4 @@
-output ((["z: ",show(z)]++["\n["])++[(if j==1 then "\n" else "" endif++show(x[i,j]))++"," | i,j in 1..n])++["]\n"];
+output let {array [int] of string: X_INTRODUCED_2863_ = ((["z: ",show(z)]++["\n["])++[(if j==1 then "\n" else "" endif++show(x[i,j]))++"," | i,j in 1..n])++["]\n"]} in (X_INTRODUCED_2863_);
 int: n = 31;
 int: z;
 array [1..961] of int: X_INTRODUCED_0_;

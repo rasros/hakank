@@ -1,4 +1,4 @@
-output ["wife   : ",show(wife),"\n","husband: ",show(husband),"\n"];
+output let {array [int] of string: X_INTRODUCED_357_ = ["wife   : ",show(wife),"\n","husband: ",show(husband),"\n"]} in (X_INTRODUCED_357_);
 int: num_women = 9;
 int: num_men = 9;
 array [1..num_women] of int: husband;

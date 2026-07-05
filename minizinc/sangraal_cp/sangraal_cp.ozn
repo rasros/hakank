@@ -1,4 +1,4 @@
-output ["start  : ",show(start),"\n","free   : ",show(free),"\n","prep   : ",show(prep),"\n","end    : ",show(end),"\n","rescued: ",show(rescued),"\n","z      : ",show(z),"\n"];
+output let {array [int] of string: X_INTRODUCED_62_ = ["start  : ",show(start),"\n","free   : ",show(free),"\n","prep   : ",show(prep),"\n","end    : ",show(end),"\n","rescued: ",show(rescued),"\n","z      : ",show(z),"\n"]} in (X_INTRODUCED_62_);
 int: k = 8;
 array [1..k] of int: rescued;
 int: z = sum(rescued);

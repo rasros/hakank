@@ -1,4 +1,4 @@
-output ["[michael, simon, richard]: ",show([michael,simon,richard]),"\n","sport: ",show(sport),"\n","country: ",show(country),"\n","place: ",show(place),"\n"];
+output let {array [int] of string: X_INTRODUCED_23_ = ["[michael, simon, richard]: ",show([michael,simon,richard]),"\n","sport: ",show(sport),"\n","country: ",show(country),"\n","place: ",show(place),"\n"]} in (X_INTRODUCED_23_);
 set of int: d = 1..3;
 array [d] of int: place;
 int: australia;

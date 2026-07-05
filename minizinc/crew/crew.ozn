@@ -1,4 +1,4 @@
-output [((if i==1 /\ j==1 then ("number of person: "++show(z))++"\n" else "" endif++if j mod numPersons==1 then show(i)++": " else "" endif)++show(crew[i,j]))++if j mod numPersons==0 then "\n" else " " endif | i in 1..numFlights, j in 1..numPersons]++["\n"];
+output let {array [int] of string: X_INTRODUCED_550_ = [((if i==1 /\ j==1 then ("number of person: "++show(z))++"\n" else "" endif++if j mod numPersons==1 then show(i)++": " else "" endif)++show(crew[i,j]))++if j mod numPersons==0 then "\n" else " " endif | i in 1..numFlights, j in 1..numPersons]++["\n"]} in (X_INTRODUCED_550_);
 int: numPersons = 20;
 int: numFlights = 10;
 array [1..200] of int: X_INTRODUCED_0_;

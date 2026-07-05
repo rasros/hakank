@@ -1,4 +1,4 @@
-output [(((((("first: "++show(first))++"\n")++"last: ")++show(last))++"\n")++"age: ")++show(age)];
+output let {array [int] of string: X_INTRODUCED_32_ = [(((((("first: "++show(first))++"\n")++"last: ")++show(last))++"\n")++"age: ")++show(age)]} in (X_INTRODUCED_32_);
 set of int: r = 1..5;
 int: Otto = 5;
 int: Nora = 4;

@@ -1,2 +1,2 @@
-output [(((("s1: "++show(s1))++"\n")++"s2: ")++show(s1))++"\n"];
+output let {array [int] of string: X_INTRODUCED_11_ = [(((("s1: "++show(s1))++"\n")++"s2: ")++show(s1))++"\n"]} in (X_INTRODUCED_11_);
 set of int: s1;

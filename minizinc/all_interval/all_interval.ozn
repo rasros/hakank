@@ -1,4 +1,4 @@
-output [show(x)++","," ",show(sum_distinct)," diffs: ",show(diffs)];
+output let {array [int] of string: X_INTRODUCED_27_ = [show(x)++","," ",show(sum_distinct)," diffs: ",show(diffs)]} in (X_INTRODUCED_27_);
 int: n = 3;
 array [1..n-1] of int: diffs;
 int: sum_distinct = 6;

@@ -1,4 +1,4 @@
-output [((((((("x: "++show(x))++"\n")++"tot_benefit: ")++show(tot_benefit))++"\n")++"tot_weight: ")++show(tot_weight))++"\n"];
+output let {array [int] of string: X_INTRODUCED_38_ = [((((((("x: "++show(x))++"\n")++"tot_benefit: ")++show(tot_benefit))++"\n")++"tot_weight: ")++show(tot_weight))++"\n"]} in (X_INTRODUCED_38_);
 int: n = 3;
 array [1..n] of int: x;
 int: tot_benefit;

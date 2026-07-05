@@ -1,4 +1,4 @@
-output [((((((("variables: "++show(variables))++"\n")++"ctr: ")++show(ctr))++"\n")++"t_var: ")++show(t_var))++"\n"];
+output let {array [int] of string: X_INTRODUCED_11_ = [((((((("variables: "++show(variables))++"\n")++"ctr: ")++show(ctr))++"\n")++"t_var: ")++show(t_var))++"\n"]} in (X_INTRODUCED_11_);
 int: n = 3;
 array [1..n] of int: variables = [2,1,4];
 int: ctr = 0;

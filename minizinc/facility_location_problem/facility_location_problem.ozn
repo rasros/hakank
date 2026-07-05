@@ -1,4 +1,4 @@
-output [((((("open: "++show(open))++"\n")++"tot_cost: ")++show(tot_cost))++"\n")++"ships:"]++[if j==1 then "\n" else " " endif++show(ships[i,j]) | i in 1..num_companies, j in 1..num_regions];
+output let {array [int] of string: X_INTRODUCED_89_ = [((((("open: "++show(open))++"\n")++"tot_cost: ")++show(tot_cost))++"\n")++"ships:"]++[if j==1 then "\n" else " " endif++show(ships[i,j]) | i in 1..num_companies, j in 1..num_regions]} in (X_INTRODUCED_89_);
 int: num_companies = 4;
 array [1..num_companies] of int: open;
 int: tot_cost;

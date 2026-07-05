@@ -1,3 +1,3 @@
-output ["Move the coin in position "++format(from)++" to empty position "++format(to)++"\n"];
+output let {array [int] of string: X_INTRODUCED_128_ = ["Move the coin in position "++format(from)++" to empty position "++format(to)++"\n"]} in (X_INTRODUCED_128_);
 int: from;
 int: to;

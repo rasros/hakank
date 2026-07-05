@@ -1,4 +1,4 @@
-output ["sum_calories: ",show(sum_calories),"\n","x: ",show(x),"\n"];
+output let {array [int] of string: X_INTRODUCED_30_ = ["sum_calories: ",show(sum_calories),"\n","x: ",show(x),"\n"]} in (X_INTRODUCED_30_);
 int: n = 8;
 array [1..n] of int: x;
 int: sum_calories;

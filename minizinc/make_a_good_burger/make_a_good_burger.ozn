@@ -1,4 +1,4 @@
-output ["total   : ",show(total)," cent\n","sodium  : ",show(sum([x[i]*items[i,1] | i in 1..num_items]))," mg\n","fat     : ",show(sum([x[i]*items[i,2] | i in 1..num_items]))," g\n","calories: ",show(sum([x[i]*items[i,3] | i in 1..num_items])),"\n","x       : ",show(x),"\n"]++[((((show(names[i])++": ")++show(x[i]))++" (")++show_int(3,x[i]*items[i,4]))++" cent)\n" | i in 1..num_items];
+output let {array [int] of string: X_INTRODUCED_59_ = ["total   : ",show(total)," cent\n","sodium  : ",show(sum([x[i]*items[i,1] | i in 1..num_items]))," mg\n","fat     : ",show(sum([x[i]*items[i,2] | i in 1..num_items]))," g\n","calories: ",show(sum([x[i]*items[i,3] | i in 1..num_items])),"\n","x       : ",show(x),"\n"]++[((((show(names[i])++": ")++show(x[i]))++" (")++show_int(3,x[i]*items[i,4]))++" cent)\n" | i in 1..num_items]} in (X_INTRODUCED_59_);
 int: num_items = 8;
 array [1..num_items] of int: x;
 array [1..num_items,1..4] of int: items = [|50,17,220,25|330,9,260,15|310,6,70,10|1,2,10,9|260,0,5,3|3,0,4,4|160,0,20,2|3,0,9,4|];

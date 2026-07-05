@@ -1,4 +1,4 @@
-output ["[recreation, apartments, houses, cemetery, dump]\n","developments (the lots) : ",show(developments),"\n","la: near lake, st: steep slopes, so: bad soil, hi: near highway, du: near dump\n","broken constraints: [la,st,st,st,st,so,so,hi,hi,hi,du,du,du]\n","broken constraints: ",show(broken),"\n","total broken constraints: ",show(total_count),"\n"];
+output let {array [int] of string: X_INTRODUCED_64_ = ["[recreation, apartments, houses, cemetery, dump]\n","developments (the lots) : ",show(developments),"\n","la: near lake, st: steep slopes, so: bad soil, hi: near highway, du: near dump\n","broken constraints: [la,st,st,st,st,so,so,hi,hi,hi,du,du,du]\n","broken constraints: ",show(broken),"\n","total broken constraints: ",show(total_count),"\n"]} in (X_INTRODUCED_64_);
 int: c = 13;
 array [1..c] of int: broken;
 int: total_count = sum(broken);

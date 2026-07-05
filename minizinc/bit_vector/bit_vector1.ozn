@@ -1,4 +1,4 @@
-output [((((((((((((("num : "++show(num))++" num_x : ")++show(num_x))++"\n")++"num2: ")++show(num2))++" num2_x: ")++show(num2_x))++"\n")++"num3: ")++show(num3))++" num3_x: ")++show(num3_x))++"\n"]++["\n"];
+output let {array [int] of string: X_INTRODUCED_126_ = [((((((((((((("num : "++show(num))++" num_x : ")++show(num_x))++"\n")++"num2: ")++show(num2))++" num2_x: ")++show(num2_x))++"\n")++"num3: ")++show(num3))++" num3_x: ")++show(num3_x))++"\n"]++["\n"]} in (X_INTRODUCED_126_);
 int: num;
 int: bits = 16;
 array [1..bits] of int: num_x;

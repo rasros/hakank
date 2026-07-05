@@ -1,4 +1,4 @@
-output [(((("npairs: "++show(npairs))++"\n")++"pairs: ")++show(pairs))++"\n"];
+output let {array [int] of string: X_INTRODUCED_56_ = [(((("npairs: "++show(npairs))++"\n")++"pairs: ")++show(pairs))++"\n"]} in (X_INTRODUCED_56_);
 int: n = 5;
 array [1..10] of int: X_INTRODUCED_0_;
 array [1..n,1..2] of int: pairs = [|3,1|1,5|3,1|3,1|1,5|];

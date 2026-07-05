@@ -1,4 +1,4 @@
-output [((((((("Story: "++show(Story))++"\n")++"Age: ")++show(Age))++"\n")++"Country: ")++show(Country))++"\n"];
+output let {array [int] of string: X_INTRODUCED_38_ = [((((((("Story: "++show(Story))++"\n")++"Age: ")++show(Age))++"\n")++"Country: ")++show(Country))++"\n"]} in (X_INTRODUCED_38_);
 set of int: R = 1..5;
 int: TenCommandments;
 int: Passover;

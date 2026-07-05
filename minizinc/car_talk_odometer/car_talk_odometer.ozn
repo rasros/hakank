@@ -1,4 +1,4 @@
-output ["start: "++format(start)++" .. end: "++format(end)++" z: "++format(z)++"\n"];
+output let {array [int] of string: X_INTRODUCED_50_ = ["start: "++format(start)++" .. end: "++format(end)++" z: "++format(z)++"\n"]} in (X_INTRODUCED_50_);
 int: start;
 int: end;
 int: z = end-start;

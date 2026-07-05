@@ -1,4 +1,4 @@
-output ([(((("rows: "++show(rows))++"\n")++"cols: ")++show(cols))++"\n"]++[if j==1 then "\n" else " " endif++show_int(2,x[i,j]) | i,j in 1..n])++[(((("\nx_rows: "++show(x_rows))++"\n")++"x_cols: ")++show(x_cols))++"\n"];
+output let {array [int] of string: X_INTRODUCED_1805_ = ([(((("rows: "++show(rows))++"\n")++"cols: ")++show(cols))++"\n"]++[if j==1 then "\n" else " " endif++show_int(2,x[i,j]) | i,j in 1..n])++[(((("\nx_rows: "++show(x_rows))++"\n")++"x_cols: ")++show(x_cols))++"\n"]} in (X_INTRODUCED_1805_);
 int: n = 10;
 array [1..n] of int: rows = [13,26,33,36,40,42,44,48,50,72];
 array [1..n] of int: cols = [17,20,24,25,32,57,65,66,80,84];

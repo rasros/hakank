@@ -1,4 +1,4 @@
-output [(show([X1,X2,Y1,Y2])++", % ")++show(Z)];
+output let {array [int] of string: X_INTRODUCED_13_ = [(show([X1,X2,Y1,Y2])++", % ")++show(Z)]} in (X_INTRODUCED_13_);
 int: Y2;
 int: Y1;
 int: X2;

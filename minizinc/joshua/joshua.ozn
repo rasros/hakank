@@ -1,4 +1,4 @@
-output [show(tot),"\n",show(x),"\n"];
+output let {array [int] of string: X_INTRODUCED_845_ = [show(tot),"\n",show(x),"\n"]} in (X_INTRODUCED_845_);
 set of int: R = 1..9;
 array [R] of int: x;
 int: tot = sum([x[i] | i in R]);

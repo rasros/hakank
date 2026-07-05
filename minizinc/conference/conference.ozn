@@ -1,4 +1,4 @@
-output [((((((("sessions: "++show(sessions))++"\n")++"slots: ")++show(slots))++"\n")++"num_time_slots: ")++show(num_time_slots))++"\n"];
+output let {array [int] of string: X_INTRODUCED_52_ = [((((((("sessions: "++show(sessions))++"\n")++"slots: ")++show(slots))++"\n")++"num_time_slots: ")++show(num_time_slots))++"\n"]} in (X_INTRODUCED_52_);
 int: num_sessions = 11;
 int: max_time_slots = 11;
 array [1..num_sessions] of int: sessions;

@@ -1,4 +1,4 @@
-output ["bins: ",show(bins),"\n","colors: ",show(colors),"\n","color: ",show(color),"\n","nval: ",show(nval),"\n"];
+output let {array [int] of string: X_INTRODUCED_17_ = ["bins: ",show(bins),"\n","colors: ",show(colors),"\n","color: ",show(color),"\n","nval: ",show(nval),"\n"]} in (X_INTRODUCED_17_);
 int: nval = 2;
 int: color = 4;
 int: n = 4;

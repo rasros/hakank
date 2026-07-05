@@ -1,4 +1,4 @@
-output [show(series)];
+output let {array [int] of string: X_INTRODUCED_54_ = [show(series)]} in (X_INTRODUCED_54_);
 set of int: classes = 0..11;
 array [1..12] of int: X_INTRODUCED_16_;
 array [classes] of int: series = array1d(0..11,X_INTRODUCED_16_);

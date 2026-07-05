@@ -1,3 +1,3 @@
-output ["v1: "++show(v1)];
+output let {array [int] of string: X_INTRODUCED_18_ = ["v1: "++show(v1)]} in (X_INTRODUCED_18_);
 int: m = 3;
 array [1..m] of int: v1 = [5,3,3];

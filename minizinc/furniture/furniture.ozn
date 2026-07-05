@@ -1,4 +1,4 @@
-output (["prefs: "++format(prefs)++"\n","Total: "++format(Total)++"\n","to_buy: "++format(to_buy)++"\n"]++["\nWhat we got:\n"])++[((""++format(furnitures_s[j])++": ")++show(sum([to_buy[i]*mat[i,j] | i in 1..num_offers])))++"\n" | j in 1..num_products];
+output let {array [int] of string: X_INTRODUCED_40_ = (["prefs: "++format(prefs)++"\n","Total: "++format(Total)++"\n","to_buy: "++format(to_buy)++"\n"]++["\nWhat we got:\n"])++[((""++format(furnitures_s[j])++": ")++show(sum([to_buy[i]*mat[i,j] | i in 1..num_offers])))++"\n" | j in 1..num_products]} in (X_INTRODUCED_40_);
 int: num_offers = 7;
 array [1..num_offers] of int: to_buy;
 array [1..num_offers] of int: offer_price = [1600,1600,1860,1860,1900,2100,2100];

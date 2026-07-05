@@ -1,4 +1,4 @@
-output [("x: "++show(rot))++"\n"]++[((("zone "++show(j))++": ")++show([v[i,1+fix(rot[i]+j-1) mod n] | i in 1..num_discs]))++"\n" | j in 1..n];
+output let {array [int] of string: X_INTRODUCED_143_ = [("x: "++show(rot))++"\n"]++[((("zone "++show(j))++": ")++show([v[i,1+fix(rot[i]+j-1) mod n] | i in 1..num_discs]))++"\n" | j in 1..n]} in (X_INTRODUCED_143_);
 int: num_discs = 4;
 int: n = 8;
 array [1..num_discs] of int: rot;

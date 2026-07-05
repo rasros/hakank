@@ -1,3 +1,3 @@
-output [("labels: "++show(labels))++"\n"];
+output let {array [int] of string: X_INTRODUCED_48_ = [("labels: "++show(labels))++"\n"]} in (X_INTRODUCED_48_);
 set of int: indices = 1..7;
 array [indices] of int: labels;

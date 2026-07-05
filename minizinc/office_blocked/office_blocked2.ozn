@@ -1,4 +1,4 @@
-output ["floor: ",show(floor),"\n","room : ",show(room),"\n","     : ",show([(floor[i]-1)*rooms+room[i] | i in 1..n]),"\n"]++[if r==1 /\ p==1 then "\n" else "" endif++if fix(floor[p])==3-f /\ fix(room[p])==r then x_s[p]++" " else "" endif | f in 1..floors, r in 1..rooms, p in 1..n];
+output let {array [int] of string: X_INTRODUCED_41_ = ["floor: ",show(floor),"\n","room : ",show(room),"\n","     : ",show([(floor[i]-1)*rooms+room[i] | i in 1..n]),"\n"]++[if r==1 /\ p==1 then "\n" else "" endif++if fix(floor[p])==3-f /\ fix(room[p])==r then x_s[p]++" " else "" endif | f in 1..floors, r in 1..rooms, p in 1..n]} in (X_INTRODUCED_41_);
 int: n = 6;
 int: floors = 2;
 array [1..n] of int: floor;

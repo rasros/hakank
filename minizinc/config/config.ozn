@@ -1,4 +1,4 @@
-output [(((("cost: "++show(cost))++"\n")++"rack: ")++show(rack))++"\n"];
+output let {array [int] of string: X_INTRODUCED_91_ = [(((("cost: "++show(cost))++"\n")++"rack: ")++show(rack))++"\n"]} in (X_INTRODUCED_91_);
 int: cost;
 set of int: Racks = 0..4;
 array [1..5] of int: X_INTRODUCED_0_;

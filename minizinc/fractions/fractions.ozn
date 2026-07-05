@@ -1,4 +1,4 @@
-output [show(Vars),"\n"]++[(((((((((((((("\n"++show(A))++"/(")++show(B))++show(C))++") + ")++show(D))++"/(")++show(E))++show(F))++") + ")++show(G))++"/(")++show(H))++show(I))++") = 1\n "];
+output let {array [int] of string: X_INTRODUCED_41_ = [show(Vars),"\n"]++[(((((((((((((("\n"++show(A))++"/(")++show(B))++show(C))++") + ")++show(D))++"/(")++show(E))++show(F))++") + ")++show(G))++"/(")++show(H))++show(I))++") = 1\n "]} in (X_INTRODUCED_41_);
 int: I;
 int: H;
 int: G;

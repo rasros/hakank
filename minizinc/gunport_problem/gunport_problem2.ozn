@@ -1,4 +1,4 @@
-output (["sum_zeros: "++show(sum_zeros)]++[if j==1 then "\n" else " " endif++show(rt[i,j]) | i in M, j in N])++["\n"];
+output let {array [int] of string: X_INTRODUCED_526_ = (["sum_zeros: "++show(sum_zeros)]++[if j==1 then "\n" else " " endif++show(rt[i,j]) | i in M, j in N])++["\n"]} in (X_INTRODUCED_526_);
 set of int: N = 1..4;
 set of int: M = 1..4;
 array [1..16] of int: X_INTRODUCED_97_;

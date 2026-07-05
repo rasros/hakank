@@ -1,4 +1,4 @@
-output ["friends  : ",show(friends),"\n","all_words: ",show(all_words),"\n","anna   : ",show(anna),"\n","barbra : ",show(barbra),"\n","carla  : ",show(carla),"\n","delilah: ",show(delilah),"\n","eliza  : ",show(eliza),"\n","fiona  : ",show(fiona),"\n","abulia    : ",show(abulia),"\n","betise    : ",show(betise),"\n","caryatid  : ",show(caryatid),"\n","dehisce   : ",show(dehisce),"\n","euhemerism: ",show(euhemerism),"\n","floruit   : ",show(floruit),"\n"];
+output let {array [int] of string: X_INTRODUCED_40_ = ["friends  : ",show(friends),"\n","all_words: ",show(all_words),"\n","anna   : ",show(anna),"\n","barbra : ",show(barbra),"\n","carla  : ",show(carla),"\n","delilah: ",show(delilah),"\n","eliza  : ",show(eliza),"\n","fiona  : ",show(fiona),"\n","abulia    : ",show(abulia),"\n","betise    : ",show(betise),"\n","caryatid  : ",show(caryatid),"\n","dehisce   : ",show(dehisce),"\n","euhemerism: ",show(euhemerism),"\n","floruit   : ",show(floruit),"\n"]} in (X_INTRODUCED_40_);
 set of int: days = 1..6;
 int: floruit;
 int: euhemerism;

@@ -1,4 +1,4 @@
-output [((("Vars: "++show(Vars))++"\n")++"Obj: ")++show(Obj)];
+output let {array [int] of string: X_INTRODUCED_15_ = [((("Vars: "++show(Vars))++"\n")++"Obj: ")++show(Obj)]} in (X_INTRODUCED_15_);
 int: D3;
 int: D2;
 int: D1;

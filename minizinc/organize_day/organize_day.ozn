@@ -1,4 +1,4 @@
-output ["           [Work, Mail, Shop, Bank]\n","Begins:    ",show(Begins),"\n","Durations: ",show(Durations),"\n","Ends:      ",show(Ends),"\n"];
+output let {array [int] of string: X_INTRODUCED_26_ = ["           [Work, Mail, Shop, Bank]\n","Begins:    ",show(Begins),"\n","Durations: ",show(Durations),"\n","Ends:      ",show(Ends),"\n"]} in (X_INTRODUCED_26_);
 int: n = 4;
 array [1..n] of int: Ends;
 array [1..n] of int: Durations = [4,1,2,1];

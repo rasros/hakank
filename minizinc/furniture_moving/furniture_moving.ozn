@@ -1,4 +1,4 @@
-output ["numPersons: ",show(numPersons),"\n","Resources: ",show(Resources),"\n","Starts:    ",show(Starts),"\n","Durations: ",show(Durations),"\n","EndTimes:  ",show(EndTimes),"\n","end_time:  ",show(end_time),"\n"];
+output let {array [int] of string: X_INTRODUCED_34_ = ["numPersons: ",show(numPersons),"\n","Resources: ",show(Resources),"\n","Starts:    ",show(Starts),"\n","Durations: ",show(Durations),"\n","EndTimes:  ",show(EndTimes),"\n","end_time:  ",show(end_time),"\n"]} in (X_INTRODUCED_34_);
 int: end_time;
 int: n = 4;
 array [1..n] of int: EndTimes;
