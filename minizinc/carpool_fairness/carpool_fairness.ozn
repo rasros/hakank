@@ -1,0 +1,11 @@
+output (((((["num_people: ",show(num_people),"\n","num_people div abs(num_days-sum(obligation)): ",show(num_people div abs(num_days-sum(obligation))),"\n","num_days: ",show(num_days),"\n","oligation: ",show(obligation),"\n","sum_oligation: ",show(sum(obligation)),"\n","driver: ",show(driver),"\n","num_drives: ",show(num_drives),"\n","diffs: ",show(diffs),"\n","mean: ",show(mean),"\n","z: ",show(z),"\n","pdiff: ",show(pdiff),"\n"]++["\nDays:\n"])++[((("day "++show_int(2,d))++" driver: ")++show(driver[d]))++"\n" | d in 1..num_days])++["\nPeople:\n"])++[((((((((("person"++show(p))++" (obl: ")++show(obligation[p]))++" drives: ")++show(num_drives[p]))++if obligation[p]!=fix(num_drives[p]) then "!" else "" endif)++") ")++" days: ")++show(join(",",[show(d) | d in 1..num_days where fix(driver[d])==p])))++"\n" | p in 1..num_people])++["\nSchedule: 'X': drives, 'r': rides, '_': don't participates the day"])++[if d==1 then "\n" else " " endif++if fix(driver[d]==p) then "X" elseif participation[p,d]==1 then "r" else "_" endif | p in 1..num_people, d in 1..num_days];
+int: num_people = 4;
+int: num_days = 5;
+int: pdiff;
+array [1..num_people] of int: obligation = [2,2,2,2];
+array [1..num_people] of int: diffs;
+int: z = sum(diffs);
+int: mean = 0;
+array [1..num_people] of int: num_drives;
+array [1..num_days] of int: driver;
+array [1..num_people,1..num_days] of int: participation = [|1,1,1,1,1|1,1,1,1,1|1,1,1,1,1|1,1,1,1,1|];

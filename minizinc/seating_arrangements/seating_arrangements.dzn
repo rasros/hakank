@@ -1,0 +1,6 @@
+n = 3;
+m = 3;
+num_likes = 3;
+num_dislikes = 4;
+likes = array2d(1..3, 1..2, [1, 1, 1, 1, 1, 1]);
+dislikes = array2d(1..4, 1..2, [1, 1, 1, 1, 1, 1, 1, 1]);

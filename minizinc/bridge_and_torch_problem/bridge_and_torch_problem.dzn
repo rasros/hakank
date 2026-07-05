@@ -1,0 +1,4 @@
+num_persons = 3;
+max_time = 3;
+max_num_to_cross = 3;
+cross_time = [1, 1, 1];

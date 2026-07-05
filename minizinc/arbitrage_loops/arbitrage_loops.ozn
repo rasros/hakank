@@ -1,0 +1,8 @@
+output ["z: "++format(z)++"\n","profit: "++format([profit[i] | i in 1..m])++"\n","y: "++format(y)++"\n","starts with "++format(start)++" "++format(currencies_s[fix(y[1])])++" -> "++format(start*z)++" "++format(currencies_s[fix(y[1])])++"\n","real profit: "++format(start*z)++" - "++format(start)++" = "++format(start*z-start)++" "++format(currencies_s[fix(y[1])])++"\n\n"]++[""++format(currencies_s[fix(y[i])])++" -> "++format(currencies_s[fix(y[i+1])])++" "++format(profit[i])++"\n" | i in 1..m];
+float: start = 1.0;
+float: z;
+int: n = 2;
+array [1..n] of string: currencies_s = ["A","B"];
+int: m = 2;
+array [1..m+1] of int: y;
+array [1..m+1] of float: profit;

@@ -1,0 +1,5 @@
+output ((([(((("x     : "++show(x))++"\n")++"y     : ")++show(y))++"\n"]++["\n"])++[((((("("++show(x[i]))++", ")++show(y[i]))++"): ")++show(path[i]))++"\n" | i in 1..num_steps])++[("path: "++show(path))++"\n"])++["\n"];
+int: num_steps = 9;
+array [1..num_steps] of int: x;
+array [1..num_steps] of int: y;
+array [1..num_steps] of int: path;

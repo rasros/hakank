@@ -1,0 +1,12 @@
+output ((((((([("x: "++show([x[i,j] | i in 0..rows-1, j in 0..cols-1]))++"\n"]++["x (rows x cols):"])++[if j==0 then "\n" else " " endif++show(x[i,j]) | i in 0..rows-1, j in 0..cols-1])++["\n\nx expanded (rows-1+extra x cols-1+extra):"])++[if j==0 then "\n" else " " endif++show(x[i,j]) | i in 0..rows-1+extra1, j in 0..cols-1+extra2])++[((("\n\nx as "++show(m1))++" x ")++show(m2))++" m-tuples:\n"])++[(((show([x[i+k1,j+k2] | k1 in 0..m1-1, k2 in 0..m2-1])++" y[")++show(i*cols+j))++"]: ")++"\n" | i in 0..rows-1, j in 0..cols-1])++[("\n\ngcc: "++show(gcc))++"\n"])++["\n"];
+int: cols = 20;
+int: extra2 = 9;
+int: rows = 20;
+int: extra1 = 9;
+int: base = 10;
+array [1..841] of int: X_INTRODUCED_16_;
+array [0..rows-1+extra1,0..cols-1+extra2] of int: x = array2d(0..28,0..28,X_INTRODUCED_16_);
+int: m1 = 10;
+int: m2 = 10;
+array [1..10] of int: X_INTRODUCED_858_;
+array [0..base-1] of int: gcc = array1d(0..9,X_INTRODUCED_858_);

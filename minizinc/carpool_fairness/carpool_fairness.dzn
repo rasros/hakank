@@ -1,0 +1,3 @@
+num_days = 5;
+num_people = 4;
+participation = array2d(1..4, 1..5, [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]);

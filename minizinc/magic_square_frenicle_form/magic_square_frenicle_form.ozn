@@ -1,0 +1,5 @@
+output [("Total: "++show(total))++"\n"]++[(show_int(3,magic[i,j])++" ")++if j mod n==0 then "\n" else "" endif | i,j in 1..n];
+int: total = 34;
+int: n = 4;
+array [1..16] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: magic = array2d(1..4,1..4,X_INTRODUCED_16_);

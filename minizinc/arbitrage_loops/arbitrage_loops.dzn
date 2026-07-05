@@ -1,0 +1,5 @@
+n = 2;
+m = 2;
+currencies = array2d(1..2,1..2,[1.0,2.0,0.5,1.0]);
+currencies_s = ["A","B"];
+start = 1.0;

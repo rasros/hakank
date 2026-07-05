@@ -1,0 +1,6 @@
+n = 3;
+m = 3;
+row_upper = [0, 0, 0];
+row_lower = [0, 0, 0];
+col_left = [0, 0, 0];
+col_right = [0, 0, 0];

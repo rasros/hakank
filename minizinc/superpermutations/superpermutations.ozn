@@ -1,0 +1,8 @@
+output ["factorial(n): "++format(factorial(n))++"\n","upper_bound: "++format(upper_bound)++"\n","x: "++format(x)++"\n","ps: "++format(ps)++"\n","z: "++format(z)++"\n","tot_len: "++format(z+n-1)++"\n"];
+function int : factorial(int: n) = let {int: f = product([i | i in 1..n])} in (f);
+int: num_perms = 6;
+int: upper_bound = 9;
+array [1..num_perms] of int: ps;
+int: z = max(ps);
+int: n = 3;
+array [1..upper_bound] of int: x;

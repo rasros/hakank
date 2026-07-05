@@ -1,0 +1,4 @@
+rows = 3;
+cols = 3;
+num_given = 1;
+given = array2d(1..1,1..2,[1,1]);

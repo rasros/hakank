@@ -1,0 +1,4 @@
+num_work = 3;
+num_shifts = 3;
+min_num_shifts = 3;
+shifts = [{}, {}, {}];

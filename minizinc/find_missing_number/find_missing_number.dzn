@@ -1,0 +1,6 @@
+n = 2;
+num_digits_all = 2;
+num_digits_missing = 1;
+max_len = 2;
+digits_all = [0,1];
+digits_missing = [0];

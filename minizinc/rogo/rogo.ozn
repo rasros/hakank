@@ -1,0 +1,6 @@
+output [(((((((((("x: "++show(x))++"\n")++"y: ")++show(y))++"\n")++"points: ")++show(points))++"\n")++"sum_points: ")++show(sum_points))++"\n"];
+int: max_steps = 3;
+array [1..max_steps] of int: x;
+array [1..max_steps] of int: y;
+array [1..max_steps] of int: points = [1,1,1];
+int: sum_points = 3;

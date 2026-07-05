@@ -1,5 +1,5 @@
 output ["doors: ",show([A,B,C,D]),"\n","monks: ",show([M1,M2,M3,M4,M5,M6,M7,M8]),"\n"];
-bool: M8 = true;
+bool: M8;
 bool: M7;
 bool: M6;
 bool: M5;

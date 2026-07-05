@@ -1,0 +1,5 @@
+output (([if n<=100 then ("s: "++show(s))++"\n" else "" endif]++[(((((((((("n: "++show(n))++"\n")++"sum(s): ")++show(sum(s)))++"\n")++"x: ")++show(x))++"\n")++"diff: ")++show(d))++"\n"])++[((((("team"++show(j))++": ")++show([s[i] | i in 1..n where fix(x[i])==j]))++"  sum: ")++show(sum([s[i] | i in 1..n where fix(x[i])==j])))++"\n" | j in 1..2])++[("diff: "++show(d))++"\n"];
+int: n = 4;
+array [1..n] of int: s = [1,2,3,4];
+array [1..n] of int: x;
+int: d;
