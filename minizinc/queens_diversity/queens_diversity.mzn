@@ -97,7 +97,7 @@ predicate queens(array[int] of var int: q) =
 % (but not the columns as in lex2).
 % See: http://www.emn.fr/z-info/sdemasse/gccat/Clex_chain_less.html
 %
-predicate lex_chain_less(array[int, int] of var int: a) =
+predicate lex_chain_less_local(array[int, int] of var int: a) =
   forall(i in 2..card(index_set_1of2(a))) (
      (lex_less( [a[i-1, j] | j in index_set_2of2(a)], 
                 [a[i  , j] | j in index_set_1of2(a)]))
@@ -129,7 +129,7 @@ constraint
     soft_cost[j] = soft_alldifferent([x[i,j] | i in 1..n-1])
   )
   /\
-  lex_chain_less(x)
+  lex_chain_less_local(x)
 
   % symmetry breaking
   % /\ x[1,1] = 1

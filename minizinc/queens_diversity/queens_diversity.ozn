@@ -1,0 +1,6 @@
+output let {array [int] of string: X_INTRODUCED_1107_ = ["soft_cost: "++format(soft_cost)++"\n","total_cost: "++format(total_cost)++"\n"]++[show([x[i,j] | j in 1..n])++"\n" | i in 1..n-1]} in (X_INTRODUCED_1107_);
+int: n = 10;
+array [1..n] of int: soft_cost;
+int: total_cost = sum(soft_cost);
+array [1..90] of int: X_INTRODUCED_16_;
+array [1..n-1,1..n] of int: x = array2d(1..9,1..10,X_INTRODUCED_16_);
