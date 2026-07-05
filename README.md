@@ -44,5 +44,19 @@ Model fixes so models flatten under current MiniZinc:
 - diet2: widened a parameter domain that its own data exceeded.
 - sudoku_multi, sudoku_multi2: simplified output that used a var array.
 - smullyan_knights_knaves: turned an all-commented-out constraint into a no-op.
+- domino: added the standard 28-piece (0..6) instance on a 7x8 board.
+
+Removed models:
+
+- crossword3_test: needs a bespoke crossword instance a family of crossword3_*
+  models already covers.
+- nonogram_regular: needs a hand-built regular-automaton instance.
+- weights: its data files were only ever hosted on the (now gone) upstream site.
+- linear_combinations: a mode-dependent modelling bug in the source.
+- product_test: multiplies 40 variables up to 1000, which overflows 64-bit
+  integers; only fixable by changing what the model tests.
+
+The crossword3.mzn template (included by the crossword3_* instances) lives under
+minizinc/lib/ with its word list.
 
 The original models are MIT licensed; see LICENSE.
