@@ -1,0 +1,4 @@
+n = 4;
+gender = [1,2,1,2];
+num_hobbies = 2;
+hobbies = [{1},{2},{1},{2}];

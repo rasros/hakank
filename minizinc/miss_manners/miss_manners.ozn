@@ -1,0 +1,6 @@
+output let {array [int] of string: X_INTRODUCED_27_ = ((([show(seating)++"\n"]++["common_hobbies: ",show(common_hobbies),"\n"])++[((((show(seating[i])++": ")++show(gender[seating[i]]))++" ")++show(hobbies[seating[i]]))++"\n" | i in 1..n])++["common_hobbies: ",show(common_hobbies),"\n"])++["\n"]} in (X_INTRODUCED_27_);
+int: n = 4;
+array [1..n] of int: seating;
+array [1..n] of set of int: hobbies = [1..1,2..2,1..1,2..2];
+int: common_hobbies;
+array [1..n] of int: gender = [1,2,1,2];

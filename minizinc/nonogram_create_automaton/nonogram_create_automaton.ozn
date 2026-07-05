@@ -1,0 +1,6 @@
+output let {array [int] of string: X_INTRODUCED_71_ = [if j==1 then "\n" else "" endif++show_cond(x[i,j]==1," ","#") | i in 1..rows, j in 1..cols]++["\n"]} in (X_INTRODUCED_71_);
+function string : show_cond(bool: c,string: a,string: b) = if fix(c) then a else b endif;
+int: cols = 2;
+int: rows = 2;
+array [1..4] of int: X_INTRODUCED_16_;
+array [1..rows,1..cols] of int: x = array2d(1..2,1..2,X_INTRODUCED_16_);

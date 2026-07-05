@@ -1,0 +1,6 @@
+rows = 2;
+row_rule_len = 1;
+row_rules = array2d(1..2,1..1,[1,1]);
+cols = 2;
+col_rule_len = 1;
+col_rules = array2d(1..2,1..1,[1,1]);
