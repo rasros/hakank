@@ -1,0 +1,5 @@
+output [(((((((((("n: "++show(n))++"\n")++"n_a: ")++show(n_a))++"\n")++"n_squared: ")++show(n_squared))++"\n")++"n_squared_a: ")++show(n_squared_a))++"\n"];
+int: n;
+array [1..4] of int: n_a;
+int: n_squared;
+array [1..8] of int: n_squared_a;

@@ -1,0 +1,7 @@
+output ([(((("total_value: "++show(total_value))++"\n")++"total_weight: ")++show(total_weight))++"\n"]++[if fix(x[i]) > 0 then ((((show(items_str[i])++": ")++show(x[i]))++" value: ")++show(items[i,2]))++"\n" else "" endif | i in 1..num_items])++["\n"];
+int: num_items = 22;
+array [1..num_items] of int: x;
+array [1..num_items,1..2] of int: items = [|9,150|13,35|153,200|50,160|15,60|68,45|27,60|39,40|23,30|52,10|11,70|32,30|24,15|48,10|73,40|42,70|43,75|22,80|7,20|18,12|4,50|30,10|];
+int: total_value = sum([x[i]*items[i,2] | i in 1..num_items]);
+int: total_weight = sum([x[i]*items[i,1] | i in 1..num_items]);
+array [1..num_items] of string: items_str = ["map","compass","water","sandwich","glucose","tin","banana","apple","cheese","beer","suntancream","camera","T-shirt","trousers","umbrella","waterproof trousers","waterproof overclothes","note-case","sunglasses","towel","socks","book"];

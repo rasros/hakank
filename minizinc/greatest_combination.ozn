@@ -1,0 +1,6 @@
+output [((((((("max_val: "++show(max_val))++"\n")++"x      : ")++show(x))++"\n")++"values : ")++show([grid[i,fix(x[i])] | i in 1..n]))++"\n"]++["\n"];
+int: m = 4;
+int: n = 3;
+array [1..n,1..m] of int: grid = [|0,2,1,0|0,1,1,0|0,10,20,30|];
+array [1..n] of int: x;
+int: max_val = sum([grid[i,x[i]] | i in 1..n]);

@@ -1,0 +1,3 @@
+output ["x[1]:"++format(x[1])++" x[2]:"++format(x[2])++" v: "++format(v)++""];
+array [1..2] of float: x;
+float: v;

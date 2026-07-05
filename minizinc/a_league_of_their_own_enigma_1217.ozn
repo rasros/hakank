@@ -1,0 +1,14 @@
+output (((((((["           Won   Drawn Lost  Points"]++[(if t==won then ("\n"++show(teams[team]))++": " else "" endif++show(scores[team,t]))++"     " | team in 1..n, t in {won,drawn,lost,points}])++["\nHome:"])++[if t2==1 then "\n" else " " endif++show(games[t1,t2,1]) | t1,t2 in 1..n])++["\nAway:"])++[if t2==1 then "\n" else " " endif++show(games[t1,t2,2]) | t1,t2 in 1..n])++["\nDraws:\n"])++[if fix(games[t1,t2,1])==1 then ((show(teams[t1])++" vs. ")++show(teams[t2]))++"\n" else "" endif | t1,t2 in 1..n where t1 < t2])++[if fix(games[t1,t2,2])==1 then ((show(teams[t2])++" vs. ")++show(teams[t1]))++"\n" else "" endif | t1,t2 in 1..n where t1 < t2];
+int: n = 4;
+array [1..n] of string: teams = ["Fagan's  ","George   ","Harlequin","Inkerman "];
+int: won = 1;
+int: num_types = 4;
+array [1..16] of int: X_INTRODUCED_49_;
+array [1..n,1..num_types] of int: scores = array2d(1..4,1..4,X_INTRODUCED_49_);
+int: points = 4;
+int: lost = 3;
+int: drawn = 2;
+int: home = 1;
+int: away = 2;
+array [1..32] of int: X_INTRODUCED_16_;
+array [1..n,1..n,home..away] of int: games = array3d(1..4,1..4,1..2,X_INTRODUCED_16_);

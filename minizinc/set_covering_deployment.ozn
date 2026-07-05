@@ -1,0 +1,5 @@
+output ["[alexandria, asia_minor, britain, byzantium, gaul, iberia, rome, tunis]","\n","X: ",show(X),"\n","Y: ",show(Y),"\n","c_armies: ",show(c_armies),"\n"];
+int: n = 8;
+array [1..n] of int: X;
+array [1..n] of int: Y;
+int: c_armies = sum([X[i]+Y[i] | i in 1..n]);

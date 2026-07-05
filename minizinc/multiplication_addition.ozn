@@ -1,0 +1,12 @@
+output [""++format(A)++"/"++format(B)++" + "++format(C)++"/"++format(D)++" + "++format(E)++" / "++format(F)++" = "++format(A)++"/"++format(B)++" * "++format(C)++"/"++format(D)++" * "++format(E)++" / "++format(F)++"\n",""++format(Addition)++" == "++format(Multiplication)++"  A/B:"++format(AB)++" C/D:"++format(CD)++" E/F:"++format(EF)++"\n"];
+int: A;
+int: B;
+int: C;
+int: D;
+int: E;
+int: F;
+float: Addition;
+float: Multiplication;
+float: AB;
+float: CD;
+float: EF;

@@ -1,0 +1,5 @@
+output [((("x: "++show(x))++"\n")++"z: ")++show(z)];
+int: num_nodes = 19;
+array [1..num_nodes] of int: x;
+array [1..num_nodes] of int: w = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+int: z = sum([w[i]*x[i] | i in 1..num_nodes]);

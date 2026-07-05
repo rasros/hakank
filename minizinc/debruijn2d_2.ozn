@@ -1,0 +1,8 @@
+output (((((((([("x: "++show([x[i,j] | i,j in 0..dim-1]))++"\n"]++["x (dim x dim):"])++[if j==0 then "\n" else " " endif++show(x[i,j]) | i,j in 0..dim-1])++["\n\nx expanded (dim-1+extra x dim-1+extra):"])++[if j==0 then "\n" else " " endif++show(x[i,j]) | i,j in 0..dim-1+extra])++["\n\nx as m-tuples:\n"])++[((((show([x[i+k1,j+k2] | k1,k2 in 0..m-1])++" y[")++show(i*dim+j))++"]: ")++show(y[i*dim+j]))++"\n" | i,j in 0..dim-1])++[("\n\ny: "++show(y))++"\n"])++[(if j==0 then "\n" else " " endif++if fix(y[i*dim+j]) < 10 then " " else "" endif)++show(y[i*dim+j]) | i,j in 0..dim-1])++["\n"];
+int: dim = 9;
+int: extra = 2;
+array [1..121] of int: X_INTRODUCED_16_;
+array [0..dim-1+extra,0..dim-1+extra] of int: x = array2d(0..10,0..10,X_INTRODUCED_16_);
+int: m = 3;
+array [1..81] of int: X_INTRODUCED_138_;
+array [0..dim*dim-1] of int: y = array1d(0..80,X_INTRODUCED_138_);

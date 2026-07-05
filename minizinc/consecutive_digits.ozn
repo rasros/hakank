@@ -1,0 +1,8 @@
+output ["  ",show(ABCD),"\n","  ",show(DCBA),"\n","+ ",show(dots_num),"\n","------","\n"," 12300","\n"];
+int: dots_num;
+int: D;
+int: C;
+int: B;
+int: A;
+int: DCBA = 1000*D+100*C+10*B+A;
+int: ABCD = 1000*A+100*B+10*C+D;

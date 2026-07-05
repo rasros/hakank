@@ -1,0 +1,4 @@
+output ["n: ",(show(n)++"\n")++"x: ",show(x),"\n"];
+int: max_n = 6;
+array [1..max_n] of int: x;
+int: n;

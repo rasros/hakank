@@ -1,0 +1,10 @@
+output ["Roberta:1 Thelma:2 Steve:3 Pete:4\n","[chef, guard, nurse, clerk, police_officer, teacher, actor, boxer]\n",show(Jobs),"\n"];
+int: boxer;
+int: actor;
+int: teacher;
+int: police_officer;
+int: clerk;
+int: nurse;
+int: guard;
+int: chef;
+array [1..8] of int: Jobs = [chef,guard,nurse,clerk,police_officer,teacher,actor,boxer];

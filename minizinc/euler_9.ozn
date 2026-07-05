@@ -1,0 +1,5 @@
+output [(show([a,b,c])++": ")++show(prod)];
+int: c;
+int: b;
+int: a;
+int: prod = a*b*c;

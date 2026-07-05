@@ -1,0 +1,6 @@
+output (["sum_zeros: "++show(sum_zeros)]++[if j==1 then "\n" else " " endif++show(rt[i,j]) | i in M, j in N])++["\n"];
+set of int: N = 1..4;
+set of int: M = 1..4;
+array [1..16] of int: X_INTRODUCED_97_;
+array [M,N] of int: rt = array2d(1..4,1..4,X_INTRODUCED_97_);
+int: sum_zeros = sum([bool2int(rt[i,j]==0) | i in M, j in M]);

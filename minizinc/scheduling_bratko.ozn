@@ -1,0 +1,6 @@
+output ["Ta = ",showDzn(Ta),";\n","Tb = ",showDzn(Tb),";\n","Tc = ",showDzn(Tc),";\n","Td = ",showDzn(Td),";\n","Tf = ",showDzn(Tf),";\n"];
+int: Tf;
+int: Td;
+int: Tc;
+int: Tb;
+int: Ta;

@@ -1,0 +1,3 @@
+output ["year: ",show(year),"\n","is_leap_year: ",show(is_leap_year),"\n"];
+int: is_leap_year;
+int: year;

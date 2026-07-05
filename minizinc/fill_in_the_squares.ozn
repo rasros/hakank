@@ -1,0 +1,12 @@
+output [((((((((((((("a: "++show(a))++"\n")++"b: ")++show(b))++"\n")++"c: ")++show(c))++"\n")++"d: ")++show(d))++"\n")++"e: ")++show(e))++"\n"];
+int: n = 5;
+array [1..5] of int: X_INTRODUCED_16_;
+array [0..n-1] of int: a = array1d(0..4,X_INTRODUCED_16_);
+array [1..5] of int: X_INTRODUCED_22_;
+array [0..n-1] of int: b = array1d(0..4,X_INTRODUCED_22_);
+array [1..5] of int: X_INTRODUCED_28_;
+array [0..n-1] of int: c = array1d(0..4,X_INTRODUCED_28_);
+array [1..5] of int: X_INTRODUCED_34_;
+array [0..n-1] of int: d = array1d(0..4,X_INTRODUCED_34_);
+array [1..5] of int: X_INTRODUCED_40_;
+array [0..n-1] of int: e = array1d(0..4,X_INTRODUCED_40_);

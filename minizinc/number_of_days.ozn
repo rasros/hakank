@@ -1,0 +1,5 @@
+output [((((((("x: "++show(x))++"\n")++"days: ")++show(days))++"\n")++"total_cost: ")++show(total_cost))++"\n"];
+int: num_days = 5;
+array [1..num_days] of int: x;
+int: days = 13;
+int: total_cost;

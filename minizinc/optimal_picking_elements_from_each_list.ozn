@@ -1,0 +1,5 @@
+output [((((((("max_val: "++show(max_val))++"\n")++"sum_diffs: ")++show(sum_diffs))++"\n")++"x        : ")++show(x))++"\n"]++["\n"];
+int: max_val = 20;
+int: n = 30;
+int: sum_diffs;
+array [1..n] of int: x;

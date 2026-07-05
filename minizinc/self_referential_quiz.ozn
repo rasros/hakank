@@ -1,0 +1,12 @@
+output ["Answers: ",show(LD),"\n"];
+int: Q10;
+int: Q9;
+int: Q8;
+int: Q7;
+int: Q6;
+int: Q5;
+int: Q4;
+int: Q3;
+int: Q2;
+int: Q1;
+array [1..10] of int: LD = [Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10];

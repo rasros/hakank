@@ -1,0 +1,7 @@
+output ["fd: "++show(fd)];
+int: R;
+int: V;
+int: N;
+int: I;
+int: E;
+array [1..5] of int: fd = [E,I,N,V,R];

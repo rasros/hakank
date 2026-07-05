@@ -1,0 +1,6 @@
+output [(((("variables: "++show(variables))++"\n")++"values: ")++show(values))++"\n"];
+int: n = 4;
+array [1..n] of int: variables = [3,3,8,6];
+int: m = 3;
+array [1..6] of int: X_INTRODUCED_4_;
+array [1..m,1..2] of int: values = [|3,2|5,0|6,1|];

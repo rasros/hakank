@@ -1,0 +1,13 @@
+output [(((("x       : "++format(x)++"\n")++"x_worked: "++format(x_worked)++"\n")++"excess  : "++format(excess)++"\n")++"z: "++format(z)++"\n")++"num_workers: "++format(num_workers)++"\n","tot_days: "++format(tot_days)++"\n","days_to_work: "++format(days_to_work)++"\n","\n"]++["day:"++format(day)++": work days:"++format([(n+day-k) mod n | k in 0..fix(days_to_work)-1])++" sum = "++format(sum([fix(x[(n+day-k) mod n]) | k in 0..fix(days_to_work)-1]))++"\n" | day in DAYS];
+int: days_to_work;
+set of int: DAYS = 0..6;
+array [1..7] of int: X_INTRODUCED_0_;
+array [DAYS] of int: x = array1d(0..6,X_INTRODUCED_0_);
+int: tot_days = sum([x[i] | i in DAYS]);
+array [1..7] of int: X_INTRODUCED_8_;
+array [DAYS] of int: x_worked = array1d(0..6,X_INTRODUCED_8_);
+array [1..7] of int: X_INTRODUCED_16_;
+array [DAYS] of int: excess = array1d(0..6,X_INTRODUCED_16_);
+int: z = tot_days;
+int: num_workers = sum(x);
+int: n = 7;

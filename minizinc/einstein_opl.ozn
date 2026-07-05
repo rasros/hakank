@@ -1,0 +1,11 @@
+output [((((((((((((("s: "++show(s))++"\n")++"a: ")++show(a))++"\n")++"d: ")++show(d))++"\n")++"k: ")++show(k))++"\n")++"c: ")++show(c))++"\n"];
+set of int: States = 1..5;
+array [States] of int: s;
+set of int: Animals = 1..5;
+array [Animals] of int: a;
+set of int: Drinks = 1..5;
+array [Drinks] of int: d;
+set of int: Smoke = 1..5;
+array [Smoke] of int: k;
+set of int: Color = 1..5;
+array [Color] of int: c;

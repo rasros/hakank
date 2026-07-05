@@ -1,0 +1,7 @@
+output [((((((((("element_table:"++show(element_table))++"\n")++"item: ")++show(item))++"\n")++"item_default: ")++show(item_default))++"\n")++"result: ")++show(result)];
+int: n = 4;
+array [1..8] of int: X_INTRODUCED_0_;
+array [1..n,1..2] of int: element_table = [|1,2|2,5|4,2|8,9|];
+array [1..2] of int: item = [2,5];
+int: item_default = 5;
+int: result = 5;

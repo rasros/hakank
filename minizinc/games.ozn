@@ -1,0 +1,4 @@
+output [(((("X: "++show(X))++"\n")++"w: ")++show(w))++"\n"];
+int: n = 3;
+array [1..n] of float: X;
+float: w;

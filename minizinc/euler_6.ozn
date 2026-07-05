@@ -1,0 +1,5 @@
+output ["sum of the squares: ",show(ss),"\n","square of the sum: ",show(s2),"\n","square of the sum - sum of the squares = ",show(d),"\n"];
+int: s = 5050;
+int: s2 = s*s;
+int: ss = 338350;
+int: d = s2-ss;

@@ -1,0 +1,10 @@
+output (((((["\nnumber: ",show(number)]++["\nnor: ",show(nor)])++["\nin1:"])++[if j==1 then "\n" else " " endif++show(in1[i,j]) | i in maxi, j in maxj])++["\nout:"])++[if k==1 then "\n" else " " endif++show(out[i,k]) | i in maxi, k in maxk])++["\n"];
+set of int: maxi = 1..7;
+array [maxi] of int: nor;
+int: number = sum([nor[i] | i in maxi]);
+set of int: maxj = 1..2;
+array [1..14] of int: X_INTRODUCED_0_;
+array [maxi,maxj] of int: in1 = array2d(1..7,1..2,X_INTRODUCED_0_);
+set of int: maxk = 1..4;
+array [1..28] of int: X_INTRODUCED_15_;
+array [maxi,maxk] of int: out = array2d(1..7,1..4,X_INTRODUCED_15_);

@@ -1,0 +1,5 @@
+output [((((((("x: "++show(x))++"\n")++"low: ")++show(low))++"\n")++"up: ")++show(up))++"\n"];
+int: n = 3;
+array [1..n] of int: x = [2,8,2];
+int: low = 1;
+int: up = 9;

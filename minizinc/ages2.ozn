@@ -1,0 +1,4 @@
+output [((((((("john: "++show(john))++"\n")++"jim: ")++show(jim))++"\n")++"jerry: ")++show(jerry))++"\n"]++["\n"];
+int: john;
+int: jim;
+int: jerry;

@@ -1,0 +1,9 @@
+output ([(((((((("x1: "++show(x1))++" ")++show([states_str[fix(x1[I])] | I in 1..num_get]))++"\n")++"x2: ")++show(x2))++" ")++show([states_str[fix(x2[I])] | I in 1..num_get]))++"\n"]++[("gcc: "++show(gcc))++"\n"])++["\n"];
+int: num_get = 2;
+int: num_states = 50;
+array [1..num_get] of int: x1;
+array [1..num_states] of string: states_str = ["alabama","alaska","arizona","arkansas","california","colorado","connecticut","delaware ","florida","georgia ","hawaii","idaho","illinois","indiana","iowa","kansas","kentucky","louisiana","maine","maryland","massachusetts","michigan","minnesota","mississippi","missouri","montana","nebraska","nevada","new hampshire","new jersey","new mexico","new york","north carolina","north dakota","ohio","oklahoma","oregon","pennsylvania","rhode island","south carolina","south dakota","tennessee","texas","utah","vermont","virginia","washington","west virginia","wisconsin","wyoming"];
+array [1..num_get] of int: x2;
+int: num_letters = 26;
+array [1..27] of int: X_INTRODUCED_20_;
+array [0..num_letters] of int: gcc = array1d(0..26,X_INTRODUCED_20_);

@@ -1,0 +1,7 @@
+output ["z: ",show(z),"\n","x: ",show(x),"\n","transported: ",show(transported),"\n"];
+int: n = 4;
+array [1..n] of int: x;
+array [1..n] of int: capacity = [7,5,4,3];
+int: transported = sum([x[i]*capacity[i] | i in 1..n]);
+array [1..n] of int: cost = [90,60,50,40];
+int: z = sum([x[i]*cost[i] | i in 1..n]);

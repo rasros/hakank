@@ -1,0 +1,5 @@
+output [if j==1 then "\n" else " " endif++show_int(3,x[i,j]) | i in 1..r, j in 1..c];
+int: c = 8;
+int: r = 8;
+array [1..64] of int: X_INTRODUCED_16_;
+array [1..r,1..c] of int: x = array2d(1..8,1..8,X_INTRODUCED_16_);

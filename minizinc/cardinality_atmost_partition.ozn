@@ -1,0 +1,6 @@
+output [(((((("variables: "++show(variables))++"\n")++"nvar: ")++show(nvar))++"\n")++"partitions: ")++show(partitions)];
+int: n = 6;
+array [1..n] of int: variables = [2,3,7,1,6,0];
+int: nvar = 2;
+int: m = 3;
+array [1..m] of set of int: partitions;

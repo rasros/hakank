@@ -1,0 +1,8 @@
+output [if j==1 then "\n" else " " endif++show(x[i,j]) | i in knight, j in posit]++["\nt: ",show(t)++"\n","d: ",show(d)++"\n","maxk: ",show(maxk)];
+set of int: posit = 1..8;
+set of int: knight = 1..8;
+array [1..64] of int: X_INTRODUCED_0_;
+array [knight,posit] of int: x = array2d(1..8,1..8,X_INTRODUCED_0_);
+array [posit] of int: d;
+int: maxk = sum([d[j] | j in posit]);
+array [posit] of int: t;

@@ -1,0 +1,6 @@
+output [(((((((((("low: "++show(low))++"\n")++"up: ")++show(up))++"\n")++"seq: ")++show(seq))++"\n")++"variables: ")++show(variables))++"\n"];
+int: low = 3;
+int: up = 7;
+int: n = 7;
+int: seq = 4;
+array [1..n] of int: variables;

@@ -1,0 +1,4 @@
+output [(((("talkp: "++show(talkp))++"\n")++"talkn: ")++show(talkn))++"\n"];
+int: n = 5;
+array [1..n] of int: talkp;
+array [1..n] of int: talkn;

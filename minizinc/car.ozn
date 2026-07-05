@@ -1,0 +1,8 @@
+output [(((("z: "++show(z))++"\n")++"slot: ")++show(slot))++"\n"]++[if j==1 then "\n" else " " endif++show(setup[i,j]) | i in Options, j in Slots];
+set of int: Slots = 1..10;
+set of int: Cars = 1..6;
+array [Slots] of int: slot;
+int: z = sum([s*slot[s] | s in Cars]);
+set of int: Options = 1..5;
+array [1..50] of int: X_INTRODUCED_10_;
+array [Options,Slots] of int: setup = array2d(1..5,1..10,X_INTRODUCED_10_);

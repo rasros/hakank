@@ -1,0 +1,4 @@
+output [((("x: "++show(x))++"\n")++"flow: ")++show(flow)];
+int: num_edges = 14;
+array [1..num_edges] of int: x;
+int: flow;

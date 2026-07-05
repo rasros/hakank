@@ -1,0 +1,7 @@
+output ["Max end time: ",show(End),"\n","Origin      : ",show(LO),"\n","Duration    : ",show(LD),"\n","Resources   : ",show(LR),"\n","End times   : ",show(LE),"\n"];
+int: n = 7;
+array [1..n] of int: LE;
+array [1..n] of int: LR = [2,9,3,7,10,1,11];
+array [1..n] of int: LD = [16,6,13,7,5,18,4];
+array [1..n] of int: LO;
+int: End;

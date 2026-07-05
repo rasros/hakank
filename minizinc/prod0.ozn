@@ -1,0 +1,4 @@
+output [show([XB,XC,obj])];
+float: XB;
+float: XC;
+float: obj = 25.0*XB+30.0*XC;

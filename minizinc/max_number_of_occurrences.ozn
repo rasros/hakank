@@ -1,0 +1,8 @@
+output ["a: "++format(a)++"\n","upb: "++format(upb)++"\n","gcc: "++format(gcc)++"\n","z: "++format(z)++"\n","max_val: "++format(max_val)++"\n","ub_array(a): "++format(lb_array(a))++".."++format(ub_array(a))++"\n"];
+int: n = 7;
+array [1..n] of int: a = [15,14,39,23,14,14,8];
+int: upb = 39;
+array [1..40] of int: X_INTRODUCED_16_;
+array [0..upb] of int: gcc = array1d(0..39,X_INTRODUCED_16_);
+int: max_val = arg_max(gcc)-1;
+int: z = max(gcc);

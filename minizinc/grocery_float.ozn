@@ -1,0 +1,2 @@
+output [show(item),"\n"];
+array [1..4] of float: item;

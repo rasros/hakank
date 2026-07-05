@@ -1,0 +1,4 @@
+output [(((("x: "++show(x))++"\n")++"total_cost: ")++show(total_cost))++"\n"];
+int: num_t = 4;
+array [1..num_t] of int: x;
+int: total_cost;

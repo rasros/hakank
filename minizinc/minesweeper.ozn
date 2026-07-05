@@ -1,0 +1,6 @@
+output ((["\ngame:"]++[if j==1 then "\n" else " " endif++if game[i,j]==-1 then "." else show(game[i,j]) endif | i in 1..r, j in 1..c])++["\nmines:"])++[if j==1 then "\n" else " " endif++show(mines[i,j]) | i in 1..r, j in 1..c];
+int: c = 6;
+int: r = 6;
+array [1..r,1..c] of int: game = [|-1,-1,2,-1,3,-1|2,-1,-1,-1,-1,-1|-1,-1,2,4,-1,3|1,-1,3,4,-1,-1|-1,-1,-1,-1,-1,3|-1,3,-1,3,-1,-1|];
+array [1..36] of int: X_INTRODUCED_0_;
+array [1..r,1..c] of int: mines = array2d(1..6,1..6,X_INTRODUCED_0_);

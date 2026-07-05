@@ -1,0 +1,5 @@
+output [((((((("colors: "++show(colors))++"\n")++"perm: ")++show(perm))++"\n")++"optimal: ")++show(optimal))++"\n"];
+int: n = 7;
+array [1..n] of int: colors = [3,5,5,2,1,3,1];
+array [1..n] of int: perm;
+array [1..n] of int: optimal;

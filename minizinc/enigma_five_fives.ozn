@@ -1,0 +1,4 @@
+output ["x: ",show(x),"\n","bases: ",show(bases),"\n"];
+int: n = 5;
+array [1..n] of int: bases;
+array [1..n] of int: x;

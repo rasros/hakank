@@ -1,0 +1,3 @@
+output [(((("n1: "++show(n1))++"\n")++"n2: ")++show(n2))++"\n"];
+int: n1;
+int: n2;

@@ -1,0 +1,8 @@
+output ["n_colors: ",show(n_colors),"\n","color_communes: ",show(color_communes),"\n","color: ",show(color),"\n"];
+int: num_enclaves = 29;
+int: num_communes = 11;
+array [1..num_enclaves] of int: color;
+int: num_colors = 11;
+array [1..num_communes] of int: color_communes;
+array [1..num_colors] of int: color_used;
+int: n_colors = sum(color_used);

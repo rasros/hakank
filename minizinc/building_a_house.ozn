@@ -1,0 +1,7 @@
+output ([(((("makespan: "++show(makespan))++"\n")++"z: ")++show(z))++"\n"]++[((((((show(tasks[t])++": ")++show(start[t]))++" - ")++show(duration[t]))++" --> ")++show(start[t]+duration[t]))++"\n" | t in 1..num_tasks])++["\n"];
+int: makespan;
+int: num_tasks = 10;
+array [1..num_tasks] of int: start;
+int: z;
+array [1..10] of string: tasks = ["masonry","carpentry","plumbing","ceiling","roofing","painting","windows","facade","garden","moving"];
+array [1..num_tasks] of int: duration = [35,15,40,15,5,10,5,10,5,5];

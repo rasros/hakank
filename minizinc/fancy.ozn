@@ -1,0 +1,7 @@
+output [show(cost),"\n","t:",show(t)," h:",show(h)," r:",show(r)," s:",show(s)," n:",show(n),"\n"];
+bool: n;
+bool: s;
+bool: r;
+bool: h;
+bool: t;
+int: cost;

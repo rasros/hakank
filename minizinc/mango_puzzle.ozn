@@ -1,0 +1,3 @@
+output ["x: ",show(x),"\n"];
+int: n = 5;
+array [1..n] of int: x;

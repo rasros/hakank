@@ -1,0 +1,7 @@
+output ["floor: ",show(floor),"\n","room : ",show(room),"\n","     : ",show([(floor[i]-1)*rooms+room[i] | i in 1..n]),"\n"]++[if r==1 /\ p==1 then "\n" else "" endif++if fix(floor[p])==3-f /\ fix(room[p])==r then x_s[p]++" " else "" endif | f in 1..floors, r in 1..rooms, p in 1..n];
+int: n = 6;
+int: floors = 2;
+array [1..n] of int: floor;
+int: rooms = 3;
+array [1..n] of int: room;
+array [1..n] of string: x_s = ["arthur   ","bella    ","craig    ","duncan   ","elizabeth","francesca"];

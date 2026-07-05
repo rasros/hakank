@@ -1,0 +1,4 @@
+output [(show(s)++"\n")++show(sieve)];
+int: n = 123;
+set of int: s;
+array [1..n] of int: sieve;

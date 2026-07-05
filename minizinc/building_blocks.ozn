@@ -1,0 +1,5 @@
+output [("dice: "++show(dice))++"\n"]++[if j==1 then ("\nDice"++show(i))++": " else "" endif++if fix(dice[j])==i then show(alpha[j])++" " else "" endif | i in 1..n, j in 1..m];
+int: m = 24;
+array [1..m] of int: dice;
+array [1..m] of string: alpha = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","R","S","T","U","V","W","X","Y"];
+int: n = 4;

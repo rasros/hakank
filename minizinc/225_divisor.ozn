@@ -1,0 +1,4 @@
+output ["x: ",show(x),"\n","y: ",show(y)];
+int: n = 11;
+int: y;
+array [1..n] of int: x;

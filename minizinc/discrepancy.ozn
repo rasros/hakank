@@ -1,0 +1,5 @@
+output [(((((("variables: "++show(variables))++"\n")++"bad: ")++show(bad))++"\n")++"k: ")++show(k)];
+int: n = 5;
+array [1..n] of int: variables = [4,5,5,4,1];
+array [1..n] of set of int: bad = [{1,4,6},0..1,{1,6,9},{1,4},1..0];
+int: k = 2;

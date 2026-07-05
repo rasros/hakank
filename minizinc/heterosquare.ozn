@@ -1,0 +1,8 @@
+output ((["diag1: ",show(diag1)," diag2: ",show(diag2),"\n","row_sums: ",show(row_sums),"\n","col_sums: ",show(col_sums),"\n"]++[show(mat[i,j])++if j mod n==0 then "\n" else " " endif | i in 1..n, j in 1..n])++["mat: "++show(mat)])++["\n"];
+int: n = 3;
+array [1..n] of int: col_sums;
+array [1..n] of int: row_sums;
+int: diag2;
+int: diag1;
+array [1..9] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: mat = array2d(1..3,1..3,X_INTRODUCED_16_);

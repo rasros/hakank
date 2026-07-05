@@ -1,0 +1,4 @@
+output [((("x: "++show(x))++"\n")++"numColors: ")++show(numColors)];
+set of int: countries = 1..6;
+array [countries] of int: x;
+int: numColors;

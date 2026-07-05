@@ -1,0 +1,3 @@
+output [(((("x: "++show(x))++"\n")++"missing: ")++show(missing))++"\n"];
+array [1..9] of int: x;
+int: missing;

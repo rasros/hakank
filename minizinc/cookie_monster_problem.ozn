@@ -1,0 +1,8 @@
+output ([(((("Num_moves: "++show(num_moves))++"\n")++"Cookies picked: ")++show([z[m] | m in 2..fix(num_moves)+1]))++"\n"]++["jars:             "++show(jars)])++[if i==1 then ("\nTake "++show_int(2,z[m]))++" cookie(s): " else " " endif++show(x[m,i]) | m in 2..max_moves, i in 1..n];
+int: max_moves = 5;
+int: num_moves;
+int: n = 6;
+array [1..n] of int: jars = [15,13,12,4,2,1];
+array [1..max_moves] of int: z;
+array [1..30] of int: X_INTRODUCED_16_;
+array [1..max_moves,1..n] of int: x = array2d(1..5,1..6,X_INTRODUCED_16_);

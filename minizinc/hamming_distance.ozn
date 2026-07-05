@@ -1,0 +1,5 @@
+output [((((((("a: "++show(a))++"\n")++"b: ")++show(b))++"\n")++"diffs: ")++show(diffs))++"\n"];
+int: n = 6;
+array [1..n] of int: a = [1,1,1,1,1,1];
+array [1..n] of int: b;
+int: diffs = 2;

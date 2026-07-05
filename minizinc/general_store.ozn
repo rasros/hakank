@@ -1,0 +1,13 @@
+output [show(x)];
+int: L;
+int: P;
+int: W;
+int: O;
+int: B;
+int: A;
+int: S;
+int: E;
+int: H;
+int: C;
+int: n = 10;
+array [1..n] of int: x = [C,H,E,S,A,B,O,W,P,L];

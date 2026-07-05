@@ -1,0 +1,4 @@
+output ["x: ",show(x)," num_cycles: ",show(num_cycles)++"\n"];
+int: num_cycles = 2;
+int: n = 6;
+array [1..n] of int: x;

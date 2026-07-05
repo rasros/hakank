@@ -1,0 +1,5 @@
+output [(((("xtable: "++show(xtable))++"\n")++"items: ")++show(items))++"\n"];
+int: n = 3;
+array [1..n] of int: xtable = [6,0,-3];
+int: num_rows = 3;
+array [1..num_rows,1..2] of int: items = [|3,-4|1,6|3,1|];

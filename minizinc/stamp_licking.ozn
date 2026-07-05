@@ -1,0 +1,8 @@
+output ["z: ",show(z)]++[if j==1 then "\n" else " " endif++show(y[i,j]) | i,j in S];
+set of int: T = 1..5;
+set of int: S = 1..4;
+array [1..80] of int: X_INTRODUCED_0_;
+array [S,S,T] of int: x = array3d(1..4,1..4,1..5,X_INTRODUCED_0_);
+int: z = sum([k*x[i,j,k] | i in S, j in S, k in T]);
+array [1..16] of int: X_INTRODUCED_162_;
+array [S,S] of int: y = array2d(1..4,1..4,X_INTRODUCED_162_);

@@ -1,0 +1,6 @@
+output [(((("production: "++show(production))++"\n")++"z: ")++show(z))++"\n"];
+set of int: Products = 1..2;
+array [Products] of float: production;
+int: gas = 1;
+int: chloride = 2;
+float: z = 40.0*production[gas]+50.0*production[chloride];

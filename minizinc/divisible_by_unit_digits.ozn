@@ -1,0 +1,5 @@
+output [((("sum: "++show(sum(x)))++"\n")++show(x))++"\n"]++[if fix(x[i])==1 then show(i)++" " else "" endif | i in ll..uu];
+int: ll = 10;
+int: uu = 50;
+array [1..41] of int: X_INTRODUCED_0_;
+array [ll..uu] of int: x = array1d(10..50,X_INTRODUCED_0_);

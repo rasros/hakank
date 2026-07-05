@@ -1,0 +1,2 @@
+output ["y="++format(y)++""];
+int: y;

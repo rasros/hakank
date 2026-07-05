@@ -1,0 +1,8 @@
+output [show(A),"^3 + ",show(B),"^3 +",show(C),"^3 + ",show(D),"^3 = ",show(E),"^3 + ",show(F),"^3 + ",show(G),"^3 ","\n"];
+int: G;
+int: F;
+int: E;
+int: D;
+int: C;
+int: B;
+int: A;

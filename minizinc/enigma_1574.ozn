@@ -1,0 +1,4 @@
+output [show([year,month,day])];
+int: day;
+int: month;
+int: year;

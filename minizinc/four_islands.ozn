@@ -1,0 +1,17 @@
+output ["island: ",show(island),"\n","export: ",show(export),"\n","attraction: ",show(attraction),"\n"];
+set of int: r = 1..4;
+int: koala_preserve;
+int: jai_alai_stadium;
+int: ice_skating_rink;
+int: resort_hotel;
+array [r] of int: attraction = [resort_hotel,ice_skating_rink,jai_alai_stadium,koala_preserve];
+int: durian_fruit;
+int: coconuts;
+int: bananas;
+int: alabaster;
+array [r] of int: export = [alabaster,bananas,coconuts,durian_fruit];
+int: Skern;
+int: Rayou;
+int: Quero;
+int: Pwana;
+array [r] of int: island = [Pwana,Quero,Rayou,Skern];

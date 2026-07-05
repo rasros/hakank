@@ -1,0 +1,10 @@
+output [show(letters)];
+int: S;
+int: T;
+int: A;
+int: M;
+int: G;
+int: I;
+int: N;
+int: E;
+array [1..8] of int: letters = [E,N,I,G,M,A,T,S];

@@ -1,0 +1,3 @@
+output ["x: "++show(x)];
+int: len = 10;
+array [1..len] of int: x;

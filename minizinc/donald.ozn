@@ -1,0 +1,12 @@
+output [" D  O  N  A  L  G  E  R  B  T\n",show(FD),"\n"];
+int: T;
+int: B;
+int: R;
+int: E;
+int: G;
+int: L;
+int: A;
+int: N;
+int: O;
+int: D;
+array [1..10] of int: FD = [D,O,N,A,L,G,E,R,B,T];

@@ -1,0 +1,4 @@
+output ["today: "++format(today)++"\n","truth: "++format(truth)++"\n"];
+int: n = 7;
+array [1..n] of int: truth;
+int: today;

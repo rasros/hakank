@@ -1,0 +1,14 @@
+output [((((((("men: "++show(men))++"\n")++"women: ")++show(women))++"\n")++"sons: ")++show(sons))++"\n"];
+int: Snyder = 3;
+int: Locker = 2;
+int: Abel = 1;
+set of int: R = 1..3;
+array [R] of int: men = [Abel,Locker,Snyder];
+int: Luisa;
+int: Doris;
+int: Edith;
+array [R] of int: women = [Edith,Doris,Luisa];
+int: Victor;
+int: Henry;
+int: Albert;
+array [R] of int: sons = [Albert,Henry,Victor];

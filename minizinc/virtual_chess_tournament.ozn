@@ -1,0 +1,12 @@
+output [((((((((((((((((((("x         : "++show(x))++"\n")++"total     : ")++show(total))++"\n")++"num_wins  : ")++show(num_wins))++"\n")++"num_losses: ")++show(num_losses))++"\n")++"winners   : ")++show(winners))++"\n")++"losers    : ")++show(losers))++"\n")++"num_draws_total : ")++show(num_draws_total))++"\n"]++[let {int: i2 = 1+i, int: m = 1+i mod 3, int: r = fix(x[i+1])} in (((((((show_int(2,i2)++": ")++show(s2[m]))++" Winner/draw: ")++show(s[fix(winners[i2])]))++" (")++show(winners[i2]))++")\n") | i in 0..n2-1];
+int: n2 = 21;
+array [1..n2] of int: x;
+int: num_players = 3;
+array [1..num_players] of int: total;
+array [1..num_players] of int: num_wins;
+array [1..num_players] of int: num_losses;
+array [1..n2] of int: winners;
+array [1..n2] of int: losers;
+int: num_draws_total = sum([bool2int(winners[i]==0) | i in 1..n2]);
+array [1..3] of string: s2 = ["Fisher vs Kasparov","Fisher vs Karpov","Kasparov vs Karpov"];
+array [0..3] of string: s = array1d(0..3,["Draw","Fisher","Kasparov","Karpov"]);

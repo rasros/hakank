@@ -1,0 +1,11 @@
+output [show(LD)];
+int: C9;
+int: C8;
+int: C7;
+int: C6;
+int: C5;
+int: C4;
+int: C3;
+int: C2;
+int: C1;
+array [1..9] of int: LD = [C1,C2,C3,C4,C5,C6,C7,C8,C9];

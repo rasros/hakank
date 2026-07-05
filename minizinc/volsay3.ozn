@@ -1,0 +1,5 @@
+output [(((("Production: "++show(Production))++"\n")++"z: ")++show(z))++"\n"];
+set of int: Products = 1..2;
+array [Products] of float: Production;
+array [Products] of float: Profit = [30.0,40.0];
+float: z = sum([Profit[p]*Production[p] | p in Products]);

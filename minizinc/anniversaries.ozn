@@ -1,0 +1,18 @@
+output ["husbands: ",show(husbands),"\n","wifes   : ",show(wifes),"\n","married : ",show(married),"\n"]++[((((((show(surnames_s[s])++": ")++show(join("",[husbands_s[p] | p in 1..n where s==fix(husbands[p])])))++" and ")++show(join("",[wifes_s[p] | p in 1..n where s==fix(wifes[p])])))++" ")++show(married[s]))++" years\n" | s in 1..n];
+int: n = 5;
+array [1..n] of int: married;
+int: Mildred = Douglas;
+int: Elizabeth;
+int: Marcia;
+int: Joyce;
+int: Elaine;
+array [1..n] of int: wifes = [Elaine,Joyce,Marcia,Elizabeth,Mildred];
+int: Everett;
+int: Peter;
+int: Charles;
+int: Douglas;
+int: Russell;
+array [1..n] of int: husbands = [Russell,Douglas,Charles,Peter,Everett];
+array [1..n] of string: surnames_s = ["Johnstone","Parker","Watson","Graves","Shearer"];
+array [1..n] of string: husbands_s = ["Russell","Douglas","Charles","Peter","Everett"];
+array [1..n] of string: wifes_s = ["Elaine","Joyce","Marcia","Elizabeth","Mildred"];

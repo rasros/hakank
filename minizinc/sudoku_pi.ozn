@@ -1,0 +1,5 @@
+output [if j==1 then "\n" else " " endif++if fix(x[i,j])==P then "P" else show(x[i,j]) endif | i,j in 1..n];
+int: n = 12;
+array [1..144] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: x = array2d(1..12,1..12,X_INTRODUCED_16_);
+int: P = -1;

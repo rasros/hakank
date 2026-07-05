@@ -1,0 +1,6 @@
+output ["colors       : ",show(colors),"\n","nationalities: ",show(nationalities),"\n","drinks       : ",show(drinks),"\n","smokes       : ",show(smokes),"\n","pets         : ",show(pets),"\n"];
+array [1..5] of int: pets;
+array [1..5] of int: smokes;
+array [1..5] of int: drinks;
+array [1..5] of int: nationalities;
+array [1..5] of int: colors;

@@ -1,0 +1,5 @@
+output ["wife   : ",show(wife),"\n","husband: ",show(husband),"\n"];
+int: num_women = 9;
+int: num_men = 9;
+array [1..num_women] of int: husband;
+array [1..num_men] of int: wife;

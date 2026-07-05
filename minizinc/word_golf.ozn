@@ -1,0 +1,6 @@
+output (["\nladder_num: ",show(ladder_num)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..ladder_len, j in 1..word_len])++["\n"];
+int: ladder_len = 14;
+array [1..ladder_len] of int: ladder_num;
+int: word_len = 4;
+array [1..56] of int: X_INTRODUCED_17_;
+array [1..ladder_len,1..word_len] of int: x = array2d(1..14,1..4,X_INTRODUCED_17_);

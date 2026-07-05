@@ -1,0 +1,4 @@
+output ["x: ",show(x),"\n","y: ",show(y),"\n"];
+int: num_prices = 6;
+int: y;
+array [1..num_prices] of int: x;

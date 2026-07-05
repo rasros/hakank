@@ -1,0 +1,5 @@
+output [((((((("variables: "++show(variables))++"\n")++"t_min: ")++show(t_min))++"\n")++"rank: ")++show(rank))++"\n"];
+int: n = 5;
+array [1..n] of int: variables;
+int: t_min = 3;
+int: rank = 1;

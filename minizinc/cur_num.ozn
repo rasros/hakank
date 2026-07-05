@@ -1,0 +1,8 @@
+output [show(arr),"\n"];
+int: E;
+int: D;
+int: C;
+int: B;
+int: A;
+int: X;
+array [1..6] of int: arr = [X,A,B,C,D,E];

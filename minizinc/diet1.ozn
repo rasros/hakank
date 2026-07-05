@@ -1,0 +1,5 @@
+output [(((("cost: "++show(cost))++"\n")++"x: ")++show(x))++"\n"];
+int: n = 4;
+array [1..n] of int: price = [50,20,30,80];
+array [1..n] of int: x;
+int: cost = sum([price[i]*x[i] | i in 1..n]);

@@ -1,0 +1,4 @@
+output [((("x: "++show(x))++"\n")++"z: ")++show(z)];
+int: n = 7;
+array [1..n] of int: x = [0,0,1,2,0,0,-3];
+int: z = 4;

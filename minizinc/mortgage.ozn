@@ -1,0 +1,6 @@
+output ["P: ",show(P),"\n","I: ",show(I),"\n","R: ",show(R),"\n","mortgage: ",show(mortgage),"\n"];
+int: T = 3;
+array [1..T] of float: mortgage;
+float: R = 150.0;
+float: I = 0.1;
+float: P;

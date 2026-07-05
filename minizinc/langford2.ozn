@@ -1,0 +1,3 @@
+output ["solution: ",show(solution),"\n"];
+set of int: positionDomain = 1..8;
+array [positionDomain] of int: solution;

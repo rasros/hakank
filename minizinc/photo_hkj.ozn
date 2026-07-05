@@ -1,0 +1,4 @@
+output [(((("positions: "++show(positions))++"\n")++"z: ")++show(z))++"\n"];
+int: n = 7;
+array [1..n] of int: positions;
+int: z;

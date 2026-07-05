@@ -1,0 +1,5 @@
+output ["S:",show(S),"\n","C:",show(C),"\n","E:",show(E),"\n","P:",show(P),"\n"];
+float: P;
+float: E;
+float: C = 200.0;
+float: S;

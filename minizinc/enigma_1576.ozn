@@ -1,0 +1,6 @@
+output ((["Plants:"]++[if j==1 then "\n" else " " endif++show(plants[i,j]) | i,j in 1..n])++["\nColors: "])++[if j==1 then "\n" else " " endif++show(colors[i,j]) | i,j in 1..n];
+int: n = 4;
+array [1..16] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: plants = array2d(1..4,1..4,X_INTRODUCED_16_);
+array [1..16] of int: X_INTRODUCED_33_;
+array [1..n,1..n] of int: colors = array2d(1..4,1..4,X_INTRODUCED_33_);

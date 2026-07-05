@@ -1,0 +1,7 @@
+output [show(LD)];
+int: E3;
+int: D2;
+int: C;
+int: B;
+int: A;
+array [1..5] of int: LD = [A,B,C,D2,E3];

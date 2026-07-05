@@ -1,0 +1,4 @@
+output [((((((("number: "++show(number))++"\n")++"one_before: ")++show(one_before))++"\n")++"one_after: ")++show(one_after))++"\n"];
+int: number;
+int: one_before;
+int: one_after;

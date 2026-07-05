@@ -1,0 +1,6 @@
+output [(((((((((("variables: "++show(variables))++"\n")++"value: ")++show(value))++"\n")++"n: ")++show(n))++"\n")++"s: ")++show(s))++"\n"];
+int: num = 4;
+array [1..num] of int: variables = [2,2,4,5];
+int: value = 2;
+int: n = 1;
+set of int: s = 2..4;

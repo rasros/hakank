@@ -1,0 +1,5 @@
+output [((if i==0 /\ j==1 /\ k==1 then "\n\nGame:" else "" endif++if j==1 /\ k==1 then "\n" else "" endif)++if k==1 then "\n" else " " endif)++show(tickTackToe[i,j,k]) | i in STEPS0, j,k in LENGTH]++["\n"];
+set of int: LENGTH = 1..3;
+set of int: STEPS0 = 0..7;
+array [1..72] of int: X_INTRODUCED_0_;
+array [STEPS0,LENGTH,LENGTH] of int: tickTackToe = array3d(0..7,1..3,1..3,X_INTRODUCED_0_);

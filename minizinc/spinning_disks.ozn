@@ -1,0 +1,6 @@
+output [(((("disk1: "++show(disk1))++"\n")++"disk2: ")++show(disk2))++"\n"];
+int: n = 12;
+array [1..n] of int: disk1;
+int: m = 12;
+array [1..144] of int: X_INTRODUCED_24_;
+array [1..m,1..n] of int: disk2 = array2d(1..12,1..12,X_INTRODUCED_24_);

@@ -1,0 +1,10 @@
+output ((["\ninit: ",show(init),"\n","check_ix: ",show(check_ix),"\n","ops: ",(show(ops)++"\n")++"Moves: "]++[let {int: m = fix(ops[i])} in (if i > 0 /\ m > 0 then show(moves_str[m]) else "" endif) | i in 1..rows])++[if i==1 then ("\n"++show(ops[k]))++": " else " " endif++show(x[k,i]) | k in 1..rows, i in 1..n])++["\n"];
+int: rows = 20;
+int: num_moves = 4;
+array [1..rows] of int: ops;
+int: check_ix;
+int: n = 16;
+array [1..n] of int: init;
+array [0..num_moves] of string: moves_str = array1d(0..4,["-","1","2","3","4"]);
+array [1..320] of int: X_INTRODUCED_16_;
+array [1..rows,1..n] of int: x = array2d(1..20,1..16,X_INTRODUCED_16_);

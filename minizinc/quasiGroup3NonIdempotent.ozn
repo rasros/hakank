@@ -1,0 +1,6 @@
+output ((["\nqgDiagonal: ",show(qgDiagonal)]++["\nquasiGroup: "])++[if col==0 then "\n" else " " endif++show(quasiGroup[row,col]) | row,col in nDomain])++["\n"];
+set of int: nDomain = 0..3;
+array [1..4] of int: X_INTRODUCED_33_;
+array [nDomain] of int: qgDiagonal = array1d(0..3,X_INTRODUCED_33_);
+array [1..16] of int: X_INTRODUCED_16_;
+array [nDomain,nDomain] of int: quasiGroup = array2d(0..3,0..3,X_INTRODUCED_16_);

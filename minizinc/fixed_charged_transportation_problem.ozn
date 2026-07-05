@@ -1,0 +1,8 @@
+output [((((((("x: "++show(x))++"\n")++"y: ")++show(y))++"\n")++"cost: ")++show(cost))++"\n"];
+set of int: J = 1..12;
+set of int: I = 1..8;
+array [1..96] of float: X_INTRODUCED_0_;
+array [I,J] of float: x = array2d(1..8,1..12,X_INTRODUCED_0_);
+array [1..96] of int: X_INTRODUCED_97_;
+array [I,J] of int: y = array2d(1..8,1..12,X_INTRODUCED_97_);
+float: cost;

@@ -1,0 +1,4 @@
+output [((show(s[i])++" ")++show(m[i]))++"\n" | i in 1..heap];
+int: heap = 5;
+array [1..heap] of int: s;
+array [1..heap] of int: m;

@@ -1,0 +1,10 @@
+output (((((([if j==1 then "\n" else " " endif++show(data[i,j]) | i in 1..rows, j in 1..cols]++["\n"])++[if j==1 then "\n" else " " endif++show(str[data[i,j]]) | i in 1..rows, j in 1..cols])++["\nx:"])++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..rows, j in 1..cols])++["\nx:"])++[if j==1 then "\n" else " " endif++show(str[fix(x[i,j])]) | i in 1..rows, j in 1..cols])++["\n"];
+int: B = 3;
+int: P = 2;
+int: W = 4;
+int: cols = 4;
+int: rows = 4;
+array [1..rows,1..cols] of int: data = [|B,W,P,P|W,P,W,B|P,W,B,P|P,P,P,B|];
+array [1..4] of string: str = ["-","+","b","w"];
+array [1..16] of int: X_INTRODUCED_16_;
+array [1..rows,1..cols] of int: x = array2d(1..4,1..4,X_INTRODUCED_16_);

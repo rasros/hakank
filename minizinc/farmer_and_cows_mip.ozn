@@ -1,0 +1,6 @@
+output [("sons: "++show(sons))++"\n"]++[((("son "++show(s))++" got these cows: ")++show([c | c in 1..num_cows where fix(cows[c,s])==1]))++"\n" | s in 1..num_sons];
+int: num_sons = 9;
+int: num_cows = 81;
+array [1..num_sons] of int: sons = [369,369,369,369,369,369,369,369,369];
+array [1..729] of int: X_INTRODUCED_25_;
+array [1..num_cows,1..num_sons] of int: cows = array2d(1..81,1..9,X_INTRODUCED_25_);

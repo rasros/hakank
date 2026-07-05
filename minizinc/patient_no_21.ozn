@@ -1,0 +1,8 @@
+output [((((((((((((((("x: "++show(x))++"\n")++"dists: ")++show(dists))++"\n")++"min_ix: ")++show(min_ix))++"\n")++"#21 is most like ")++show(min_ix))++"\n")++"probable diagnose: ")++show(x[the_case]))++" (")++show(diagnoses_str[fix(x[the_case])]))++")\n"]++["\n"];
+int: num_r = 5;
+array [1..num_r] of int: x = [0,1,1,1,1];
+int: num_p = 20;
+array [1..num_p] of int: dists;
+int: min_ix;
+int: the_case = 5;
+array [1..3] of string: diagnoses_str = ["Cold","Flu","Allergies"];

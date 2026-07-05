@@ -1,0 +1,12 @@
+output ((["s:"]++[if j==1 then "\n" else " " endif++show_int(2,s[i,j]) | i in 1..num_slots, j in 1..num_rooms])++[((((((((((("\nslots: "++show(xslots))++"\n")++"days : ")++show(xdays))++"\n")++"rooms: ")++show(xrooms))++"\n")++"z    : ")++show(z))++"\n")++"years (max 2 occurrences per day):"])++[if j==1 then ("\nday "++show(1+(i-1) div num_days))++": " else " " endif++if fix(s[i,j]) > 0 then show_int(2,years[fix(s[i,j])]) else " -" endif | i in 1..num_slots, j in 1..num_rooms];
+int: num_rooms = 6;
+int: num_slots = 9;
+int: n = 20;
+array [1..54] of int: X_INTRODUCED_16_;
+array [1..num_slots,1..num_rooms] of int: s = array2d(1..9,1..6,X_INTRODUCED_16_);
+array [1..n] of int: xslots;
+int: num_days = 3;
+array [1..n] of int: xdays;
+array [1..n] of int: xrooms;
+int: z;
+array [1..n] of int: years = [1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4];

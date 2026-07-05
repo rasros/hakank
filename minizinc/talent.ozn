@@ -1,0 +1,8 @@
+output ["idleCost: ",show(idleCost),"\n","slot: ",show(slot),"\n","scene: ",show(scene),"\n"];
+set of int: Scenes = 1..9;
+array [Scenes] of int: scene;
+array [Scenes] of int: slot;
+set of int: Actors = 1..5;
+array [Actors] of int: actorPay = [1,1,1,1,1];
+array [Actors] of int: actorWait;
+int: idleCost = sum([actorPay[a]*actorWait[a] | a in Actors]);

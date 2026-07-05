@@ -1,0 +1,6 @@
+output ["ATOM = A + TO + M","\n",show(ATOM)," = ",show(A)," + ",show(10*T+O)," + ",show(M),"\n"];
+int: M;
+int: T;
+int: O;
+int: A;
+int: ATOM = 1000*A+100*T+10*O+M;

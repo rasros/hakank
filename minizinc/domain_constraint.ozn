@@ -1,0 +1,5 @@
+output [((((((("var01: "++show(var01))++"\n")++"values: ")++show(values))++"\n")++"val: ")++show(val))++"\n"];
+int: n = 4;
+array [1..n] of int: var01 = [0,1,0,0];
+array [1..n] of int: values = [9,5,2,7];
+int: val = 5;

@@ -1,0 +1,5 @@
+output ["z: ",show(z),"\n","d: ",show(d),"\n","w: ",show(w),"\n","h: ",show(h),"\n"];
+float: h;
+float: w;
+float: d;
+float: z = 2.0*(0.05*(d*w+d*h)+0.1*w*h);

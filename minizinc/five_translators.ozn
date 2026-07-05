@@ -1,0 +1,4 @@
+output (([(("x: "++show(x))++"\n")++"Translators:\n"]++[((("The "++lang[i])++" translator speaks: ")++show(join(" ",[lang[ll] | ll in fix(x[i])])))++"\n" | i in 1..n])++["\nLanguages:"])++[if j==1 then ("\nLanguage "++show(lang[i]))++" is spoken by the " else "" endif++if i in fix(x[j]) then show(lang[j])++" " else "" endif | i in 1..n, j in 1..n];
+int: n = 5;
+array [1..n] of set of int: x;
+array [1..n] of string: lang = ["Spanish","English","French","German","Russian"];

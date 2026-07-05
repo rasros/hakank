@@ -1,0 +1,6 @@
+output [((((((("total: "++show(total))++"\n")++"punish: ")++show(punish))++"\n")++"x: ")++show(x))++"\n"];
+int: total;
+int: num_shops = 37;
+array [1..num_shops] of int: punish;
+int: num_items = 29;
+array [1..num_items] of int: x;

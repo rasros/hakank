@@ -1,0 +1,4 @@
+output [show([r,x,y])];
+float: y;
+float: x;
+float: r;

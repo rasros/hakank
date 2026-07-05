@@ -1,0 +1,5 @@
+output [(((("x: "++show(x))++"\n")++"y: ")++show(y))++"\n"];
+int: T = 3;
+array [1..T] of int: x;
+array [1..4] of int: X_INTRODUCED_3_;
+array [0..T] of int: y = array1d(0..3,X_INTRODUCED_3_);

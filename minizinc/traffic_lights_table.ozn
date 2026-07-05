@@ -1,0 +1,4 @@
+output (["V: ",show(V),"\nP: ",show(P),"\n"]++[((show(V[i])++" ")++show(P[i]))++" " | i in 1..n])++["\n"];
+int: n = 4;
+array [1..n] of int: P;
+array [1..n] of int: V;

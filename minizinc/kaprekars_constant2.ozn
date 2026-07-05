@@ -1,0 +1,5 @@
+output [((((((((((((("n: "++show(n))++"\n")++"base: ")++show(base))++"\n")++"x_num: ")++show(x_num))++"\n")++"y: ")++show(y))++"\n")++"x: ")++show(y))++"\n"]++["\n"];
+int: n = 4;
+int: base = 10;
+int: x_num;
+array [1..n] of int: y;

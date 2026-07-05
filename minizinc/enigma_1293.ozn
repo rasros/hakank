@@ -1,0 +1,6 @@
+output [((((((((((((("C: "++show(C))++"\n")++"F: ")++show(F))++"\n")++"Base: ")++show(Base))++"\n")++"D1: ")++show(D1))++"\n")++"D2: ")++show(D2))++"\n"];
+int: C;
+int: F;
+int: Base;
+int: D1;
+int: D2;

@@ -1,0 +1,7 @@
+output [show([V,I,R1,R2,VD,ID])];
+float: ID = 0.1;
+float: VD;
+float: R2;
+float: R1;
+float: I;
+float: V;

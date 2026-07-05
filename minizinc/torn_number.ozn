@@ -1,0 +1,5 @@
+output [show(D0)," ",show(D1)," ",show(D2)," ",show(D3),"\n"];
+int: D3;
+int: D2;
+int: D1;
+int: D0;

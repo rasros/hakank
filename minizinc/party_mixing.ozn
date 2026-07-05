@@ -1,0 +1,6 @@
+output ((["Total: "++format(Total)++"\n","Start:\n"]++[if J==1 then "\n" else " " endif++show_int(3,(I-1)*NumAtTables+J) | I in 1..NumTables, J in 1..NumAtTables])++["\n\nEnd: "])++[if J==1 then "\n" else " " endif++show_int(3,X[I,J]) | I in 1..NumTables, J in 1..NumAtTables];
+int: Total = 70;
+int: NumAtTables = 7;
+int: NumTables = 10;
+array [1..70] of int: X_INTRODUCED_16_;
+array [1..NumTables,1..NumAtTables] of int: X = array2d(1..10,1..7,X_INTRODUCED_16_);

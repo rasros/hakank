@@ -1,0 +1,3 @@
+output ["Move the coin in position "++format(from)++" to empty position "++format(to)++"\n"];
+int: from;
+int: to;

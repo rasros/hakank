@@ -1,0 +1,9 @@
+output ([((((((((((((("total_value : "++show(total_value))++" (")++show(int2float(total_value)/1.0))++")\n")++"total_weight: ")++show(total_weight))++" (")++show(int2float(total_weight)/10.0))++")\n")++"total_volume: ")++show(total_volume))++" (")++show(int2float(total_volume)/1000.0))++")\n"]++[((show(i)++": ")++show(x[i]))++"\n" | i in 1..n])++["\n"];
+int: n = 3;
+array [1..n] of int: x;
+array [1..n] of int: value = [3000,1800,2500];
+int: total_value = sum([x[i]*value[i] | i in 1..n]);
+array [1..n] of int: weight = [3,2,20];
+int: total_weight = sum([x[i]*weight[i] | i in 1..n]);
+array [1..n] of int: volume = [25,15,2];
+int: total_volume = sum([x[i]*volume[i] | i in 1..n]);

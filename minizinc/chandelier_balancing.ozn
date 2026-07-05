@@ -1,0 +1,10 @@
+output [(show(["a","b","c","d","e","f","g","h","i"])++"\n")++show([a,b,c,d,e,f,g,h,i])];
+int: i;
+int: h;
+int: g;
+int: f;
+int: e;
+int: d;
+int: c;
+int: b;
+int: a;

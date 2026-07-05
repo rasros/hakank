@@ -1,0 +1,16 @@
+output ([((((((("lastname: "++show(lastname))++"\n")++"job     : ")++show(job))++"\n")++"muffins : ")++show(muffins))++"\n\n"]++[let {1..n: lastname_ix = max([j*bool2int(lastname[j]==i) | j in 1..n]), 1..n: job_ix = max([j*bool2int(job[j]==i) | j in 1..n])} in (((((((firstname_s[i]++" ")++lastname_s[fix(lastname_ix)])++", ")++job_s[fix(job_ix)])++": ")++show(muffins[i]))++" muffins\n") | i in 1..n])++["\n"];
+int: n = 4;
+int: Summers;
+int: Oakley;
+int: Ingham;
+int: Ellis;
+array [1..n] of int: lastname = [Ellis,Ingham,Oakley,Summers];
+int: zookeeper;
+int: secretary;
+int: flautist;
+int: dogcatcher;
+array [1..n] of int: job = [dogcatcher,flautist,secretary,zookeeper];
+array [1..n] of int: muffins;
+array [1..n] of string: firstname_s = ["Bill","Mark","Calla","Lynn"];
+array [1..n] of string: lastname_s = ["Ellis","Ingham","Oakley","Summers"];
+array [1..n] of string: job_s = ["dogcatcher","flautist","secretary","zookeeper"];

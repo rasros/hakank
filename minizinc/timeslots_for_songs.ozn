@@ -1,0 +1,12 @@
+output ([(("x: "++show(x))++"\n")++"timeline: "]++[show(str[fix(timeline[i])])++" " | i in 1..n])++["\n"];
+int: n = 7;
+int: News;
+int: S;
+int: P;
+int: O;
+int: L;
+int: H;
+int: G;
+array [1..n] of int: x = [G,H,L,O,P,S,News];
+array [1..n] of string: str = ["G","H","L","O","P","S","News"];
+array [1..n] of int: timeline;

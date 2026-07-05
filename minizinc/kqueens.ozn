@@ -1,0 +1,5 @@
+output [(if i==1 /\ j==1 then "\nnumq: "++show(numq) else "" endif++if j==1 then "\n" else " " endif)++show(x[i,j]) | i in S, j in S]++["\n"];
+set of int: S = 1..8;
+array [1..64] of int: X_INTRODUCED_0_;
+array [S,S] of int: x = array2d(1..8,1..8,X_INTRODUCED_0_);
+int: numq = sum([x[i,j] | i in S, j in S]);

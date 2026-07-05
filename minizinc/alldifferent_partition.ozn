@@ -1,0 +1,4 @@
+output [((((((("x: "++show(x))++"\n")++"s: ")++show(s))++"\n")++"s: ")++show(s))++"\n"];
+int: n = 3;
+array [1..n] of int: x;
+array [1..n] of set of int: s;

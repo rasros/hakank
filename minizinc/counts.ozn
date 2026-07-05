@@ -1,0 +1,6 @@
+output [((((((("values: "++show(values))++"\n")++"variables: ")++show(variables))++"\n")++"limitx: ")++show(limitx))++"\n"];
+int: m = 4;
+array [1..m] of int: values = [1,3,4,9];
+int: n = 6;
+array [1..n] of int: variables = [4,5,5,4,1,5];
+int: limitx = 3;

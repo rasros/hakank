@@ -1,0 +1,7 @@
+output ["nums: "++format(nums)++"\n"]++[if i==1 then "\n" else " " endif++show(x[s,i]) | s in 0..num_steps, i in 1..max_size];
+int: num_steps = 5;
+int: max_size = 5;
+array [1..6] of int: X_INTRODUCED_47_;
+array [0..num_steps] of int: nums = array1d(0..5,X_INTRODUCED_47_);
+array [1..30] of int: X_INTRODUCED_16_;
+array [0..num_steps,1..max_size] of int: x = array2d(0..5,1..5,X_INTRODUCED_16_);

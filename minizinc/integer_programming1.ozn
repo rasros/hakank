@@ -1,0 +1,4 @@
+output [show([a,b,c])];
+int: c;
+int: b;
+int: a;

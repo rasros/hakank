@@ -1,0 +1,6 @@
+output ["\nx: ",show(x)]++[if j==1 then "\n" else " " endif++show(digits[i,j]) | i in 1..6, j in 1..9];
+int: n = 6;
+array [1..n] of int: x;
+int: d = 9;
+array [1..54] of int: X_INTRODUCED_0_;
+array [1..n,1..d] of int: digits = array2d(1..6,1..9,X_INTRODUCED_0_);

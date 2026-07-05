@@ -1,0 +1,5 @@
+output ["variables1: ",show(variables1),"\n","variables2: ",show(variables2),"\n","size_interval: ",show(size_interval),"\n"]++["\n"];
+int: n = 6;
+int: size_interval = 3;
+array [1..n] of int: variables2 = [8,8,8,0,1,2];
+array [1..n] of int: variables1 = [1,7,6,0,1,7];

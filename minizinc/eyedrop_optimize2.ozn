@@ -1,0 +1,12 @@
+output (((((([(((("z:   : "++show(z))++"\n")++"x    : ")++show(x))++"\n"]++[((show_int(2,t)++": ")++if fix(x[t]) > 0 then show(x[t]) else "  " endif)++"\n" | t in start..end])++[if time==start then ("\nType "++show(t))++": " else "" endif++if fix(x[time])==t then show_int(2,time)++" " else "" endif | t in 1..num_types, time in start..end])++["\ndrop_table:"])++[if time==1 then "\n" else " " endif++show_int(2,drop_table[t,time]) | t in 1..num_types, time in 1..occ[t]])++["\ndists_table:"])++[if time==1 then "\n" else " " endif++show_int(2,dists_table[t,time]) | t in 1..num_types, time in 1..max_times-1])++[("\nz: "++show(z))++"\n"];
+int: z;
+int: start = 1;
+int: end = 30;
+int: num_types = 6;
+array [start..end] of int: x;
+int: max_times = 8;
+array [1..48] of int: X_INTRODUCED_46_;
+array [1..num_types,1..max_times] of int: drop_table = array2d(1..6,1..8,X_INTRODUCED_46_);
+array [1..num_types] of int: occ = [8,5,4,3,2,1];
+array [1..42] of int: X_INTRODUCED_95_;
+array [1..num_types,1..max_times-1] of int: dists_table = array2d(1..6,1..7,X_INTRODUCED_95_);

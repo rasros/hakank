@@ -1,0 +1,5 @@
+output ["x     : ",show(x),"\n","scores: ",show(scores),"\n","total_score: ",show(total_score),"\n"];
+int: num_kids = 6;
+array [1..num_kids] of int: scores;
+int: total_score = sum(scores);
+array [1..num_kids] of int: x;

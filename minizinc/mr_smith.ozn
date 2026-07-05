@@ -1,0 +1,7 @@
+output [show(x)];
+bool: Tim = John;
+bool: John;
+bool: Matt;
+bool: Mrs_Smith;
+bool: Mr_Smith;
+array [1..5] of bool: x = [Mr_Smith,Mrs_Smith,Matt,John,Tim];

@@ -1,0 +1,3 @@
+output [(((("nodes: "++show(nodes))++"\n")++"edges: ")++show(edges))++"\n"];
+array [1..8] of int: nodes;
+array [1..16] of int: edges;

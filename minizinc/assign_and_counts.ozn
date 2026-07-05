@@ -1,0 +1,6 @@
+output ["bins: ",show(bins),"\n","colors: ",show(colors),"\n","color: ",show(color),"\n","nval: ",show(nval),"\n"];
+int: nval = 2;
+int: color = 4;
+int: n = 4;
+array [1..n] of int: colors = [4,4,4,5];
+array [1..n] of int: bins = [1,3,1,1];

@@ -1,0 +1,7 @@
+output [((((((((((((("max_score: "++show(max_score))++"\n")++"total: ")++show(total))++"\n")++"x: ")++show(x))++"\n")++"z: ")++show(z))++"\n")++"s: ")++show(s))++"\n"]++["\n"];
+int: max_score = 92;
+int: n = 19;
+array [1..n] of int: s;
+int: total = sum(s);
+array [1..n] of int: x;
+array [1..n] of int: z;

@@ -1,0 +1,5 @@
+output [((("Team "++show_int(2,t))++": ")++show([p | p in persons where fix(team[p])==t]))++"\n" | t in 1..num_teams];
+set of int: persons = 0..59;
+array [1..60] of int: X_INTRODUCED_16_;
+array [persons] of int: team = array1d(0..59,X_INTRODUCED_16_);
+int: num_teams = 10;

@@ -1,0 +1,3 @@
+output ["number of hens (2 legs): ",show(c[2]),"\n","number of pigs (4 legs): ",show(c[4]),"\n"];
+array [1..5] of int: X_INTRODUCED_23_;
+array [0..4] of int: c = array1d(0..4,X_INTRODUCED_23_);

@@ -1,0 +1,7 @@
+output [(((((((((("z   : "++show(z))++"\n")++"dist: ")++show(dist))++"\n")++"x1  : ")++show(x1))++"\n")++"x2  : ")++show(x2))++"\n"]++[if fix(dist[i]) > 0 then ((show_int(2,i)++": ")++show(dist[i]))++"\n" else "" endif | i in 1..m*2];
+int: m = 10;
+int: n = 6;
+array [1..m*2] of int: dist;
+int: z = sum([bool2int(dist[k] > 0) | k in 1..m*2]);
+array [1..n] of int: x1;
+array [1..n] of int: x2;

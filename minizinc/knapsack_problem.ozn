@@ -1,0 +1,5 @@
+output [(((("x: "++show(x))++"\n")++"z: ")++show(z))++"\n"];
+int: n = 3;
+array [1..n] of int: x;
+array [1..n] of float: value = [3000.0,1800.0,2500.0];
+float: z = sum([int2float(x[i])*value[i] | i in 1..n]);

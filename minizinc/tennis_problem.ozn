@@ -1,0 +1,6 @@
+output ["first_serves [g,f]: ",show([gs[1],fs[1]]),"\n","fs: ",show(fs),"\n","gs: ",show(gs),"\n","fw: ",show(fw),"\n","gw: ",show(gw),"\n"];
+int: n = 9;
+array [1..n] of int: gw;
+array [1..n] of int: fw;
+array [1..n] of int: gs;
+array [1..n] of int: fs;

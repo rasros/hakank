@@ -1,0 +1,4 @@
+output [((((((("threshold: "++show(threshold))++"\n")++"ind: ")++show(ind))++"\n")++"val: ")++show(val))++"\n"];
+int: threshold = 2;
+int: ind = 3;
+int: val = 9;

@@ -1,0 +1,4 @@
+output [""++format(buses)++"\nz:"++format(z)++"\n"];
+array [1..2] of int: buses;
+array [1..2] of int: price = [400,500];
+int: z = sum([buses[i]*price[i] | i in 1..2]);

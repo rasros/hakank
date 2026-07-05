@@ -1,0 +1,6 @@
+output (["\ncountpeaces: ",show(countpeaces)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..N])++["\n"];
+int: N = 8;
+int: peace = 1;
+array [1..64] of int: X_INTRODUCED_0_;
+array [1..N,1..N] of int: x = array2d(1..8,1..8,X_INTRODUCED_0_);
+int: countpeaces = sum([bool2int(x[i,j]==peace) | i,j in 1..N]);

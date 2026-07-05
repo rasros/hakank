@@ -1,0 +1,12 @@
+output [(((("letters: "++show(letters))++"\n")++"days: ")++show(days))++"\n"];
+int: a;
+int: s;
+int: f;
+int: h;
+int: w;
+int: u;
+int: t;
+int: o;
+int: m;
+array [1..9] of int: letters = [m,o,t,u,w,h,f,s,a];
+array [1..7] of int: days;

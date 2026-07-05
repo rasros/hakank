@@ -1,0 +1,9 @@
+output ["S:",show(S)," E:",show(E)," N:",show(N)," D:",show(D)," M:",show(M)," O:",show(O)," R:",show(R)," Y:",show(Y),"\n\n","    ",show(S)," ",show(E)," ",show(N)," ",show(D),"\n"," +  ",show(M)," ",show(O)," ",show(R)," ",show(E),"\n"," = ",show(M)," ",show(O)," ",show(N)," ",show(E)," ",show(Y),"\n"];
+int: Y;
+int: E;
+int: N;
+int: O;
+int: M;
+int: R;
+int: D;
+int: S;

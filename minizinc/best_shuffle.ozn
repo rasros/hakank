@@ -1,0 +1,9 @@
+output (([show(letters[word[I]]) | I in 1..len]++[", "])++[show(letters[word[fix(shuffle[I])]]) | I in 1..len])++[(", ("++show(num_same))++")\n"];
+int: num_letters = 26;
+array [1..num_letters] of string: letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+int: a = 1;
+int: b = 2;
+int: len = 8;
+array [1..len] of int: word = [a,a,b,b,b,b,a,a];
+array [1..len] of int: shuffle;
+int: num_same = 0;

@@ -1,0 +1,3 @@
+output ["C: ",show(C),"\n","F: ",show(F),"\n"];
+float: F;
+float: C;

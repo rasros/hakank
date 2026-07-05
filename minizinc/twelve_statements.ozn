@@ -1,0 +1,5 @@
+output ["x: ",show(x),"\n","y: ",show(y),"\n","z: ",show(z),"\n"];
+int: n = 12;
+array [1..n] of int: y;
+int: z = sum(y);
+array [1..n] of int: x;

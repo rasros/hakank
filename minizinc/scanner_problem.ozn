@@ -1,0 +1,5 @@
+output [if j==1 then "\n" else " " endif++if fix(x[i,j])==1 then "*" else " " endif | i in 1..num_rows, j in 1..num_cols];
+int: num_cols = 21;
+int: num_rows = 10;
+array [1..210] of int: X_INTRODUCED_16_;
+array [1..num_rows,1..num_cols] of int: x = array2d(1..10,1..21,X_INTRODUCED_16_);

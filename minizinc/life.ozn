@@ -1,0 +1,5 @@
+output [(if i==1 /\ j==1 then "\n" else "" endif++if j==1 then "\n" else " " endif)++show(x[k,i,j]) | k in 1..m, i,j in 1..n]++["\n"];
+int: n = 8;
+int: m = 20;
+array [1..1280] of int: X_INTRODUCED_0_;
+array [1..m,1..n,1..n] of int: x = array3d(1..20,1..8,1..8,X_INTRODUCED_0_);

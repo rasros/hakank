@@ -1,0 +1,6 @@
+output ["sum_calories: ",show(sum_calories),"\n","appetiser   : ",show(appetiser)," (1: radishes, 2: pasta). Calories: ",show(calories[appetiser]),"\n","main        : ",show(main)," (3: beef, 4: pork, 5: sole, 6: tuna). Calories: ",show(calories[main]),"\n","dessert     : ",show(dessert)," (7: fruit, 8: icecream): Calories: ",show(calories[dessert]),"\n"];
+array [1..8] of int: calories = [1,6,5,7,2,4,2,6];
+int: dessert;
+int: main;
+int: appetiser;
+int: sum_calories;

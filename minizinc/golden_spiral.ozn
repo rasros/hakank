@@ -1,0 +1,3 @@
+output ["xy: ",show([x,y])];
+float: y;
+float: x;

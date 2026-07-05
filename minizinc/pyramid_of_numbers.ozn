@@ -1,0 +1,9 @@
+output ["x: ",show(x),"\n","[X,Y,Z]: ",show([X,Y,Z]),"\n","t: ",show(t),"\n","adds: ",show(adds),"\n"];
+int: n = 5;
+int: len = 15;
+array [1..n] of int: t = [1,3,6,10,15];
+array [1..t[n-1]] of int: adds = [2,4,5,7,8,9,11,12,13,14];
+int: Z;
+int: Y;
+int: X;
+array [1..len] of int: x;

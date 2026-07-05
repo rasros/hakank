@@ -1,0 +1,7 @@
+output ["xa: ",show(xa),"\n","x: ",show(x),"\n","ya: ",show(ya),"\n","y: ",show(y),"\n"];
+int: y;
+int: m = 9;
+array [1..m] of int: ya;
+int: x;
+int: n = 10;
+array [1..n] of int: xa;

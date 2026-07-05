@@ -1,0 +1,6 @@
+output [if j==1 /\ k==1 then "\n" else "" endif++if fix(x[i,j,k])==1 then show_int(2,k)++" " else "" endif | i in 1..rows, j in 1..cols, k in 1..vals];
+int: vals = 81;
+int: cols = 9;
+int: rows = 9;
+array [1..6561] of int: X_INTRODUCED_0_;
+array [1..rows,1..cols,1..vals] of int: x = array3d(1..9,1..9,1..81,X_INTRODUCED_0_);

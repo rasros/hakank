@@ -1,0 +1,5 @@
+output [(((("cost: "++show(cost))++"\n")++"rack: ")++show(rack))++"\n"];
+int: cost;
+set of int: Racks = 0..4;
+array [1..5] of int: X_INTRODUCED_0_;
+array [Racks] of int: rack = array1d(0..4,X_INTRODUCED_0_);

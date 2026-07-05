@@ -1,0 +1,5 @@
+output [show(z),": ",show(positions),"\n"];
+int: n = 9;
+array [1..9] of int: X_INTRODUCED_16_;
+array [0..n-1] of int: positions = array1d(0..8,X_INTRODUCED_16_);
+int: z;

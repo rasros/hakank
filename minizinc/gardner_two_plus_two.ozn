@@ -1,0 +1,7 @@
+output [show(T),show(W),show(O)," + ",show(T),show(W),show(O)," = ",show(F),show(O),show(U),show(R),"\n","W: ",show(W),"\n"];
+int: W;
+int: R;
+int: U;
+int: O;
+int: F;
+int: T = 7;

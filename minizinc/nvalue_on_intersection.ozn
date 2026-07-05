@@ -1,0 +1,6 @@
+output [((((((("nval: "++show(nval))++"\n")++"variables1: ")++show(variables1))++"\n")++"variables2: ")++show(variables2))++"\n"];
+int: n = 4;
+int: m = 6;
+int: nval = 2;
+array [1..n] of int: variables1 = [1,9,1,5];
+array [1..m] of int: variables2 = [2,1,9,9,6,9];

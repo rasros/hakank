@@ -1,0 +1,4 @@
+output [((((((("Start: "++show(Start))++"\n")++"SumTimes: ")++show(SumTimes))++"\n")++"Start[n]: ")++show(Start[n]))++"\n"];
+int: n = 11;
+array [1..n] of int: Start;
+int: SumTimes = sum([Start[i] | i in 1..n]);

@@ -1,0 +1,4 @@
+output [((("x: "++show(x))++" (length: ")++show(len))++")"]++["\n"];
+int: m = 14;
+array [1..m] of int: x;
+int: len = sum([bool2int(x[i] > 0) | i in 1..m]);

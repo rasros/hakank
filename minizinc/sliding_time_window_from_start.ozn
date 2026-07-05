@@ -1,0 +1,9 @@
+output [((((((((((((("window_size: "++show(window_size))++"\n")++"limitx: ")++show(limitx))++"\n")++"tasks: ")++show(tasks))++"\n")++"start: ")++show(start))++"\n")++"occupied: ")++show(occupied))++"\n"];
+int: window_size = 9;
+int: limitx = 6;
+int: n = 3;
+array [1..6] of int: X_INTRODUCED_0_;
+array [1..n,1..2] of int: tasks = [|10,3|5,1|6,2|];
+int: start = 5;
+array [1..9] of int: X_INTRODUCED_7_;
+array [start..start+window_size-1] of int: occupied = array1d(5..13,[1,1,1,0,0,1,1,1,0]);

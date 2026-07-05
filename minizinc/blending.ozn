@@ -1,0 +1,11 @@
+output [(((((((((((((((("p: "++show(p))++"\n")++"r: ")++show(r))++"\n")++"s: ")++show(s))++"\n")++"i: ")++show(i))++"\n")++"metal: ")++show(metal))++"\n")++"z: ")++show(z))++"\n"];
+set of int: Metals = 1..3;
+array [Metals] of float: p;
+set of int: Raws = 1..2;
+array [Raws] of float: r;
+set of int: Scraps = 1..2;
+array [Scraps] of float: s;
+set of int: Ingos = 1..1;
+array [Ingos] of int: i;
+array [Metals] of float: metal;
+float: z;

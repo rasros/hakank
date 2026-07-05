@@ -1,0 +1,5 @@
+output ["isbn: ",show(isbn),"\n","mult0: ",show(mult0)," mult1: ",show(mult1),"\n"];
+int: mult1 = 1;
+int: mult0 = 3;
+int: n = 13;
+array [1..n] of int: isbn;

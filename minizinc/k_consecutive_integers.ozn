@@ -1,0 +1,5 @@
+output [((((((("z     : "++show(z))++"\n")++"starts: ")++show(starts))++"\n")++"x     : ")++show(x))++"\n"];
+int: n = 13;
+array [1..n] of int: starts;
+int: z = sum([bool2int(starts[i] > 0) | i in 1..n]);
+array [1..n] of int: x;

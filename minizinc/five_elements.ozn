@@ -1,0 +1,6 @@
+output (([((("y: "++show(y))++" max y:")++show(max(y)))++"\n"]++[if j==1 then "\n" else " " endif++if fix(x[i,j])==1 then show_int(2,matrix[i,j]) else "__" endif | i,j in 1..n])++["\n"])++[if j==1 then "\n" else " " endif++show_int(2,matrix[i,j]) | i,j in 1..n];
+int: n = 5;
+array [1..n] of int: y;
+array [1..n,1..n] of int: matrix = [|2,13,16,11,23|15,1,9,7,10|14,12,21,24,8|3,25,22,18,4|20,19,6,5,17|];
+array [1..25] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: x = array2d(1..5,1..5,X_INTRODUCED_16_);

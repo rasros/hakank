@@ -1,0 +1,7 @@
+output ["Ph:",show(Ph)," ","Pa:",show(Pa)," ","Pl:",show(Pl)," ","El:",show(El)," ","Ca:",show(Ca)," ","Ma:",show(Ma)," ","\n"];
+int: Ma;
+int: Ca;
+int: El;
+int: Pl;
+int: Pa;
+int: Ph;

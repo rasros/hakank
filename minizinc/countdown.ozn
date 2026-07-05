@@ -1,0 +1,8 @@
+output ((([((((((((((((("x      : "++show(x))++"\n")++"s      : ")++show(s))++"\n")++"total  : ")++show(total))++"\n")++"ops    : ")++show(ops))++"\n")++"ops_str: ")++show([ops_string[fix(ops[i])] | i in 1..n-1]))++"\n"]++["(" | i in 1..n-1])++[(show(x[i])++if i > 1 then ")" else "" endif)++show(ops_string[fix(ops[i])]) | i in 1..n-1])++[show(x[n]),")\n"])++[((((show(s[i])++show(ops_string[fix(ops[i])]))++show(x[i+1]))++" = ")++show(s[i+1]))++"\n" | i in 1..n-1];
+int: n = 6;
+array [1..n] of int: x;
+array [1..n] of int: s;
+int: total;
+int: max_ops = 4;
+array [1..n-1] of int: ops;
+array [1..max_ops] of string: ops_string = ["+","-","*","/"];

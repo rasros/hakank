@@ -1,0 +1,5 @@
+output ["s: ",show(s),"\n","t: ",show(t),"\n","s_total: ",show(s_total),"\n","t_total: ",show(t_total),"\n"]++["\n"];
+int: t_total = s_total;
+int: s_total;
+set of int: t;
+set of int: s;

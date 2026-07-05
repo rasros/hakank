@@ -1,0 +1,5 @@
+output [((((((("x: "++show(x))++"\n")++"perm_num: ")++show(perm_num))++"\n")++"even_odd: ")++show(even_odd))++"\n"];
+int: n = 6;
+array [1..n] of int: x;
+int: perm_num;
+int: even_odd;

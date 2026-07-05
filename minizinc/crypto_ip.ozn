@@ -1,0 +1,3 @@
+output ["letters: ",show(letters_res),"\n"];
+int: num_letters = 26;
+array [1..num_letters] of int: letters_res;

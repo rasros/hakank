@@ -1,0 +1,4 @@
+output [if col==1 then "\n" else " " endif++show(grid[row,col]) | row,col in GRID_RANGE]++["\n"];
+set of int: GRID_RANGE = 1..10;
+array [1..100] of int: X_INTRODUCED_0_;
+array [GRID_RANGE,GRID_RANGE] of int: grid = array2d(1..10,1..10,X_INTRODUCED_0_);

@@ -1,0 +1,5 @@
+output ["age  : ",show(age),"\n","beans: ",show(beans),"\n","David's age: ",show(age[David])," David's beans: ",show(beans[David]),"\n"];
+int: n = 4;
+array [1..n] of int: beans;
+int: David = 4;
+array [1..n] of int: age;

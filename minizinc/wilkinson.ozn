@@ -1,0 +1,2 @@
+output [show(x)];
+float: x;

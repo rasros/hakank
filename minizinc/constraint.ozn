@@ -1,0 +1,6 @@
+output ["b: ",show(b),"\n","rhs: ",show(rhs),"\n","ss: ",show(ss),"\n","a: ",show(a),"\n"];
+set of int: terms = 1..8;
+array [terms] of int: a;
+int: ss = sum([a[j]*j | j in terms]);
+int: b;
+int: rhs = b-a[3]-a[5];

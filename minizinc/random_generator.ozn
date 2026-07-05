@@ -1,0 +1,4 @@
+output [(((("rand: "++show(rand))++"\n")++"x   : ")++show(x))++"\n"];
+int: n = 10;
+array [1..n] of int: rand;
+array [1..n] of int: x;

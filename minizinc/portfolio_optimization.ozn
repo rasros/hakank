@@ -1,0 +1,4 @@
+output ["x: ",show(x),"\n","f: ",show(f),"\n"];
+float: f;
+int: n = 4;
+array [1..n] of float: x;

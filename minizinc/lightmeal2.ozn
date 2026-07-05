@@ -1,0 +1,4 @@
+output ["sum_calories: ",show(sum_calories),"\n","x: ",show(x),"\n"];
+int: n = 8;
+array [1..n] of int: x;
+int: sum_calories;

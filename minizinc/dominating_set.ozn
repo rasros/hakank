@@ -1,0 +1,2 @@
+output ["D: ",show(D),"\n"];
+set of int: D;

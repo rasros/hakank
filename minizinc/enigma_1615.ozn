@@ -1,0 +1,3 @@
+output [(((("enigma: "++show(enigma))++"\n")++"igmaen: ")++show(igmaen))++"\n"];
+int: enigma;
+int: igmaen;

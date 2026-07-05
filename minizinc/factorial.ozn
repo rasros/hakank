@@ -1,0 +1,3 @@
+output ["n: ",show(n),"\n","z: ",show(z),"\n"];
+int: z = 3628800;
+int: n = 10;

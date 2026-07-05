@@ -1,0 +1,6 @@
+output [((((((("n: "++show(n))++"\n")++"divisor: ")++show(divisor))++"\n")++"is_prime: ")++show(is_prime))++"\n"];
+int: n = 33;
+int: t = 17;
+array [1..16] of int: X_INTRODUCED_16_;
+array [2..t] of int: divisor = array1d(2..17,[0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0]);
+int: is_prime;

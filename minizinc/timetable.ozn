@@ -1,0 +1,6 @@
+output [if p==1 then "\n" else " " endif++if available[c,p]==0 then "-" else show(timetable[c,p]) endif | c in 1..courses, p in 1..periods];
+int: periods = 20;
+int: courses = 5;
+array [1..courses,1..periods] of int: available = [|0,0,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1|1,1,0,0,1,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1|0,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1|1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,1,1|1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1|];
+array [1..100] of int: X_INTRODUCED_16_;
+array [1..courses,1..periods] of int: timetable = array2d(1..5,1..20,X_INTRODUCED_16_);

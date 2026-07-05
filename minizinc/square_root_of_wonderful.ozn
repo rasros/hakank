@@ -1,0 +1,3 @@
+output ["WONDERFUL: ",show(WONDERFUL),"\n","OODDF: ",show(OODDF)];
+int: OODDF;
+int: WONDERFUL;

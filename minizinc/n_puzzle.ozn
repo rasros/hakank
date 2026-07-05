@@ -1,0 +1,12 @@
+output (((((["\npuzzle:"]++[if i mod ceil(sqrt(int2float(t)))==1 then "\n" else " " endif++show_int(2,puzzle[i]) | i in 1..t])++["\noperations: ",show(operations),"\n","check: ",show(check),"\n","check_ix: ",show(check_ix),"\n","changes: ",show(changes)])++[(if j==1 then ((("\n\n"++show(check[i]))++" (move: ")++show([moves[i,k] | k in 1..2]))++"):\n" else " " endif++if (j-1) mod ceil(sqrt(int2float(t)))==0 then "\n" else "" endif)++show_int(2,x[i,j]) | i in 1..num_sols, j in 1..t])++["\nmoves:"])++[if j==1 then "\n" else " " endif++show_int(2,moves[i,j]) | i in 1..num_sols, j in 1..2])++["\n"];
+int: t = 16;
+array [1..t] of int: puzzle = [1,2,3,4,5,6,8,12,11,16,7,15,10,9,13,14];
+int: num_sols = 20;
+array [1..num_sols] of int: changes;
+int: check_ix;
+array [1..num_sols] of int: check;
+array [1..num_sols] of int: operations;
+array [1..40] of int: X_INTRODUCED_16_;
+array [1..num_sols,1..2] of int: moves = array2d(1..20,1..2,X_INTRODUCED_16_);
+array [1..320] of int: X_INTRODUCED_57_;
+array [1..num_sols,1..t] of int: x = array2d(1..20,1..16,X_INTRODUCED_57_);

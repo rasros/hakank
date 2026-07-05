@@ -1,0 +1,13 @@
+output ["reporters: ",show(reporters),"\n","locations: ",show(locations),"\n","events: ",show(events),"\n"];
+set of int: r = 1..4;
+int: whale;
+int: skyscraper;
+int: blimp;
+int: baby;
+array [r] of int: events = [baby,blimp,skyscraper,whale];
+int: South_Amboy;
+int: Port_Charles;
+int: New_Hope;
+int: Bayonne;
+array [r] of int: locations = [Bayonne,New_Hope,Port_Charles,South_Amboy];
+array [r] of int: reporters = [1,2,3,4];

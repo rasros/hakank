@@ -1,0 +1,5 @@
+output [(((("z: "++show(z))++"\n")++"x: ")++show(x))++"\n"];
+int: num_alternatives = 10;
+array [1..num_alternatives] of int: x;
+array [1..num_alternatives] of int: costs = [19,16,18,13,15,19,15,17,16,15];
+int: z = sum([x[i]*costs[i] | i in 1..num_alternatives]);

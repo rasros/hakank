@@ -1,0 +1,4 @@
+output [((((((("wife: "++show(wife))++"\n")++"pony: ")++show(pony))++"\n")++"X: ")++show(X))++"\n"];
+array [1..5] of int: wife;
+array [1..5] of int: pony;
+int: X;

@@ -1,0 +1,4 @@
+output ["z: ",show(z),"\n","a: ",show(a),"\n"];
+array [1..5] of float: X_INTRODUCED_0_;
+array [0..4] of float: a = array1d(0..4,X_INTRODUCED_0_);
+float: z;

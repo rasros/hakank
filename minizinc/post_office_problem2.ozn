@@ -1,0 +1,7 @@
+output [((((((("x: "++show(x))++"\n")++"z: ")++show(z))++"\n")++"num_workers: ")++show(num_workers))++"\n"];
+set of int: DAYS = 0..6;
+array [1..7] of int: X_INTRODUCED_0_;
+array [DAYS] of int: x = array1d(0..6,X_INTRODUCED_0_);
+array [DAYS] of int: Cost = array1d(0..6,[500,600,800,800,800,800,700]);
+int: z = sum([x[i]*Cost[i] | i in DAYS]);
+int: num_workers = sum(x);

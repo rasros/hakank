@@ -1,0 +1,12 @@
+output [show(x),"\n"];
+int: F;
+int: G;
+int: I;
+int: T;
+int: R;
+int: L;
+int: E;
+int: C;
+int: N;
+int: A;
+array [1..10] of int: x = [A,N,C,E,L,R,T,I,G,F];

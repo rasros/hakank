@@ -1,0 +1,5 @@
+output [((((((("weights: "++show(weights))++"\n")++"s: ")++show(s))++"\n")++"t: ")++show(t))++"\n"];
+set of int: weights;
+int: n = 13;
+array [1..n] of set of int: s;
+int: t = card(weights);

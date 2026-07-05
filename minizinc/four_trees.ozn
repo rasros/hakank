@@ -1,0 +1,9 @@
+output ["position: ",show(position),"\n","order   : ",show(order),"\n","order2  : ",show(join(", ",[s[fix(order[i])] | i in 1..n])),"\n"];
+int: n = 4;
+array [1..n] of string: s = ["oak","elm","ash","fir"];
+array [1..n] of int: order;
+int: fir;
+int: ash;
+int: elm;
+int: oak;
+array [1..n] of int: position = [oak,elm,ash,fir];

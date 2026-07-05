@@ -1,0 +1,7 @@
+output [(if i==1 /\ j==1 then "\ntotal: "++show(total) else "" endif++if j==1 then "\n" else " " endif)++show_int(2,x[i,j]) | i,j in 1..n]++["\n"];
+int: n = 5;
+array [1..25] of int: X_INTRODUCED_0_;
+array [1..n,1..n] of int: x = array2d(1..5,1..5,X_INTRODUCED_0_);
+int: start = 1;
+array [1..n,1..n] of int: c = [|0,20,30,10,0|0,0,40,0,30|0,0,0,10,20|0,0,5,0,20|0,0,0,0,0|];
+int: total = sum([x[start,j] | j in 1..n where c[start,j] > 0]);

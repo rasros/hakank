@@ -1,0 +1,8 @@
+output (["z: ",show(z),"\n","num_players_choosen: ",show(num_players_choosen),"\n"]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..num_types, j in 1..max_num_players])++["\n"];
+int: max_num_players = 10;
+int: num_types = 4;
+array [1..40] of int: X_INTRODUCED_0_;
+array [1..num_types,1..max_num_players] of int: x = array2d(1..4,1..10,X_INTRODUCED_0_);
+array [1..num_types,1..max_num_players] of int: cost = [|730,1280,3880,0,0,0,0,0,0,0|920,1310,1620,2410,2790,3280,3910,4570,0,0|1800,2630,3170,3769,4140,4750,5380,5930,6780,7130|4460,6470,7780,8390,9500,0,0,0,0,0|];
+int: num_players_choosen = sum([x[i,j] | i in 1..num_types, j in 1..max_num_players where cost[i,j] > 0]);
+int: z = sum([x[i,j]*cost[i,j] | i in 1..num_types, j in 1..max_num_players where cost[i,j] > 0]);

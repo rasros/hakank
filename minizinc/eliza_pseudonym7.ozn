@@ -1,0 +1,16 @@
+output ["friends  : ",show(friends),"\n","all_words: ",show(all_words),"\n","anna   : ",show(anna),"\n","barbra : ",show(barbra),"\n","carla  : ",show(carla),"\n","delilah: ",show(delilah),"\n","eliza  : ",show(eliza),"\n","fiona  : ",show(fiona),"\n","abulia    : ",show(abulia),"\n","betise    : ",show(betise),"\n","caryatid  : ",show(caryatid),"\n","dehisce   : ",show(dehisce),"\n","euhemerism: ",show(euhemerism),"\n","floruit   : ",show(floruit),"\n"];
+set of int: days = 1..6;
+int: floruit;
+int: euhemerism;
+int: dehisce;
+int: caryatid;
+int: betise;
+int: abulia;
+int: fiona;
+int: eliza;
+int: delilah;
+int: carla = 5;
+int: barbra;
+int: anna;
+array [days] of int: all_words = [abulia,betise,caryatid,dehisce,euhemerism,floruit];
+array [days] of int: friends = [anna,barbra,carla,delilah,eliza,fiona];

@@ -1,0 +1,4 @@
+output [((("x: "++show(x))++"\n")++"total_sum: ")++show(total_sum)];
+int: num_comb = 6;
+array [1..num_comb] of int: x;
+int: total_sum = sum([x[i] | i in 1..num_comb]);

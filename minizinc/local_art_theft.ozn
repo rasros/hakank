@@ -1,0 +1,5 @@
+output [(((("b     : "++show(b))++"\n")++"counts: ")++show(counts))++"\n"]++[if fix(b[i])==true then show(s[i])++" committed the crime.\n" else "" endif | i in 1..n];
+int: n = 6;
+array [1..n] of bool: b;
+array [1..n] of int: counts;
+array [1..n] of string: s = ["Alan","Brian","Charlie","Dave","Eddie","Freddie"];

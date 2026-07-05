@@ -1,0 +1,5 @@
+output ["S E F G R"]++[(if j==1 then "\n" else " " endif++show(x[i,j]))++if j==n then "  "++show(lang1[i]) else "" endif | i,j in 1..n];
+int: n = 5;
+array [1..25] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: x = array2d(1..5,1..5,X_INTRODUCED_16_);
+array [1..n] of string: lang1 = ["S","E","F","G","R"];

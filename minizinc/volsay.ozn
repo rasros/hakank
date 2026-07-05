@@ -1,0 +1,4 @@
+output [((((((("Gas: "++show(Gas))++"\n")++"Chloride: ")++show(Chloride))++"\n")++"z: ")++show(z))++"\n"];
+float: Gas;
+float: Chloride;
+float: z;

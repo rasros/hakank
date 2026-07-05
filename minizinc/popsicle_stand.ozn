@@ -1,0 +1,14 @@
+output [((((((((((((((((((("z        : "++show(z))++"\n")++"full_time: ")++show(full_time))++"\n")++"part_time: ")++show(part_time))++"\n")++"all_f    : ")++show(all_f))++"\n")++"all_p    : ")++show(all_p))++"\n")++"all      : ")++show(all))++"\n")++"demand   : ")++show(demand))++"\n"]++["\n"];
+int: n = 7;
+array [1..7] of int: X_INTRODUCED_0_;
+array [0..n-1] of int: full_time = array1d(0..6,X_INTRODUCED_0_);
+array [1..7] of int: X_INTRODUCED_8_;
+array [0..n-1] of int: part_time = array1d(0..6,X_INTRODUCED_8_);
+int: z = sum([5*full_time[i]*100+2*part_time[i]*150 | i in 0..n-1]);
+array [1..7] of int: X_INTRODUCED_16_;
+array [0..n-1] of int: all_f = array1d(0..6,X_INTRODUCED_16_);
+array [1..7] of int: X_INTRODUCED_24_;
+array [0..n-1] of int: all_p = array1d(0..6,X_INTRODUCED_24_);
+array [1..7] of int: X_INTRODUCED_32_;
+array [0..n-1] of int: all = array1d(0..6,X_INTRODUCED_32_);
+array [0..n-1] of int: demand = array1d(0..6,[5,7,7,10,16,18,12]);

@@ -1,0 +1,4 @@
+output [(((("x: "++show(x))++"\n")++"xs: ")++show(xs))++"\n"];
+int: n = 5;
+array [1..n] of bool: x;
+array [1..n] of set of int: xs;

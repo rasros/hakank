@@ -1,0 +1,12 @@
+output [show(LD),"\n"];
+int: K;
+int: I;
+int: H;
+int: G = 14;
+int: F = 8;
+int: E;
+int: D;
+int: C;
+int: B = 2;
+int: A = 16;
+array [1..10] of int: LD = [A,B,C,D,E,F,G,H,I,K];

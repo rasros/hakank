@@ -1,0 +1,12 @@
+output (["A: ",show(A),"\n","B: ",show(B),"\n","C: ",show(C),"\n","D: ",show(D),"\n","E: ",show(E),"\n"]++[("The "++show(nationalities[fix(A[C[5]])]))++" owns the fish\n"])++["\n"];
+set of int: e = 1..5;
+array [e] of int: E;
+set of int: d = 1..5;
+array [d] of int: D;
+set of int: c = 1..5;
+array [c] of int: C;
+set of int: b = 1..5;
+array [b] of int: B;
+set of int: a = 1..5;
+array [a] of int: A;
+array [a] of string: nationalities = ["Norwegian","Dane","Briton","Swede","German"];

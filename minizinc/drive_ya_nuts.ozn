@@ -1,0 +1,9 @@
+output (((([(((((((("pos     : "++show(pos))++"\n")++"pos_inv : ")++show(pos_inv))++"\n")++"start_ix: ")++show(start_ix))++"\n")++"x:"]++[(if j==1 then "\n" else " " endif++show(x[i,j]))++if i==7 /\ j==n then "  center!" else "" endif | i in 1..m, j in 1..n])++[((("\ncenter ("++show(7))++"): ")++show([nuts[pos[7],j] | j in 1..n]))++"\n"])++["\nnuts:"])++[if j==1 then "\n" else " " endif++show(nuts[i,j]) | i in 1..m, j in 1..n])++["\n"];
+int: m = 7;
+array [1..m] of int: pos;
+array [1..m] of int: pos_inv;
+int: n = 6;
+array [1..m] of int: start_ix;
+array [1..42] of int: X_INTRODUCED_17_;
+array [1..m,1..n] of int: x = array2d(1..7,1..6,X_INTRODUCED_17_);
+array [1..m,1..n*2] of int: nuts = [|1,2,3,4,5,6,1,2,3,4,5,6|1,4,3,6,5,2,1,4,3,6,5,2|1,4,6,2,3,5,1,4,6,2,3,5|1,6,2,4,5,3,1,6,2,4,5,3|1,6,4,2,5,3,1,6,4,2,5,3|1,6,5,3,2,4,1,6,5,3,2,4|1,6,5,4,3,2,1,6,5,4,3,2|];

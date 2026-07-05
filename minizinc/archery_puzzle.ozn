@@ -1,0 +1,6 @@
+output ["targets: ",show(targets),"\n","x: ",show(x),"\n","z: ",show(z),"\n","diffz: ",show(diffz),"\n\n"]++[if fix(x[i]) > 0 then ""++format(fix(x[i]))++" hits on score "++format(targets[i])++"\n" else "" endif | i in 1..n where fix(x[i]) > 0];
+int: diffz;
+int: n = 6;
+array [1..n] of int: x;
+array [1..n] of int: targets = [16,17,23,24,39,40];
+int: z = sum([x[i]*targets[i] | i in 1..n]);

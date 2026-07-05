@@ -1,0 +1,9 @@
+output [((((("OneRM   ( "++show_int(2,1))++" rep): ")++show_float(2,2,oneRM))++"kg age adjusted: ")++show_float(3,2,oneRMAge))++"kg\n",((((("Weight1 ("++show_int(2,reps1))++" reps): ")++show_float(2,2,weight1))++"kg age adjusted: ")++show_float(3,2,weight1Age))++"kg\n",((((("Weight2 ("++show_int(2,reps2))++" reps): ")++show_float(2,2,weight2))++"kg age adjusted: ")++show_float(3,2,weight2Age))++"kg\n"];
+int: reps2 = 12;
+float: weight2 = 72.0;
+float: weight2Age = 109.008;
+int: reps1 = 6;
+float: weight1;
+float: weight1Age;
+float: oneRM = 103.68;
+float: oneRMAge = 156.97152;

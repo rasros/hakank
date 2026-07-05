@@ -1,0 +1,5 @@
+output (["x: ",show(x),"\n","d_x: ",show(d_x),"\n"]++[((show(i)++":")++show(d_roots[i]))++"\n" | i in 1..m])++["\n"];
+int: d_x = 7;
+int: x = 65536;
+int: m = 112;
+array [1..m] of int: d_roots;

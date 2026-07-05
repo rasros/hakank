@@ -1,0 +1,11 @@
+output ["[Baker, Dyer, Farmer, Glover, Hosier]: ",show([Baker,Dyer,Farmer,Glover,Hosier]),"\n","[baker, dyer, farmer, glover, hosier]: ",show([baker,dyer,farmer,glover,hosier]),"\n"];
+int: hosier;
+int: glover;
+int: farmer;
+int: dyer;
+int: baker = 3;
+int: Hosier;
+int: Glover;
+int: Farmer;
+int: Dyer;
+int: Baker = 1;

@@ -1,0 +1,4 @@
+output [(((("party: "++show(party))++"\n")++"celebrities: ")++show(celebrities))++"\n"];
+int: n = 5;
+array [1..n] of set of int: party = [2..5,{1,4,5},4..5,5..5,4..4];
+set of int: celebrities;

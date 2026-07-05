@@ -1,0 +1,8 @@
+output ["numPersons: ",show(numPersons),"\n","Resources: ",show(Resources),"\n","Starts:    ",show(Starts),"\n","Durations: ",show(Durations),"\n","EndTimes:  ",show(EndTimes),"\n","end_time:  ",show(end_time),"\n"];
+int: end_time;
+int: n = 4;
+array [1..n] of int: EndTimes;
+array [1..n] of int: Durations = [30,10,15,15];
+array [1..n] of int: Starts;
+array [1..n] of int: Resources = [3,1,3,2];
+int: numPersons;

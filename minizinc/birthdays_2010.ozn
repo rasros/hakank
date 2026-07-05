@@ -1,0 +1,6 @@
+output [(((((((((((("hakank_age: "++show(hakank_age))++"\n")++"anders_age: ")++show(anders_age))++"\n")++"hakank_born: ")++show(hakank_born))++"\n")++"anders_born: ")++show(anders_born))++"\n")++"this_year: ")++show(this_year)];
+int: hakank_age;
+int: anders_age;
+int: hakank_born = anders_age;
+int: anders_born = hakank_age;
+int: this_year = 110;

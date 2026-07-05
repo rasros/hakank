@@ -1,0 +1,4 @@
+output [(((("variables:"++show(variables))++"\n")++"max_set:")++show(max_set))++"\n"];
+int: n = 10;
+array [1..n] of int: variables;
+int: max_set = 6;

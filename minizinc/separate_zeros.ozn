@@ -1,0 +1,5 @@
+output ["s: "++format(s)++"\n","s2: "++format(s2)++"\n","s3: "++format(s3)++"\n"];
+int: n = 5;
+array [1..n] of int: s = [1,0,5,0,3];
+array [1..n] of int: s3 = [1,5,3,0,0];
+array [1..n] of int: s2 = [0,0,1,5,3];

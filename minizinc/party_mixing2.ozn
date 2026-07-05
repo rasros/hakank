@@ -1,0 +1,5 @@
+output ((["L: "++format(L)++"\n"]++["Matrix:\n"])++[if J==1 then "\n" else " " endif++show_int(3,L[(I-1)*NumAtTables+J]) | I in 1..NumTables, J in 1..NumAtTables])++["\n"];
+int: Total = 648;
+array [1..Total] of int: L;
+int: NumAtTables = 27;
+int: NumTables = 24;

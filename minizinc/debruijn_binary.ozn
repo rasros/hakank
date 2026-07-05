@@ -1,0 +1,10 @@
+output ([(if i==1 then ((((((((("\nn: "++show(n))++" m: ")++show(m))++" base: ")++show(base))++"\nbin_code: ")++show(bin_code))++"\ngcc: ")++show(gcc))++"\nbinary code: " else "" endif++show(bin_code[i]))++"" | i in 1..m]++[(if i==1 /\ j==1 then "\nx (decimal representation):\n"++show(x) else "" endif++if j==1 then "\n" else " " endif)++show(binary[i,j]) | i in 1..m, j in 1..n])++["\n"];
+int: n = 5;
+int: m = 27;
+int: base = 2;
+array [1..m] of int: bin_code;
+array [1..2] of int: X_INTRODUCED_206_;
+array [0..base-1] of int: gcc = array1d(0..1,X_INTRODUCED_206_);
+array [1..m] of int: x;
+array [1..135] of int: X_INTRODUCED_43_;
+array [1..m,1..n] of int: binary = array2d(1..27,1..5,X_INTRODUCED_43_);

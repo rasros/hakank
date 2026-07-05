@@ -1,0 +1,10 @@
+output ([(((("rows: "++show(rows))++"\n")++"cols: ")++show(cols))++"\n"]++[if j==1 then "\n" else " " endif++show_int(2,x[i,j]) | i,j in 1..n])++[(((("\nx_rows: "++show(x_rows))++"\n")++"x_cols: ")++show(x_cols))++"\n"];
+int: n = 10;
+array [1..n] of int: rows = [13,26,33,36,40,42,44,48,50,72];
+array [1..n] of int: cols = [17,20,24,25,32,57,65,66,80,84];
+array [1..100] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: x = array2d(1..10,1..10,X_INTRODUCED_16_);
+array [1..20] of int: X_INTRODUCED_117_;
+array [1..n,1..2] of int: x_rows = array2d(1..10,1..2,X_INTRODUCED_117_);
+array [1..20] of int: X_INTRODUCED_138_;
+array [1..n,1..2] of int: x_cols = array2d(1..10,1..2,X_INTRODUCED_138_);

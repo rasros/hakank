@@ -1,0 +1,6 @@
+output [(((((((((("dist: "++show(dist))++"\n")++"v1: ")++show(v1))++"\n")++"v2: ")++show(v2))++"\n")++"ctr: ")++show(ctr))++"\n"];
+int: n = 5;
+int: dist = 1;
+array [1..n] of int: v1 = [3,3,1,2,2];
+array [1..n] of int: v2 = [4,4,3,3,3];
+int: ctr = 4;

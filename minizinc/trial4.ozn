@@ -1,0 +1,6 @@
+output [if j==1 then "\n" else " " endif++show(x[i,j]) | i in D, j in P]++[(if i==1 then "\n" else "" endif++show(t[i]))++"\n" | i in D];
+set of int: P = 1..2;
+set of int: D = 1..2;
+array [1..4] of int: X_INTRODUCED_0_;
+array [D,P] of int: x = array2d(1..2,1..2,X_INTRODUCED_0_);
+array [D] of int: t;

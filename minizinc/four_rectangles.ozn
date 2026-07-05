@@ -1,0 +1,9 @@
+output ["area1 = ",showDzn(area1),";\n","area2 = ",showDzn(area2),";\n","area3 = ",showDzn(area3),";\n","area4 = ",showDzn(area4),";\n","len = ",showDzn(len),";\n","height = ",showDzn(height),";\n","x = ",showDzn(x),";\n","y = ",showDzn(y),";\n"];
+int: y;
+int: x;
+int: height;
+int: len;
+int: area4;
+int: area3 = 16;
+int: area2 = 39;
+int: area1 = 13;

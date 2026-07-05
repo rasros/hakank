@@ -1,0 +1,4 @@
+output [(((("z: "++show(z))++"\n")++"x: ")++show(x))++"\n"];
+int: n = 9;
+array [1..n] of int: x;
+int: z = sum(x);

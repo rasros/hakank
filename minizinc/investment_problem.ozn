@@ -1,0 +1,6 @@
+output [(((((((((("x:"++show(x))++"\n")++"the_returns:")++show(the_returns))++"\n")++"not_invested:")++show(not_invested))++"\n")++"z:")++show(z))++"\n"];
+int: m = 8;
+array [1..m] of int: x;
+array [1..m] of int: the_returns;
+int: not_invested;
+int: z;

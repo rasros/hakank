@@ -1,0 +1,11 @@
+output [show(Vars),"\n"]++[(((((((((((((("\n"++show(A))++"/(")++show(B))++show(C))++") + ")++show(D))++"/(")++show(E))++show(F))++") + ")++show(G))++"/(")++show(H))++show(I))++") = 1\n "];
+int: I;
+int: H;
+int: G;
+int: F;
+int: E;
+int: D;
+int: C;
+int: B;
+int: A;
+array [1..9] of int: Vars = [A,B,C,D,E,F,G,H,I];

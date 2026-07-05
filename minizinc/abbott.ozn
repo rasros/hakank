@@ -1,0 +1,7 @@
+output [((if i==1 /\ j==1 then ("total_sum: "++show(total_sum))++"\n" else "" endif++if j==1 then show(i)++" : " else "" endif)++show(x[i,j]))++if j==col then "\n" else " " endif | i in R, j in C];
+int: col = 8;
+set of int: C = 1..8;
+set of int: R = 1..8;
+array [1..64] of int: X_INTRODUCED_0_;
+array [R,C] of int: x = array2d(1..8,1..8,X_INTRODUCED_0_);
+int: total_sum = sum([x[i,j] | i in R, j in C]);

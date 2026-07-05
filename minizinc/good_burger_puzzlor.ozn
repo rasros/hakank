@@ -1,0 +1,6 @@
+output ["x: ",show(x),"\n","total_cost: ",show(total_cost)," cent ($",show_float(2,2,int2float(total_cost)/100.0),")\n"]++[((show(items_names[i])++": ")++show(x[i]))++"\n" | i in 1..num_items];
+int: num_items = 8;
+array [1..num_items] of int: x;
+array [1..num_items,1..4] of int: items = [|50,17,220,25|330,9,260,15|310,6,70,10|1,2,10,9|260,0,5,3|3,0,4,4|160,0,20,2|3,0,9,4|];
+int: total_cost = sum([x[i]*items[i,4] | i in 1..num_items]);
+array [1..num_items] of string: items_names = ["Beef Patty","Bun","Cheese","Onions","Pickles","Lettuce","Ketchup","Tomato"];

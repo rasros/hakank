@@ -1,0 +1,6 @@
+output ((((["n: "++format(n)++" num_courts: "++format(num_courts)++"\n","z: "++format(z)++"\n"]++["\n\nMatches:\n"])++[if fix(x[p1,p2])==match then ((((("Match "++show_int(2,match))++": ")++show_int(2,p1))++" vs ")++show_int(2,p2))++"\n" else "" endif | match in 1..fix(z), p1,p2 in 1..n where p1 < p2])++["\nMatch grid:\n"])++[if j==1 then "\n" else " " endif++show_int(3,x[i,j]) | i,j in 1..n])++["\nz: "++format(z)++"\n"];
+int: n = 9;
+array [1..81] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: x = array2d(1..9,1..9,X_INTRODUCED_16_);
+int: z = max(array1d(x));
+int: num_courts = 3;

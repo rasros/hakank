@@ -1,0 +1,7 @@
+output [show(a)++"\n"];
+int: x5;
+int: x4;
+int: x3;
+int: x2;
+int: x1;
+array [1..5] of int: a = [x1,x2,x3,x4,x5];

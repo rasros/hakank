@@ -1,0 +1,15 @@
+output [((("Vars: "++show(Vars))++"\n")++"Obj: ")++show(Obj)];
+int: D3;
+int: D2;
+int: D1;
+int: C3;
+int: C2;
+int: C1;
+int: B3;
+int: B2;
+int: B1;
+int: A3;
+int: A2;
+int: A1;
+array [1..12] of int: Vars = [A1,A2,A3,B1,B2,B3,C1,C2,C3,D1,D2,D3];
+int: Obj;

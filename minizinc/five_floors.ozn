@@ -1,0 +1,8 @@
+output ["x"++show(x)]++["\n"];
+int: n = 5;
+int: Smith;
+int: Miller;
+int: Fletcher;
+int: Cooper;
+int: Baker;
+array [1..n] of int: x = [Baker,Cooper,Fletcher,Miller,Smith];

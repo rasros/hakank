@@ -1,0 +1,4 @@
+output [(((("x: "++show(x))++"\n")++"obj: ")++show(obj))++"\n"];
+int: num_edges = 23;
+array [1..num_edges] of int: x;
+int: obj = sum([x[i] | i in 1..num_edges]);

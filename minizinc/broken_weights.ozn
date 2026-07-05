@@ -1,0 +1,6 @@
+output (((["W:    "]++[show(weights[i])++"   " | i in 1..n])++["\n"])++[if i==1 then ("\n"++show_int(2,j))++": " else " " endif++show_int(3,x[j,i]) | j in 1..m, i in 1..n])++["\n"];
+int: n = 4;
+int: m = 40;
+array [1..n] of int: weights;
+array [1..160] of int: X_INTRODUCED_4_;
+array [1..m,1..n] of int: x = array2d(1..40,1..4,X_INTRODUCED_4_);

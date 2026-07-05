@@ -1,0 +1,6 @@
+output [(if s==1 /\ b==1 then "goal_step: "++show(goal_step) else "" endif++if b==1 then "\n" else " " endif)++show(state[s,b]) | s in steps, b in buckets]++["\n"];
+int: goal_step;
+set of int: buckets = 1..3;
+set of int: steps = 1..10;
+array [1..30] of int: X_INTRODUCED_0_;
+array [steps,buckets] of int: state = array2d(1..10,1..3,X_INTRODUCED_0_);

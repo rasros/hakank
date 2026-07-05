@@ -1,0 +1,13 @@
+output ["doors: ",show([A,B,C,D]),"\n","monks: ",show([M1,M2,M3,M4,M5,M6,M7,M8]),"\n"];
+bool: M8 = true;
+bool: M7;
+bool: M6;
+bool: M5;
+bool: M4;
+bool: M3;
+bool: M2;
+bool: M1 = A;
+bool: D;
+bool: C;
+bool: B;
+bool: A;

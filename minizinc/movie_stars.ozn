@@ -1,0 +1,8 @@
+output [((((((((((((("x: "++show(x))++"\n")++"dists: ")++show(dists))++"\n")++"probable rating: ")++show(x[the_case]))++"\n")++"min_ix: ")++show(min_ix))++"\n")++"Evan is most like ")++show(p_str[fix(min_ix)]))++"\n"]++["\n"];
+int: num_r = 5;
+array [1..num_r] of int: x;
+int: num_p = 4;
+array [1..num_p] of int: dists;
+int: the_case = 5;
+int: min_ix;
+array [1..num_p] of string: p_str = ["Alex","Bill","Carla","Dan"];

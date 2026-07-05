@@ -1,0 +1,9 @@
+output ((([((((((("x: "++show(x))++"\n")++"bins: ")++show(bins))++"\n")++"total_diffs: ")++show(total_diffs))++"\n"]++[if j==1 then "\n" else " " endif++show(diffs[i,j]) | i,j in 1..num_buckets])++["\n"])++[if j==1 then ("\n"++show(i))++":" else "" endif++if fix(x[j])==i then ((show(j)++" (")++show(masses[j]))++") " else "" endif | i in 1..num_buckets, j in 1..num_masses])++["\n"];
+int: num_masses = 20;
+int: num_buckets = 4;
+array [1..num_masses] of int: x;
+array [1..num_buckets] of int: bins;
+array [1..16] of int: X_INTRODUCED_40_;
+array [1..num_buckets,1..num_buckets] of int: diffs = array2d(1..4,1..4,X_INTRODUCED_40_);
+int: total_diffs = sum([diffs[i,j] | i,j in 1..num_buckets]);
+array [1..num_masses] of int: masses = [23,43,12,54,7,3,5,10,54,55,26,9,9,43,54,1,8,6,38,33];

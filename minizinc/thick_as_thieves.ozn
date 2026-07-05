@@ -1,0 +1,17 @@
+output ["x: ",show(x),"\n","x_t: ",show(x_t),"\n","Who did it: ",show(join(", ",[names[i] | i in 1..n where fix(x[i])==1])),"\n"];
+int: n = 6;
+array [1..n] of string: names = ["Artie","Bill","Crackitt","Dodgy","Edgy","Fingers"];
+int: fingers;
+int: edgy;
+int: dodgy;
+int: crackitt;
+int: bill;
+int: artie;
+array [1..n] of int: x = [artie,bill,crackitt,dodgy,edgy,fingers];
+int: fingers_t;
+int: edgy_t;
+int: dodgy_t;
+int: crackitt_t;
+int: bill_t;
+int: artie_t;
+array [1..n] of int: x_t = [artie_t,bill_t,crackitt_t,dodgy_t,edgy_t,fingers_t];

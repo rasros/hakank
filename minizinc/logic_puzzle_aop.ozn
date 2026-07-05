@@ -1,0 +1,14 @@
+output ["[michael, simon, richard]: ",show([michael,simon,richard]),"\n","sport: ",show(sport),"\n","country: ",show(country),"\n","place: ",show(place),"\n"];
+set of int: d = 1..3;
+array [d] of int: place;
+int: australia;
+int: israel = 2;
+int: america;
+array [d] of int: country = [america,israel,australia];
+int: cricket;
+int: tennis;
+int: basketball = 1;
+array [d] of int: sport = [basketball,tennis,cricket];
+int: richard = 3;
+int: simon = 2;
+int: michael = 1;

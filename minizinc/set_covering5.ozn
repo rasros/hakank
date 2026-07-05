@@ -1,0 +1,6 @@
+output ["x: ",show(x),"\n","preference_points: ",show(preference_points),"\n","sum_pref_points: ",show(sum_pref_points),"\n"];
+int: num_persons = 3;
+array [1..num_persons] of int: preference_points;
+int: sum_pref_points = sum(preference_points);
+int: num_combinations = 19;
+array [1..num_combinations] of int: x;

@@ -1,0 +1,4 @@
+output ["x: "++format(x)++"\nnval: "++format(nval)++"\n"];
+int: n = 5;
+array [1..n] of int: x = [3,1,7,1,6];
+int: nval = 2;

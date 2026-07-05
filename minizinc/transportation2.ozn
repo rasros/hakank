@@ -1,0 +1,7 @@
+output [((("x: "++show(x))++"\n")++"z: ")++show(z)];
+int: num_clients = 4;
+int: num_plants = 3;
+array [1..12] of int: X_INTRODUCED_0_;
+array [1..num_plants,1..num_clients] of int: x = array2d(1..3,1..4,X_INTRODUCED_0_);
+array [1..num_plants,1..num_clients] of int: cost = [|10,8,5,9|7,5,5,3|11,10,8,7|];
+int: z = sum([x[i,j]*cost[i,j] | i in 1..num_plants, j in 1..num_clients]);

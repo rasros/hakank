@@ -1,0 +1,9 @@
+output ["on_duty: ",show(on_duty),"\n","num_workdays: ",show(num_workdays),"\n","z: ",show(z),"\n"];
+int: num_shifts = 3;
+int: mon = 1;
+int: sun = 7;
+int: num_workers = 4;
+array [1..21] of int: X_INTRODUCED_16_;
+array [mon..sun,1..num_shifts] of int: on_duty = array2d(1..7,1..3,X_INTRODUCED_16_);
+int: z = sum([on_duty[i,j] | i in 1..7, j in 1..num_shifts]);
+array [1..num_workers] of int: num_workdays;

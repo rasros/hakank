@@ -1,0 +1,5 @@
+output ([show(costas)++","]++[if j==1 then "\n" else " " endif++if fix(differences[i,j]) > -n+1 then show(differences[i,j]) else " " endif | i,j in 1..n])++["\n"];
+int: n = 18;
+array [1..n] of int: costas;
+array [1..324] of int: X_INTRODUCED_34_;
+array [1..n,1..n] of int: differences = array2d(1..18,1..18,X_INTRODUCED_34_);

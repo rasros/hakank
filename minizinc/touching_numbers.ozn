@@ -1,0 +1,8 @@
+output [show(Maxscore),"\n",show(Z),"\n"]++[if j==0 then "\n" else " " endif++show(X[i,j]) | i,j in 0..Size];
+int: Size = 9;
+array [1..10] of int: X_INTRODUCED_101_;
+array [0..Size] of int: Z = array1d(0..9,X_INTRODUCED_101_);
+array [0..Size,0..Size] of int: N = array2d(0..9,0..9,[0,2,4,3,3,4,5,2,5,4,1,0,1,1,0,1,1,0,1,1,4,2,0,3,3,4,4,2,4,4,5,2,4,0,3,4,5,2,5,4,5,2,4,3,0,4,5,2,5,4,4,1,4,3,2,0,4,1,4,3,4,1,4,3,2,3,0,1,4,3,5,2,4,3,3,4,5,0,5,4,5,2,4,3,3,4,5,2,0,4,5,2,4,3,3,4,5,2,5,0]);
+array [1..100] of int: X_INTRODUCED_0_;
+array [0..Size,0..Size] of int: X = array2d(0..9,0..9,X_INTRODUCED_0_);
+int: Maxscore = sum([(i+j-1)*N[i,j]*X[i,j] | i,j in 0..Size]);

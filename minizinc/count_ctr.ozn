@@ -1,0 +1,5 @@
+output [((((((("x: "++show(x))++"\n")++"nvar: ")++show(nvar))++"\n")++"val: ")++show(val))++"\n"];
+int: n = 5;
+array [1..n] of int: x = [4,5,5,4,5];
+int: nvar;
+int: val = 5;

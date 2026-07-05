@@ -1,0 +1,7 @@
+output ([if j==1 then "\n" else " " endif++show(ps1[i,j]) | i in 1..m, j in 1..n]++["\n"])++[if j==1 then "\n" else " " endif++show(ps2[i,j]) | i in 1..m, j in 1..n];
+int: n = 5;
+int: m = 31;
+array [1..155] of int: X_INTRODUCED_16_;
+array [1..m,1..n] of int: ps1 = array2d(1..31,1..5,X_INTRODUCED_16_);
+array [1..155] of int: X_INTRODUCED_172_;
+array [1..m,1..n] of int: ps2 = array2d(1..31,1..5,X_INTRODUCED_172_);

@@ -1,0 +1,7 @@
+output [("gifts: "++show(gifts))++"\n","A B C D"]++[if i==1 then "\n" else " " endif++show(x[t,i]) | t in 1..num_steps, i in 1..n];
+int: num_gifts = 4;
+array [1..num_gifts] of int: gifts;
+int: n = 4;
+int: num_steps = 3;
+array [1..12] of int: X_INTRODUCED_16_;
+array [1..num_steps,1..n] of int: x = array2d(1..3,1..4,X_INTRODUCED_16_);

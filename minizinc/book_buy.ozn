@@ -1,0 +1,5 @@
+output [((((((("w: "++show(w))++"\n")++"x: ")++show(x))++"\n")++"y: ")++show(y))++"\n"];
+int: w;
+set of int: M = 1..2;
+array [M] of int: x;
+array [M] of int: y;

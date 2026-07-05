@@ -1,0 +1,4 @@
+output [if j==1 then "\n" else "" endif++if fix(x[i,j])==0 then "O" else "X" endif | i,j in 1..n];
+int: n = 14;
+array [1..196] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: x = array2d(1..14,1..14,X_INTRODUCED_16_);

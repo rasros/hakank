@@ -1,0 +1,5 @@
+output [(((("gcd: "++show([a,b,gg]))++"\n")++"lcm: ")++show([a,b,ll]))++"\n"];
+int: gg;
+int: b;
+int: a;
+int: ll;

@@ -1,0 +1,12 @@
+output [show(X),"\n","         ",show(A),"\n","       ",show(B),"  ",show(C),"\n","     ",show(D),"  ",show(E),"  ",show(F),"\n","   ",show(G),"  ",show(H),"   ",show(I),"  ",show(J),"\n"];
+int: J;
+int: I;
+int: H;
+int: G;
+int: F;
+int: E;
+int: D;
+int: C;
+int: B;
+int: A;
+array [1..10] of int: X = [A,B,C,D,E,F,G,H,I,J];

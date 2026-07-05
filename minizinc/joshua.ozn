@@ -1,0 +1,4 @@
+output [show(tot),"\n",show(x),"\n"];
+set of int: R = 1..9;
+array [R] of int: x;
+int: tot = sum([x[i] | i in R]);

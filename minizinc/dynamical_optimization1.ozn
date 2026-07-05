@@ -1,0 +1,5 @@
+output [((((((("x: "++show(x))++"\n")++"u: ")++show(u))++"\n")++"cost: ")++show(cost))++"\n"];
+int: Ng = 101;
+array [1..Ng] of float: x;
+array [1..Ng] of float: u;
+float: cost = sum([x[j] | j in 1..Ng]);

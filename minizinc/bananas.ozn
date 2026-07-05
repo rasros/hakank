@@ -1,0 +1,6 @@
+output [(("the_sum: "++show(the_sum))++"\n")++show([bananas,oranges,mangoes,apples])];
+int: bananas;
+int: apples;
+int: the_sum = bananas+apples;
+int: mangoes;
+int: oranges;

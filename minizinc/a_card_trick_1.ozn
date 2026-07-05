@@ -1,0 +1,11 @@
+output (["suites:",show(suites),"\n","values:",show(values),"\n"]++[(((if j==1 then "\n" else "" endif++show(suites_s[fix(suites[i,j])]))++"")++show(values_s[fix(values[i,j])]))++" " | i in 1..rows, j in 1..columns])++["\n"];
+int: columns = 13;
+int: rows = 4;
+int: num_values = 13;
+array [1..52] of int: X_INTRODUCED_69_;
+array [1..rows,1..columns] of int: values = array2d(1..4,1..13,X_INTRODUCED_69_);
+int: num_suites = 4;
+array [1..52] of int: X_INTRODUCED_16_;
+array [1..rows,1..columns] of int: suites = array2d(1..4,1..13,X_INTRODUCED_16_);
+array [1..num_suites] of string: suites_s = ["H","S","C","D"];
+array [1..num_values] of string: values_s = ["A","2","3","4","5","6","7","8","9","T","J","Q","K"];

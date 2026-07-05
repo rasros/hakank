@@ -1,0 +1,8 @@
+output ([((((((("z:   : "++show(z))++"\n")++"x    : ")++show(x))++"\n")++"dists: ")++show(dists))++"\n"]++[((show_int(2,t)++": ")++if fix(x[t]) > 0 then show(x[t]) else "  " endif)++"\n" | t in start..end])++[if time==start then ("\nType "++show(t))++": " else "" endif++if fix(x[time])==t then show(time)++" " else "" endif | t in 1..num_types, time in start..end];
+int: num_types = 3;
+array [1..num_types] of int: dists;
+int: z = sum(dists);
+int: start = 7;
+int: end = 23;
+array [1..17] of int: X_INTRODUCED_16_;
+array [start..end] of int: x = array1d(7..23,X_INTRODUCED_16_);

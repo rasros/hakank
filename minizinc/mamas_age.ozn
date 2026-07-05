@@ -1,0 +1,8 @@
+output [show([m,p,t,i,m2,p2,t2])];
+int: t2;
+int: p2;
+int: m2;
+int: i;
+int: t;
+int: p;
+int: m;

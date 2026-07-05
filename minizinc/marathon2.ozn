@@ -1,0 +1,10 @@
+output [((show(runners)++"\n")++show(runners_pres))++"\n"];
+int: n = 6;
+int: Pascal;
+int: Philippe;
+int: Olivier;
+int: Naren;
+int: Ignace;
+int: Dominique;
+array [1..n] of int: runners = [Dominique,Ignace,Naren,Olivier,Philippe,Pascal];
+array [1..n] of int: runners_pres;

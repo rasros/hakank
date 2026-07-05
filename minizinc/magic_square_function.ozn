@@ -1,0 +1,6 @@
+output ["s: "++format(s)++"\n"++format(nice2d(x))++""];
+function string : nice2d(array [int,int] of int: a) = join("\n",[join(" ",[show_int(3,a[i,j]) | i in index_set_1of2(a)]) | j in index_set_2of2(a)]);
+int: n = 4;
+int: s = 34;
+array [1..16] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: x = array2d(1..4,1..4,X_INTRODUCED_16_);

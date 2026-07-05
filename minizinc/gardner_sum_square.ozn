@@ -1,0 +1,11 @@
+output [((("x: "++show(x))++"\n")++"V: ")++show(V)]++["\n"];
+int: h;
+int: g;
+int: f;
+int: e;
+int: d;
+int: c;
+int: b;
+int: a;
+array [1..8] of int: x = [a,b,c,d,e,f,g,h];
+int: V;

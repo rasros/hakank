@@ -1,0 +1,10 @@
+output [show(philosophers),"\n"]++[((show(philosophers_s[i])++": ")++show(occupation_s[fix(philosophers[i])]))++"\n" | i in 1..n];
+int: n = 5;
+int: Nietzsche;
+int: Mill;
+int: Locke;
+int: Kant;
+int: James;
+array [1..n] of int: philosophers = [James,Kant,Locke,Mill,Nietzsche];
+array [1..n] of string: philosophers_s = ["James","Kant","Locke","Mill","Nietzsche"];
+array [1..n] of string: occupation_s = ["driver","guard","porter","signalman","stationmaster"];

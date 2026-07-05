@@ -1,0 +1,5 @@
+output ([((((("x     : "++show(x))++"\n")++"gender: ")++show(gender))++"\n")++"gender2:"]++[gender_str[fix(gender[i])] | i in 1..m])++["\n"];
+int: m = 6;
+array [1..m] of int: x;
+array [1..m] of int: gender;
+array [0..1] of string: gender_str = array1d(0..1,["h","w"]);

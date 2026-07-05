@@ -1,0 +1,5 @@
+output [((((((("x: "++show(x))++"\n")++"z: ")++show(z))++"\n")++"tot_elements: ")++show(tot_elements))++"\n"];
+int: num_sets = 7;
+array [1..num_sets] of int: x;
+int: z = sum([x[j] | j in 1..num_sets]);
+int: tot_elements;

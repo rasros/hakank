@@ -1,0 +1,3 @@
+output (["DMU\tEfficiency\n"]++[((show(td)++"\t")++show(theta[td]))++"\n" | td in dmus])++["z: "++show(sum(theta))];
+set of int: dmus = 1..69;
+array [dmus] of float: theta;

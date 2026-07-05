@@ -1,0 +1,12 @@
+output [((("x: "++show(x))++"\n")++"DALEY: ")++show(DALEY)];
+int: Y;
+int: E;
+int: L;
+int: A;
+int: D;
+int: M;
+int: O;
+int: T;
+int: n = 8;
+array [1..n] of int: x = [T,O,M,D,A,L,E,Y];
+int: DALEY;

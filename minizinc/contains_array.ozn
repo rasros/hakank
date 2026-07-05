@@ -1,0 +1,5 @@
+output [(((((("x: "++show(x))++"\n")++"el: ")++show(el))++"\n")++"num: ")++show(num)];
+int: n = 9;
+array [1..n] of int: x;
+int: el;
+int: num = 123402345;

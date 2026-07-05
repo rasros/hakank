@@ -1,0 +1,4 @@
+output [show(A),"^2 + ",show(B),"^2 = ",show(C),"^2","\n"];
+int: C;
+int: B;
+int: A;

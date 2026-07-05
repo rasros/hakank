@@ -1,0 +1,8 @@
+output ["cost: ",show(cost),"\n","x: ",show(x),"\n","x_cost: ",show(x_cost),"\n","quant: ",show(quant),"\n","total_cost: ",show(total_cost),"\n"];
+float: days = 365.25;
+set of int: C = 1..77;
+array [C] of float: x;
+float: total_cost = days*sum([x[c] | c in C]);
+array [C] of float: quant;
+array [C] of float: x_cost;
+float: cost = sum([x[c] | c in C]);

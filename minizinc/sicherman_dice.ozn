@@ -1,0 +1,4 @@
+output [(((("x1"++show(x1))++"\n")++"x2")++show(x2))++"\n"];
+int: n = 6;
+array [1..n] of int: x1;
+array [1..n] of int: x2;

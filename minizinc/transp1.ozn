@@ -1,0 +1,6 @@
+output [("z: "++show(z))++"\n"]++[(if c1==1 /\ c2==1 then "\n\nProduct "++show(p) else " " endif++if c2==1 then "\n" else " " endif)++show_float(5,1,Trans[p,c1,c2]) | p in 1..num_products, c1 in 1..num_cities, c2 in 1..num_cities];
+float: z;
+int: num_cities = 10;
+int: num_products = 3;
+array [1..300] of float: X_INTRODUCED_0_;
+array [1..num_products,1..num_cities,1..num_cities] of float: Trans = array3d(1..3,1..10,1..10,X_INTRODUCED_0_);

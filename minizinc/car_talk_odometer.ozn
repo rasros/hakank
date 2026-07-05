@@ -1,0 +1,4 @@
+output ["start: "++format(start)++" .. end: "++format(end)++" z: "++format(z)++"\n"];
+int: start;
+int: end;
+int: z = end-start;

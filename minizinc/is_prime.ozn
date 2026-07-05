@@ -1,0 +1,3 @@
+output [((("primes: "++show(primes))++"\n")++"num_primes:")++show(num_primes)]++["\n"];
+set of int: primes;
+int: num_primes = card(primes);

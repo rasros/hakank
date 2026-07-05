@@ -1,0 +1,11 @@
+output [((show(x)++"\n")++show([ss[fix(x[i])] | i in 1..n]))++"\n"];
+int: p7;
+int: p6 = p2;
+int: p5;
+int: p4;
+int: p3;
+int: p2;
+int: p1;
+int: n = 7;
+array [1..n] of int: x = [p1,p2,p3,p4,p5,p6,p7];
+array [1..4] of string: ss = ["wine","poison","forward","back"];

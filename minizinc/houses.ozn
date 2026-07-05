@@ -1,0 +1,13 @@
+output ([(((("all   : "++show(all))++"\n")++"houses: ")++show(houses))++"\n"]++[((("house: "++show(i))++": ")++show(all_str[fix(houses[i])]))++"\n" | i in 1..n])++["\n"];
+int: n = 8;
+int: don;
+int: daryl;
+int: crawford;
+int: cheri;
+int: benito;
+int: adrienne;
+int: belinda;
+int: allison;
+array [1..n] of int: all = [allison,belinda,adrienne,benito,cheri,crawford,daryl,don];
+array [1..n] of int: houses;
+array [1..n] of string: all_str = ["allison","belinda","adrienne","benito","cheri","crawford","daryl","don"];

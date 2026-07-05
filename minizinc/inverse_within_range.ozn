@@ -1,0 +1,5 @@
+output [(((("x1: "++show(x1))++"\n")++"x2: ")++show(x2))++"\n"];
+int: n1 = 3;
+array [1..n1] of int: x1 = [9,4,2];
+int: n2 = 4;
+array [1..n2] of int: x2 = [9,3,9,2];

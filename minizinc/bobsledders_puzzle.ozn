@@ -1,0 +1,8 @@
+output ["partners: "++format(partners)++"\n","pairs: "++format(pairs)++"\n","countries: "++format(countries)++"\n","sleds: "++format(sleds)++"\n"]++[""++format(p)++":\t"++format(partners[p])++"\t"++format(sleds[pairs[p]])++"\t"++format(countries[pairs[p]])++" \n" | p in names];
+int: num_pairs = 5;
+array [1..num_pairs] of int: sleds;
+array [1..num_pairs] of int: countries;
+int: num_people = 10;
+array [1..num_people] of int: pairs;
+set of int: names = 1..10;
+array [1..num_people] of int: partners;

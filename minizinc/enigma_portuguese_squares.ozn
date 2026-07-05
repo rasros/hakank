@@ -1,0 +1,12 @@
+output ["square_root: ",show(square_root),"\n","x: ",show(x),"\n"];
+int: C;
+int: V;
+int: N;
+int: M;
+int: U;
+int: O;
+int: R;
+int: E;
+int: Z;
+array [1..9] of int: x = [Z,E,R,O,U,M,N,V,C];
+int: square_root;

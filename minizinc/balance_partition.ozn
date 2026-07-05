@@ -1,0 +1,4 @@
+output ["x: ",show(x),"\n","bal: ",show(bal),"\n"];
+int: n = 5;
+int: bal;
+array [1..n] of int: x = [6,2,6,4,4];

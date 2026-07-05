@@ -1,0 +1,5 @@
+output ["varsnow: ",show(varsnow),"\n","lastyear: ",show(lastyear),"\n","now:",show(now),"\n"];
+int: now;
+int: lastyear;
+int: n = 7;
+array [1..n] of int: varsnow;

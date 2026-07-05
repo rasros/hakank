@@ -1,0 +1,4 @@
+output ((([("x: "++show(x))++"\n"]++[show(name_str[fix(x[i])])++" " | i in 1..n])++["\n\n"])++[(((((((((((((("          "++show(name_str[fix(x[1])]))++"\n")++"  ")++show(name_str[fix(x[6])]))++"           ")++show(name_str[fix(x[2])]))++"\n")++"  ")++show(name_str[fix(x[5])]))++"           ")++show(name_str[fix(x[3])]))++"\n")++"        ")++show(name_str[fix(x[4])]))++"\n\n"])++["\n"];
+int: n = 6;
+array [1..n] of int: x;
+array [1..n] of string: name_str = ["Andrew","Betty","Cara","Dave","Erica","Frank"];

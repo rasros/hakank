@@ -1,0 +1,5 @@
+output [(((((((((("nn: "++show(nn))++"\n")++"num_divisors: ")++show(num_divisors))++"\n")++"divisor: ")++show(divisor))++"\n")++"is_prime: ")++show(is_prime))++"\n"];
+int: nn;
+int: num_divisors;
+set of int: divisor;
+int: is_prime;

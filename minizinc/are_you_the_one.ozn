@@ -1,0 +1,6 @@
+output [if g==Alexis then "\n" else " " endif++show(assign[b,g]) | b in boys, g in girls];
+int: Alexis = 12;
+set of int: girls = 12..22;
+set of int: boys = 1..11;
+array [1..121] of int: X_INTRODUCED_16_;
+array [boys,girls] of int: assign = array2d(1..11,12..22,X_INTRODUCED_16_);

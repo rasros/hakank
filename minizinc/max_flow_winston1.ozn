@@ -1,0 +1,5 @@
+output ["z: ",show(z)]++[if j==1 then "\n" else " " endif++show(flow[i,j]) | i in nodes, j in nodes];
+set of int: nodes = 1..5;
+array [1..25] of int: X_INTRODUCED_0_;
+array [nodes,nodes] of int: flow = array2d(1..5,1..5,X_INTRODUCED_0_);
+int: z = flow[5,1];

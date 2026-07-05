@@ -1,0 +1,10 @@
+output [show(x),"\n"]++[show(join(" ",[x_s[p] | r in 4..6, p in 1..n where fix(x[p])==r])),"\n",show(join(" ",[x_s[p] | r in 1..3, p in 1..n where fix(x[p])==r])),"\n"];
+int: n = 6;
+int: francesca;
+int: elizabeth;
+int: duncan;
+int: craig;
+int: bella;
+int: arthur;
+array [1..n] of int: x = [arthur,bella,craig,duncan,elizabeth,francesca];
+array [1..n] of string: x_s = ["arthur   ","bella    ","craig    ","duncan   ","elizabeth","francesca"];

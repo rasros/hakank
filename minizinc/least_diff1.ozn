@@ -1,0 +1,14 @@
+output [((show(x)++"\n")++show(difference))++"\n"];
+int: J;
+int: I;
+int: H;
+int: G;
+int: F;
+int: E;
+int: D;
+int: C;
+int: B;
+int: A;
+int: n = 10;
+array [1..n] of int: x = [A,B,C,D,E,F,G,H,I,J];
+int: difference = 10000*A+1000*B+100*C+10*D+E-(10000*F+1000*G+100*H+10*I+J);

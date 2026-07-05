@@ -1,0 +1,9 @@
+output ((([show(L)++"\n"]++[show(letters[fix(L[I])])++" " | I in 1..N])++["\n\n"])++[if problem[i,j]==0 then "_" else show(letters[fix(L[problem[i,j]])]) endif++if j==cols then "\n" else " " endif | i in 1..rows, j in 1..cols])++["\n"];
+int: N = 16;
+int: num_letters = 26;
+array [1..17] of int: X_INTRODUCED_16_;
+array [0..N] of int: L = array1d(0..16,X_INTRODUCED_16_);
+array [1..num_letters] of string: letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+int: cols = 6;
+int: rows = 4;
+array [1..rows,1..cols] of int: problem = [|1,2,3,4,5,0|6,0,7,0,8,0|9,10,11,12,13,14|15,0,0,0,16,0|];

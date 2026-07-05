@@ -1,0 +1,10 @@
+output [((((((("sokPosn: "++show(sokPosn))++"\n")++"move: ")++show(move))++"\n")++"crateGoalPosns: ")++show(crateGoalPosns))++"\n"];
+set of int: STEPS = 0..13;
+array [1..14] of int: X_INTRODUCED_16_;
+array [STEPS] of int: sokPosn = array1d(0..13,X_INTRODUCED_16_);
+int: stps = 14;
+array [1..13] of int: X_INTRODUCED_31_;
+array [0..stps-2] of int: move = array1d(0..12,X_INTRODUCED_31_);
+set of int: CRATEINDICES = 0..0;
+array [1..14] of int: X_INTRODUCED_45_;
+array [STEPS,CRATEINDICES] of int: crateGoalPosns = array2d(0..13,0..0,X_INTRODUCED_45_);

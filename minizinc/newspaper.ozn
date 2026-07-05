@@ -1,0 +1,15 @@
+output (((((((([((((((((((((((("\nEarliest end time: "++show(earliest_end_time))++"\n")++"(8:30 + ")++show(earliest_end_time div 60))++" hours ")++show(earliest_end_time mod 60))++" minutes)\n")++"(i.e. at ")++show((earliest_end_time+510) div 60))++" and ")++show((510+earliest_end_time) mod 60))++")\n")++"Start times: ")++show(start_times))++"\n")++"\nReading times:"]++[if m==1 then "\n" else " " endif++show(reading_times[p,m]) | p,m in 1..n])++["\n\nTimes person reads newspapers:"])++[(((((((if m==1 then ("\n"++show(person[p]))++" : " else " " endif++if fix(reading_start[p,m]) < 10 then " " else "" endif)++if fix(reading_start[p,m]) < 100 then " " else "" endif)++show(reading_start[p,m]))++"..")++if fix(reading_end[p,m]) < 10 then " " else "" endif)++if fix(reading_end[p,m]) < 100 then " " else "" endif)++show(reading_end[p,m]-1))++" " | p,m in 1..n])++["\n\nTimes newspapers is read:"])++[(((((((if p==1 then ("\n"++newspapers[m])++" : " else " " endif++if fix(reading_start[p,m]) < 10 then " " else "" endif)++if fix(reading_start[p,m]) < 100 then " " else "" endif)++show(reading_start[p,m]))++"..")++if fix(reading_end[p,m]) < 10 then " " else "" endif)++if fix(reading_end[p,m]) < 100 then " " else "" endif)++show(reading_end[p,m]-1))++" " | m,p in 1..n])++["\n\nSchedule:"])++[if time < fix(earliest_end_time) then let {int: tt = 510+time, int: hour = tt div 60, int: minute = tt mod 60} in (if m==1 /\ p==1 then ((((((((("\nTime: "++show(time))++": ")++if time < 10 then " " else "" endif)++if time < 100 then " " else "" endif)++if hour < 10 then "0" else "" endif)++show(hour))++":")++if minute < 10 then "0" else "" endif)++show(minute))++" " else "" endif++if time>=fix(reading_start[p,m]) /\ time < fix(reading_end[p,m]) then ((show(person[p])++": ")++show(newspapers[m]))++"  " else if m==1 /\ fix(timeline[time,p])==0 then if time < start_times[p] then show(person[p])++": <sleeping>      " else show(person[p])++": -               " endif else "" endif endif) else "" endif | time in 0..max_time, p,m in 1..n])++[("Sum idle times: "++show(idle_time))++"\n"])++["\n"];
+int: n = 4;
+int: max_time = 200;
+array [1..16] of int: X_INTRODUCED_33_;
+array [1..n,1..n] of int: reading_end = array2d(1..4,1..4,X_INTRODUCED_33_);
+int: earliest_end_time = max([reading_end[i,t] | i in 1..n, t in 1..n]);
+array [1..n] of int: start_times = [0,15,15,60];
+array [1..n,1..n] of int: reading_times = [|30,60,2,5|75,25,3,10|15,10,5,30|1,1,1,90|];
+array [1..n] of string: person = ["Algy   ","Bertie ","Charlie","Digby  "];
+array [1..16] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: reading_start = array2d(1..4,1..4,X_INTRODUCED_16_);
+array [1..n] of string: newspapers = ["Guardian      ","Financial Time","Express       ","Sun           "];
+array [1..804] of int: X_INTRODUCED_50_;
+array [0..max_time,1..n] of int: timeline = array2d(0..200,1..4,X_INTRODUCED_50_);
+array [1..n] of int: idle_time;

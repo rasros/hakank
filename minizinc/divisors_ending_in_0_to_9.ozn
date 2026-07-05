@@ -1,0 +1,2 @@
+output [show(n)];
+int: n;

@@ -1,0 +1,5 @@
+output ["a: "++format(a)++"\n","x: "++format(x)++"\n","y: "++format(y)++""];
+int: n = 12;
+array [1..n] of int: y;
+array [1..n] of int: x = [0,0,6,2,1,6,2,1,0,2,1,0];
+array [1..12] of int: a = [1,2,9,5,4,12,7,6,3,11,10,8];

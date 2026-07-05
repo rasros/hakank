@@ -1,0 +1,5 @@
+output [""++format(slice_1d(x,[i..i,-infinity..infinity],index_set_2of2(x)))++"\n" | i in 1..m];
+int: n = 5;
+int: m = 25;
+array [1..125] of int: X_INTRODUCED_16_;
+array [1..m,1..n] of int: x = array2d(1..25,1..5,X_INTRODUCED_16_);

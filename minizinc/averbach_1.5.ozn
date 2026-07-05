@@ -1,0 +1,6 @@
+output ["x       : ",show(x),"\n","who     : ",show(who),"\n","winner  : ",show(winner),"\n","z_cumsum: ",show(z_cumsum),"\n"];
+int: n = 15;
+array [1..n] of int: z_cumsum;
+array [1..n] of int: winner;
+array [1..n] of int: who = [1,2,1,2,1,2,1,2,1,2,1,2,1,2,1];
+array [1..n] of int: x;

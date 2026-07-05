@@ -1,0 +1,4 @@
+output [(((("s: "++show(s))++"\n")++"coeffs: ")++show(coeffs))++"\n"];
+int: s;
+int: n = 3;
+array [1..n] of int: coeffs = [1,2,-3];

@@ -1,0 +1,5 @@
+output [(((((((((("x: "++show(x))++"\n")++"nvar: ")++show(nvar))++"\n")++"remainder: ")++show(remainder))++"\n")++"quotient: ")++show(quotient))++"\n"];
+array [1..5] of int: x = [4,5,8,4,1];
+int: nvar;
+int: remainder = 0;
+int: quotient = 2;

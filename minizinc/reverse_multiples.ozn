@@ -1,0 +1,8 @@
+output [((((((((((((((((((("n: "++show(n))++"\n")++"base: ")++show(base))++"\n")++"num1: ")++show(num1))++"\n")++"num2: ")++show(num2))++"\n")++"a1  : ")++show(a1))++"\n")++"a2  : ")++show(a2))++"\n")++"m  : ")++show(m))++"\n"];
+int: n = 7;
+int: base = 10;
+int: num1;
+int: num2;
+array [1..n] of int: a1;
+array [1..n] of int: a2;
+int: m;

@@ -1,0 +1,15 @@
+output [(((((("first: "++show(first))++"\n")++"last: ")++show(last))++"\n")++"age: ")++show(age)];
+set of int: r = 1..5;
+int: Otto = 5;
+int: Nora = 4;
+int: Margo = 3;
+int: Libby = 2;
+int: Keith = 1;
+array [r] of int: first = [Keith,Libby,Margo,Nora,Otto];
+int: Jule = 2;
+int: Ivey;
+int: Hall;
+int: Gant;
+int: Fell;
+array [r] of int: last = [Fell,Gant,Hall,Ivey,Jule];
+array [r] of int: age;

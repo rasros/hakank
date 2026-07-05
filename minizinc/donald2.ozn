@@ -1,0 +1,18 @@
+output [" D  O  N  A  L  G  E  R  B  T\n",show(fd),"\n","\n\n","D:",show(D)," O:",show(O)," N:",show(N)," A:",show(A)," L:",show(L)," D:",show(D),"\n","G:",show(G)," E:",show(E)," R:",show(R)," A:",show(A)," L:",show(L)," D:",show(D),"\n","R:",show(R)," O:",show(O)," B:",show(B)," E:",show(E)," R:",show(R)," T:",show(T),"\n","\n\n","   ",show(c6),show(c5),show(c4),show(c3),show(c2),show(c1),"\n","    ",show(D),show(O),show(N),show(A),show(L),show(D),"\n","  + ",show(G),show(E),show(R),show(A),show(L),show(D),"\n","  = ",show(R),show(O),show(B),show(E),show(R),show(T),"\n","\n\n","c6:",show(c6)," c5:",show(c5)," c4:",show(c4)," c3:",show(c3)," c2:",show(c2)," c1:",show(c1)];
+int: c1;
+int: c2;
+int: c3;
+int: c4;
+int: c5;
+int: c6 = 0;
+int: T;
+int: R;
+int: E;
+int: B;
+int: O;
+int: D;
+int: L;
+int: A;
+int: G;
+int: N;
+array [1..10] of int: fd = [D,O,N,A,L,G,E,R,B,T];

@@ -1,0 +1,5 @@
+output [((((((("x: "++show(x))++"\n")++"y: ")++show(y))++"\n")++"nsame: ")++show(nsame))++"\n"];
+int: n = 4;
+array [1..n] of int: x;
+array [1..n] of int: y = [1,3,1,7];
+int: nsame = 2;

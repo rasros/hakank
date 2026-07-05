@@ -1,0 +1,5 @@
+output [(((("vstCty: "++show(vstCty))++"\n")++"mtTrader: ")++show(mtTrader))++"\n"];
+int: NumCities = 5;
+array [1..NumCities] of int: vstCty;
+int: NumTraders = 5;
+array [1..NumTraders] of int: mtTrader;

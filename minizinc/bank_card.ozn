@@ -1,0 +1,7 @@
+output [show(x),"\n"];
+int: d;
+int: c;
+int: b;
+int: a;
+int: n = 4;
+array [1..n] of int: x = [a,b,c,d];

@@ -1,0 +1,2 @@
+output [("x: "++show(x))++"\n"];
+array [1..5] of int: x;

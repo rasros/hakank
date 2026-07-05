@@ -1,0 +1,6 @@
+output [(((((((((("first_name: "++show(first_name))++"\n")++"last_name : ")++show(last_name))++"\n")++"birthday  : ")++show(birthday))++"\n")++"z         : ")++show(z))++"\n"];
+int: n = 4;
+array [1..n] of int: first_name;
+array [1..n] of int: last_name;
+array [1..n] of int: birthday;
+int: z = max((first_name++last_name)++birthday);

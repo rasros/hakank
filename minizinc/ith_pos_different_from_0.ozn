@@ -1,0 +1,5 @@
+output [((((((("x: "++show(x))++"\n")++"pos: ")++show(pos))++"\n")++"ith: ")++show(ith))++"\n"];
+int: n = 5;
+array [1..n] of int: x = [3,0,0,8,6];
+int: pos = 4;
+int: ith = 2;

@@ -1,0 +1,6 @@
+output [((((((("mix: "++show(mix))++"\n")++"tot_cost: ")++show(tot_cost))++"\n")++"daily_req_met: ")++show(daily_req_met))++"\n"];
+int: num_feeds = 3;
+array [1..num_feeds] of int: mix;
+int: tot_cost;
+int: num_ingredients = 3;
+array [1..num_ingredients] of int: daily_req_met;

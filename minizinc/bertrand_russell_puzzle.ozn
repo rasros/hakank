@@ -1,0 +1,13 @@
+output [((show([a,b,c,d])++"\n")++show([w,x,y,z]))++"\n"]++[if fix(wxyz[j])==i then show(join("<=>",[abcd_s[i],wxyz_s[j]]))++"\n" else "" endif | i in 1..n, j in 1..n];
+int: d = 4;
+int: c = 3;
+int: b = 2;
+int: a = 1;
+int: n = 4;
+int: z;
+int: y;
+int: x;
+int: w;
+array [1..n] of string: wxyz_s = ["w","x","y","z"];
+array [1..n] of string: abcd_s = ["a","b","c","d"];
+array [1..n] of int: wxyz = [w,x,y,z];

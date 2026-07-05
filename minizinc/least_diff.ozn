@@ -1,0 +1,16 @@
+output [((((((show(FD)++"\n")++show(X))++" - ")++show(Y))++" = ")++show(difference))++"\n"];
+int: J;
+int: I;
+int: H;
+int: G;
+int: F;
+int: E;
+int: D;
+int: C;
+int: B;
+int: A;
+int: n = 10;
+array [1..n] of int: FD = [A,B,C,D,E,F,G,H,I,J];
+int: X;
+int: Y;
+int: difference = X-Y;

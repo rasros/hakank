@@ -1,0 +1,5 @@
+output [(((((("x: "++show(x))++"\n")++"y: ")++show(y))++"\n")++"z: ")++show(z)];
+int: n = 5;
+array [1..n] of int: x = [0,1,0,0,1];
+array [1..n] of int: y = [0,0,0,1,0];
+int: z = 0;

@@ -1,0 +1,4 @@
+output ["W: ",show(W),"\n","L: ",show(L),"\n","V: ",show(V),"\n"];
+float: V;
+int: L;
+int: W;

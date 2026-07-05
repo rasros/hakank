@@ -1,0 +1,5 @@
+output [show([L,w,h,wh]),"\n","[w,h,L/4]: ",show([w,h,L div 4])];
+int: L;
+int: h;
+int: w;
+int: wh = w*h;

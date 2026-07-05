@@ -1,0 +1,5 @@
+output [((("x: "++show(x))++"\n")++"the_period: ")++show(the_period)];
+int: n = 8;
+array [1..n] of int: x;
+int: per_len = 3;
+array [1..per_len] of int: the_period;

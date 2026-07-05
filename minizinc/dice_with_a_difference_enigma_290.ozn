@@ -1,0 +1,14 @@
+output ["dice9 (IMAGINING): ",show(dice9),"\n","dice4 (GAGS): ",show(dice4),"\n","dice6 (ENIGMA): ",show(dice6),"\n","MEANINGS: ",show([M,E,A,N,I,N,G,S]),"\n"];
+int: S;
+int: G;
+int: N;
+int: I;
+int: A;
+int: e = 6;
+int: E;
+int: M;
+array [1..e] of int: dice6 = [E,N,I,G,M,A];
+int: f = 4;
+array [1..f] of int: dice4 = [G,A,G,S];
+int: n = 9;
+array [1..n] of int: dice9 = [I,M,A,G,I,N,I,N,G];

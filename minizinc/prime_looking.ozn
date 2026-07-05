@@ -1,0 +1,4 @@
+output [((((("x: "++show(x))++" (")++show(d1))++"*")++show(d2))++")\n"]++["\n"];
+int: x;
+int: d1;
+int: d2;

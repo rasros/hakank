@@ -1,0 +1,9 @@
+output [show(W),show(R),show(O),show(N),show(G)," * ",show(W),show(R),show(O),show(N),show(G)," = ",show(R),show(I),show(G),show(H),show(T),"   ","\n"];
+int: T;
+int: H;
+int: G;
+int: I;
+int: R;
+int: N;
+int: O = 0;
+int: W;

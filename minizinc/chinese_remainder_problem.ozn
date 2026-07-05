@@ -1,0 +1,5 @@
+output ["divs: ",show(divs),"\n","rems: ",show(rems),"\n",show(x)];
+int: x;
+int: n = 5;
+array [1..n] of int: rems = [2,3,2,4,1];
+array [1..n] of int: divs = [3,5,7,11,13];

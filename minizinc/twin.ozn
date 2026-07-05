@@ -1,0 +1,4 @@
+output [if j==1 then "\n" else " " endif++show(pairs[i,j]) | i in 1..n, j in 1..2];
+int: n = 6;
+array [1..12] of int: X_INTRODUCED_16_;
+array [1..n,1..2] of int: pairs = array2d(1..6,1..2,X_INTRODUCED_16_);

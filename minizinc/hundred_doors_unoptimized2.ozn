@@ -1,0 +1,4 @@
+output [if fix(x[j])==1 then show(j) else show(0) endif++" " | j in r]++["\n"++show(s),"\n"];
+set of int: r = 1..100;
+array [r] of int: x;
+set of int: s;

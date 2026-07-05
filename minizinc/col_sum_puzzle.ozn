@@ -1,0 +1,6 @@
+output [show(x),"\n",show(x[1,1]),"  ",show(x[1,2]),"  ",show(x[1,3]),"  ",show(x[1,4])," = ",show(rowsums[1]),"\n",show(x[2,1]),"  ",show(x[2,2]),"  ",show(x[2,3]),"  ",show(x[2,4])," = ",show(rowsums[2]),"\n",show(x[3,1]),"  ",show(x[3,2]),"  ",show(x[3,3]),"  ",show(x[3,4])," = ",show(rowsums[3]),"\n",show(x[4,1]),"  ",show(x[4,2]),"  ",show(x[4,3]),"  ",show(x[4,4])," = ",show(rowsums[4]),"\n",show(colsums[1])," ",show(colsums[2])," ",show(colsums[3])," ",show(colsums[4]),"\n"];
+int: n = 4;
+array [1..n] of int: colsums = [24,18,31,31];
+array [1..n] of int: rowsums = [22,26,31,25];
+array [1..16] of int: X_INTRODUCED_0_;
+array [1..n,1..n] of int: x = array2d(1..4,1..4,X_INTRODUCED_0_);

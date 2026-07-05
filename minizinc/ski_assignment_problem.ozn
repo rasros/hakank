@@ -1,0 +1,7 @@
+output [((show(z)++"\n")++show(x))++"\n"];
+int: num_skiers = 5;
+int: num_skis = 6;
+array [1..num_skiers] of int: x;
+array [1..num_skis] of int: ski_heights = [1,2,5,7,13,21];
+array [1..num_skiers] of int: skier_heights = [3,4,7,11,18];
+int: z = sum([bool2int(x[i]==j)*abs(ski_heights[j]-skier_heights[i]) | i in 1..num_skiers, j in 1..num_skis]);

@@ -1,0 +1,7 @@
+output [(((((((((("digits: "++show(digits))++"\n")++"x: ")++show(x))++"\n")++"digits_sum: ")++show(digits_sum))++"\n")++"digits_sum_a: ")++show(digits_sum_a))++"\n"];
+int: n = 4;
+array [1..n] of int: digits;
+int: m = 24;
+array [1..m] of int: x;
+int: digits_sum;
+array [1..6] of int: digits_sum_a;

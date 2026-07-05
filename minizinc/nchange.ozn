@@ -1,0 +1,5 @@
+output [((((((("x: "++show(x))++"\n")++"c_pos: ")++show(c_pos))++"\n")++"num_changes: ")++show(num_changes))++"\n"];
+int: n = 5;
+array [1..n] of int: x = [4,4,3,4,1];
+array [1..n-1] of int: c_pos;
+int: num_changes;

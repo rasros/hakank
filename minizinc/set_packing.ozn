@@ -1,0 +1,4 @@
+output ["numNeeded: ",show(numNeeded),"\n",show(x),"\n"];
+int: num_sets = 7;
+array [1..num_sets] of int: x;
+int: numNeeded = 4;

@@ -1,0 +1,4 @@
+output [((((((("x: "++show(x))++"\n")++"y: ")++show(y))++"\n")++"z: ")++show(z))++"\n"];
+float: x;
+float: y;
+float: z;

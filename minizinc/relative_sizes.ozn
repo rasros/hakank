@@ -1,0 +1,2 @@
+output ["beetles: ",show(beetles),"\n"];
+int: beetles;

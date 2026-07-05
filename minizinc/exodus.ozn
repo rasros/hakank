@@ -1,0 +1,15 @@
+output [((((((("Story: "++show(Story))++"\n")++"Age: ")++show(Age))++"\n")++"Country: ")++show(Country))++"\n"];
+set of int: R = 1..5;
+int: TenCommandments;
+int: Passover;
+int: MosessYouth;
+int: Captivity = 2;
+int: BurningBush;
+array [R] of int: Story = [BurningBush,Captivity,MosessYouth,Passover,TenCommandments];
+array [R] of int: Age;
+int: Yemen;
+int: Morocco;
+int: Lithuania = 3;
+int: Kazakhstan;
+int: Ethiopia;
+array [R] of int: Country = [Ethiopia,Kazakhstan,Lithuania,Morocco,Yemen];

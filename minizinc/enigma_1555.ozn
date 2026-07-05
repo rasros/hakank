@@ -1,0 +1,14 @@
+output [(((((((((((((((((((((((((((((((((((((((("A: "++show(A))++"\n")++"B: ")++show(B))++"\n")++"C: ")++show(C))++"\n")++"D: ")++show(D))++"\n")++"E: ")++show(E))++"\n")++"F: ")++show(F))++"\n")++"G: ")++show(G))++"\n")++"H: ")++show(H))++"\n")++"I: ")++show(I))++"\n")++"J: ")++show(J))++"\n")++"K: ")++show(K))++"\n")++"L: ")++show(L))++"\n")++"AB: ")++show(AB))++"\n")++"all: [A  B  C  D  E  F  G  H  I  J  K  L]\n")++show([A,B,C,D,E,F,G,H,I,J,K,L]))++"\n"]++["\n"];
+int: A;
+int: B;
+int: C;
+int: D;
+int: E;
+int: F;
+int: G;
+int: H;
+int: I;
+int: J;
+int: K;
+int: L;
+int: AB = A*10+B;

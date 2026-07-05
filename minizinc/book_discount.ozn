@@ -1,0 +1,6 @@
+output ["t: ",show(t),"\n","totcost: ",show(totcost)]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in M];
+set of int: M = 1..5;
+array [M] of int: t;
+float: totcost;
+array [1..25] of int: X_INTRODUCED_0_;
+array [M,M] of int: x = array2d(1..5,1..5,X_INTRODUCED_0_);

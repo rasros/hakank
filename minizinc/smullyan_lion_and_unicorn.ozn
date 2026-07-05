@@ -1,0 +1,2 @@
+output ["today: ",show(today),"\n"];
+int: today;

@@ -1,0 +1,5 @@
+output [show(E),show(E),show(T),"+",show(E),show(E),show(T),"+",show(E),show(E),show(T),"+",show(E),show(E),show(T),"+",show(E),show(E),show(T)," = ",show(F),show(E),show(M),"\n"];
+int: M;
+int: E;
+int: F;
+int: T;

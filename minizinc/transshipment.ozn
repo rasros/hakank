@@ -1,0 +1,6 @@
+output ["z: ",show(z)]++[if j==1 then "\n" else " " endif++show(delivery[i,j]) | i,j in cities];
+set of int: cities = 1..6;
+array [cities,cities] of int: cost = [|0,1000,8,13,25,28|1000,0,15,12,26,25|1000,1000,0,6,16,17|1000,1000,1000,0,14,16|1000,1000,1000,1000,0,1000|1000,1000,1000,1000,1000,0|];
+array [1..36] of int: X_INTRODUCED_0_;
+array [cities,cities] of int: delivery = array2d(1..6,1..6,X_INTRODUCED_0_);
+int: z = sum([cost[i,j]*delivery[i,j] | i in cities, j in cities]);

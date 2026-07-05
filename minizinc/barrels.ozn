@@ -1,0 +1,11 @@
+output ((["barrels: ",show(barrels),"\n"]++[((((((("barrel "++show(b))++" (")++show_int(2,barrels[b]))++"): ")++show([contents[b,i,j] | i,j in 1..m]))++" op: ")++show(ops[fix(barrels_op[b])]))++"\n" | b in 1..n])++["barrels grid:"])++[((if j==1 then "\n" else " " endif++if j==1 /\ i mod 2==1 then "\n" else "" endif)++if j mod 2==1 then "  " else "" endif)++show(mat[i,j]) | i,j in 1..t];
+int: n = 9;
+array [1..n] of int: barrels;
+int: m = 2;
+int: t = 6;
+array [1..36] of int: X_INTRODUCED_30_;
+array [1..n,1..m,1..m] of int: contents = array3d(1..9,1..2,1..2,X_INTRODUCED_30_);
+array [1..2] of string: ops = ["prod","sum"];
+array [1..n] of int: barrels_op;
+array [1..36] of int: X_INTRODUCED_61_;
+array [1..t,1..t] of int: mat = array2d(1..6,1..6,X_INTRODUCED_61_);

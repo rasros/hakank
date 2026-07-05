@@ -1,0 +1,12 @@
+output ["J1,J2,M1,M2,B1,B2,S1,S2,W1,W2:\n"++show(List),"\n","[J1,J2]: ",show([J1,J2]),"\n","[W1,W2]: ",show([W1,W2]),"\n"];
+int: W2;
+int: W1;
+int: J2;
+int: J1;
+int: S2;
+int: S1;
+int: B2;
+int: B1;
+int: M2;
+int: M1;
+array [1..10] of int: List = [J1,J2,M1,M2,B1,B2,S1,S2,W1,W2];

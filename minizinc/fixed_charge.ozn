@@ -1,0 +1,6 @@
+output [((((((("Rent: "++show(Rent))++"\n")++"Produce: ")++show(Produce))++"\n")++"z: ")++show(z))++"\n"];
+int: num_machines = 3;
+array [1..num_machines] of int: Rent;
+int: num_products = 3;
+array [1..num_products] of int: Produce;
+int: z;

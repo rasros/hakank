@@ -1,0 +1,15 @@
+output ["revenue: ",show(revenue),"\n","milk price: ",show(milk*1000.0),"\n","butter price: ",show(butt*1000.0),"\n","cheese 1 price: ",show(cha*1000.0),"\n","cheese 2 price: ",show(chb*1000.0),"\n","milk prod: ",show(xm*1000.0),"\n","butter prod: ",show(xb*1000.0),"\n","cheese 1 prod: ",show(xca*1000.0),"\n","cheese 2 prod: ",show(xcb*1000.0),"\n"];
+float: xcb;
+float: xca;
+float: xb;
+float: xm;
+float: chb;
+float: cha;
+float: butt;
+float: milk;
+float: milksq;
+float: buttsq;
+float: chasq;
+float: chbsq;
+float: qsq;
+float: revenue = -6492.0*milksq-1200.0*buttsq-194.0*chasq-8.0*chbsq-qsq+6748.0*milk+1185.0*butt+420.0*cha+70.0*chb;

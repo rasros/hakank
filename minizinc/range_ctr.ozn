@@ -1,0 +1,3 @@
+output [(((("variables: "++show(variables))++"\n")++"t_var: ")++show(t_var))++"\n"];
+array [1..3] of int: variables;
+int: t_var = 8;

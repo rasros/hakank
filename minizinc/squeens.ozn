@@ -1,0 +1,7 @@
+output ((((([("numq: "++show(numq))++"\n"]++["\nx:"])++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in S])++["\na:"])++[if j==1 then "\n" else " " endif++show(a[i,j]) | i,j in S])++["\npositions:"])++[if fix(x[i,j])==1 then show(j)++" " else "" endif | i,j in S];
+set of int: S = 1..8;
+array [1..64] of int: X_INTRODUCED_0_;
+array [S,S] of int: x = array2d(1..8,1..8,X_INTRODUCED_0_);
+int: numq = sum([x[i,j] | i in S, j in S]);
+array [1..64] of int: X_INTRODUCED_65_;
+array [S,S] of int: a = array2d(1..8,1..8,X_INTRODUCED_65_);

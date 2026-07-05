@@ -1,0 +1,6 @@
+output ["used    : ",show(used),"\n","origin  : ",show(origin),"\n","duration: ",show(duration),"\n","end_time: ",show(end_time),"\n"];
+int: n = 4;
+array [1..n] of int: end_time = [4,0,9,5];
+array [1..n] of int: duration = [3,0,2,1];
+array [1..n] of int: origin = [1,2,7,4];
+array [1..n] of int: used = [1,0,1,1];

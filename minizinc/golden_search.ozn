@@ -1,0 +1,3 @@
+output ["x: ",show(x),"\n","z: ",show(z),"\n"];
+float: z;
+float: x;

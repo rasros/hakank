@@ -1,0 +1,6 @@
+output ([((((((((("m: "++show(m))++" n: ")++show(n))++"\n")++"x: ")++show(x))++"\n")++"c: ")++show(c))++"\n"]++[show(s[fix(x[i])]) | i in 1..n])++["\n"];
+int: m = 13;
+int: n = 26;
+array [1..n] of int: x;
+array [1..n] of int: c;
+array [0..1] of string: s = array1d(0..1,["[","]"]);

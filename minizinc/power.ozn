@@ -1,0 +1,3 @@
+output [(((("n:"++show(n))++"\n")++"num:")++show(num))++"\n"];
+int: n = 3;
+int: num = 81;

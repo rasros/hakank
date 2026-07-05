@@ -1,0 +1,5 @@
+output ["x: ",show(x),"\n","y: ",show(y),"\n","z: ",show(z),"\n"];
+int: person = 3;
+array [1..person] of int: x;
+int: z = sum([x[i]+3*x[1] | i in 1..person]);
+array [1..person] of int: y;

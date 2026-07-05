@@ -1,0 +1,7 @@
+output (["obj: ",show(obj),"\n","u: ",show(u),"\n"]++[if j==1 then ("\n"++show(i))++": " else " " endif++show(x[i,j]) | i in V, j in 1..nc])++["\n"];
+int: nc = 5;
+array [1..nc] of int: u;
+int: obj = sum([u[c] | c in 1..nc]);
+set of int: V = 1..11;
+array [1..55] of int: X_INTRODUCED_0_;
+array [V,1..nc] of int: x = array2d(1..11,1..5,X_INTRODUCED_0_);

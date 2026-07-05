@@ -1,0 +1,17 @@
+output ["Tim:",show(Tim)," Jane:",show(Jane)," Mary:",show(Mary),"\n",show(tmp)];
+float: Mary;
+float: Jane;
+float: Tim;
+float: y8;
+float: y7;
+float: y6;
+float: y5;
+float: y4;
+float: y3;
+float: y2;
+float: y1;
+float: y;
+float: m;
+float: j;
+float: t;
+array [1..15] of float: tmp = [t,j,m,y,y1,y2,y3,y4,y5,y6,y7,y8,Tim,Jane,Mary];

@@ -1,0 +1,13 @@
+output ["rockband: ",show(rock_band),"\n","genre: ",show(genre),"\n","rendevouz: ",show(rendevouz),"\n"];
+set of int: r = 1..4;
+int: T_shirt_vendor;
+int: mosh_pit;
+int: information_booth;
+int: carnival_games;
+array [r] of int: rendevouz = [carnival_games,information_booth,mosh_pit,T_shirt_vendor];
+int: speed_metal;
+int: reggae;
+int: grunge;
+int: country;
+array [r] of int: genre = [country,grunge,reggae,speed_metal];
+array [r] of int: rock_band = [1,2,3,4];

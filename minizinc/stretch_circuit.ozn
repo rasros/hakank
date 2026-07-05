@@ -1,0 +1,7 @@
+output [(((((((((("x: "++show(x))++"\n")++"val: ")++show(val))++"\n")++"lmin: ")++show(lmin))++"\n")++"lmax: ")++show(lmax))++"\n"];
+int: n = 8;
+array [1..n] of int: x;
+int: m = 4;
+array [1..m] of int: val = [1,2,3,6];
+array [1..m] of int: lmin = [2,2,1,4];
+array [1..m] of int: lmax = [4,3,6,4];

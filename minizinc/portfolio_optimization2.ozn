@@ -1,0 +1,5 @@
+output [((("frac:"++show(frac))++"\n")++"return: ")++show(return)]++["\n"];
+set of int: SHARES = 1..10;
+array [SHARES] of int: frac;
+array [SHARES] of int: ret = [5,17,26,12,8,9,7,6,31,21];
+int: return = sum([ret[s]*frac[s] | s in SHARES]);

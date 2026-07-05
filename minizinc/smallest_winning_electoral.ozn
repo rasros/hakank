@@ -1,0 +1,7 @@
+output [((((((("x: "++show(x))++"\n")++"z: ")++show(z))++"\n")++"s: ")++show(s))++"\n"]++[if fix(x[i])==1 then show(StatesStr[i])++" " else "" endif | i in STATES];
+set of int: STATES = 1..51;
+array [STATES] of int: x;
+array [STATES] of int: Cost = [135765,1717854,295254,137732,423970,269601,14357,6447,177,170304,153909,28311,216446,149998,94321,145743,213096,104659,134264,91646,32133,27336,250494,225171,125434,180533,380838,200345,286351,24216,22588,314915,141299,139389,183112,116096,181035,254805,119283,4002,82932,199731,109151,695621,219887,24901,110785,184665,62755,169639,253336];
+int: z = sum([Cost[i]*x[i] | i in STATES]);
+int: s = sum(x);
+array [STATES] of string: StatesStr = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","'District of Columbia'","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","'New Hampshire'","'New Jersey'","'New Mexico'","'New York'","'North Carolina'","'North Dakota'","Ohio","Oklahoma","Oregon","Pennsylvania","'Rhode Island'","'South Carolina'","'South Dakota'","Tennessee","Texas","Utah","Vermont","Virginia","Washington","'West Virginia'","Wisconsin","Wyoming"];

@@ -1,0 +1,3 @@
+output [("labels: "++show(labels))++"\n"];
+set of int: indices = 1..7;
+array [indices] of int: labels;

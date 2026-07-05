@@ -1,0 +1,5 @@
+output [show([A,B,C,D]),"\n"];
+int: D;
+int: C;
+int: B;
+int: A;

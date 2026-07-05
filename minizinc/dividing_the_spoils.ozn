@@ -1,0 +1,4 @@
+output [show([mary,nellie,susie])];
+int: susie;
+int: nellie;
+int: mary;

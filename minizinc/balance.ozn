@@ -1,0 +1,5 @@
+output [(((((("bal: "++show(bal))++"\n")++"x: ")++show(x))++"\n")++"gcc: ")++show(gcc)];
+int: bal = 3;
+int: n = 5;
+array [1..n] of int: x;
+array [1..7] of int: gcc;

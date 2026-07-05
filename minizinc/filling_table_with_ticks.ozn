@@ -1,0 +1,6 @@
+output ([("ticks: "++show(ticks))++"\n"]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..rows, j in 1..cols])++["\n"];
+int: rows = 4;
+int: cols = 6;
+int: ticks = 18;
+array [1..24] of int: X_INTRODUCED_16_;
+array [1..rows,1..cols] of int: x = array2d(1..4,1..6,X_INTRODUCED_16_);

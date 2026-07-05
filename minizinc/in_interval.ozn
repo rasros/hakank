@@ -1,0 +1,4 @@
+output [((((((("v: "++show(v))++"\n")++"low: ")++show(low))++"\n")++"up: ")++show(up))++"\n"];
+int: v = 3;
+int: low = 2;
+int: up = 5;

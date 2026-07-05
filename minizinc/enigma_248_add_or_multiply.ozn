@@ -1,0 +1,6 @@
+output (((["number of half-pennies:\n"]++[show([x[i,j] | j in 1..m])++"\n" | i in 1..n])++["\npennies:\n"])++[((show([int2float(x[i,j])*0.5 | j in 1..m])++" total: ")++show(total[i]))++"\n" | i in 1..n])++["total: ",show(total),"\n","sum_total: ",show(sum(total)),"\n"];
+int: m = 3;
+int: n = 5;
+array [1..15] of int: X_INTRODUCED_21_;
+array [1..n,1..m] of int: x = array2d(1..5,1..3,X_INTRODUCED_21_);
+array [1..n] of float: total;

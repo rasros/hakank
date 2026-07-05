@@ -1,0 +1,6 @@
+output ["x: ",show(x)," num_cycles: ",show(num_cycles)," num fixpoints: ",show(num_fixpoints),"\n"];
+int: n = 7;
+array [1..n] of int: x;
+function int : num_fixpoints(array [int] of int: a) = sum([bool2int(a[i]==i) | i in index_set(a)]);
+int: num_fixpoints = num_fixpoints(x);
+int: num_cycles;

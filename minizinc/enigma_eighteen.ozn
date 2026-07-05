@@ -1,0 +1,14 @@
+output ["x: ",show(x),"\n","..NINE..: ",show(nine),"\n","EIGHTEEN: ",show(eighteen),"\n","(",show(X1),show(X2),show(N),show(I),show(N),show(E),show(X3),show(X4),") * 2 = ",show(E),show(I),show(G),show(H),show(T),show(E),show(E),show(N),"\n"];
+int: N;
+int: E;
+int: T;
+int: H;
+int: G;
+int: I;
+int: X4;
+int: X3;
+int: X2;
+int: X1;
+array [1..8] of int: eighteen = [E,I,G,H,T,E,E,N];
+array [1..8] of int: nine = [X1,X2,N,I,N,E,X3,X4];
+array [1..10] of int: x = [N,I,E,G,H,T,X1,X2,X3,X4];

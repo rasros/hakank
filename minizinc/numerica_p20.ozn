@@ -1,0 +1,3 @@
+output [((("x:"++show_float(3,12,x))++"\n")++"y:")++show_float(3,12,y)];
+float: x;
+float: y;

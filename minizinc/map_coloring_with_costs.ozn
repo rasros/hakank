@@ -1,0 +1,8 @@
+output ([(((("total: "++show(total))++"\n")++"x: ")++show(x))++"\n\n"]++[((((show(countries_str[i])++": ")++color_str[fix(x[i])])++" ")++show(color_cost[x[i]]))++"\n" | i in 1..num_countries])++["\n"];
+int: num_countries = 16;
+int: num_colors = 8;
+array [1..num_colors] of int: color_cost = [100,200,300,400,500,600,700,800];
+int: total;
+array [1..num_countries] of int: x;
+array [1..num_countries] of string: countries_str = ["Galapagos Islands","Ecuador          ","Colombia         ","Venezuela        ","Guyana           ","Suriname         ","French Guiana    ","Brazil           ","Peru             ","Bolivia          ","Paraguay         ","Chile            ","Argentina        ","Uruguay          ","Falklands Island ","South Georgia    "];
+array [1..num_colors] of string: color_str = ["Red   ","Blue  ","Green ","Orange","Yellow","Purple","Brown ","Black "];

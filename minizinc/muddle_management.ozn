@@ -1,0 +1,5 @@
+output (["x: ",show(x),"\n","z: ",show(z),"\n"]++[((show(meetings_s[m])++" at time ")++show(x[m]))++"\n" | m in 1..num_meetings])++[if t<=fix(z) then ((("time "++show(t))++": ")++show(join(", ",[meetings_s[m] | m in 1..num_meetings where fix(x[m])==t])))++"\n" else "" endif | t in 1..num_meetings];
+int: num_meetings = 8;
+array [1..num_meetings] of int: x;
+int: z = max(x);
+array [1..num_meetings] of string: meetings_s = ["marketing","networks","orders","production","quality","revenue","sales","timetables"];

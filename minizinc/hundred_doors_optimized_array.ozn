@@ -1,0 +1,3 @@
+output ["x: ",show(x),"\n"];
+set of int: r = 1..100;
+array [r] of int: x;

@@ -1,0 +1,5 @@
+output [((((((("max_total: "++show(max_total))++"\n")++"total: ")++show(total))++"\n")++"x: ")++show(x))++"\n"];
+int: max_total = 2705262;
+int: total;
+int: num_items = 29;
+array [1..num_items] of int: x;

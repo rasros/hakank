@@ -1,0 +1,7 @@
+output [((("series: "++show(series))++"\n")++"differences: ")++show(differences)];
+set of int: classes = 0..11;
+array [1..12] of int: X_INTRODUCED_16_;
+array [classes] of int: series = array1d(0..11,X_INTRODUCED_16_);
+int: n = 12;
+array [1..11] of int: X_INTRODUCED_29_;
+array [0..n-2] of int: differences = array1d(0..10,X_INTRODUCED_29_);

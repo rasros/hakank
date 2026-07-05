@@ -1,0 +1,7 @@
+output [((if b==1 /\ s==1 then ("num_loaded_bins: "++show(num_loaded_bins))++"\n" else "" endif++if s==1 then show(bin_loads[b])++" : " else "" endif)++show(bins[b,s]))++if s==num_stuff then "\n" else " " endif | b in 1..num_bins, s in 1..num_stuff];
+int: num_bins = 19;
+int: num_loaded_bins;
+array [1..num_bins] of int: bin_loads;
+int: num_stuff = 45;
+array [1..855] of int: X_INTRODUCED_16_;
+array [1..num_bins,1..num_stuff] of int: bins = array2d(1..19,1..45,X_INTRODUCED_16_);

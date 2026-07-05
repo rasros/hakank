@@ -1,0 +1,3 @@
+output [((("v: "++show(v))++"\n")++"vars: ")++show(vars)];
+bool: v;
+array [1..2] of bool: vars;

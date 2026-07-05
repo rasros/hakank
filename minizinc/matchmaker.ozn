@@ -1,0 +1,15 @@
+output (([(((("total: "++show(total))++"\n")++"x: ")++show(x))++"\n"]++[let {int: t = fix(x[i])} in ((((("Woman "++show(i))++" match man ")++show(men_str[t]))++"  ")++"\n") | i in 1..n])++[let {int: t = fix(x[i])} in ((((((((((((((((("Woman "++show(i))++" matches man ")++show(men_str[t]))++"  ")++"Hair: ")++show(color_str[women[i,1]]))++" <-> ")++show(color_str[men[t,1]]))++if women[i,1]==men[t,1] then "+" else "-" endif)++" Eyes: ")++show(color_str[women[i,2]]))++" <-> ")++show(color_str[men[t,2]]))++if women[i,2]==men[t,2] then "+" else "-" endif)++" num_matches: ")++show(num_matches[i]))++"\n") | i in 1..n])++["\n"];
+int: n = 6;
+int: total;
+array [1..n] of int: x;
+array [1..n] of string: men_str = ["A","B","C","D","E","F"];
+array [1..n] of string: color_str = ["Yellow","Brown","Red","Green","Black","Blue"];
+int: Brown = 2;
+int: Black = 5;
+int: Red = 3;
+int: Blue = 6;
+int: Green = 4;
+int: Yellow = 1;
+array [1..n,1..2] of int: women = [|Yellow,Brown|Red,Green|Black,Blue|Black,Brown|Red,Brown|Black,Brown|];
+array [1..n,1..2] of int: men = [|Red,Green|Yellow,Blue|Yellow,Brown|Red,Green|Black,Green|Yellow,Blue|];
+array [1..n] of int: num_matches;

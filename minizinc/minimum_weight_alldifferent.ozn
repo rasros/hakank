@@ -1,0 +1,6 @@
+output [((((((("variables: "++show(variables))++"\n")++"cost: ")++show(cost))++"\n")++"matrix: ")++show(matrix))++"\n"];
+int: n = 4;
+array [1..n] of int: variables;
+int: cost = 17;
+array [1..16] of int: X_INTRODUCED_20_;
+array [1..n,1..n] of int: matrix = array2d(1..4,1..4,X_INTRODUCED_20_);

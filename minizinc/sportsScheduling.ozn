@@ -1,0 +1,8 @@
+output ["\nschedule: "]++[((((((((((if p==1 then "\n" else "" endif++"w:")++show(w))++" p:")++show(p))++" : ")++show(schedule[w,p,1]))++" vs ")++show(schedule[w,p,2]))++" game:")++show(game[w,p]))++"\n" | w in weeks, p in periods];
+set of int: homeaway = 1..2;
+set of int: periods = 1..2;
+set of int: weeks = 1..3;
+array [1..12] of int: X_INTRODUCED_16_;
+array [weeks,periods,homeaway] of int: schedule = array3d(1..3,1..2,1..2,X_INTRODUCED_16_);
+array [1..6] of int: X_INTRODUCED_29_;
+array [weeks,periods] of int: game = array2d(1..3,1..2,X_INTRODUCED_29_);

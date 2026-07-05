@@ -1,0 +1,6 @@
+output ([if j==1 then "\n" else " " endif++show(x[i,j]) | i in 1..num_sites, j in 1..num_judges]++["\njudges_where: "++show(judges_where)])++["\nx: "++show(x)];
+int: num_judges = 7;
+int: num_sites = 7;
+array [1..49] of int: X_INTRODUCED_16_;
+array [1..num_sites,1..num_judges] of int: x = array2d(1..7,1..7,X_INTRODUCED_16_);
+array [1..num_judges] of set of int: judges_where;

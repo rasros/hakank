@@ -1,0 +1,10 @@
+output ["z: ",show(z),"\n","S: ",show(S),"\nE: ",show(E),"\nN: ",show(N),"\nD: ",show(D),"\nM: ",show(M),"\nO: ",show(O),"\nT: ",show(T),"\nY: ",show(Y),"\n"];
+int: Y;
+int: T;
+int: O;
+int: M;
+int: D;
+int: N;
+int: E;
+int: S;
+int: z = 10000*M+1000*O+100*N+10*E+Y;

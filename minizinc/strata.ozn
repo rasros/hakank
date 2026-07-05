@@ -1,0 +1,12 @@
+output ((["move_color : ",show(move_color),"\n","move_row   : ",show(move_row),"\n","move_column: ",show(move_column),"\n","num_moves  : ",show(num_moves),"\n","colors_s   : ",show(colors_s),"\n"]++[((if c==1 /\ r==1 then (((((((("\n\n"++"* move ")++show(m))++": ")++if fix(move_row[m]) > 0 then "row: "++show(move_row[m]) else "column: "++show(move_column[m]) endif)++" color ")++show(move_color[m]))++" (")++show(colors_s[fix(move_color[m])]))++")\n" else "" endif++if c==1 then "\n" else "" endif)++show(colors_s[fix(y[m,r,c])]))++" " | m in 1..max_num_moves where m<=fix(num_moves), r in 1..rows, c in 1..cols])++["\n\nSummary of moves: \n","num_moves: "++show(num_moves),"\n"])++[((((("move "++show_int(2,m))++": ")++if fix(move_row[m]) > 0 then "row    "++show(move_row[m]) else "column "++show(move_column[m]) endif)++" ")++show(colors_s[fix(move_color[m])]))++"\n" | m in 1..max_num_moves where m<=fix(num_moves)];
+int: num_colors = 4;
+array [0..num_colors] of string: colors_s = array1d(0..4,["-     ","green ","red   ","orange","brown "]);
+int: max_num_moves = 10;
+int: num_moves;
+int: cols = 5;
+array [1..max_num_moves] of int: move_column;
+int: rows = 5;
+array [1..max_num_moves] of int: move_row;
+array [1..max_num_moves] of int: move_color;
+array [1..275] of int: X_INTRODUCED_46_;
+array [0..max_num_moves,1..rows,1..cols] of int: y = array3d(0..10,1..5,1..5,X_INTRODUCED_46_);

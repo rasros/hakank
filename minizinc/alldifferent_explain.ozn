@@ -1,0 +1,4 @@
+output ["x: "++show(x),("\n"++"s: ")++show(s),("\n"++"num_conflicts: ")++show(card(s))];
+int: n = 5;
+set of int: s;
+array [1..n] of int: x;

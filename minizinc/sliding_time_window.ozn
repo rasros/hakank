@@ -1,0 +1,7 @@
+output (["tasks:"]++[if j==1 then "\n  " else " " endif++show(tasks[i,j]) | i in 1..n, j in 1..2])++["\nsums: ",show(sums),"\n","limit: ",show(limitx),"\n"];
+int: n = 5;
+int: max_time = 16;
+array [1..10] of int: X_INTRODUCED_0_;
+array [1..n,1..2] of int: tasks = [|10,3|5,1|6,2|14,2|2,2|];
+int: limitx = 6;
+array [1..max_time] of int: sums = [0,1,2,3,3,3,3,3,3,3,2,1,0,0,0,0];

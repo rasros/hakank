@@ -1,0 +1,6 @@
+output [((((((("x: "++show(x))++"\n")++"y: ")++show(y))++"\n")++"unsat: ")++show(unsat))++"\n"];
+int: n = 42;
+array [1..n] of int: x;
+int: m = 133;
+array [1..m] of int: y;
+int: unsat = sum([y[i] | i in 1..m]);

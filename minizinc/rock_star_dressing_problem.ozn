@@ -1,0 +1,5 @@
+output [((((((("pants: "++show(colors[fix(pants)]))++"\n")++"shirt: ")++show(colors[fix(shirt)]))++"\n")++"tie  : ")++show(colors[fix(tie)]))++"\n"]++["\n"];
+array [1..9] of string: colors = ["red","green","orange","blue","pink","yellow","black","khaki","purple"];
+int: pants;
+int: shirt;
+int: tie;

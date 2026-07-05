@@ -1,0 +1,7 @@
+output ([(((("min_step: "++show(min_step))++"\n")++"ops: ")++show(ops))++"\n"]++[(if j==1 then "\n" else " " endif++show(steps[i,j]))++if j==n then (" (op "++show(ops[i]))++")" else "" endif | i in 1..max_steps, j in 1..n])++["\n"];
+int: max_steps = 15;
+int: min_step;
+array [1..max_steps] of int: ops;
+int: n = 8;
+array [1..120] of int: X_INTRODUCED_24_;
+array [1..max_steps,1..n] of int: steps = array2d(1..15,1..8,X_INTRODUCED_24_);

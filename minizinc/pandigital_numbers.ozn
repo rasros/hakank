@@ -1,0 +1,9 @@
+output ["x: ",show(x),"\n",show(num1)," ",vop_s[fix(vop)]," ",show(num2)," = ",show(res)," (base ",show(base),")","\n"];
+int: base = 10;
+int: res;
+int: num2;
+array [1..2] of string: vop_s = ["*","+"];
+int: vop = 1;
+int: num1;
+int: x_len = 9;
+array [1..x_len] of int: x;

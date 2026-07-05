@@ -1,0 +1,3 @@
+output [(((("X: "++show(X))++"\n")++"Y: ")++show(Y))++"\n"];
+int: X = 4;
+int: Y = 8;

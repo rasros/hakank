@@ -1,0 +1,4 @@
+output [if col==1 then "\n" else " " endif++show(field[row,col]) | row,col in RANGE]++["\n"];
+set of int: RANGE = 1..5;
+array [1..25] of int: X_INTRODUCED_16_;
+array [RANGE,RANGE] of int: field = array2d(1..5,1..5,X_INTRODUCED_16_);

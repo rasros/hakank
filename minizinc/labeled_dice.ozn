@@ -1,0 +1,6 @@
+output ([""++format(letters)++"\n"++format(dice)++""]++[if i==A then ("\ndice: "++show(d))++": " else "" endif++if fix(dice[i])==d then _toString_letters(i,false,false)++" " else "" endif | d in 1..4, i in letters])++["\n"];
+function string : _toString_letters(opt int: X_INTRODUCED_0_,bool: X_INTRODUCED_1_,bool: X_INTRODUCED_2_) = if occurs(X_INTRODUCED_0_) then if X_INTRODUCED_1_ then showDznId(_enum_to_string_0_letters[deopt(X_INTRODUCED_0_)]) elseif X_INTRODUCED_2_ then ("{\"e\":"++show(_enum_to_string_0_letters[deopt(X_INTRODUCED_0_)]))++"}" else _enum_to_string_0_letters[deopt(X_INTRODUCED_0_)] endif else if X_INTRODUCED_2_ then "null" else "<>" endif endif;
+set of int: letters = 1..24;
+array [1..24] of int: dice;
+int: A = 1;
+array [1..24] of string: _enum_to_string_0_letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","Y"];

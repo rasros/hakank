@@ -1,0 +1,6 @@
+output [((if i==1 /\ j==1 then ("number of person: "++show(z))++"\n" else "" endif++if j mod numPersons==1 then show(i)++": " else "" endif)++show(crew[i,j]))++if j mod numPersons==0 then "\n" else " " endif | i in 1..numFlights, j in 1..numPersons]++["\n"];
+int: numPersons = 20;
+int: numFlights = 10;
+array [1..200] of int: X_INTRODUCED_0_;
+array [1..numFlights,1..numPersons] of int: crew = array2d(1..10,1..20,X_INTRODUCED_0_);
+int: z;

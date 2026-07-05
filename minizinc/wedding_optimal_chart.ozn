@@ -1,0 +1,7 @@
+output ((([("z: "++show(z))++"\n"]++[("\ntables:"++show(tables))++"\n"])++[((((show(j)++": ")++show(names[j]))++". Table ")++show(tables[j]))++"\n" | j in 1..m])++[if j==1 then ("\nTable "++show(i))++": " else "" endif++if fix(tables[j])==i then show(names2[j])++" " else "" endif | i in 1..n, j in 1..m])++["\n"];
+int: m = 17;
+int: z;
+int: n = 5;
+array [1..m] of int: tables;
+array [1..m] of string: names = ["Deb        mother of the bride","John       father of the bride","Martha     sister of the bride","Travis     boyfriend of Martha","Allan      grandfather of the bride","Lois       wife of Allan","Jayne      aunt of the bride","Brad       uncle of the bride","Abby       cousin of the bride","Mary Helen mother of the groom","Lee        father of the groom","Annika     sister of the groom","Carl       brother of the groom","Colin      brother of the groom","Shirley    grandmother of the groom","DeAnn      aunt of the groom","Lori       aunt of the groom"];
+array [1..m] of string: names2 = ["Deb (B)","John (B)","Martha (B)","Travis (B)","Allan (B)","Lois (B)","Jayne (B)","Brad (B)","Abby (B)","Mary Helen (G)","Lee (G)","Annika (G)","Carl (G)","Colin (G)","Shirley (G)","DeAnn (G)","Lori (G)"];

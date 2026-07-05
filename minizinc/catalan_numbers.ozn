@@ -1,0 +1,4 @@
+output ["C: ",show(C)];
+int: m = 7;
+array [1..8] of int: X_INTRODUCED_0_;
+array [0..m] of int: C = array1d(0..7,[1,1,2,5,14,42,132,429]);

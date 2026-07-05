@@ -1,0 +1,5 @@
+output [(((("x: "++show(x))++"\n")++"minexp: ")++show(minexp))++"\n"];
+set of int: T = 1..3;
+array [T] of int: x;
+array [T] of int: price = [30,27,21];
+int: minexp = sum([x[i]*price[i] | i in T]);

@@ -1,0 +1,9 @@
+output (((["\nRostering:"]++[if j==1 then "\n" else " " endif++if available[i,j]==0 then show("-") else show(days[fix(x[i,j])]) endif | i in 1..num_nurses, j in 1..num_days])++["\n\nstatistics:\n"++" d  n  o\n--------"])++[(if t==1 then "\n" else "" endif++show_int(2,stat[j,t]))++" " | j in 1..num_days, t in 1..3])++["\n"];
+int: num_days = 14;
+int: num_nurses = 7;
+array [1..num_nurses,1..num_days] of int: available = [|1,1,0,1,1,1,1,1,1,1,0,1,1,1|0,1,1,1,0,1,1,0,1,1,1,1,1,1|1,0,1,1,0,1,1,1,0,0,1,1,0,1|1,1,1,1,1,0,1,1,0,1,1,1,1,0|1,1,1,0,1,1,1,1,1,1,1,0,1,1|1,1,0,1,1,0,1,1,1,0,1,1,1,0|1,1,1,0,1,1,1,1,1,1,0,1,1,1|];
+array [1..3] of string: days = ["d","n","o"];
+array [1..98] of int: X_INTRODUCED_16_;
+array [1..num_nurses,1..num_days] of int: x = array2d(1..7,1..14,X_INTRODUCED_16_);
+array [1..42] of int: X_INTRODUCED_115_;
+array [1..num_days,1..3] of int: stat = array2d(1..14,1..3,X_INTRODUCED_115_);

@@ -1,0 +1,3 @@
+output ["v1: "++show(v1)];
+int: m = 3;
+array [1..m] of int: v1 = [5,3,3];

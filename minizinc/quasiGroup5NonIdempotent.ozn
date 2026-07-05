@@ -1,0 +1,4 @@
+output [if col==0 then "\n" else " " endif++show(quasiGroup[row,col]) | row,col in nDomain]++["\n"];
+set of int: nDomain = 0..6;
+array [1..49] of int: X_INTRODUCED_16_;
+array [nDomain,nDomain] of int: quasiGroup = array2d(0..6,0..6,X_INTRODUCED_16_);

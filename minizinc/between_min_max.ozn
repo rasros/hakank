@@ -1,0 +1,4 @@
+output [(((("x: "++show(x))++"\n")++"nvar: ")++show(nvar))++"\n"];
+int: n = 4;
+array [1..n] of int: x;
+int: nvar = 3;

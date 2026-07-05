@@ -1,0 +1,4 @@
+output [show(x),"\n"++show(p),"\n"];
+int: n = 150;
+array [1..n] of int: p;
+array [1..n] of int: x;

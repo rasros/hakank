@@ -1,0 +1,5 @@
+output [((((((("n: "++show(n))++"\n")++"len: ")++show(len))++"\n")++"x: ")++show(x))++"\n"];
+int: n = 117;
+int: max_len = 351;
+int: len;
+array [1..max_len] of int: x;

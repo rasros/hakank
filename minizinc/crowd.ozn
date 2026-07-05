@@ -1,0 +1,10 @@
+output (["z: ",show(z)]++[if j==1 then "\n" else " " endif++show(res[i,j]) | i,j in 1..size])++["\n"];
+set of int: P = 1..8;
+set of int: S = 1..12;
+array [1..1152] of int: X_INTRODUCED_0_;
+array [S,S,P] of int: x = array3d(1..12,1..12,1..8,X_INTRODUCED_0_);
+set of int: R = 3..10;
+int: z = sum([x[i,j,k] | i in R, j in R, k in P]);
+int: size = 8;
+array [1..64] of int: X_INTRODUCED_1153_;
+array [1..size,1..size] of int: res = array2d(1..8,1..8,X_INTRODUCED_1153_);

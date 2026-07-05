@@ -1,0 +1,5 @@
+output ["x: ",show(x),"\n",show(distance)];
+int: n = 16;
+array [1..n] of int: d;
+int: distance = sum(d);
+array [1..n] of int: x;

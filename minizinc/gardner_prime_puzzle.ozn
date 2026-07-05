@@ -1,0 +1,4 @@
+output [show(mP)," * ",show(nP)," = ",show(mnP),"\n"];
+int: mnP;
+int: nP;
+int: mP;

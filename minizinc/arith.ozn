@@ -1,0 +1,4 @@
+output [(((("x: "++show(x))++"\n")++"y: ")++show(y))++"\n"];
+int: n = 5;
+array [1..n] of int: x = [4,5,7,4,5];
+int: y = 9;

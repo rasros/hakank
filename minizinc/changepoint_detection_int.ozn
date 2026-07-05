@@ -1,0 +1,7 @@
+output ["cp:"++format(cp)++" mean1:"++format(mean1)++" mean2:"++format(mean2)++"\n","z:"++format(z)++" mean_diff1:"++format(mean_diff1)++" mean_diff2:"++format(mean_diff2)++"\n"];
+int: mean_diff1;
+int: mean_diff2;
+int: z = mean_diff1+mean_diff2;
+int: cp;
+int: mean1;
+int: mean2;

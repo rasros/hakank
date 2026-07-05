@@ -1,0 +1,4 @@
+output [(((("s:"++show(s))++"\n")++"c:")++show(c))++"\n"];
+int: n = 6;
+array [1..n] of float: s;
+array [1..n] of float: c;

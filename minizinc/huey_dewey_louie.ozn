@@ -1,0 +1,4 @@
+output [show([huey,dewey,louie])];
+bool: louie;
+bool: dewey = false;
+bool: huey = false;

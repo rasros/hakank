@@ -1,0 +1,3 @@
+output ["b: ",show(b),"\n","g: ",show(g),"\n","total: ",show(b+g),"\n"];
+int: b;
+int: g;

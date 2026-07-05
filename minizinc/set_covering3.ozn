@@ -1,0 +1,3 @@
+output [((("Senator "++show(i))++": ")++show(x[i]))++"\n" | i in 1..num_senators];
+int: num_senators = 10;
+array [1..num_senators] of int: x;

@@ -1,0 +1,5 @@
+output ["variables: ",show(variables),"\n","min_ind: ",show(min_ind),"\n","min_val: ",show(min_val),"\n"];
+int: min_val;
+int: n = 5;
+int: min_ind;
+array [1..n] of int: variables;

@@ -1,0 +1,4 @@
+output ["N: ",show(N)," NB: ",show(NB),"\n","Sets: ",show(Sets)];
+int: NB = 7;
+int: N = 7;
+array [1..NB] of set of int: Sets;

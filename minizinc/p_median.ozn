@@ -1,0 +1,9 @@
+output [((((((("OpenWarehouse: "++show(OpenWarehouse))++"\n")++"ShipToCustomer: ")++show(ShipToCustomer))++"\n")++"z: ")++show(z))++"\n"];
+set of int: Warehouses = 1..3;
+array [Warehouses] of int: OpenWarehouse;
+set of int: Customers = 1..4;
+array [1..12] of int: X_INTRODUCED_3_;
+array [Customers,Warehouses] of int: ShipToCustomer = array2d(1..4,1..3,X_INTRODUCED_3_);
+array [Customers] of float: Demand = [100.0,80.0,80.0,70.0];
+array [Customers,Warehouses] of float: Distance = [|2.0,10.0,50.0|2.0,10.0,52.0|50.0,60.0,3.0|40.0,60.0,1.0|];
+float: z = sum([Demand[c]*Distance[c,w]*int2float(ShipToCustomer[c,w]) | c in Customers, w in Warehouses]);

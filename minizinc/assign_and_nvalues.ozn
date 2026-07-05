@@ -1,0 +1,2 @@
+output [("limitx: "++show(limitx))++"\n"];
+int: limitx = 2;

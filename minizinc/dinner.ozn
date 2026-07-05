@@ -1,0 +1,4 @@
+output ["Grandparents: ",show(Grandparents),"\n","Parents:      ",show(Parents),"\n","Children:     ",show(Children),"\n"];
+int: Children;
+int: Parents;
+int: Grandparents;

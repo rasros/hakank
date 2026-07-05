@@ -1,0 +1,2 @@
+output [(((("s1: "++show(s1))++"\n")++"s2: ")++show(s1))++"\n"];
+set of int: s1;

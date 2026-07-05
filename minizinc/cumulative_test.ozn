@@ -1,0 +1,7 @@
+output ["limit   : ",show(limitx),"\n","origin  : ",show(origin),"\n","duration: ",show(duration),"\n","height  : ",show(height),"\n","end     : ",show(end),"\n"];
+int: n = 5;
+array [1..n] of int: end;
+array [1..n] of int: height;
+array [1..n] of int: duration;
+array [1..n] of int: origin;
+int: limitx;

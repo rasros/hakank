@@ -1,0 +1,3 @@
+output ["my age: ",show(m),"\n","husband's age: ",show(h),"\n"];
+int: h;
+int: m;

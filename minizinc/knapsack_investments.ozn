@@ -1,0 +1,10 @@
+output [((((((((((((("x: "++show(x))++"\n")++"total_persons: ")++show(total_persons))++"\n")++"total_budget: ")++show(total_budget))++"\n")++"total_projects: ")++show(total_projects))++"\n")++"total_values: ")++show(total_values))++"\n"];
+int: num_projects = 15;
+array [1..num_projects] of int: x;
+array [1..num_projects] of int: personell = [5,3,4,2,2,2,4,1,1,5,3,2,2,4,3];
+int: total_persons = sum([x[i]*personell[i] | i in 1..num_projects]);
+array [1..num_projects] of int: budgets = [35,34,26,12,10,18,32,11,10,22,27,18,16,29,22];
+int: total_budget = sum([x[i]*budgets[i] | i in 1..num_projects]);
+int: total_projects = sum([x[i] | i in 1..num_projects]);
+array [1..num_projects] of int: values = [600,400,100,150,80,120,200,220,90,380,290,130,80,270,280];
+int: total_values = sum([x[i]*values[i] | i in 1..num_projects]);

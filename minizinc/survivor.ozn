@@ -1,0 +1,10 @@
+output ([(((((("sum_weight: "++show(sum_weight))++"\n")++"sum_survival_points: ")++show(sum_survival_points))++"\n")++"x: ")++show(x)]++[(((((((((((((((((((((("\nfood   : "++show(food[fix(x[1]),1]))++"kg ")++show(food[fix(x[1]),2]))++"pts ")++"\n")++"water  : ")++show(water[fix(x[2]),1]))++"kg ")++show(water[fix(x[2]),2]))++"pts ")++"\n")++"shelter: ")++show(shelter[fix(x[3]),1]))++"kg ")++show(shelter[fix(x[3]),2]))++"pts ")++"\n")++"defence: ")++show(defence[fix(x[4]),1]))++"kg ")++show(defence[fix(x[4]),2]))++"pts ")++"\n"])++["\n"];
+int: sum_weight;
+int: sum_survival_points;
+int: num_types = 4;
+int: num_items = 3;
+array [1..num_types] of int: x;
+array [1..num_items,1..2] of int: food = [|5,10|8,20|12,25|];
+array [1..num_items,1..2] of int: water = [|3,10|5,20|8,25|];
+array [1..num_items,1..2] of int: shelter = [|5,5|8,15|12,20|];
+array [1..num_items,1..2] of int: defence = [|1,5|2,15|3,20|];

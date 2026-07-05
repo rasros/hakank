@@ -1,0 +1,14 @@
+output [("x: "++show(x))++"\n"]++[((show(s[i])++": ")++show(x[i]))++"\n" | i in 1..n];
+int: N;
+int: I;
+int: M;
+int: O;
+int: R;
+int: E;
+int: H;
+int: T;
+int: A;
+int: G;
+int: n = 10;
+array [1..n] of int: x = [G,A,T,H,E,R,O,M,I,N];
+array [1..n] of string: s = ["G","A","T","H","E","R","O","M","I","N"];

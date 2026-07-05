@@ -1,0 +1,9 @@
+output (["\ninit: ",show(init),"\n","check: ",show(check),"\n","check_ix: ",show(check_ix),"\n","operations: ",show(operations)++"\n"]++[if i==1 then ("\n"++show(operations[k]))++": " else " " endif++show(x[k,i]) | k in 1..rows, i in 1..n*n])++["\n"];
+int: rows = 12;
+array [1..rows] of int: operations;
+int: check_ix;
+array [1..rows] of int: check;
+int: n = 4;
+array [1..n*n] of int: init;
+array [1..192] of int: X_INTRODUCED_16_;
+array [1..rows,1..n*n] of int: x = array2d(1..12,1..16,X_INTRODUCED_16_);

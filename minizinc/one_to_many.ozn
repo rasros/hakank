@@ -1,0 +1,3 @@
+output [""++format(c)++": "++format(x[c])++"\n" | c in children];
+set of int: children = 1..6;
+array [children] of int: x;

@@ -1,0 +1,6 @@
+output [((((((("elements: "++show(elements))++"\n")++"entries: ")++show(entries))++"\n")++"t_index: ")++show(t_index))++"\n"];
+int: n = 4;
+array [1..n] of int: elements = [6,9,2,9];
+int: s = 2;
+array [1..s] of int: entries = [2,9];
+int: t_index = 3;

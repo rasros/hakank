@@ -1,0 +1,8 @@
+output ["table: ",show(xtable),"\n","[American, English, French]: ",show([American,English,French]),"\n"];
+int: French;
+int: English;
+int: American;
+int: Z;
+int: Y;
+int: X = 1;
+array [1..3] of int: xtable = [X,Y,Z];

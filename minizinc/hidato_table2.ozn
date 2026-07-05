@@ -1,0 +1,5 @@
+output [(if j==1 then "\n" else " " endif++if fix(x[i,j]) < 0 then " " else if fix(x[i,j]) < 10 then "  " else if fix(x[i,j]) < 100 then " " else "" endif endif endif)++if fix(x[i,j]) > 0 then show(x[i,j]) else "__" endif | i in 1..r, j in 1..c]++["\n"];
+int: c = 8;
+int: r = 8;
+array [1..64] of int: X_INTRODUCED_16_;
+array [1..r,1..c] of int: x = array2d(1..8,1..8,X_INTRODUCED_16_);

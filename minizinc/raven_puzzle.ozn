@@ -1,0 +1,6 @@
+output [(if i==1 /\ j==1 then ("\n"++show(num_lang))++"\n" else "" endif++if num_persons mod j==0 then "\n" else " " endif)++show(mat[i,j]) | i in 1..num_persons, j in 1..num_languages]++["\n"];
+int: num_persons = 7;
+int: num_languages = 5;
+array [1..num_persons] of int: num_lang;
+array [1..35] of int: X_INTRODUCED_16_;
+array [1..num_persons,1..num_languages] of int: mat = array2d(1..7,1..5,X_INTRODUCED_16_);

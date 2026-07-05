@@ -1,0 +1,4 @@
+output ["a: ",show(a),"\n"];
+int: k = 3;
+int: n = 10;
+array [1..k*n] of int: a;

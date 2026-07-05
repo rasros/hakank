@@ -1,0 +1,6 @@
+output [((("z: "++show(z))++"\nx: ")++show(x))++"\n"]++[if fix(x[i])==1 then ((((show(movies[i])++": ")++show(data[i,1]))++"..")++show(data[i,2]))++"\n" else "" endif | i in 1..num_movies];
+int: num_movies = 9;
+array [1..num_movies] of int: x;
+int: z = sum(x);
+array [1..num_movies] of string: movies = ["Tarjan of the Jungle","The Four Volume Problem","The President's Algorist","Steiner's Tree","Process Terminated","Halting State","Programming Challenges","'Discrete' Mathematics","Calculated Bets"];
+array [1..num_movies,1..2] of int: data = [|4,13|17,27|1,10|12,18|23,30|9,16|19,25|2,7|26,31|];

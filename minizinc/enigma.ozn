@@ -1,0 +1,2 @@
+output ["y: ",show(y)++"\n"];
+array [1..10] of int: y;

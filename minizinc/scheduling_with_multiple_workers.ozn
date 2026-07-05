@@ -1,0 +1,13 @@
+output (((((["start_time: "++format(start_time)++"\n","durations : "++format(duration)++"\n","end_time  : "++format(end_time)++"\n","memory    : "++format(memory)++"\n","last_time : "++format(last_time)++"\n","machine   : "++format(machine)++"\n","machines_used: "++format(machines_used)++"\n"]++["Machine memory per time:\n    "])++[show_int(3,tt) | tt in 1..max_time])++[if tt==1 then (("\n"++"M")++show_int(2,m))++": " else " " endif++show_int(2,machine_used_ram[m,tt]) | m in 1..num_machines, tt in 1..max_time])++["\n\nTime / task: machine(task's memory)\n  Task "])++[show_int(7,t) | t in 1..num_tasks])++[if t==1 then ("\nTime "++show_int(2,tt))++" " else " " endif++if tt in fix(start_time[t])..fix(end_time[t]) then ((show_int(2,fix(machine[t]))++"(")++show_int(2,memory[t]))++")" else "      " endif | tt in 1..fix(last_time), t in 1..num_tasks];
+int: num_tasks = 10;
+int: num_machines = 10;
+array [1..num_tasks] of int: machine;
+int: machines_used = max(machine);
+int: max_time = 30;
+array [1..num_tasks] of int: end_time;
+int: last_time = max(end_time);
+array [1..num_tasks] of int: memory = [1,2,4,2,1,8,12,4,1,10];
+array [1..num_tasks] of int: duration = [2,4,6,5,2,1,4,6,3,12];
+array [1..num_tasks] of int: start_time;
+array [1..300] of int: X_INTRODUCED_46_;
+array [1..num_machines,1..max_time] of int: machine_used_ram = array2d(1..10,1..30,X_INTRODUCED_46_);

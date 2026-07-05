@@ -1,0 +1,7 @@
+output ["Ds: ",show(Ds),"\n","Rs: ",show(Rs),"\n","Ss: ",show(Ss),"\n","End: ",show(End),"\n","Capacity: ",show(Capacity),"\n"];
+int: Capacity;
+int: End;
+int: n = 5;
+array [1..n] of int: Ss;
+array [1..n] of int: Rs = [1,1,1,1,1];
+array [1..n] of int: Ds = [5,7,10,2,9];

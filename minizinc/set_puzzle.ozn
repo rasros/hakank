@@ -1,0 +1,6 @@
+output [show(x)++"\n"]++[if j==1 then "\n" else " " endif++show(puzzle[i,j]) | i in 1..n, j in 1..num_attributes];
+int: num_sets = 5;
+int: n = 12;
+array [1..num_sets] of set of int: x;
+int: num_attributes = 4;
+array [1..n,1..num_attributes] of int: puzzle = [|1,1,1,1|2,2,2,2|3,3,3,3|1,3,1,2|2,1,1,1|3,3,2,2|1,1,3,1|2,1,2,3|3,1,1,1|1,1,2,2|2,2,3,2|3,2,3,1|];

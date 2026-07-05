@@ -1,0 +1,6 @@
+output ["z: ",show(z),"\n","w: ",show(w),"\n","y: ",show(y),"\n"];
+set of int: T = 1..100;
+array [T] of int: y;
+int: n = 100;
+array [1..n] of int: w;
+int: z;

@@ -1,0 +1,4 @@
+output ["nv: ",show(nvv)," x: ",show(x)];
+int: n = 7;
+array [1..n] of int: x;
+int: nvv;

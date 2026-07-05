@@ -1,0 +1,4 @@
+output [show(a)];
+int: n = 15;
+int: m = 3;
+array [1..n*m] of int: a;

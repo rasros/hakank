@@ -1,0 +1,6 @@
+output ([("the_sum: "++show(the_sum))++"\n"]++[if j==1 then "\n" else " " endif++show(t[i,j]*fix(x[i,j])) | i,j in 1..n])++["\n"];
+int: n = 5;
+array [1..n,1..n] of int: t = [|7,8,5,9,10|6,7,4,8,9|9,10,7,11,12|8,9,6,10,11|4,5,2,6,7|];
+int: the_sum;
+array [1..25] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: x = array2d(1..5,1..5,X_INTRODUCED_16_);

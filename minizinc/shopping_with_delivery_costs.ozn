@@ -1,0 +1,6 @@
+output ["x: "++format(x)++"\n","part_cost: "++format(part_cost)++"\n","delivery_cost: "++format(delivery_cost)++"\n","total_cost: "++format(total_cost)++"\n"];
+int: num_parts = 3;
+float: part_cost;
+float: delivery_cost;
+float: total_cost = part_cost+delivery_cost;
+array [1..num_parts] of int: x;

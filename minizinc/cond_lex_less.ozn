@@ -1,0 +1,7 @@
+output [((((((("arr: "++show(arr))++"\n")++"v1: ")++show(v1))++"\n")++"v2: ")++show(v2))++"\n"];
+int: m = 2;
+int: n = 4;
+array [1..8] of int: X_INTRODUCED_0_;
+array [1..n,1..m] of int: arr = [|1,0|0,1|0,0|1,1|];
+array [1..m] of int: v1 = [1,0];
+array [1..m] of int: v2 = [0,0];

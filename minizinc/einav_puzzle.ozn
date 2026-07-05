@@ -1,0 +1,10 @@
+output [((((((((((((("total_sum: "++show(total_sum))++"\n")++"row_sums: ")++show(row_sums))++"\n")++"col_sums: ")++show(col_sums))++"\n")++"row_signs: ")++show(row_signs))++"\n")++"col_signs: ")++show(col_signs))++"\n"]++[if j==1 then "\n" else " " endif++show(data_x[i,j]) | i in 1..rows, j in 1..cols];
+int: total_sum;
+int: rows = 27;
+array [1..rows] of int: row_sums;
+int: cols = 9;
+array [1..cols] of int: col_sums;
+array [1..rows] of int: row_signs;
+array [1..cols] of int: col_signs;
+array [1..243] of int: X_INTRODUCED_0_;
+array [1..rows,1..cols] of int: data_x = array2d(1..27,1..9,X_INTRODUCED_0_);

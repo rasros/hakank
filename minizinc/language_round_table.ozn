@@ -1,0 +1,6 @@
+output [((((((("native : "++show(native))++"\n")++"foreign: ")++show(foreign))++"\n")++"turkish foreign language: ")++show(s[fix(turk_foreign)]))++"\n\n"]++[((("native: "++show(s[fix(native[i])]))++" -> foreign: ")++show(s[fix(foreign[i])]))++"\n" | i in 1..n];
+int: n = 5;
+array [1..n] of int: native;
+array [1..n] of int: foreign;
+array [1..n] of string: s = ["French","English","Polish","Italian","Turkish"];
+int: turk_foreign;

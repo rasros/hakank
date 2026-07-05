@@ -1,0 +1,4 @@
+output [show([cock,hen,chicks])];
+int: chicks;
+int: hen;
+int: cock;

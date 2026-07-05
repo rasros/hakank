@@ -1,0 +1,7 @@
+output ["z: ",show(z),"\n","n: ",show(n),"\n","[d,h,l,w]: ",show([d,h,l,w,z]),"\n"];
+float: d;
+float: l;
+float: w;
+float: z = d*l*w;
+float: h;
+int: n;

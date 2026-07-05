@@ -1,0 +1,5 @@
+output ["x : ",show(vx),"\n","xr: ",join("",[show(fix(x[n-i+1])) | i in 1..n]),"\n","vz: ",show(vz),"\n"];
+int: n = 9;
+int: vz;
+array [1..n] of int: x;
+int: vx;

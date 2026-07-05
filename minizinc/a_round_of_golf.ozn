@@ -1,0 +1,14 @@
+output ["first_name: ",show(first_name),"\n","last_name : ",show(last_name),"\n","job       : ",show(job),"\n","score     : ",show(score),"\n"];
+set of int: r = 1..4;
+array [r] of int: score;
+int: caddy;
+int: clerk;
+int: maintenance_man;
+int: cook;
+array [r] of int: job = [cook,maintenance_man,clerk,caddy];
+int: Carter;
+int: Sands;
+int: Clubb;
+int: Green;
+array [r] of int: last_name = [Green,Clubb,Sands,Carter];
+array [r] of int: first_name = [1,2,3,4];

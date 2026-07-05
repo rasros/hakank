@@ -1,0 +1,8 @@
+output (["z: "++show(z)]++[if j==1 then "\n" else " " endif++show(rt[i,j]) | i in M, j in N])++["\n"];
+set of int: P = 1..8;
+array [P] of int: d;
+int: z = sum([d[k] | k in P]);
+set of int: N = 1..4;
+set of int: M = 1..4;
+array [1..16] of int: X_INTRODUCED_137_;
+array [M,N] of int: rt = array2d(1..4,1..4,X_INTRODUCED_137_);

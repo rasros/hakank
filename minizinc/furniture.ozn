@@ -1,0 +1,9 @@
+output (["prefs: "++format(prefs)++"\n","Total: "++format(Total)++"\n","to_buy: "++format(to_buy)++"\n"]++["\nWhat we got:\n"])++[((""++format(furnitures_s[j])++": ")++show(sum([to_buy[i]*mat[i,j] | i in 1..num_offers])))++"\n" | j in 1..num_products];
+int: num_offers = 7;
+array [1..num_offers] of int: to_buy;
+array [1..num_offers] of int: offer_price = [1600,1600,1860,1860,1900,2100,2100];
+int: Total = sum([offer_price[i]*to_buy[i] | i in 1..num_offers]);
+int: num_products = 3;
+array [1..num_products] of int: prefs = [12,8,1];
+array [1..num_products] of string: furnitures_s = ["ArmChairs","SideChairs","Benches"];
+array [1..num_offers,1..num_products] of int: mat = [|2,4,0|2,2,1|0,8,0|0,6,1|2,6,0|2,8,0|2,6,1|];

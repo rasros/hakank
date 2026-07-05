@@ -1,0 +1,5 @@
+output [((((((("text: "++show(text))++"\n")++"rotated: ")++show(rotated))++"\n")++"rot: ")++show(rot))++"\n"];
+int: len = 10;
+array [1..len] of int: text = [1,2,3,13,14,15,16,24,25,26];
+array [1..len] of int: rotated;
+int: rot;

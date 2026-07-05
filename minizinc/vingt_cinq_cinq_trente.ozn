@@ -1,0 +1,11 @@
+output [show(fd)];
+int: E;
+int: R;
+int: Q;
+int: C;
+int: T;
+int: G;
+int: N;
+int: I;
+int: V;
+array [1..9] of int: fd = [V,I,N,G,T,C,Q,R,E];

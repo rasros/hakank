@@ -1,0 +1,12 @@
+output ["shoes [ecru_espadrilles, fuchsia_flats, purple_pumps, suede_sandals] ",show(shoes),"\n","shops [Foot_Farm, Heels_in_a_Handcart, The_Shoe_Palace, Tootsies]",show(shops),"\n"];
+int: Tootsies;
+int: The_Shoe_Palace;
+int: Heels_in_a_Handcart = fuchsia_flats;
+int: Foot_Farm = 2;
+int: n = 4;
+array [1..n] of int: shops = [Foot_Farm,Heels_in_a_Handcart,The_Shoe_Palace,Tootsies];
+int: suede_sandals;
+int: purple_pumps;
+int: fuchsia_flats;
+int: ecru_espadrilles;
+array [1..n] of int: shoes = [ecru_espadrilles,fuchsia_flats,purple_pumps,suede_sandals];

@@ -1,0 +1,4 @@
+output [((("x: "++show(x))++"\n")++"path_len: ")++show(path_len)];
+set of int: N = 1..10;
+array [N] of int: x;
+int: path_len = sum([bool2int(x[i] > 0) | i in N]);

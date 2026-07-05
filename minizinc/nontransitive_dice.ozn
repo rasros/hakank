@@ -1,0 +1,12 @@
+output (([((((((((((("max_val: "++show(max_val))++"\n")++"max_win: ")++show(max_win))++"\n")++"gap    : ")++show(gap))++"\n")++"gap_sum: ")++show(gap_sum))++"\n")++"comp:"]++[(((if j==1 then "\n" else " " endif++show_int(2,comp[i,j]))++" (")++show_float(2,2,int2float(100*comp[i,j] div sum([comp[i,k] | k in 1..2]))))++"%) " | i in 0..m-1, j in 1..2])++["\nDice: "])++[if j==1 then "\n" else " " endif++show_int(2,dice[i,j]) | i in 1..m, j in 1..n];
+int: n = 6;
+int: max_val;
+int: max_win;
+int: m = 6;
+array [1..6] of int: X_INTRODUCED_66_;
+array [0..m-1] of int: gap = array1d(0..5,X_INTRODUCED_66_);
+int: gap_sum = sum(gap);
+array [1..12] of int: X_INTRODUCED_53_;
+array [0..m-1,1..2] of int: comp = array2d(0..5,1..2,X_INTRODUCED_53_);
+array [1..36] of int: X_INTRODUCED_16_;
+array [1..m,1..n] of int: dice = array2d(1..6,1..6,X_INTRODUCED_16_);

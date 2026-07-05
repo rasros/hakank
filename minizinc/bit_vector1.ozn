@@ -1,0 +1,8 @@
+output [((((((((((((("num : "++show(num))++" num_x : ")++show(num_x))++"\n")++"num2: ")++show(num2))++" num2_x: ")++show(num2_x))++"\n")++"num3: ")++show(num3))++" num3_x: ")++show(num3_x))++"\n"]++["\n"];
+int: num;
+int: bits = 16;
+array [1..bits] of int: num_x;
+int: num2;
+array [1..bits] of int: num2_x;
+int: num3 = num;
+array [1..bits] of int: num3_x;

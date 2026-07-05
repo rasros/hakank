@@ -1,0 +1,8 @@
+output [(((((("value: "++show(value))++"\n")++"sel: ")++show(sel))++"\n")++"sum_coins: ")++show(sum_coins)];
+set of int: coin = 1..6;
+array [coin] of int: value;
+set of int: change = 1..100;
+array [1..600] of int: X_INTRODUCED_12_;
+array [change,coin] of int: sel = array2d(1..100,1..6,X_INTRODUCED_12_);
+array [coin] of int: num;
+int: sum_coins = sum([num[i] | i in coin]);

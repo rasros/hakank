@@ -1,0 +1,6 @@
+output [(show([X1,X2,Y1,Y2])++", % ")++show(Z)];
+int: Y2;
+int: Y1;
+int: X2;
+int: X1;
+int: Z;

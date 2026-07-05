@@ -1,0 +1,8 @@
+output ([((((((((((((("s:   : "++show(s))++"\n")++"area : ")++show(area))++"\n")++"x    : ")++show(x))++"\n")++"sum_sides: ")++show(sum_sides))++"\n")++"num_sides: ")++show(num_sides))++"\n"]++[((((((("         "++show([s[i] | i in 1..num_segments where fix(x[i])==1]))++"\n")++show([s[i] | i in 1..num_segments where fix(x[i])==4]))++"                   ")++show([s[i] | i in 1..num_segments where fix(x[i])==2]))++"\n")++"         ")++show([s[i] | i in 1..num_segments where fix(x[i])==3])])++["\n"];
+int: num_segments = 6;
+array [1..num_segments] of int: s = [4,2,4,4,6,8];
+int: area;
+array [1..num_segments] of int: x;
+int: n = 4;
+array [1..n] of int: sum_sides;
+array [1..n] of int: num_sides;

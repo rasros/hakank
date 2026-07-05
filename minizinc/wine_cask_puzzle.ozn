@@ -1,0 +1,6 @@
+output [if j==1 then "\n" else " " endif++show(x[i,j]) | i in N, j in C]++["\ndtot: ",show(dtot),"\n"];
+set of int: C = 1..5;
+set of int: N = 1..5;
+array [1..25] of int: X_INTRODUCED_0_;
+array [N,C] of int: x = array2d(1..5,1..5,X_INTRODUCED_0_);
+array [N] of int: dtot;

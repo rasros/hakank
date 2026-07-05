@@ -1,0 +1,10 @@
+output (((((["x: "]++[if j==1 then "\n" else " " endif++show(str[fix(x[i,j])]) | i,j in 1..n])++["\ngcc_row:"])++[if j==1 then "\n" else " " endif++show(gcc_rows[i,j]) | i in 1..n, j in 1..m])++["\ngcc_col:"])++[if j==1 then "\n" else " " endif++show(gcc_cols[i,j]) | i in 1..n, j in 1..m])++["\n"];
+int: m = 3;
+array [1..m] of string: str = ["A","B","C"];
+int: n = 4;
+array [1..16] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: x = array2d(1..4,1..4,X_INTRODUCED_16_);
+array [1..12] of int: X_INTRODUCED_33_;
+array [1..n,1..m] of int: gcc_rows = array2d(1..4,1..3,X_INTRODUCED_33_);
+array [1..12] of int: X_INTRODUCED_46_;
+array [1..n,1..m] of int: gcc_cols = array2d(1..4,1..3,X_INTRODUCED_46_);

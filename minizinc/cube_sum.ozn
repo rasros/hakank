@@ -1,0 +1,4 @@
+output ["x: ",show(x),"\n","z: ",show(z),"\n"];
+int: n = 10;
+array [1..n] of int: x;
+int: z = sum([bool2int(x[i] > 0) | i in 1..n]);

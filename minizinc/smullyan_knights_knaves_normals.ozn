@@ -1,0 +1,2 @@
+output ["1:knight (alway true), 2=normal (sometimes lie), 3=knave (always false), \n","p: ",show(p),"\n"];
+array [1..3] of int: p;

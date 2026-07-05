@@ -1,0 +1,8 @@
+output ([(((((("x:"++show(x))++"\n")++"sum_rest: ")++show(sum_rest))++"\n")++"max: ")++show(max_rest)]++[(if j==1 then "\n" else " " endif++show(rest[i,j]))++" " | i in 1..num_houses, j in 1..num_improvements])++["\n"];
+int: num_improvements = 5;
+array [1..num_improvements] of int: x;
+int: num_houses = 9;
+array [1..45] of int: X_INTRODUCED_5_;
+array [1..num_houses,1..num_improvements] of int: rest = array2d(1..9,1..5,X_INTRODUCED_5_);
+int: sum_rest = sum([rest[i,j] | i in 1..num_houses, j in 1..num_improvements]);
+int: max_rest = max([rest[i,j] | i in 1..num_houses, j in 1..num_improvements]);

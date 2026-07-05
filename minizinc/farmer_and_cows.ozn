@@ -1,0 +1,5 @@
+output [(((("sons: "++show(sons))++"\n")++"cows: ")++show(cows))++"\n"]++[((("son "++show(s))++" get these cows: ")++show([c | c in 1..num_cows where fix(cows[c]==s)]))++"\n" | s in 1..num_sons];
+int: num_sons = 9;
+int: num_cows = 81;
+array [1..num_sons] of int: sons;
+array [1..num_cows] of int: cows;

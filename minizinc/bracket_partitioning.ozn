@@ -1,0 +1,10 @@
+output [((((((((((((((((((("w: "++show(w))++"\n")++"z: ")++show(z))++"\n")++"x: ")++show(x))++"\n")++"set_size: ")++show(set_size))++"\n")++"diffs: ")++show(diffs))++"\n")++"mins: ")++show(mins))++"\n")++"maxs: ")++show(maxs))++"\n"]++[if fix(set_size[s]) > 0 then ((("bracket "++show(s))++": ")++show([w[i] | i in 1..n where fix(x[i])==s]))++"\n" else "" endif | s in 1..ssize];
+int: n = 30;
+array [1..n] of int: w = [190,143,133,186,176,129,182,172,125,115,168,158,111,164,154,107,197,150,140,193,146,136,189,179,132,185,175,128,118,171];
+int: ssize = 15;
+array [1..ssize] of int: set_size;
+int: z = sum([bool2int(set_size[s] in {4,8}) | s in 1..ssize]);
+array [1..n] of int: x;
+array [1..ssize] of int: diffs;
+array [1..ssize] of int: mins;
+array [1..ssize] of int: maxs;

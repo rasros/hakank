@@ -1,0 +1,5 @@
+output [(((("s: "++show(s))++"\n")++"x: ")++show(x))++"\n"]++[((("subset"++show(j))++": ")++show([s[i] | i in 1..n where fix(x[i])==j]))++"\n" | j in 1..num_subsets];
+int: n = 9;
+array [1..n] of int: s = [3,1,1,2,2,1,5,2,7];
+int: num_subsets = 2;
+array [1..n] of int: x;

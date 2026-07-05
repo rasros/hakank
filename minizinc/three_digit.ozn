@@ -1,0 +1,11 @@
+output [show([A,B,C,D,E,F,G,H,I,J])];
+int: J;
+int: I;
+int: H;
+int: G;
+int: F;
+int: E;
+int: D;
+int: C;
+int: B;
+int: A;

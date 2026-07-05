@@ -1,0 +1,7 @@
+output ["major   : ",show(major),"\n","major_inv: ",show(major_inv),"\n","returned: ",show(returned),"\n"]++[((((show(people_s[p])++" majors in ")++show(major_s[fix(major_inv[p])]))++" and returned ")++show(returned[p]))++"\n" | p in 1..n];
+int: n = 3;
+array [1..n] of int: returned;
+array [1..n] of int: major_inv;
+array [1..n] of int: major;
+array [1..n] of string: people_s = ["Arthur","Belinda","Clarissa"];
+array [1..n] of string: major_s = ["English","French","German"];

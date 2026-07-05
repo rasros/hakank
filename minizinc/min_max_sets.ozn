@@ -1,0 +1,4 @@
+output [(((("S  : "++show(S))++"min: ")++show(mn))++"max: ")++show(mx)]++["\n"];
+set of int: S;
+int: mn;
+int: mx;

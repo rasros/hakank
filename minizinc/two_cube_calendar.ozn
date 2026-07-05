@@ -1,0 +1,5 @@
+output ["cube1: ",show(cube1),"\n","cube2: ",show(cube2),"\n"]++[(((show(k)++": ")++show(x[k,1]))++show(x[k,2]))++"\n" | k in 1..31];
+array [1..6] of int: cube2;
+array [1..6] of int: cube1;
+array [1..62] of int: X_INTRODUCED_28_;
+array [1..31,1..2] of int: x = array2d(1..31,1..2,X_INTRODUCED_28_);

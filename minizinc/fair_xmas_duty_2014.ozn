@@ -1,0 +1,10 @@
+output ((["total_diffs: ",show(total_diffs),"\n"]++[((((show(days_str[d])++" (")++show(points[d]))++"p): ")++show(people_str[fix(on_duty[d])]))++"\n" | d in 1..num_days])++["\nPoints:\n"])++[(((((show(people_str[p])++": ")++show(people_points[p]))++" points ")++"(")++show(people_days[p]))++" days)\n" | p in 1..num_people];
+int: total_diffs;
+int: num_days = 14;
+array [1..num_days] of string: days_str = ["Dec 24 Wed Xmas Eve                  ","Dec 25 Thu Xmas Day                  ","Dec 26 Fri Boxing Day                ","Dec 27 Sat                           ","Dec 28 Sun                           ","Dec 29 Mon                           ","Dec 30 Tue                           ","Dec 31 Wed New Year's Eve            ","Jan 1  Thu New Year's Day            ","Jan 2  Fri                           ","Jan 3  Sat                           ","Jan 4  Sun                           ","Jan 5  Mon                           ","Jan 6  Tue Thirteenth Day (Epiphany) "];
+array [1..num_days] of int: points = [2,1,1,1,1,2,2,3,1,2,1,1,2,1];
+int: num_people = 4;
+array [1..num_people] of string: people_str = ["Adam","Boris","Cecile","Danielle"];
+array [1..num_days] of int: on_duty;
+array [1..num_people] of int: people_points;
+array [1..num_people] of int: people_days;

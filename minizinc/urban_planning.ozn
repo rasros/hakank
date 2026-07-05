@@ -1,0 +1,8 @@
+output (([(((((((("z: "++show(z))++"\n")++"row_scores: ")++show(row_scores))++"\n")++"col_scores: ")++show(col_scores))++"\n")++"x:"]++[if j==1 then "\n" else " " endif++show(x[i,j]) | i,j in 1..n])++["\n"])++[if j==1 then "\n" else " " endif++if fix(x[i,j])==residential then "R" else "C" endif | i,j in 1..n];
+int: n = 5;
+array [1..n] of int: row_scores;
+array [1..n] of int: col_scores;
+int: z;
+array [1..25] of int: X_INTRODUCED_16_;
+array [1..n,1..n] of int: x = array2d(1..5,1..5,X_INTRODUCED_16_);
+int: residential = 1;

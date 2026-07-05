@@ -1,0 +1,6 @@
+output [(if p==1 /\ r==1 then "  Do Ig Na Ol Ph Pa\n"++show(place) else "" endif++if p==1 then "\n" else " " endif)++show(arrive[r,p]) | r in RUNNERS, p in POS]++["\n"];
+set of int: RUNNERS = 1..6;
+set of int: POS = 1..6;
+array [RUNNERS] of int: place;
+array [1..36] of int: X_INTRODUCED_0_;
+array [RUNNERS,POS] of int: arrive = array2d(1..6,1..6,X_INTRODUCED_0_);

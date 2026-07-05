@@ -1,0 +1,4 @@
+output ([((((((("x: "++show(x))++"\n")++"pos: ")++show(pos))++"\n")++"start: ")++show(x[1]))++"\n"]++[show(x[i])++" " | i in 1..fix(pos)])++["\n"];
+int: rows = 10;
+array [1..rows] of int: x;
+int: pos;

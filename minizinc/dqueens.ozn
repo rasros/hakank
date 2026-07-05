@@ -1,0 +1,7 @@
+output ([(if i==1 /\ j==1 then ("\nsuma: "++show(suma))++"\nx:" else "" endif++if j==1 then "\n" else " " endif)++show(x[i,j]) | i in 1..size, j in 1..size]++[(if i==1 /\ j==1 then "\na:" else "" endif++if j==1 then "\n" else " " endif)++show(a[i,j]) | i in 1..size, j in 1..size])++["\n"];
+int: size = 8;
+array [1..64] of int: X_INTRODUCED_65_;
+array [1..size,1..size] of int: a = array2d(1..8,1..8,X_INTRODUCED_65_);
+int: suma = sum([a[i,j] | i,j in 1..size]);
+array [1..64] of int: X_INTRODUCED_0_;
+array [1..size,1..size] of int: x = array2d(1..8,1..8,X_INTRODUCED_0_);

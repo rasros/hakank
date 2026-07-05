@@ -1,0 +1,14 @@
+output ["first_names: ",show(first_names),"\n","last_names : ",show(last_names),"\n"];
+set of int: r = 1..5;
+int: miller;
+int: cooper;
+int: darling;
+int: adams;
+int: brookes;
+array [r] of int: last_names = [brookes,adams,darling,cooper,miller];
+int: amanda;
+int: kate;
+int: hillary;
+int: sylvia;
+int: jane;
+array [r] of int: first_names = [jane,sylvia,hillary,kate,amanda];

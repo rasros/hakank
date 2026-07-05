@@ -1,0 +1,7 @@
+output ["y = ",show(b),"*x + ",show(a)," Max deviation: ",show(z),"\n","u: ",show(u),"\n","v: ",show(v),"\n"];
+int: n = 19;
+array [1..n] of float: v;
+array [1..n] of float: u;
+float: z;
+float: a;
+float: b;

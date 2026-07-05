@@ -1,0 +1,4 @@
+output ["vector1: ",show(vector1),"\n","vector2: ",show(vector2),"\n"];
+int: n = 4;
+array [1..n] of int: vector2;
+array [1..n] of int: vector1;

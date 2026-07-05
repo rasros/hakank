@@ -1,0 +1,5 @@
+output [show(x)];
+int: n = 3;
+int: m = 3;
+array [1..9] of int: X_INTRODUCED_16_;
+array [1..m,1..n] of int: x = [|5,2,3|5,2,6|5,3,3|];

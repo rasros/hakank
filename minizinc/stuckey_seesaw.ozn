@@ -1,0 +1,4 @@
+output ["Liz: ",show(Liz),"\n","Fi: ",show(Fi),"\n","Sara: ",show(Sara),"\n"];
+int: Sara;
+int: Fi;
+int: Liz;

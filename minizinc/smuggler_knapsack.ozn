@@ -1,0 +1,5 @@
+output [(((("x: "++show(x))++"\n")++"TotalProfit: ")++show(TotalProfit))++"\n"];
+int: n = 3;
+array [1..n] of int: x;
+array [1..n] of int: profits = [15,10,7];
+int: TotalProfit = sum([x[i]*profits[i] | i in 1..n]);

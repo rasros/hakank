@@ -1,0 +1,4 @@
+output [(((("x: "++show(x))++"\n")++"c: ")++show(c))++"\n"];
+int: n = 9;
+array [1..n] of int: x = [8,8,3,4,1,1,5,5,2];
+int: c;

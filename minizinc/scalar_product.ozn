@@ -1,0 +1,5 @@
+output [((((((("weights: "++show(weights))++"\n")++"z: ")++show(z))++"\n")++"x: ")++show(x))++"\n"];
+int: n = 10;
+array [1..n] of int: weights = [1,2,3,10,4,2,5,3,8,5];
+int: z;
+array [1..n] of int: x;

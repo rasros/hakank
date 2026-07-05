@@ -1,0 +1,10 @@
+output (((((([(((((((((((("Freq : "++show(Freq))++"\n")++"ItemsetSize : ")++show(ItemsetSize))++"\n")++"Coverage: ")++show(Coverage))++"\n")++"Support: ")++show_float(2,2,int2float(fix(Support))/100.0))++" (")++show(Support))++")\n"]++["Items: "])++[if fix(Items[i])==1 then show(i)++" " else "" endif | i in 1..NrI])++["\nItems: "])++[if fix(Items[i])==1 then show(ItemStr[i])++" " else "" endif | i in 1..NrI])++["\nTrans: "])++[if fix(Trans[t])==1 then show(t)++" " else "" endif | t in 1..NrT])++["\n"];
+int: Freq = 10;
+int: NrI = 10;
+int: ItemsetSize;
+int: NrT = 1000;
+int: Coverage;
+int: Support = 100*Coverage div NrT;
+array [1..NrI] of int: Items;
+array [1..NrI] of string: ItemStr = ["i1","i2","i3","i4","i5","i6","i7","i8","i9","i10"];
+array [1..NrT] of int: Trans;

@@ -1,0 +1,5 @@
+output ["x: "++format(x)++"\ny: "++format(y)++"\np: "++format(p)++"\n"];
+int: n = 3;
+array [1..n] of int: x;
+array [1..n] of int: y;
+array [1..n] of int: p;

@@ -1,0 +1,6 @@
+output ["total:  ",show(total),"\n","result: ",show(result),"\n","plus:   ",show(plus),"\n","minus:  ",show(minus),"\n"];
+int: n = 19;
+array [1..n] of int: minus;
+array [1..n] of int: plus;
+array [1..n] of int: result;
+int: total = 666;

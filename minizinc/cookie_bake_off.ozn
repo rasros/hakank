@@ -1,0 +1,6 @@
+output [((((((("x: "++show(x))++"\n")++"diffs: ")++show(diffs))++"\n")++"diffs_sum: ")++show(diffs_sum))++"\n"]++[((("test "++show(t))++": ")++show(sum([scores_test[t,i]*fix(x[i]) | i in 1..3])))++"\n" | t in 1..3];
+array [1..3] of int: x;
+int: n = 15;
+array [1..n] of int: diffs;
+int: diffs_sum = sum([abs(diffs[i]) | i in 1..n]);
+array [1..3,1..3] of int: scores_test = [|1,2,5|2,4,2|3,1,4|];

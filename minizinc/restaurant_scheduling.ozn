@@ -1,0 +1,8 @@
+output [(((((((((((("needed     : "++show(needed))++"\n")++"total_cost : ")++show(total_cost))++"\n")++"x          : ")++show(x))++"\n")++"working    : ")++show(working))++"\n")++"num_workers: ")++show(sum([x[i] | i in 1..days]))]++["\n"];
+int: days = 7;
+array [1..days] of int: needed = [4,5,5,10,12,12,2];
+int: work_days = 4;
+int: cost_per_day = 100;
+array [1..days] of int: x;
+int: total_cost = sum([work_days*cost_per_day*x[i] | i in 1..days]);
+array [1..days] of int: working;

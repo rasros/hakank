@@ -1,0 +1,4 @@
+output [((("x: "++show(x))++"\n")++"total: ")++show(total)];
+int: num_bids = 5;
+array [1..num_bids] of int: x;
+int: total;

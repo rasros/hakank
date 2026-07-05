@@ -1,0 +1,4 @@
+output [show(x)++"\n"]++[if fix(x[i] > 0) then ((show(x[i])++" of ")++show(y[i]))++"\n" else "" endif | i in 1..n];
+int: n = 4;
+array [1..n] of int: x;
+array [1..n] of int: y = [2,4,6,8];

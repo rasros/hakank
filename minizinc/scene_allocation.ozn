@@ -1,0 +1,9 @@
+output [((("cost: "++show(cost))++"\n")++show(shoot))++"\n"];
+int: numActors = 11;
+array [1..numActors] of int: pay = [26481,25043,30310,4085,7562,9381,8770,5788,7423,3303,9593];
+int: maxDay = 5;
+array [1..55] of int: X_INTRODUCED_35_;
+array [1..numActors,1..maxDay] of int: isPaid = array2d(1..11,1..5,X_INTRODUCED_35_);
+int: cost = sum([pay[a]*isPaid[a,d] | a in 1..numActors, d in 1..maxDay]);
+int: maxScene = 19;
+array [1..maxScene] of int: shoot;
