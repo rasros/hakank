@@ -27,7 +27,7 @@ int: word_len;
 int: num_words;
 array[1..num_words, 1..word_len] of 0..26: words;
 % include "word_len3.mzn";
-include "word_len4.mzn";
+include "../lib/word_len4.mzn";
 % include "word_len5.mzn"; % Note: for Gecode/fz use -c-d 10000
 % include "word_len6.mzn";
 % include "word_len7.mzn";

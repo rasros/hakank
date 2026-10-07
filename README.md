@@ -16,13 +16,11 @@ The models live under minizinc/, grouped into one subdirectory per family, so a
 model and its variants (for example queens, queens2 and queens_ip) sit together.
 A parameterized model has a companion <model>.dzn alongside it.
 
-Files that only define shared constraints/functions and are included by other
-models (rather than being problems themselves) live under minizinc/lib/,
-including the crossword3.mzn template and its word list, used by the crossword3_*
-instances. Add lib/ to the include path to compile a model that uses one, for
-example:
+Shared model code is inlined into each problem. Word lists remain under
+minizinc/lib/ and are included through paths relative to the model file, so
+compilation does not require an extra include path, for example:
 
-    minizinc -I minizinc/lib minizinc/minesweeper/minesweeper_0.mzn
+    minizinc minizinc/minesweeper/minesweeper_0.mzn
 
 ## Changes from upstream
 
