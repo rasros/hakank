@@ -24,6 +24,7 @@ compilation does not require an extra include path, for example:
 
 ## Changes from upstream
 
+- sudoku_gcc, sudoku_gcc_model: replaced global_cardinality_old with global_cardinality and an explicit digit cover.
 - seating_arrangements, company_competition: replaced the deprecated decreasing_set / increasing_set (dropped from the standard library in 2.6) with decreasing / increasing.
 - lex_chain_less, queens_diversity: renamed a locally defined lex_chain_less predicate that now clashes with the standard-library builtin.
 - nonogram_create_automaton: restored a show_cond helper.
