@@ -46,15 +46,15 @@ constraint
 
   % global cardinality
   forall(i in 1..n) (
-    global_cardinality_old([x[i,j] | j in 1..n], occ)
+    global_cardinality([x[i,j] | j in 1..n], set2array(1..n), occ)
   )
   /\
   forall(j in 1..n) (
-    global_cardinality_old([x[i,j] | i in 1..n], occ)
+    global_cardinality([x[i,j] | i in 1..n], set2array(1..n), occ)
   ) 
   /\
   forall(i in 0..reg-1,j in 0..reg-1) (
-    global_cardinality_old([x[r,c] | r in i*reg+1..i*reg+reg, c in j*reg+1..j*reg+reg] , occ)
+    global_cardinality([x[r,c] | r in i*reg+1..i*reg+reg, c in j*reg+1..j*reg+reg], set2array(1..n), occ)
   )
 
 %  /\
